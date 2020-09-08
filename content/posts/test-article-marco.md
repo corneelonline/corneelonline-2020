@@ -6,7 +6,7 @@ tags:
 title: Test article Marco
 body: "***"
 published: 2020-09-07T22:00:00Z
-banner_image: "/uploads/dummy-01.jpg"
+banner_image: "/v1599583640/dummy-01_jvg3ti.jpg"
 seo_title: Test article Marco
 seo_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
   venenatis pharetra elit eget molestie. In augue tortor, viverra vel posuere vitae,

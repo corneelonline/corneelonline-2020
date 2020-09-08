@@ -32,4 +32,5 @@ fields:
   template: seo
   label: SEO Information
 pages:
+- content/posts/en-nog-een-leuke-wat-langere-titel-voor-dit-blogje-van-marco-de-jamstack-koning.md
 - content/posts/test-article-marco.md

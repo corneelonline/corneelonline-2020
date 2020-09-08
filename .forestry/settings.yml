@@ -9,6 +9,15 @@ sections:
 - type: document
   path: content/home.md
   label: Home
+- type: directory
+  path: content/posts
+  label: Blog
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/projects
+  label: Portfolio
+  create: all
   match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"

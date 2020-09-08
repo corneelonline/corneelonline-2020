@@ -1,4 +1,20 @@
 ---
 label: SEO
 hide_body: true
-fields: []
+fields:
+- name: seo_title
+  type: text
+  config:
+    required: false
+    max: 70
+  label: SEO Title
+- name: seo_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 160
+  label: SEO Description

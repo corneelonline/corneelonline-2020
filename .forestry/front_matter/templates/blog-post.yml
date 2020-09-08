@@ -8,15 +8,11 @@ fields:
   config:
     required: true
   label: Title
-- name: body
-  type: textarea
-  default: ''
+- name: banner_image
+  type: file
   config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Body
+    maxSize: 64
+  label: Banner image
 - name: published
   type: datetime
   label: Published
@@ -30,11 +26,6 @@ fields:
   type: tag_list
   default: []
   label: Tags
-- name: banner_image
-  type: file
-  config:
-    maxSize: 64
-  label: Banner image
 - name: seo_information
   type: include
   config: {}

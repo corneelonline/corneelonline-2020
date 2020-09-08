@@ -1,0 +1,55 @@
+// ---------------------------------------------------------
+// skip link
+// ---------------------------------------------------------
+[href="#main"] {
+  position: absolute;
+  top: 0;
+  right: 100%; /* moves off screen */
+}
+
+[href="#main"]:focus {
+  right: auto;
+}
+
+// ---------------------------------------------------------
+// sticky footer with flexbox
+// ---------------------------------------------------------
+html, body {
+  height: 100%;
+  background-color: var(--color__white);
+  @media (min-width: var(--lg)) {
+    background-color: var(--color__background-body);
+  }
+}
+#app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#main {
+  flex: 1 0 auto;
+  background-color: var(--color__white);
+  padding-bottom: var(--gutter-lg);
+  @media (min-width: var(--md)) {
+    padding-top: var(--gutter-md);
+  }
+  @media (min-width: var(--lg)) {
+    padding-top: 0;
+  }
+}
+
+// ---------------------------------------------------------
+// basic elements
+// ---------------------------------------------------------
+a {
+  color: var(--color__link);
+}
+a:active {
+  color: var(--color__link);
+}
+a:visited {
+  color: var(--color__link-visited);
+}
+a:hover {
+  color: var(--color__link-hover);
+}

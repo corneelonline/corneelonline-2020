@@ -13,3 +13,5 @@ fields:
   config: {}
   template: seo
   label: SEO Information
+pages:
+- content/colofon.md

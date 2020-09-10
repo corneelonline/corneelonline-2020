@@ -1,7 +1,8 @@
 ---
 title: Privacyverklaring
 seo_title: Privacyverklaring
-seo_description: ''
+seo_description: Privacy statement van Corneel Online met informatie over de verwerking
+  van persoonsgegevens.
 
 ---
 ## Privacy Statement Corneel Online

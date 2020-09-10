@@ -21,15 +21,12 @@ sections:
 - type: document
   path: content/algemene-voorwaarden.md
   label: Algemene voorwaarden
-  match: "**/*"
 - type: document
   path: content/privacyverklaring.md
   label: Privacyverklaring
-  match: "**/*"
 - type: document
   path: content/colofon.md
   label: Colofon
-  match: "**/*"
 - type: heading
   label: Blog
 - type: directory
@@ -39,6 +36,11 @@ sections:
   match: "**/*"
   templates:
   - blog-post
+- type: directory
+  path: content/categories
+  label: Categories
+  create: documents
+  match: "**/*"
 - type: heading
   label: Portfolio
 - type: directory

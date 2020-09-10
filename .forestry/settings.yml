@@ -12,14 +12,23 @@ sections:
 - type: document
   path: content/diensten.md
   label: Diensten
-  match: "**/*"
 - type: document
   path: content/contact.md
   label: Contact
-  match: "**/*"
 - type: document
   path: content/over-corneel.md
   label: Over Corneel
+- type: document
+  path: content/algemene-voorwaarden.md
+  label: Algemene voorwaarden
+  match: "**/*"
+- type: document
+  path: content/privacyverklaring.md
+  label: Privacyverklaring
+  match: "**/*"
+- type: document
+  path: content/colofon.md
+  label: Colofon
   match: "**/*"
 - type: heading
   label: Blog

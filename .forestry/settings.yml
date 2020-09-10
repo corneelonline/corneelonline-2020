@@ -9,6 +9,18 @@ sections:
 - type: document
   path: content/home.md
   label: Home
+- type: document
+  path: content/diensten.md
+  label: Diensten
+  match: "**/*"
+- type: document
+  path: content/contact.md
+  label: Contact
+  match: "**/*"
+- type: document
+  path: content/over-corneel.md
+  label: Over Corneel
+  match: "**/*"
 - type: heading
   label: Blog
 - type: directory

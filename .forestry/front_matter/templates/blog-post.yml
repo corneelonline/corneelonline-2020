@@ -13,15 +13,27 @@ fields:
   config:
     maxSize: 64
   label: Banner image
-- name: published
+- name: date_published
   type: datetime
-  label: Published
+  label: Date Published
   description: ''
   config:
     required: false
     date_format: 
     time_format: 
     display_utc: false
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: categories
+      file: 
+      path: 
+  label: Category
 - name: tags
   type: tag_list
   default: []

@@ -41,6 +41,8 @@ sections:
   label: Categories
   create: documents
   match: "**/*"
+  templates:
+  - category
 - type: heading
   label: Portfolio
 - type: directory

@@ -9,6 +9,7 @@ visit_website: http://ateliersfransderoo.com/nl/
 seo_title: Ateliers Frans de Roo
 seo_description: Meertalige website voor Ateliers Frans de Roo, lijstenmaker en restaurateur.
   Het betreft lijsten voor musea, waarin de oude meesters in worden getoond.
+draft: true
 
 ---
 Meertalige website voor Ateliers Frans de Roo, lijstenmaker en restaurateur. Het betreft lijsten voor musea, waarin de oude meesters in worden getoond.

@@ -9,6 +9,7 @@ visit_website: https://www.gsanetwerk.nl/
 seo_title: GSA Netwerk van COC Nederland
 seo_description: GSA Netwerk is een community website voor LHBTI-jongeren. In opdracht
   van COC Nederland is door OCCHIO een nieuwe website ontwikkeld voor het GSA Netwerk.
+draft: true
 
 ---
 In opdracht van **COC Nederland** is door **OCCHIO** een nieuwe website ontwikkeld voor het **GSA Netwerk**. De letters GSA staan voor Gay-Straight Alliance of Gender and Sexuality Alliance: een verbond tussen allerlei seksuele oriëntaties, gender identiteiten en gender expressies. De GSA is een groep scholieren die vindt dat iedereen op hun school de vrijheid heeft te kunnen zijn wie ze zijn, zonder zich daarvoor te hoeven schamen of te verantwoorden. Op de nieuwe website staan alle GSA's op de kaart en kunnen scholieren en docenten een account aanmaken. Verder kunnen in de gratis webshop actiematerialen besteld worden. 

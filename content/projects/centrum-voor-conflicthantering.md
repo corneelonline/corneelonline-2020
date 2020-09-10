@@ -9,6 +9,7 @@ visit_website: https://www.cvc.nl/
 seo_title: Centrum voor Conflicthantering
 seo_description: Het Centrum voor Conflicthantering is een opleidingsinstituut dat
   zich richt op opleidingen, trainingen op het gebied van conflicthantering en mediation.
+draft: true
 
 ---
 Het Centrum voor Conflicthantering is een opleidingsinstituut dat zich richt op opleidingen, trainingen op het gebied van conflicthantering en mediation.

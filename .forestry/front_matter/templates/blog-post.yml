@@ -33,4 +33,5 @@ fields:
   label: SEO Information
 pages:
 - content/posts/en-nog-een-leuke-wat-langere-titel-voor-dit-blogje-van-marco-de-jamstack-koning.md
+- content/posts/google-chrome-bestempelt-sites-zonder-https-als-niet-veilig.md
 - content/posts/test-article-marco.md

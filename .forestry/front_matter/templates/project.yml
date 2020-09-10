@@ -50,4 +50,5 @@ fields:
   template: seo
   label: SEO Information
 pages:
+- content/projects/marco-verheul-photography.md
 - content/projects/vos-legal.md

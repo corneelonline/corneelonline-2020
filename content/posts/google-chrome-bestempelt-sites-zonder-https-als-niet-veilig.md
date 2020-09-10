@@ -10,7 +10,7 @@ seo_description: De nieuwe versie van de Google Chrome browser geeft bij website
   die geen gebruik maken van HTTPS een waarschuwing dat deze niet veilig zijn.
 
 ---
-Aan het begin van 2017 is versie 56 van de Chrome browser beschikbaar gekomen. Een van de belangrijke wijzigingen bij deze nieuwe versie is dat bij websites die geen gebruik maken van HTTPS een waarschuwing wordt gegeven dat deze niet veilig zijn. Dit kan verwarring en onrust veroorzaken bij bezoekers die dit niet verwachten of niet goed weten wat ze met deze informatie aanmoeten. ![](https://www.corneelonline.nl/wp-content/uploads/2017/03/Schermafbeelding-2017-03-21-om-11.13.31.png)
+Aan het begin van 2017 is versie 56 van de Chrome browser beschikbaar gekomen. Een van de belangrijke wijzigingen bij deze nieuwe versie is dat bij websites die geen gebruik maken van HTTPS een waarschuwing wordt gegeven dat deze niet veilig zijn. Dit kan verwarring en onrust veroorzaken bij bezoekers die dit niet verwachten of niet goed weten wat ze met deze informatie aanmoeten.
 
 ## Wat is HTTPS of een SSL certificaat?
 

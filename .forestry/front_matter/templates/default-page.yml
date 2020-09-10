@@ -1,4 +1,14 @@
 ---
 label: Default page
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: seo_information
+  type: include
+  config: {}
+  template: seo
+  label: SEO Information

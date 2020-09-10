@@ -14,5 +14,6 @@ fields:
   template: seo
   label: SEO Information
 pages:
+- content/algemene-voorwaarden.md
 - content/colofon.md
 - content/privacyverklaring.md

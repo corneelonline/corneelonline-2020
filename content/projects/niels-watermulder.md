@@ -3,7 +3,7 @@ title: Niels Watermulder
 banner_image: ''
 client: Niels Watermulder
 team: Corneel Online
-services: WordPress, Design
+services: ProcessWire, Design
 delivery_date: 2018-05-20T22:00:00Z
 visit_website: https://watermulder.com/
 seo_title: Niels Watermulder

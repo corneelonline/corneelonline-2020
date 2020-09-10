@@ -5,20 +5,24 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
-  label: Content
+  label: Pages
 - type: document
   path: content/home.md
   label: Home
+- type: heading
+  label: Blog
 - type: directory
   path: content/posts
-  label: Blog
+  label: Posts
   create: documents
   match: "**/*"
   templates:
   - blog-post
+- type: heading
+  label: Portfolio
 - type: directory
   path: content/projects
-  label: Portfolio
+  label: Projects
   create: all
   match: "**/*"
 upload_dir: ''

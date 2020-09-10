@@ -22,18 +22,6 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: category
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: categories
-      file: 
-      path: 
-  label: Category
 - name: tags
   type: tag_list
   default: []

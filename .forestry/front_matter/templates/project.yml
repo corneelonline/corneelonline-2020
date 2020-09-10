@@ -50,6 +50,7 @@ fields:
   template: seo
   label: SEO Information
 pages:
+- content/projects/ateliers-frans-de-roo.md
 - content/projects/centrum-voor-conflicthantering.md
 - content/projects/de-inschakelaars.md
 - content/projects/fotogroep-haarlem.md

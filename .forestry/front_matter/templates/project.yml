@@ -1,4 +1,51 @@
 ---
 label: Project
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: banner_image
+  type: file
+  config:
+    maxSize: 64
+  label: Banner image
+  description: The main image on top of the project page
+- name: client
+  type: text
+  config:
+    required: false
+  label: Client
+- name: team
+  type: text
+  config:
+    required: false
+  label: Team
+  description: Who participated in this project
+- name: services
+  type: text
+  config:
+    required: false
+  label: Services
+- name: delivery_date
+  type: datetime
+  label: Delivery date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: visit_website
+  type: text
+  config:
+    required: false
+  label: Visit website
+  description: Enter the URL of this project
+- name: seo_information
+  type: include
+  config: {}
+  template: seo
+  label: SEO Information

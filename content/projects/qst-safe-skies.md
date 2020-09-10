@@ -9,6 +9,7 @@ visit_website: https://www.qst-safe-skies.com/
 seo_title: QST Safe Skies
 seo_description: QST richt zich op het vergroten van het verandervermogen binnen organisaties
   en teams.
+draft: true
 
 ---
 Hier case beschrijven...

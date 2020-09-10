@@ -1,11 +1,11 @@
 ---
 title: GSA Netwerk
 banner_image: ''
-client: ''
-team: ''
-services: ''
-delivery_date: 
-visit_website: ''
+client: COC Nederland
+team: OCCHIO, Corneel Online, Buro RuSt
+services: WordPress
+delivery_date: 2016-11-10T23:00:00Z
+visit_website: https://www.gsanetwerk.nl/
 seo_title: GSA Netwerk van COC Nederland
 seo_description: GSA Netwerk is een community website voor LHBTI-jongeren. In opdracht
   van COC Nederland is door OCCHIO een nieuwe website ontwikkeld voor het GSA Netwerk.

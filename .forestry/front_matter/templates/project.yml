@@ -5,7 +5,7 @@ fields:
 - name: draft
   type: boolean
   label: Draft
-  default: false
+  default: true
 - name: title
   type: text
   config:

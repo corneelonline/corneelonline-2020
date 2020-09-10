@@ -3,7 +3,7 @@ tags:
 - Design
 title: Maak een kleuren palet met behulp van je favoriete schilderij
 banner_image: ''
-date_published: 
+date_published: 2017-09-12T22:00:00Z
 seo_title: Kleuren palet van favoriete schilderij
 seo_description: Hoe kan je zelf een mooi kleuren palet voor je eigen ontwerp vinden?
 

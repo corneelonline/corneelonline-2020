@@ -13,7 +13,7 @@
       <g-link class="nav__link" to="/diensten/">Diensten</g-link>
       <g-link class="nav__link" to="/projecten/">Projecten</g-link>
       <g-link class="nav__link" to="/blog/">Blog</g-link>
-      <g-link class="nav__link" to="/over-ons/">Over ons</g-link>
+      <g-link class="nav__link" to="/over-corneel/">Over Corneel</g-link>
       <g-link class="nav__link" to="/contact/">Contact</g-link>
     </nav>
   </header>

@@ -46,102 +46,89 @@ export default {
 <style lang="scss">
 // the header section
 .banner {
-  border: 1px dashed red;
   height: 100px;
   position: relative;
-  background-color: var(--color-white);
-
-  @media (min-width: $md) {
-    border: 1px dashed blue;
-    // @include box-shadow-soft;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  background-color: var(--color-background-header);
 
   @media (min-width: $lg) {
-    height: 85px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: var(--color-white);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    align-items: center;
   }
 }
 // the logo
 .logo {
+  position: absolute;
+  top: 25px;
+  left: 20px;
   display: block;
   width: 200px;
-  height: 88px;
-  // background-image: url('~@/assets/images/layout/logo.svg');
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-indent: -9000px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: var(--color-gray);
+  color: var(--color-black);
 
   @media (min-width: $lg) {
-    margin-left: 30px;
-    margin-top: -44px;
+    position: static;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 // the main navigation menu
 #mainnav {
   display: none;
-  // font-weight: var(--font__weight-regular);
   z-index: 1;
 
   @media (min-width: $lg) {
-    // border: 1px dashed blue;
     width: calc(100% - 240px);
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-  }
-  @media (min-width: $lg) {
-    padding-left: var(--gutter-lg);
-    padding-right: var(--gutter-md);
   }
   // when toggled active on mobule devices
   &.active {
-    // @include box-shadow-soft;
     position: absolute;
     top: 100px;
     left: 0;
     width: 100%;
+    height: calc(100vh - 100px);
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    background-color: white;
+    align-items: center;
+    background-color: var(--color-gray-lighter);
     transition: .2s all ease-in;
   }
   .nav__link {
     text-decoration: none;
     line-height: 2em;
-    color: var(--color-blue-dark);
-    letter-spacing: 2px;
+    color: var(--color-black);
     display: inline-block;
-    border: 1px solid var(--color-white);
     padding: 0 var(--gutter-xs);
+    margin: var(--gutter-sm) 0;
+
+    @media (min-width: $lg) {
+      border: 1px solid var(--color-gray);
+      margin: 0;
+    }
     
     &.active {
       color: var(--color-orange);
-      border: 1px solid var(--color-orange);
+
+      @media (min-width: $lg) {
+        border: 1px solid var(--color-black);
+      }
     }
   }
 }
 // the menu toggler button
 .menu-toggler {
   position: absolute;
-  top: 42px;
-  right: 0;
+  top: 40px;
+  right: 20px;
   display: flex;
   border: none;
   background: transparent;
@@ -170,7 +157,7 @@ export default {
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background: var(--color-blue-dark);
+    background: var(--color-black);
     transition: .2s all ease-in;
 
     &:last-child {

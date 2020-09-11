@@ -27,43 +27,28 @@ $xl: 1200px;
   // ----------------------------------------------
   --color-white:              #fff;
   --color-black:              #000;
-  --color-gray-dark:          #686868;
+  --color-gray-dark:          #666;
   --color-gray:               #aaa;
-  --color-gray-lighter:       #eee;
-  --color-gray-light:         #f3f5f8;
-
-  --color-blue-dark:          #0c3b7f;
-  --color-blue:               #0e3a81;
-  --color-blue-lighter:       #e6ebf1;
-  --color-blue-light:         #f4f5f9;
-
-  --color-orange:             #f7a941;
-  --color-orange-lighter:     #fbd39f;
-  --color-orange-light:       #fdeed9;
+  --color-gray-lighter:       #ddd;
+  --color-gray-light:         #eee;
 
 
   // ----------------------------------------------
   // Colors
   // ----------------------------------------------
-  --color-background-body:    #f8f8f8;
-  --color-background-screen:  #f1f1f1;
-  --color-background-hr:      #ccc;
-  --color-background-button:  #e6e6e6;
-  --color-background-footer:  #e6e6e6;
-  --color-background-pre:     #eee;
-  --color-background-ins:     #fff9c0;
+  --color-background-body:    var(--color-white);
+  --color-background-screen:  var(--color-white);
+  --color-background-header:  var(--color-gray-lighter);
+  --color-background-footer:  var(--color-gray-lighter);
+  --color-background-button:  var(--color-gray);
+  --color-background-pre:     var(--color-gray);
+  --color-background-ins:     var(--color-gray);
 
-  --color-text-screen:        #21759b;
-  --color-text-input:         #666;
-  --color-text-input-focus:   #111;
-  --color-link:               --color-orange;
-  --color-link-visited:       --color-orange;
-  --color-link-hover:         --color-orange;
-  --color-text-main:          --color-blue-dark;
-
-  --color-border-button:      #ccc #ccc #bbb;
-  --color-border-button-hover:#ccc #bbb #aaa;
-  --color-border-button-focus:#aaa #bbb #bbb;
-  --color-border-input:       #ccc;
-  --color-border-abbr:        #666;
+  --color-text-screen:        var(--color-white);
+  --color-text-input:         var(--color-white);;
+  --color-text-input-focus:   var(--color-white);;
+  --color-link:               blue;
+  --color-link-visited:       purple;
+  --color-link-hover:         blue;
+  --color-text-main:          var(--color-white);
 }

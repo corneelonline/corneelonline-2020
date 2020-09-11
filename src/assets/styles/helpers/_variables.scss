@@ -1,13 +1,13 @@
-:root {
-  // ----------------------------------------------
-  // Sizes for media queries
-  // ----------------------------------------------
-  --xs: 0;
-  --sm: 576px;
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
+// ----------------------------------------------
+// Sizes for media queries
+// ----------------------------------------------
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
+:root {
   // ----------------------------------------------
   // Gutter settings
   // ----------------------------------------------
@@ -25,45 +25,45 @@
   // ----------------------------------------------
   // Color palette
   // ----------------------------------------------
-  --color__white:              #fff;
-  --color__black:              #000;
-  --color__gray-dark:          #686868;
-  --color__gray:               #aaa;
-  --color__gray-lighter:       #eee;
-  --color__gray-light:         #f3f5f8;
+  --color-white:              #fff;
+  --color-black:              #000;
+  --color-gray-dark:          #686868;
+  --color-gray:               #aaa;
+  --color-gray-lighter:       #eee;
+  --color-gray-light:         #f3f5f8;
 
-  --color__blue-dark:          #0c3b7f;
-  --color__blue:               #0e3a81;
-  --color__blue-lighter:       #e6ebf1;
-  --color__blue-light:         #f4f5f9;
+  --color-blue-dark:          #0c3b7f;
+  --color-blue:               #0e3a81;
+  --color-blue-lighter:       #e6ebf1;
+  --color-blue-light:         #f4f5f9;
 
-  --color__orange:             #f7a941;
-  --color__orange-lighter:     #fbd39f;
-  --color__orange-light:       #fdeed9;
+  --color-orange:             #f7a941;
+  --color-orange-lighter:     #fbd39f;
+  --color-orange-light:       #fdeed9;
 
 
   // ----------------------------------------------
   // Colors
   // ----------------------------------------------
-  --color__background-body:    #f8f8f8;
-  --color__background-screen:  #f1f1f1;
-  --color__background-hr:      #ccc;
-  --color__background-button:  #e6e6e6;
-  --color__background-footer:  #e6e6e6;
-  --color__background-pre:     #eee;
-  --color__background-ins:     #fff9c0;
+  --color-background-body:    #f8f8f8;
+  --color-background-screen:  #f1f1f1;
+  --color-background-hr:      #ccc;
+  --color-background-button:  #e6e6e6;
+  --color-background-footer:  #e6e6e6;
+  --color-background-pre:     #eee;
+  --color-background-ins:     #fff9c0;
 
-  --color__text-screen:        #21759b;
-  --color__text-input:         #666;
-  --color__text-input-focus:   #111;
-  --color__link:               --color__orange;
-  --color__link-visited:       --color__orange;
-  --color__link-hover:         --color__orange;
-  --color__text-main:          --color__blue-dark;
+  --color-text-screen:        #21759b;
+  --color-text-input:         #666;
+  --color-text-input-focus:   #111;
+  --color-link:               --color-orange;
+  --color-link-visited:       --color-orange;
+  --color-link-hover:         --color-orange;
+  --color-text-main:          --color-blue-dark;
 
-  --color__border-button:      #ccc #ccc #bbb;
-  --color__border-button-hover:#ccc #bbb #aaa;
-  --color__border-button-focus:#aaa #bbb #bbb;
-  --color__border-input:       #ccc;
-  --color__border-abbr:        #666;
+  --color-border-button:      #ccc #ccc #bbb;
+  --color-border-button-hover:#ccc #bbb #aaa;
+  --color-border-button-focus:#aaa #bbb #bbb;
+  --color-border-input:       #ccc;
+  --color-border-abbr:        #666;
 }

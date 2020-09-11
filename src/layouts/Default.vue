@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-		<ContactBar />
+		<DebugBar />
     <PageHeader />
     <main id="main">
       <slot/>
@@ -10,11 +10,13 @@
 </template>
 
 <script>
+import DebugBar from '~/components/utils/DebugBar.vue'
 import PageHeader from '~/components/layout/PageHeader.vue'
 import PageFooter from '~/components/layout/PageFooter.vue'
 
 export default {
   components: {
+    DebugBar,
     PageHeader,
     PageFooter
   }

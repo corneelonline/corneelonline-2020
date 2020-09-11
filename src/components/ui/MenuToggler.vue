@@ -38,10 +38,10 @@ export default {
     outline:0;
   }
 
-  @media (min-width: var(--md)) {
+  @media (min-width: $md) {
     right: 20px;
   }
-  @media (min-width: var(--lg)) {
+  @media (min-width: $lg) {
     display: none;
   }
 }
@@ -58,7 +58,7 @@ export default {
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background: var(--color__blue-dark);
+    background: var(--color-blue-dark);
     transition: .2s all ease-in;
 
     &:last-child {

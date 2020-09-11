@@ -16,9 +16,9 @@
 // ---------------------------------------------------------
 html, body {
   height: 100%;
-  background-color: var(--color__white);
-  @media (min-width: var(--lg)) {
-    background-color: var(--color__background-body);
+  background-color: var(--color-white);
+  @media (min-width: $lg) {
+    background-color: var(--color-background-body);
   }
 }
 #app {
@@ -28,12 +28,12 @@ html, body {
 }
 #main {
   flex: 1 0 auto;
-  background-color: var(--color__white);
+  background-color: var(--color-white);
   padding-bottom: var(--gutter-lg);
-  @media (min-width: var(--md)) {
+  @media (min-width: $md) {
     padding-top: var(--gutter-md);
   }
-  @media (min-width: var(--lg)) {
+  @media (min-width: $lg) {
     padding-top: 0;
   }
 }
@@ -42,14 +42,14 @@ html, body {
 // basic elements
 // ---------------------------------------------------------
 a {
-  color: var(--color__link);
+  color: var(--color-link);
 }
 a:active {
-  color: var(--color__link);
+  color: var(--color-link);
 }
 a:visited {
-  color: var(--color__link-visited);
+  color: var(--color-link-visited);
 }
 a:hover {
-  color: var(--color__link-hover);
+  color: var(--color-link-hover);
 }

@@ -1,9 +1,12 @@
 ---
 draft: true
-tags: []
+tags:
+- Development
+- PWA
+- Design
 title: Mobile first
 banner_image: ''
-date_published: 
+date_published: 2019-08-09T00:00:00+02:00
 seo_title: Mobile first
 seo_description: Meer dan de helft van alle bezoekers van een website doen dat met
   hun telefoon. Het is daarom essentieel dat jouw website of applicatie perfect werkt

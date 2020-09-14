@@ -24,13 +24,21 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'BlogPost',
-        path: './content/blog/**/*.md',
+        typeName: 'Post',
+        path: './content/posts/**/*.md',
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Project',
+        path: './content/projects/**/*.md',
       }
     }
   ],
   templates: {
-    BlogPost: '/blog/:year/:month/:day/:slug'
+    Post: '/blog/:title',
+    Project: '/projecten/:title'
   },
   chainWebpack (config) {
     // Load variables for all vue-files

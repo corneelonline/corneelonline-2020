@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="container">
 		<DebugBar />
     <PageHeader />
     <main id="main">

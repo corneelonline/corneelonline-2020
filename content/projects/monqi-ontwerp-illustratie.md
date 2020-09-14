@@ -8,6 +8,7 @@ services: WordPress
 delivery_date: 
 visit_website: ''
 seo_title: MONQI Ontwerp & Illustratie
-seo_description: ''
+seo_description: 'Online portfolio van MONQI Ontwerp & Illustratie, het bureau van Monique Beukelman'
 
 ---
+Online portfolio van MONQI Ontwerp & Illustratie, het bureau van Monique Beukelman.

@@ -46,3 +46,26 @@ Het is ook mogelijk om met vertrouwde webtechnologie een website te bouwen die z
 * Altijd up to date
 
 Door deze features voelen PWA’s als een echte app aan. Ze werken dus offline, kunnen pushberichten sturen en staan op het homescreen. Net als een echte app.
+
+## PWA use cases
+
+Er zijn veel juichende verhalen te vinden over het succes van PWA's, met name op het gebied van e-commerce. De algehele tendens lijkt te zijn dat PWA's de volgende voordelen bieden:
+
+* snellere website
+* betere conversie
+* bezoekers brengen meer tijd door op de website
+* meer verkoop
+
+In dit overzicht van Medium.com staat een overzicht van succesvolle PWA's. Wedden dat je van een aantal van deze apps niet eens wist dat het een PWA was?
+
+## Is een PWA iets voor jouw organisatie?
+
+Het antwoord op die vraag is niet zo eenduidig te geven. Wel kun je jezelf een aantal vragen stellen:
+
+* Ben je van plan een mobiele app te ontwikkelen?
+* Ben je toe aan een nieuwe website?
+* Komt je meeste websiteverkeer via mobiel binnen?
+* Loopt je huidige website achter als het gaat om performance en conversie?
+* Heb je voldoende budget?
+
+Wanneer je vier van bovenstaande vijf vragen met een ‘ja’ beantwoordt, doe je er goed aan om de mogelijkheden van een PWA te onderzoeken.

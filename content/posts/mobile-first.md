@@ -69,3 +69,7 @@ Het antwoord op die vraag is niet zo eenduidig te geven. Wel kun je jezelf een a
 * Heb je voldoende budget?
 
 Wanneer je vier van bovenstaande vijf vragen met een ‘ja’ beantwoordt, doe je er goed aan om de mogelijkheden van een PWA te onderzoeken.
+
+## PWA en JAMstack
+
+JAMstack leent zich uitstekend om een PWA mee te ontwikkelen. Veel frameworks en Static Site Generators maken het heel eenvoudig om van je website een PWA te maken die razendsnel is, ook op je mobiele telefoon.

@@ -15,8 +15,6 @@ seo_description: Meer dan de helft van alle bezoekers van een website doen dat m
 ---
 Meer dan de helft van alle bezoekers van een website doen dat met hun telefoon. Het is daarom essentieel dat jouw website of applicatie perfect werkt op mobiele devices.
 
-Responsive design / Vue.js / SPA / web apps / PWA
-
 ## Google houdt van mobile first
 
 Een van de factoren die meewegen in de ranking op Google is of je website "mobile friendly" is. Niet zo gek want meer dan de helft van alle websitebezoekers gebruikt een mobiele telefoon. Voor je vindbaarheid is het dus belangrijk om hier rekening mee te houden.
@@ -33,4 +31,4 @@ Responsive webdesign zorgt ervoor dat een website goed functioneert op alle appr
 
 ## Progressive Web Apps (PWA)
 
-Het is ook mogelijk om met vertrouwde webtechnologie een website te bouwen die zich gedraagt als een app: de zogenaamde Progressive Web App (PWA). Een PWA biedt bijna dezelfde gebruikservaring als een native app en wat handige features die een reguliere website niet biedt. In dit artikel [LINK TOEVOEGEN] wordt verder ingegaan op deze manier van ontwikkelen.
+Het is ook mogelijk om met vertrouwde webtechnologie een website te bouwen die zich gedraagt als een app: de zogenaamde Progressive Web App (PWA). Een PWA biedt bijna dezelfde gebruikservaring als een native app en wat handige features die een reguliere website niet biedt. In dit artikel \[LINK TOEVOEGEN\] wordt verder ingegaan op deze manier van ontwikkelen.

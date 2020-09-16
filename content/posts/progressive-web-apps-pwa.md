@@ -35,6 +35,8 @@ Er zijn veel juichende verhalen te vinden over het succes van PWA's, met name op
 
 In dit overzicht van Medium.com staat een overzicht van succesvolle PWA's. Wedden dat je van een aantal van deze apps niet eens wist dat het een PWA was?
 
+[https://medium.com/progressivewebapps/best-pwa-examples-for-your-inspiration-261bcb3fab47](https://medium.com/progressivewebapps/best-pwa-examples-for-your-inspiration-261bcb3fab47 "https://medium.com/progressivewebapps/best-pwa-examples-for-your-inspiration-261bcb3fab47")
+
 ## Is een PWA iets voor jouw organisatie?
 
 Het antwoord op die vraag is niet zo eenduidig te geven. Wel kun je jezelf een aantal vragen stellen:

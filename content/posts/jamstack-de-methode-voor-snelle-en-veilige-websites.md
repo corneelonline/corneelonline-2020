@@ -2,11 +2,13 @@
 draft: true
 tags:
 - JAMstack
+- Development
 title: 'JAMstack: de methode voor snelle en veilige websites'
 banner_image: ''
 date_published: 
 seo_title: 'JAMstack: de methode voor snelle en veilige websites'
-seo_description: 'De JAMstack is geen specifieke set tools, maar een nieuwe, moderne manier om websites en apps te bouwen.'
+seo_description: De JAMstack is geen specifieke set tools, maar een nieuwe, moderne
+  manier om websites en apps te bouwen.
 
 ---
 De JAMstack is geen specifieke set tools, maar een nieuwe, moderne manier om websites en apps te bouwen. Waar komt "J-A-M" vandaan? Van deze drie kernconcepten:

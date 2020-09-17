@@ -28,4 +28,18 @@ Het is hierboven al gemeld, maar website die gemaakt zijn met Gridsome zijn echt
 
 ### Structuur en organisatie van de code
 
-Gridsome heeft een hele handige en duidelijke bestandsstructuur.
+Gridsome heeft een hele handige en duidelijke bestandsstructuur, waardoor je snel kan beginnen met code schrijven. De documentatie is goed en volledig en dekt bijna alle onderwerpen die je nodig hebt.
+
+### Plugins voor alles
+
+Er zijn veel plugins beschikbaar die helpen om complexe of tijdrovende zaken op een eenvoudige manier toe te voegen. Er zijn source plugins, waarmee je content van externe bronnen (headless CMS, headless WordPress) of van je eigen bestandssysteem (Markdown) kan inladen in het framework. Verder kan je denken aan plugins voor zaken als: RSS-feed, Google Analytics, Sitemap etc.
+
+### GraphQL met playground
+
+Gridsome onderscheid zich van andere static site generators doordat het gebruik maakt van GraphQL, een uniforme manier om content op te vragen en te verwerken in de verschillende templates en componenten.
+
+Het mooie van dit systeem is dat je content uit 1 of meerdere bronnen kan importeren. Bijvoorbeeld blogposts uit WordPress, aangevuld met boeken uit een online shop of headless CMS. Al deze content kan in dezelfde GraphQL-omgeving worden opgevraagd. Tijdens development kan je gebruik maken van de playground, waarin je queries kan bouwen die je nodig hebt in je verschillende pagina's.
+
+\[SCREENSHOT\]
+
+Dit is een hele prettige manier van ontwikkelen.

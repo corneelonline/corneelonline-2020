@@ -29,3 +29,11 @@ Meertaligheid zit ook ingebakken en naast HTML kan de output ook in JSON of AMP 
 ## Het is wel even wennen
 
 Als je nog nooit met Go hebt gewerkt moet je wel even schakelen. Gelukkig is er veel documentatie beschikbaar en is er een hele behulpzame community. Hugo is heel krachtig en het vergt wat inspanning  om goed gebruik te kunnen maken van de beschikbare features.
+
+Een collega web developer heeft een interessant artikel geschreven waarin hij uitlegt hoe concepten die je uit WordPress kent werken in Hugo. Dit geeft een goed inzicht in de manier waarop Hugo werkt.
+
+[https://regisphilibert.com/blog/2019/01/from-wordpress-to-hugo-a-mindset-transition/](https://regisphilibert.com/blog/2019/01/from-wordpress-to-hugo-a-mindset-transition/ "https://regisphilibert.com/blog/2019/01/from-wordpress-to-hugo-a-mindset-transition/")
+
+## Interessante case
+
+Dan is 

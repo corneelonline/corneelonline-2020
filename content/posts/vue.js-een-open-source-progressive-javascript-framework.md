@@ -14,7 +14,7 @@ Als web developer wil je voor elk project de meest geschikte technologie kiezen 
 
 ## Wat is Vue.js?
 
-Vue.js, gemaakt door Evan You, is een open-source progressief JavaScript-framework voor het bouwen van websites, user interfaces (UI's) en single-page applications (SPA).
+Vue.js, gemaakt door Evan You, is een open-source progressive JavaScript-framework voor het bouwen van websites, user interfaces (UI's) en single-page applications (SPA).
 
 In tegenstelling tot sommige andere populaire frameworks, wordt het niet ondersteund door een groot technologiebedrijf. React is gebouwd en wordt ondersteund door Facebook en Angular wordt ondersteund door Google. Vue.js wordt volledig gemaakt en onderhouden door de community.
 

@@ -21,3 +21,11 @@ Je kan een Gridsome-website zien als een gewone Vue-applicatie, maar wanneer het
 ## De voordelen van werken met Gridsome
 
 Voor de oplettende lezer zal het geen geheim zijn dat Corneel Online graag met Gridsome werkt. Deze website is zelfs met Gridsome gebouwd! Maar waarom is het zo'n prettig framework?
+
+### Snelheid
+
+Het is hierboven al gemeld, maar website die gemaakt zijn met Gridsome zijn echt snel. Dat is niet alleen heel prettig voor bezoekers van de site, maar ook nog een goed voor de SEO.
+
+### Structuur en organisatie van de code
+
+Gridsome heeft een hele handige en duidelijke bestandsstructuur.

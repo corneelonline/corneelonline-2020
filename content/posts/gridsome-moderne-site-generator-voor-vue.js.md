@@ -8,6 +8,7 @@ title: " Gridsome: Moderne Site Generator voor Vue.js"
 banner_image: ''
 date_published: 
 seo_title: " Gridsome: Moderne Site Generator voor Vue.js"
-seo_description: ''
+seo_description: Gridsome maakt het gemakkelijk om statisch gegenereerde websites
+  en apps te bouwen die razendsnel zijn
 
 ---

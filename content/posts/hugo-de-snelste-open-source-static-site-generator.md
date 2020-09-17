@@ -36,4 +36,6 @@ Een collega web developer heeft een interessant artikel geschreven waarin hij ui
 
 ## Interessante case
 
-Dan is 
+Dan is er nog een hele interessante case waarin Hugo toegepast is: in 2017 heeft Smashing Magazine, een toonaangevend kennisplatform voor de web development community, een nieuwe website gelanceerd die met Hugo is gebouwd.
+
+[https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/](https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/ "https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/")

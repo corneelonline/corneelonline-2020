@@ -43,3 +43,7 @@ Het mooie van dit systeem is dat je content uit 1 of meerdere bronnen kan import
 \[SCREENSHOT\]
 
 Dit is een hele prettige manier van ontwikkelen.
+
+### PWA-ready
+
+Gridsome genereert statische PWA's. Alleen kritieke HTML, CSS en JavaScript worden als eerste geladen. De volgende pagina's worden vervolgens vooraf opgehaald, zodat gebruikers ongelooflijk snel kunnen klikken zonder opnieuw te hoeven laden, zelfs als ze offline zijn. Meer informatie over PWA's vindt je \[in dit artikel\].

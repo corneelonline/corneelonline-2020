@@ -5,21 +5,24 @@ tags:
 - JAMstack
 title: 'Headless CMS: een korte introductie'
 banner_image: ''
-date_published: 2019-04-15T22:00:00Z
+date_published: 2019-04-15T22:00:00.000+00:00
 seo_title: 'Headless CMS: een korte introductie'
 seo_description: Wat is een headless content management system (CMS) en wanneer gebruik
   je een headless CMS?
+draft: false
 
 ---
 Het headless content management systeem (CMS) is aan een opmars bezig. Er is een uitgebreid aanbod van verschillende headless CMS’en en deze systemen winnen vlot aan populariteit. De verwachting is dat toekomstige systemen de vraag naar dit soort CMS’en alleen nog maar zal doen toenemen.
 
 ## Wat is een headless CMS?
 
-Om deze vraag te beantwoorden moet ik eerst uitleggen wat een klassiek CMS is. Een klassiek CMS, zoals WordPress, Drupal of ProcessWire, bestaat uit een voor- en achterkant: de front-end en back-end. De front-end bestaat uit onderdelen die belangrijk zijn voor de presentatie, dus wat de bezoeker te zien krijgt. In de back-end wordt de inhoud aangemaakt en onderhouden. Een klassiek CMS heeft de middelen om content te creëren en om deze te tonen in de vorm van webpagina’s. Een headless CMS is in feite alleen de back-end. Het is een systeem waarmee je de content kan creëren en beheren, maar waarbij geen front-end wordt meegeleverd. Het creëert geen webpagina’s. In plaats daarvan wordt de content via API's beschikbaar gesteld. Dat lijkt misschien niet handig, maar het internet bestaat niet alleen maar uit webpagina’s die via een browser worden bekeken. Content wordt tegenwoordig ook op andere manieren geconsumeerd, zoals met smartphones, wearables, watches, smart TV's en game consoles. Er verschijnt constant nieuwe apparatuur die nieuwe, andere eisen stelt aan data.
+Om deze vraag te beantwoorden moet ik eerst uitleggen wat een klassiek CMS is. Een klassiek CMS, zoals WordPress, Drupal of ProcessWire, bestaat uit een voor- en achterkant: de front-end en back-end. De front-end bestaat uit onderdelen die belangrijk zijn voor de presentatie, dus wat de bezoeker te zien krijgt. In de back-end wordt de inhoud aangemaakt en onderhouden. Een klassiek CMS heeft de middelen om content te creëren en om deze te tonen in de vorm van webpagina’s. 
+
+Een headless CMS is in feite alleen de back-end. Het is een systeem waarmee je de content kan creëren en beheren, maar waarbij geen front-end wordt meegeleverd. Het creëert geen webpagina’s. In plaats daarvan wordt de content via API's beschikbaar gesteld. Dat lijkt misschien niet handig, maar het internet bestaat niet alleen maar uit webpagina’s die via een browser worden bekeken. Content wordt tegenwoordig ook op andere manieren geconsumeerd, zoals met smartphones, wearables, watches, smart TV's en game consoles. Er verschijnt constant nieuwe apparatuur die nieuwe, andere eisen stelt aan data.
 
 > Een headless CMS is in feite alleen de back-end. Het is een systeem waarmee je de content kan creëren en beheren, maar waarbij geen front-end wordt meegeleverd.
 
-### en een decoupled CMS?
+### En een decoupled CMS?
 
 Een decoupled CMS is elk CMS dat je kan gebruiken zonder front-end. Klassieke CMS'en zoals WordPress, Drupal en ProcessWire kunnen ook als decoupled CMS worden gebruikt. In plaats van het creëren van HTML pagina's wordt ook hier een API gebruikt om de content beschikbaar te stellen. Het is dus mogelijk om bijvoorbeeld Drupal te gebruiken als CMS en een "losse" front-end applicatie te bouwen in React die gebruik maakt van de content uit Drupal.
 
@@ -65,4 +68,11 @@ Veranderingen op internet op gebied van front-end technologie gaan heel hard, ma
 
 ### Meer info
 
-Heb je even? Bekijk dan deze [erg interessante webinar op YouTube](https://www.youtube.com/watch?v=LJ-TGbyvjOA). In dit artikel worden vind je meer informatie over dit onderwerp en worden een aantal populaire CMS'en besproken: [https://bejamas.io/blog/headless-cms/](https://bejamas.io/blog/headless-cms/) **Bronnen:** [https://www.emerce.nl/achtergrond/headless-cms-wanneer-bruikbaar](https://www.emerce.nl/achtergrond/headless-cms-wanneer-bruikbaar) [https://www.digitalnatives.nl/nieuws/headless-cmsen-is-precies-en-ermee/](https://www.digitalnatives.nl/nieuws/headless-cmsen-is-precies-en-ermee/) [https://www.contentful.com/r/knowledgebase/headless-and-decoupled-cms/](https://www.contentful.com/r/knowledgebase/headless-and-decoupled-cms/) [https://www.sitecore.com/nl-nl/resources/what-is-a-headless-cms](https://www.sitecore.com/nl-nl/resources/what-is-a-headless-cms)
+Heb je even? Bekijk dan deze [erg interessante webinar op YouTube](https://www.youtube.com/watch?v=LJ-TGbyvjOA). In dit artikel worden vind je meer informatie over dit onderwerp en worden een aantal populaire CMS'en besproken: [https://bejamas.io/blog/headless-cms/](https://bejamas.io/blog/headless-cms/) 
+
+**Bronnen:** 
+
+* [https://www.emerce.nl/achtergrond/headless-cms-wanneer-bruikbaar](https://www.emerce.nl/achtergrond/headless-cms-wanneer-bruikbaar) 
+* [https://www.digitalnatives.nl/nieuws/headless-cmsen-is-precies-en-ermee/](https://www.digitalnatives.nl/nieuws/headless-cmsen-is-precies-en-ermee/) 
+* [https://www.contentful.com/r/knowledgebase/headless-and-decoupled-cms/](https://www.contentful.com/r/knowledgebase/headless-and-decoupled-cms/) 
+* [https://www.sitecore.com/nl-nl/resources/what-is-a-headless-cms](https://www.sitecore.com/nl-nl/resources/what-is-a-headless-cms)

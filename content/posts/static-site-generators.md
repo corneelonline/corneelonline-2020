@@ -7,7 +7,7 @@ title: Static Site Generators
 banner_image: ''
 date_published: 
 seo_title: Static Site Generators
-seo_description: ''
+seo_description: 'Een Static Site Generator is een belangrijk onderdeel in web development volgens de JAMstack-methode'
 
 ---
 ## Wat is een Static Site Generator?

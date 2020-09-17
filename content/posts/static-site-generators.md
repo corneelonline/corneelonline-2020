@@ -41,28 +41,28 @@ De taak van het bijwerken van een site die op deze manier is gebouwd, omvat het 
 De lijst barst inmiddels uit zijn voegen, maar ik zal proberen hier een overzicht te geven van de populairste Static Site Generatoren:
 
 ### Jekyll
-Hier een omschrijving...
+Jekyll bestaat sinds 2008 en is daarmee van de eerste en meest gebruikte static site generators. Jekyll is gebouwd met Ruby.
 
 ### Hugo
-Hier een omschrijving...
+Hugo is de 'andere' grote static site generator, gebouwd met de programmeertaal Go. De kracht van Hugo is dat het de sneltste van het hele stel is. Hugo kan grote hoeveelheden pagina's in enkele seconden genereren.
 
 ### Next.js
-Hier een omschrijving...
+Next.js is een framework gebouwd met React en is meer dan alleen een static site generator. Next.js biedt meerdere opties om apps en websites te bouwen en SSR is daar een van.
 
 ### Gatsby
-Hier een omschrijving...
+Gatsby is een static site generator gebouwd met React. Het kan data uit een of meerder bronnen binnenhalen en samenvoegen in een eigen dataverzameling, die te benaderen is met een hele geavanceerde GraphQL oplossing.
 
 ### Nuxt.js
-Hier een omschrijving...
+Nuxt.js is de Vue.js tegenhanger van Next.js. Beide frameworks kunnen min of meer hetzelfde, maar Nuxt.js is gebouwd met Vue.
 
 ### Gridsome
-Hier een omschrijving...
+Gridsome is de Vue.js tegenhanger van Gatsby en een van de favoriete tools van Corneel Online. Deze website is met Gridsome gebouwd.
 
-### 11ty
-Hier een omschrijving...
+### Eleventy (11ty)
+Eleventy is de tegenhanger van Jekyll, maar dan gebaseerd op Vanilla Javascript en niet op een framework. De kracht is de eenvoud van het systeem.
 
 ### Scully
-Hier een omschrijving...
+Scully is het antwoord van Angular op het gebied van Static Site Generators. Scully is nog relatief nieuw in vergelijking met de andere opties.
 
 De lijst is nog veel groter, zie https://www.staticgen.com/
 

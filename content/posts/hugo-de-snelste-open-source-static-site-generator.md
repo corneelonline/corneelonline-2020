@@ -36,6 +36,16 @@ Een collega web developer heeft een interessant artikel geschreven waarin hij ui
 
 ## Interessante case
 
-Dan is er nog een hele interessante case waarin Hugo toegepast is: in 2017 heeft Smashing Magazine, een toonaangevend kennisplatform voor de web development community, een nieuwe website gelanceerd die met Hugo is gebouwd.
+Hugo is niet voor niets erg populair. Hier een paar voorbeelden van Hugo websites.
 
-[https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/](https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/ "https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/")
+### Smashing Magazine
+
+Een hele interessante case waarin Hugo toegepast is: in 2017 heeft Smashing Magazine, een toonaangevend kennisplatform voor de web development community, een nieuwe website gelanceerd die met Hugo is gebouwd.
+
+In dit artikel leggen ze uit hoe en waarom ze van 4 verschillende websites een enkel platform hebben gebouwd met Hugo:
+
+[https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/](https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/ "https://www.smashingmagazine.com/2020/01/migration-from-wordpress-to-jamstack/").
+
+### Geuzebroek.info
+
+Corneel Online heeft deze website gebouwd voor Nanda Geuzebroek. De website bevat veel pagina's en Hugo hielp enorm bij de bouw van deze website.

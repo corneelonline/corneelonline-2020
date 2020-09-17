@@ -42,4 +42,4 @@ De documentatie bij Vue.js is zo uitgebreid dat elke ontwikkelaar die iets van J
 
 ## Wie gebruikt Vue.js?
 
-Meer dan 700 bedrijven gebruiken Vue.js. Enkele van de belangrijkste zijn: Xiaomi, Alibaba en Gitlab. De volledige lijst is beschikbaar op https://stackshare.io/vue-js/in-stacks.
+Meer dan 700 bedrijven gebruiken Vue.js. Enkele van de belangrijkste zijn: Nintendo, Xiaomi, Alibaba en Gitlab. De volledige lijst is beschikbaar op [https://madewithvuejs.com/](https://madewithvuejs.com/ "https://madewithvuejs.com/").

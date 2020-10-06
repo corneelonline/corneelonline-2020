@@ -1,24 +1,24 @@
 <template>
   <div class="page">
 		<DebugBar />
-    <PageHeader />
+    <AppHeader />
     <main id="main">
       <slot/>
     </main>
-    <PageFooter />
+    <AppFooter />
   </div>
 </template>
 
 <script>
-import DebugBar from '~/components/utils/DebugBar.vue'
-import PageHeader from '~/components/layout/PageHeader.vue'
-import PageFooter from '~/components/layout/PageFooter.vue'
+import DebugBar from '~/components/layout/DebugBar.vue'
+import AppHeader from '~/components/layout/AppHeader.vue'
+import AppFooter from '~/components/layout/AppFooter.vue'
 
 export default {
   components: {
     DebugBar,
-    PageHeader,
-    PageFooter
+    AppHeader,
+    AppFooter
   }
 }
 </script>

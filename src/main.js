@@ -11,10 +11,10 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
 
   // Add Google webfonts
-  // head.link.push({
-  //   rel: 'stylesheet',
-  //   href: encodeURI('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Source+Sans+Pro:wght@200;400;600;700&display=swap')
-  // })
+  head.link.push({
+    rel: 'stylesheet',
+    href: encodeURI('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Serif+Pro:wght@400;700&display=swap')
+  })
 
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'nl' }

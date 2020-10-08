@@ -1,6 +1,6 @@
 <template>
   <header class="banner" v-bind:class="{ active: menuVisible }">
-    <g-link class="logo" to="/">{{ $static.metadata.siteName }}</g-link>
+    <g-link id="logo" v-bind:class="{ inverted: menuVisible }" to="/">{{ $static.metadata.siteName }}</g-link>
     <button class="menu-toggler" aria-label="menu" v-on:click="showMainMenu" v-bind:class="{ active: menuVisible }">
       <span class="menu-hamburger">
         <span class="icon-bar"></span>
@@ -44,39 +44,69 @@ export default {
 </script>
 
 <style lang="scss">
+// -------------------------------------
 // the header section
+// -------------------------------------
 .banner {
-  height: 100px;
+  // var definitions
+  --banner-height-xs: 100px;
+  --banner-height-md: 130px;
+  --banner-height-lg: 130px;
+
+  // styles
+  height: var(--banner-height-xs);
   position: relative;
   background-color: var(--color-background-header);
 
+  @media (min-width: $md) {
+    height: var(--banner-height-md);
+  }
   @media (min-width: $lg) {
+    @include container;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
   }
+
+  &.active {
+    background-color: var(--color-black);
+  }
 }
+// -------------------------------------
 // the logo
-.logo {
+// -------------------------------------
+#logo {
   position: absolute;
   top: 25px;
-  left: 20px;
+  left: 1em;
   display: block;
-  width: 200px;
+  width: 57px;
   height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: var(--color-gray);
-  color: var(--color-black);
+  text-indent: -9000px;
+  background-image: url('~@/assets/images/logo-corneel.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $md) {
+    left: 2em;
+    width: 100px;
+    height: 87px;
+  }
 
   @media (min-width: $lg) {
     position: static;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 70px;
+  }
+
+  &.inverted {
+    background-image: url('~@/assets/images/logo-corneel-inverted.svg');
   }
 }
+// -------------------------------------
 // the main navigation menu
+// -------------------------------------
 #mainnav {
   display: none;
   z-index: 1;
@@ -90,45 +120,69 @@ export default {
   // when toggled active on mobule devices
   &.active {
     position: absolute;
-    top: 100px;
+    top: var(--banner-height-xs);
     left: 0;
     width: 100%;
-    height: calc(100vh - 100px);
-    padding: 30px;
+    height: calc(100vh - ( var(--banner-height-xs) ));
+    padding: 0 2em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    background-color: var(--color-gray-lighter);
+    align-items: flex-start;
+    background-color: var(--color-black);
     transition: .2s all ease-in;
+
+    @media (min-width: $md) {
+      top: var(--banner-height-md);
+      height: calc(100vh - ( var(--banner-height-md) ));
+      padding-top: 1em;
+    }
   }
   .nav__link {
+    font-family: var(--ff-header);
+    font-size: 1.125em;
+    text-transform: uppercase;
     text-decoration: none;
     line-height: 2em;
-    color: var(--color-black);
+    color: var(--color-white);
     display: inline-block;
     padding: 0 var(--gutter-xs);
     margin: var(--gutter-sm) 0;
+    width: 100%;
+    background-image: url('~@/assets/images/arrow-white-right.svg');
+    background-position: calc(100% - (var(--gutter-xs))) 50%;
+    background-repeat: no-repeat;
+    background-size: 19px 15px;
 
     @media (min-width: $lg) {
-      border: 1px solid var(--color-gray);
+      color: var(--color-black);
+      width: auto;
+      height: 5em;
+      line-height: 5em;
       margin: 0;
+      background-image: none;
     }
     
     &.active {
       color: var(--color-orange);
+      background-image: url('~@/assets/images/arrow-orange-right.svg');
 
       @media (min-width: $lg) {
-        border: 1px solid var(--color-black);
+        background-image: url('~@/assets/images/arrow-orange-down.svg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 1.125em 1.5em;
       }
     }
   }
 }
+// -------------------------------------
 // the menu toggler button
+// -------------------------------------
 .menu-toggler {
   position: absolute;
   top: 40px;
-  right: 20px;
+  right: 1em;
   display: flex;
   border: none;
   background: transparent;
@@ -139,7 +193,8 @@ export default {
   }
 
   @media (min-width: $md) {
-    right: 20px;
+    top: 50px;
+    right: 2em;
   }
   @media (min-width: $lg) {
     display: none;
@@ -147,7 +202,7 @@ export default {
 }
 .menu-hamburger {
   display: inline-block;
-  width: 30px;
+  width: 36px;
   height: 24px;
   display: flex;
   flex-direction: column;
@@ -155,9 +210,8 @@ export default {
 
   .icon-bar {
     width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background: var(--color-black);
+    height: 2px;
+    background: var(--color-orange);
     transition: .2s all ease-in;
 
     &:last-child {
@@ -168,18 +222,18 @@ export default {
 .menu-toggler.active {
   .icon-bar {
     &:first-child {
-      width: 110%;
-      transform: rotate(40deg);
-      transform-origin: left top;
+      width: 90%;
+      transform: rotate(-45deg);
+      transform-origin: right top;
       transition: .2s all ease-in;
     }
     &:nth-child(2) {
       display: none;
     }
     &:last-child {
-      width: 110%;
-      transform: rotate(-40deg);
-      transform-origin: left bottom;
+      width: 90%;
+      transform: rotate(45deg);
+      transform-origin: right bottom;
       transition: .2s all ease-in;
     }
   }

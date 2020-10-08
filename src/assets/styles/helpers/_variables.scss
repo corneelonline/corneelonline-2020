@@ -26,29 +26,41 @@ $xl: 1200px;
   // Color palette
   // ----------------------------------------------
   --color-white:              #fff;
-  --color-black:              #000;
-  --color-gray-dark:          #666;
-  --color-gray:               #aaa;
-  --color-gray-lighter:       #ddd;
-  --color-gray-light:         #eee;
-
+  --color-black:              #333;
+  --color-gray-dark:          #4a4a4a;
+  --color-gray-lighter:       #e7e5da;
+  --color-gray-light:         #f5f5f1;
+  --color-blue:               #1a86ab;
+  --color-orange:             #ff7356;
+  --color-orange-light:       #ffe9e5;
+  --color-yellow:             #fff06d;
 
   // ----------------------------------------------
   // Colors
   // ----------------------------------------------
   --color-background-body:    var(--color-white);
   --color-background-screen:  var(--color-white);
-  --color-background-header:  var(--color-gray-lighter);
-  --color-background-footer:  var(--color-gray-lighter);
+  --color-background-header:  var(--color-white);
+  --color-background-footer:  var(--color-black);
   --color-background-button:  var(--color-gray);
   --color-background-pre:     var(--color-gray);
   --color-background-ins:     var(--color-gray);
 
   --color-text-screen:        var(--color-white);
-  --color-text-input:         var(--color-white);;
-  --color-text-input-focus:   var(--color-white);;
-  --color-link:               blue;
-  --color-link-visited:       purple;
-  --color-link-hover:         blue;
+  --color-text-input:         var(--color-white);
+  --color-text-input-focus:   var(--color-white);
+  --color-link:               var(--color-blue);
+  --color-link-visited:       var(--color-blue);
+  --color-link-hover:         var(--color-blue);
   --color-text-main:          var(--color-white);
+
+  // ----------------------------------------------
+  // Font vars
+  // ----------------------------------------------
+  --base-font-size:           100%;
+  --ff-header:                'Oswald', sans-serif;
+  --ff-body:                  'Source Serif Pro', serif;
+  --fw-regular:               400;
+  --fw-normal:                var(--fw-regular);
+  --fw-bold:                  700;
 }

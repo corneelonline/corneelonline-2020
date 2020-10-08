@@ -30,12 +30,6 @@ html, body {
   flex: 1 0 auto;
   background-color: var(--color-white);
   padding-bottom: var(--gutter-lg);
-  @media (min-width: $md) {
-    padding-top: var(--gutter-md);
-  }
-  @media (min-width: $lg) {
-    padding-top: 0;
-  }
 }
 
 // ---------------------------------------------------------
@@ -52,4 +46,8 @@ a:visited {
 }
 a:hover {
   color: var(--color-link-hover);
+}
+
+section {
+  @include container;
 }

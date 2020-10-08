@@ -5,8 +5,8 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-normal);
   line-height: 1.45;
 }
 
@@ -18,26 +18,35 @@ h1, h2, h3, h4, h5 {
   transition: color .6s;
   color: var(--title-color);
   margin: 2.75rem 0 1rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-family: var(--ff-header);
+  font-weight: var(--fw-normal);
   line-height: 1.15;
 }
-
 
 h1, .h1 {
   margin-top: 0;
   font-size: 1.802em;
 }
 
-h2, .h2 {font-size: 1.602em;}
+h2, .h2 {
+  font-size: 1.602em;
+}
 
-h3, .h3 {font-size: 1.424em;}
+h3, .h3 {
+  font-size: 1.424em;
+}
 
-h4, .h4 {font-size: 1.266em;}
+h4, .h4 {
+  font-size: 1.266em;
+}
 
-h5, .h5 {font-size: 1.125em;}
+h5, .h5 {
+  font-size: 1.125em;
+}
 
-small {font-size: 0.889em;}
+small {
+  font-size: 0.889em;
+}
 
 strong {
   font-weight: 600;

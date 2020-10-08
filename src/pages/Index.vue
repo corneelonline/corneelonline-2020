@@ -8,7 +8,7 @@
     <section class="home-services">
       <h2>Wat ik doe</h2>
       <div class="home-services__body">
-        <p>Corneel Online creëert prachtige websites en webapplicaties voor organisaties die een echte toegevoegde waarde willen bieden.</p>
+        <p>Corneel Online creëert <strong>prachtige websites</strong> en webapplicaties voor organisaties die een echte toegevoegde waarde willen bieden.</p>
         <p>Met een ijzersterk netwerk van webprofessionals help ik organisaties die een echte toegevoegde waarde willen bieden. Voor wie de boodschap of de beleving leidend is en niet alleen de winst. Ik ontwikkel doordachte (mobiele) websites en webapplicaties.</p>
       </div>
       <h2>Corneel Online houdt zich bezig met:</h2>

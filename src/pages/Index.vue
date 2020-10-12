@@ -20,20 +20,12 @@
       </div>
     </section>
     <section class="big-image">
-      [IMAGE]
+      <g-image src="https://res.cloudinary.com/corneel-online/image/upload/v1602512524/corneel/control-room-01_vqykci.jpg" alt="control room" />
     </section>
     <section class="featured-projects">
       <h2>Uitgelichte projecten</h2>
       <div class="featured-projects__teasers">
-        <div class="project-teaser">
-          [PROJECT-TEASER]
-        </div>
-        <div class="project-teaser">
-          [PROJECT-TEASER]
-        </div>
-        <div class="project-teaser">
-          [PROJECT-TEASER]
-        </div>
+        <ProjectTeaser />
       </div>
       <g-link to="/projecten/" class="button">Naar alle projecten</g-link>
     </section>
@@ -68,15 +60,16 @@
 </template>
 
 <script>
-
 import ServiceTeaser from '~/components/service/Teaser.vue'
+import ProjectTeaser from '~/components/project/Teaser.vue'
 
 export default {
   metaInfo: {
     title: 'Web Developer te Haarlem'
   },
   components: {
-    ServiceTeaser
+    ServiceTeaser,
+    ProjectTeaser
   }
 }
 </script>
@@ -162,6 +155,28 @@ export default {
 
   @media (min-width: $lg) {
     @include container-narrow;
+  }
+}
+// -----------------------------------------------
+// Featured projects
+// -----------------------------------------------
+.featured-projects {
+  padding-top: 1em;
+  background-color: var(--color-orange-light);
+  position: relative;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  h2 {
+    text-indent: -9000px;
+    height: 0;
+  }
+
+  &::after {
+    @include bottom-triangle(var(--color-orange-light));
   }
 }
 </style>

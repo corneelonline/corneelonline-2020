@@ -96,3 +96,17 @@
     left: calc(50% - 580px);
   }
 }
+
+// ------------------------------------------
+// Bottom triangle
+// ------------------------------------------
+@mixin bottom-triangle($bg-color) {
+  content: "";
+  display: block;
+  background-color: $bg-color;
+  width: 100%;
+  height: 60px;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  position: absolute;
+  bottom: -60px;
+}

@@ -1,15 +1,19 @@
 // ---------------------------------------------------------
 // Mixins
 // ---------------------------------------------------------
+
+// ------------------------------------------
 // Rem output with px fallback
+// ------------------------------------------
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
 	font-size: $sizeValue * 1rem;
 }
 
+// ------------------------------------------
 // Container sizes
+// ------------------------------------------
 @mixin container {
-  // border: 1px dotted blue;
   padding: 1.25rem 2.5rem;
   @media (min-width: $lg) {
     padding: 1.25rem calc(50% - 472px);
@@ -20,15 +24,36 @@
 }
 @mixin container-narrow {
   padding: 1.25rem 2.5rem;
+  @media (min-width: $md) {
+    padding: 1.25rem calc(50% - 230px);
+  }
   @media (min-width: $lg) {
     padding: 1.25rem calc(50% - 372px);
   }
   @media (min-width: $xl) {
-    padding: 1.25rem calc(50% - 400px);
+    padding: 1.25rem calc(50% - 480px);
   }
 }
 
+// ------------------------------------------
+// Header sizes
+// ------------------------------------------
+@mixin header-narrow {
+  padding: 0 2.5rem;
+  @media (min-width: $md) {
+    padding: 0 calc(50% - 230px);
+  }
+  @media (min-width: $lg) {
+    padding: 0 calc(50% - 372px);
+  }
+  @media (min-width: $xl) {
+    padding: 0 calc(50% - 480px);
+  }
+}
+
+// ------------------------------------------
 // Button styles
+// ------------------------------------------
 @mixin button {
   display: inline-block;
   padding: 0.6rem 3.5rem 0.6rem 1rem;
@@ -41,4 +66,33 @@
   background-position: calc(100% - (var(--gutter-sm))) 50%;
   background-repeat: no-repeat;
   background-size: 19px 15px;
+}
+
+// ------------------------------------------
+// H2 circle decoration
+// ------------------------------------------
+@mixin circle-decoration {
+  content: "";
+  display: block;
+  width: 6.125rem; // 98px
+  height: 6.125rem; // 98px
+  border-radius: 50%;
+  background-color: var(--color-gray-lighter);
+  position: absolute;
+  left: 0.75rem;
+  top: -0.75rem;
+  z-index: -1;
+
+  @media (min-width: $md) {
+    width: 14.25rem; // 228px
+    height: 14.25rem; // 228px
+    left: 5rem;
+  }
+  @media (min-width: $lg) {
+    top: -0.5rem;
+    left: calc(50% - 470px);
+  }
+  @media (min-width: $xl) {
+    left: calc(50% - 580px);
+  }
 }

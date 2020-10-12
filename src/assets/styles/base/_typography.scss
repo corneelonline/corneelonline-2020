@@ -26,7 +26,7 @@ p {
 h1, h2, h3, h4, h5 {
   transition: color .6s;
   color: var(--color-text-title);
-  margin: 2.75rem 0 1rem;
+  margin: 0 0 0.5rem 0;
   font-family: var(--ff-header);
   font-weight: var(--fw-normal);
   line-height: 1.15;
@@ -65,7 +65,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  @include font-size(1.25); // 20px
+  @include font-size(1.125); // 18px
   @media (min-width: $md) {
     @include font-size(1.25); // 20px
   }
@@ -81,6 +81,17 @@ h5, .h5 {
   }
   @media (min-width: $lg) {
     @include font-size(1); // 16px
+  }
+}
+
+.highlighted-text {
+  color: var(--color-orange);
+  @include font-size(1.125); // 18px
+  @media (min-width: $md) {
+    @include font-size(1.375); // 22px
+  }
+  @media (min-width: $lg) {
+    @include font-size(1.5625); // 25px
   }
 }
 

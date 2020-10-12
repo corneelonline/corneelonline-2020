@@ -13,22 +13,10 @@
       </div>
       <h2>Corneel Online houdt zich bezig met:</h2>
       <div class="home-services__teasers">
-        <div class="home-services__teaser">
-          [ICON]
-          <h3>Web development</h3>
-        </div>
-        <div class="home-services__teaser">
-          [ICON]
-          <h3>Web design</h3>
-        </div>
-        <div class="home-services__teaser">
-          [ICON]
-          <h3>Content management systemen</h3>
-        </div>
-        <div class="home-services__teaser">
-          [ICON]
-          <h3>Advies &amp; ondersteuning</h3>
-        </div>
+        <ServiceTeaser title="Web development" />
+        <ServiceTeaser title="Web design" />
+        <ServiceTeaser title="Content management systemen" />
+        <ServiceTeaser title="Advies &amp; ondersteuning" />
       </div>
     </section>
     <section class="big-image">
@@ -80,9 +68,15 @@
 </template>
 
 <script>
+
+import ServiceTeaser from '~/components/service/Teaser.vue'
+
 export default {
   metaInfo: {
     title: 'Web Developer te Haarlem'
+  },
+  components: {
+    ServiceTeaser
   }
 }
 </script>
@@ -92,6 +86,7 @@ export default {
 // Home intro
 // -----------------------------------------------
 .home-intro {
+  @include container;
   background-image: url('~@/assets/images/bg/home-intro.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -119,6 +114,54 @@ export default {
 
   h1 {
     color: var(--color-white);
+  }
+}
+// -----------------------------------------------
+// Services
+// -----------------------------------------------
+.home-services {
+  position: relative;
+  z-index: 1;
+  padding-top: 1.5rem;
+
+  @media (min-width: $md) {
+    padding-top: 5rem;
+  }
+  
+  &::before {
+    @include circle-decoration;
+  }
+}
+.home-services h2 {
+  @include header-narrow;
+}
+.home-services__body {
+  @include container-narrow;
+  padding-top: 0.5rem;
+
+  @media (min-width: $lg) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    @media (min-width: $lg) {
+      width: 48%;
+    }
+  }
+}
+.home-services__body p:first-child {
+  @extend .highlighted-text;
+}
+.home-services__teasers {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: $lg) {
+    @include container-narrow;
   }
 }
 </style>

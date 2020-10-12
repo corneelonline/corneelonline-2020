@@ -45,8 +45,8 @@ sections:
   match: "**/*"
   templates:
   - project
-upload_dir: ''
-public_path: ''
+upload_dir: corneel
+public_path: corneel
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"

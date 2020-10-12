@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="home-intro">
-      <h1>Webdevelopment met een purpose</h1>
+      <h1>Web development met een missie</h1>
       <p>Laat je website maken zoals het hoort: snel, clean, functioneel, vindbaar, veilig en 100% maatwerk.</p>
       <g-link to="/projecten/" class="button">Bekijk recente projecten</g-link>
     </section>
@@ -87,6 +87,38 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+// -----------------------------------------------
+// Home intro
+// -----------------------------------------------
+.home-intro {
+  background-image: url('~@/assets/images/bg/home-intro.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  
+  @media (min-width: $sm) {
+    padding-bottom: 7rem;
+  }
+  @media (min-width: $md) {
+    padding-right: 40%;
+    padding-bottom: 8rem;
+  }
+  @media (min-width: $lg) {
+    padding-left: calc(50% - 372px);
+    padding-right: 35%;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+  @media (min-width: $xl) {
+    padding-bottom: 14rem;
+  }
 
+  h1 {
+    color: var(--color-white);
+  }
+}
 </style>

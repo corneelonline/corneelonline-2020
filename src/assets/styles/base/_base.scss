@@ -51,3 +51,32 @@ a:hover {
 section {
   @include container;
 }
+
+// ---------------------------------------------------------
+// basic classes
+// ---------------------------------------------------------
+.button, a.button, button {
+  @include button;
+}
+
+
+// ---------------------------------------------------------
+// Copy media queries from here
+// ---------------------------------------------------------
+/*
+@media (min-width: $xs) {
+  //
+}
+@media (min-width: $sm) {
+  //
+}
+@media (min-width: $md) {
+  //
+}
+@media (min-width: $lg) {
+  //
+}
+@media (min-width: $xl) {
+  //
+}
+*/

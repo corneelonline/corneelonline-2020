@@ -16,7 +16,8 @@ export default {
 
 <style lang="scss">
 .debug-bar {
-  width: 50px;
+  @include font-size(0.8);
+  width: 3rem;
   text-align: center;
   position: fixed;
   top: 0;

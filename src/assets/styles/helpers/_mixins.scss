@@ -1,13 +1,44 @@
 // ---------------------------------------------------------
 // Mixins
 // ---------------------------------------------------------
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Container sizes
 @mixin container {
-  border: 1px dotted blue;
-  padding: 1.25em 2.5em;
+  // border: 1px dotted blue;
+  padding: 1.25rem 2.5rem;
   @media (min-width: $lg) {
-    padding: 1.25em calc(50% - 472px);
+    padding: 1.25rem calc(50% - 472px);
   }
   @media (min-width: $xl) {
-    padding: 1.25em calc(50% - 500px);
+    padding: 1.25rem calc(50% - 500px);
   }
+}
+@mixin container-narrow {
+  padding: 1.25rem 2.5rem;
+  @media (min-width: $lg) {
+    padding: 1.25rem calc(50% - 372px);
+  }
+  @media (min-width: $xl) {
+    padding: 1.25rem calc(50% - 400px);
+  }
+}
+
+// Button styles
+@mixin button {
+  display: inline-block;
+  padding: 0.6rem 3.5rem 0.6rem 1rem;
+  text-decoration: none;
+  font-family: var(--ff-header);
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  background-image: url('~@/assets/images/arrow-white-right.svg');
+  background-position: calc(100% - (var(--gutter-sm))) 50%;
+  background-repeat: no-repeat;
+  background-size: 19px 15px;
 }

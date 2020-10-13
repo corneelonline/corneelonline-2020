@@ -109,4 +109,21 @@
   clip-path: polygon(100% 0, 0 0, 50% 100%);
   position: absolute;
   bottom: -60px;
+
+  @media (min-width: $sm) {
+    height: 90px;
+    bottom: -90px;
+  }
+  @media (min-width: $md) {
+    height: 90px;
+    bottom: -90px;
+  }
+  @media (min-width: $lg) {
+    height: 120px;
+    bottom: -120px;
+  }
+  @media (min-width: $xl) {
+    height: 150px;
+    bottom: -150px;
+  }
 }

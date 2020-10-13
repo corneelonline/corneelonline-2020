@@ -2,7 +2,7 @@
   <div class="project__teaser">
     <g-link to="/projecten/">
       <figure class="project-img">
-        <g-image src="~/assets/images/dummy-project-1.png" width="168" alt="project img" />
+        <g-image src="~/assets/images/dummy-project-1.png" alt="project img" />
       </figure>
     </g-link>
   </div>
@@ -17,9 +17,15 @@ export default {
 
 <style lang="scss">
 .project__teaser {
-  width: 204px;
+  width: 100%;
   height: 143px;
-  margin-bottom: 2rem;
+  
+  @media (min-width: $md) {
+    height: 183px;
+  }
+  @media (min-width: $lg) {
+    height: 218px;
+  }
 
   a {
     display: block;
@@ -29,18 +35,38 @@ export default {
 }
 .project-img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 204px;
+  height: 143px;
   background-image: url('~@/assets/images/bg/laptop.svg');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+  margin: 0 auto;
+  
+  @media (min-width: $md) {
+    width: 261px;
+    height: 183px;
+  }
+  @media (min-width: $lg) {
+    width: 311px;
+    height: 218px;
+  }
 
   img {
     position: absolute;
     top: 12px;
     left: 17px;
+    width: 83%;
+  
+    @media (min-width: $md) {
+      top: 16px;
+      left: 22px;
+    }
+    @media (min-width: $lg) {
+      top: 18px;
+      left: 25px;
+    }
   }
 }
 </style>

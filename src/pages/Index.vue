@@ -23,11 +23,13 @@
       <g-image src="https://res.cloudinary.com/corneel-online/image/upload/v1602512524/corneel/control-room-01_vqykci.jpg" alt="control room" />
     </section>
     <section class="featured-projects">
-      <h2>Uitgelichte projecten</h2>
-      <div class="featured-projects__teasers">
-        <ProjectTeaser />
-      </div>
-      <g-link to="/projecten/" class="button">Naar alle projecten</g-link>
+      <header>
+        <h2>Uitgelichte projecten</h2>
+      </header>
+      <ProjectSlider />
+      <footer>
+        <g-link to="/projecten/" class="button">Naar alle projecten</g-link>
+      </footer>
     </section>
     <section class="about-corneel">
       <div class="about-corneel__body">
@@ -61,7 +63,7 @@
 
 <script>
 import ServiceTeaser from '~/components/service/Teaser.vue'
-import ProjectTeaser from '~/components/project/Teaser.vue'
+import ProjectSlider from '~/components/project/Slider.vue'
 
 export default {
   metaInfo: {
@@ -69,7 +71,7 @@ export default {
   },
   components: {
     ServiceTeaser,
-    ProjectTeaser
+    ProjectSlider
   }
 }
 </script>
@@ -165,14 +167,33 @@ export default {
   background-color: var(--color-orange-light);
   position: relative;
   margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 
-  h2 {
+  @media (min-width: $sm) {
+    margin-bottom: 110px;
+  }
+  @media (min-width: $md) {
+    margin-bottom: 110px;
+  }
+  @media (min-width: $lg) {
+    margin-bottom: 130px;
+  }
+  @media (min-width: $xl) {
+    margin-bottom: 170px;
+  }
+
+  header {
     text-indent: -9000px;
     height: 0;
+
+    @media (min-width: $md) {
+      @include container-narrow;
+      text-indent: 0;
+      height: auto;
+    }
+  }
+
+  footer {
+    text-align: center;
   }
 
   &::after {

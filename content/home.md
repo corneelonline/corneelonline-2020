@@ -10,6 +10,9 @@ services_text: |-
 services_summary_title: Corneel Online houdt zich bezig met
 services:
 - service_name: Web development
+- service_name: Web design
+- service_name: Content management
+- service_name: Advies & ondersteuning
 introduction_title: Web development met een missie
 call_to_action_label: Bekijk recente projecten
 

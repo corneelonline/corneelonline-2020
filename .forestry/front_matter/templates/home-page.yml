@@ -54,5 +54,15 @@ fields:
     max: 
     labelField: 
   label: Services
+- name: big_image_one
+  type: file
+  config:
+    maxSize: 64
+  label: Big image one
+- name: about_corneel_title
+  type: text
+  config:
+    required: false
+  label: About Corneel title
 pages:
 - content/home.md

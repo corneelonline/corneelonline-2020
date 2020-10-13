@@ -170,7 +170,7 @@ query {
     line-height: 1.15;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0;
+    margin-bottom: 1rem;
   
     @media (min-width: $lg) {
       display: inline-block;
@@ -183,7 +183,10 @@ query {
     font-family: var(--ff-header);
     line-height: 1.15;
     text-transform: uppercase;
-    margin: 6px 0 0 0;
+  
+    @media (min-width: $lg) {
+      margin: 6px 0 0 0;
+    }
   }
 }
 </style>

@@ -12,7 +12,7 @@ fields:
   default: ''
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
       format: markdown
   label: Introduction text
@@ -38,3 +38,30 @@ fields:
   config:
     required: false
   label: Services title
+- name: services_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Services text
+- name: services_summary_title
+  type: text
+  config:
+    required: false
+  label: Services summary title
+- name: services
+  type: field_group_list
+  fields:
+  - name: service_name
+    type: text
+    config:
+      required: false
+    label: Service name
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Services

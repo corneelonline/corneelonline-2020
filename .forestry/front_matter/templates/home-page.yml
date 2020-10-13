@@ -54,21 +54,21 @@ fields:
     max: 
     labelField: 
   label: Services
-- name: big_image_one
-  type: file
+- name: big_image_url
+  type: text
   config:
-    maxSize: 64
-  label: Big image one
+    required: false
+  label: Big image url
 - name: about_corneel_title
   type: text
   config:
     required: false
   label: About Corneel title
-- name: about_corneel_image
-  type: file
+- name: about_corneel_image_url
+  type: text
   config:
-    maxSize: 64
-  label: About Corneel image
+    required: false
+  label: About Corneel image url
 - name: about_corneel_text
   type: textarea
   default: ''
@@ -78,10 +78,10 @@ fields:
     schema:
       format: markdown
   label: About Corneel text
-- name: big_image_two
-  type: file
+- name: big_image_url_two
+  type: text
   config:
-    maxSize: 64
-  label: Big image two
+    required: false
+  label: Big image url two
 pages:
 - content/home.md

@@ -26,6 +26,9 @@ big_image_two: corneel/v1602597715/corneel/control-room-02_lgjso2.jpg
 big_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602598164/corneel/control-room-01_smz913.jpg
 about_corneel_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602584134/corneel/Foto-Marco_s953tj.jpg
 big_image_url_two: https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg
+seo_title: Web Developer te Haarlem
+seo_description: 'Corneel Online ontwikkelt doordachte (mobiele) websites en webapplicaties
+  zoals het hoort: snel, clean, functioneel, vindbaar, veilig en 100% maatwerk.'
 
 ---
 lalalaa

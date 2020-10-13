@@ -33,3 +33,8 @@ fields:
   config:
     required: false
   label: Call to action label
+- name: services_title
+  type: text
+  config:
+    required: false
+  label: Services title

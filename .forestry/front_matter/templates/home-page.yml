@@ -24,7 +24,7 @@ fields:
     options: []
     source:
       type: pages
-      section: portfolio
+      section: ''
       file: 
       path: 
   label: Call to action link

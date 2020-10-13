@@ -83,5 +83,10 @@ fields:
   config:
     required: false
   label: Big image url two
+- name: seo_information
+  type: include
+  config: {}
+  template: seo
+  label: SEO Information
 pages:
 - content/home.md

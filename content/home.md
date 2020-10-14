@@ -1,4 +1,5 @@
 ---
+title: Home
 call_to_action_link: ''
 introduction_text: 'Laat je website maken zoals het hoort: snel, clean, functioneel,
   vindbaar, veilig en 100% maatwerk'

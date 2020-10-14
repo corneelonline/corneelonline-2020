@@ -20,7 +20,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Introduction text
 - name: call_to_action_label
   type: text

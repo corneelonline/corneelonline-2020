@@ -3,7 +3,7 @@
     <section class="home-intro">
       <h1>{{$page.post.introduction_title}}</h1>
       <p v-html="$page.post.introduction_text"/>
-      <g-link to="/projecten/" class="button">Bekijk recente projecten</g-link>
+      <g-link to="/projecten/" class="button">{{$page.post.call_to_action_label}}</g-link>
     </section>
     <section class="home-services">
       <h2>{{$page.post.services_title}}</h2>
@@ -17,7 +17,7 @@
       </div>
     </section>
     <section class="big-image">
-      <g-image src="https://res.cloudinary.com/corneel-online/image/upload/v1602598164/corneel/control-room-01_smz913.jpg" alt="control room" />
+      <g-image :src="$page.post.big_image_url" alt="control room" />
     </section>
     <section class="featured-projects">
       <header>
@@ -29,18 +29,15 @@
       </footer>
     </section>
     <section class="about-corneel">
-      <h2>Over Corneel</h2>
+      <h2>{{$page.post.about_corneel_title}}</h2>
       <div class="about-corneel__image">
-        <g-image src="https://res.cloudinary.com/corneel-online/image/upload/v1602584134/corneel/Foto-Marco_s953tj.jpg" alt="foto van Marco Verheul" />
+        <g-image :src="$page.post.about_corneel_image_url" alt="foto van Marco Verheul" />
       </div>
-      <div class="about-corneel__body">
-        <p>Ik ben Marco Verheul, web developer bij Corneel Online, mijn Haarlems webbureau. Ik ontwikkel doordachte (mobiele) websites en webapplicaties zoals het hoort: snel, clean, functioneel, vindbaar, veilig en 100% maatwerk.</p>
-        <p>Ik werk rechtstreeks voor opdrachtgevers, maar je kan me ook op freelance basis inhuren. </p>
-      </div>
+      <div class="about-corneel__body" v-html="$page.post.about_corneel_text"/>
     </section>
     <ContactMe />
     <BigImage>
-      <g-image src="https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg" fit="outside" alt="control room" />
+      <g-image :src="$page.post.big_image_url_two" alt="control room" />
     </BigImage>
   </Layout>
 </template>
@@ -55,11 +52,13 @@ query {
     introduction_title
     call_to_action_label
     about_corneel_title
-    about_corneel_image
+    about_corneel_image_url
     about_corneel_text
     big_image_url
-    about_corneel_image_url
     big_image_url_two
+    fileInfo {
+      name
+    }
     seo_title
     seo_description
   }
@@ -73,8 +72,31 @@ import BigImage from '~/components/layout/BigImage.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
-  metaInfo: {
-    title: 'Web Developer te Haarlem'
+  metaInfo() {
+    return {
+      title: this.$page.post.seo_title,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.post.seo_description
+        },
+        {
+          property: "og:title",
+          content: this.$page.post.seo_title
+        },
+        {
+          property: "og:description",
+          content: this.$page.post.seo_description
+        },
+        {
+          property: "og:image",
+          content: ""
+        }
+      ],
+      bodyAttrs: {
+        class: this.$page.post.fileInfo.name
+      }
+    }
   },
   components: {
     ServiceTeaser,

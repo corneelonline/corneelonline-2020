@@ -10,7 +10,6 @@ services_text: |-
   Met een ijzersterk netwerk van webprofessionals help ik organisaties die een echte toegevoegde waarde willen bieden. Voor wie de boodschap of de beleving leidend is en niet alleen de winst. Ik ontwikkel doordachte (mobiele) websites en webapplicaties.
 introduction_title: Web development met een missie
 call_to_action_label: Bekijk recente projecten
-big_image_one: corneel/v1602598164/corneel/control-room-01_smz913.jpg
 about_corneel_title: Over Corneel
 about_corneel_image: corneel/v1602584134/corneel/Foto-Marco_s953tj.jpg
 about_corneel_text: |-

@@ -5,10 +5,18 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Pages
+  label: Content
 - type: document
   path: content/home.md
   label: Home
+- type: directory
+  path: content
+  label: Pages
+  create: documents
+  match: "*.md"
+  exclude: home.md
+  templates:
+  - default-page
 - type: document
   path: content/diensten.md
   label: Diensten

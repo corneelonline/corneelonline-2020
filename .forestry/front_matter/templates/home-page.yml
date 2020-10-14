@@ -40,7 +40,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Services text
 - name: big_image_url
   type: text
@@ -64,7 +64,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: About Corneel text
 - name: big_image_url_two
   type: text

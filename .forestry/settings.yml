@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Pages
+  label: Content
 - type: document
   path: content/home.md
   label: Home
@@ -27,8 +27,6 @@ sections:
 - type: document
   path: content/colofon.md
   label: Colofon
-- type: heading
-  label: Blog
 - type: directory
   path: content/posts
   label: Posts
@@ -36,8 +34,6 @@ sections:
   match: "**/*"
   templates:
   - blog-post
-- type: heading
-  label: Portfolio
 - type: directory
   path: content/projects
   label: Projects

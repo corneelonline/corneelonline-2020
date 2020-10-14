@@ -15,5 +15,8 @@ fields:
   label: SEO Information
 pages:
 - content/algemene-voorwaarden.md
+- content/algemene-voorwaarden.md
 - content/colofon.md
+- content/colofon.md
+- content/privacyverklaring.md
 - content/privacyverklaring.md

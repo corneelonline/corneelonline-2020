@@ -1,16 +1,13 @@
 <template>
   <Layout>
     <section class="home-intro">
-      <h1>Web development met een missie</h1>
-      <p>Laat je website maken zoals het hoort: snel, clean, functioneel, vindbaar, veilig en 100% maatwerk.</p>
+      <h1>{{$page.post.introduction_title}}</h1>
+      <p v-html="$page.post.introduction_text"/>
       <g-link to="/projecten/" class="button">Bekijk recente projecten</g-link>
     </section>
     <section class="home-services">
-      <h2>Wat ik doe</h2>
-      <div class="home-services__body">
-        <p>Corneel Online creëert <strong>prachtige websites</strong> en webapplicaties voor organisaties die een echte toegevoegde waarde willen bieden.</p>
-        <p>Met een ijzersterk netwerk van webprofessionals help ik organisaties die een echte toegevoegde waarde willen bieden. Voor wie de boodschap of de beleving leidend is en niet alleen de winst. Ik ontwikkel doordachte (mobiele) websites en webapplicaties.</p>
-      </div>
+      <h2>{{$page.post.services_title}}</h2>
+      <div class="home-services__body" v-html="$page.post.services_text"/>
       <h2>Corneel Online houdt zich bezig met:</h2>
       <div class="home-services__teasers">
         <ServiceTeaser title="Web development" />
@@ -47,6 +44,27 @@
     </BigImage>
   </Layout>
 </template>
+
+<page-query>
+query {
+  post: webpage(id: "14b844fa207042add04d39881b895615") {
+    title
+    introduction_text
+    services_title
+    services_text
+    introduction_title
+    call_to_action_label
+    about_corneel_title
+    about_corneel_image
+    about_corneel_text
+    big_image_url
+    about_corneel_image_url
+    big_image_url_two
+    seo_title
+    seo_description
+  }
+}
+</page-query>
 
 <script>
 import ServiceTeaser from '~/components/service/Teaser.vue'

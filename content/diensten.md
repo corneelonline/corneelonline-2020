@@ -10,6 +10,12 @@ introduction_text: Corneel Online brengt jouw ideeën tot leven. Met een team va
 headline: Wat ik doe
 big_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg
 process_list_item:
+- step_nr: 2
+  title: De juiste tools uitzoeken
+  description: De volgende stap is om de juiste tools uit te zoeken voor de uitvoering
+    van het project. Het doel van het project bepaalt de keuze voor de technologie
+    die toegepast wordt. We nemen de mogelijkheden door en wegen de voor- en nadelen
+    af om tot het beste eindresultaat te komen.
 - step_nr: 1
   title: Doelen van het project bepalen
   description: Wat heb je nodig? Welke factoren zijn bepalend het succes van het project?

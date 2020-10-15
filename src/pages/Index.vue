@@ -10,10 +10,11 @@
       <div class="home-services__body" v-html="$page.post.services_text"/>
       <h2>Corneel Online houdt zich bezig met:</h2>
       <div class="home-services__teasers">
-        <ServiceTeaser title="Web development" />
-        <ServiceTeaser title="Web design" />
-        <ServiceTeaser title="Content management systemen" />
-        <ServiceTeaser title="Advies &amp; ondersteuning" />
+        <ServiceTeaser 
+          v-for="edge in $page.services.edges" 
+          :key="edge.node.id" 
+          v-bind:title="edge.node.title"
+        />
       </div>
     </section>
     <section class="big-image">
@@ -61,6 +62,13 @@ query {
     }
     seo_title
     seo_description
+  }
+  services: allService(sortBy: "sort_order", order: ASC, filter: { show_on_homepage: { eq: true }}) {
+    edges {
+      node {
+        title
+      }
+    }
   }
 }
 </page-query>

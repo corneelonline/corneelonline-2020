@@ -54,7 +54,7 @@ query {
     seo_title
     seo_description
   }
-  services: allService(sortBy: "sort_order", order: ASC, filter: { show_on_homepage: { eq: true }}) {
+  services: allService(sortBy: "sort_order", order: ASC) {
     edges {
       node {
         title

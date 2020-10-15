@@ -11,9 +11,9 @@
         <div v-html="edge.node.content" />
       </ServiceExcerpt>
     </section>
-    <BigImage>
-      IMAGE
-    </BigImage>
+    <section class="big-image services">
+      <g-image :src="$page.post.big_image_url" alt="control room" />
+    </section>
     <section class="process">
       <h2>Hoe ik het doe</h2>
       <div class="process__step">

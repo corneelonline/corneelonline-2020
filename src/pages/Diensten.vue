@@ -1,10 +1,11 @@
 <template>
   <Layout>
-    <section class="page-intro">
-      <h1>Diensten</h1>
-      <h2 class="headline">Wat ik doe</h2>
-      <p>Corneel Online brengt jouw idee&euml;n tot leven. Met een team van webprofessionals ontwikkel ik doordachte (mobiele) websites en webapplicaties die laten zien wie jij bent en waar jij voor staat.</p>
-    </section>
+    <PageIntro v-bind:title="Diensten">
+      <div class="page-intro__body">
+        <h2 class="headline">Wat ik doe</h2>
+        <p>Corneel Online brengt jouw idee&euml;n tot leven. Met een team van webprofessionals ontwikkel ik doordachte (mobiele) websites en webapplicaties die laten zien wie jij bent en waar jij voor staat.</p>
+      </div>
+    </PageIntro>
     <section class="services-overview">
       <div class="service">
         <h3>Web Development</h3>
@@ -57,27 +58,33 @@
         <p>De oplevering markeert het einde van het project, maar ook het begin van een mooie samenwerking. Na lancering komt de website of app pas echt tot leven. Denk hierbij aan onderhoud, nazorg, doorontwikkelen en verdere optimalisatie.</p>
       </div>
     </section>
-    <section class="contact-me">
-      <div class="contact-me__body">
-        <h3>Wat houdt je bezig?</h3>
-        <p>Heb jij een interessant project? En wil je erover praten?</p>
-        <p>Of je nou een starter bent of een doorgewinterd bedrijf, ik hoor het graag als ik je een leuke uitdaging voor me hebt.</p>
-      </div>
-      <div class="contact-me__details">
-        <p>
-          Marco Verheul<br>
-          T. 06 2846 1106<br>
-          E. marco@corneelonline.nl
-        </p>
-      </div>
-    </section>
+    <ContactMe />
   </Layout>
 </template>
 
 <script>
+import PageIntro from '~/components/layout/PageIntro.vue'
+import ContactMe from '~/components/layout/ContactMe.vue'
+
 export default {
   metaInfo: {
     title: 'Diensten'
+  },
+  components: {
+    PageIntro,
+    ContactMe
   }
 }
 </script>
+
+<style lang="scss">
+// --------------------------------------
+// services overview
+// --------------------------------------
+.services-overview {
+  @include container-narrow-half;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--color-gray-light);
+}
+</style>

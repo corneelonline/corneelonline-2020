@@ -19,19 +19,61 @@
     padding: 1.25rem calc(50% - 472px);
   }
   @media (min-width: $xl) {
-    padding: 1.25rem calc(50% - 500px);
+    padding: 1.25rem calc(50% - 580px);
+  }
+}
+@mixin container-half {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  @media (min-width: $md) {
+    padding-right: 40%;
+  }
+  @media (min-width: $lg) {
+    border: 1px dotted yellow;
+    padding-left: calc(50% - 472px);
+    padding-right: 45%;
+  }
+  @media (min-width: $xl) {
+    padding-left: calc(50% - 580px);
+    padding-right: 55%;
   }
 }
 @mixin container-narrow {
-  padding: 1.25rem 2.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   @media (min-width: $md) {
-    padding: 1.25rem calc(50% - 230px);
+    padding-left: calc(50% - 230px);
+    padding-right: calc(50% - 230px);
   }
   @media (min-width: $lg) {
-    padding: 1.25rem calc(50% - 372px);
+    padding-left: calc(50% - 372px);
+    padding-right: calc(50% - 372px);
   }
   @media (min-width: $xl) {
-    padding: 1.25rem calc(50% - 480px);
+    padding-left: calc(50% - 480px);
+    padding-right: calc(50% - 480px);
+  }
+}
+@mixin container-narrow-half {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  @media (min-width: $md) {
+    // padding-left: calc(50% - 230px);
+    padding-right: 40%;
+  }
+  @media (min-width: $lg) {
+    padding-left: calc(50% - 372px);
+    padding-right: 35%;
+  }
+  @media (min-width: $xl) {
+    padding-left: calc(50% - 480px);
+    padding-right: 40%;
   }
 }
 
@@ -39,16 +81,8 @@
 // Header sizes
 // ------------------------------------------
 @mixin header-narrow {
+  @include container-narrow;
   padding: 0 2.5rem;
-  @media (min-width: $md) {
-    padding: 0 calc(50% - 230px);
-  }
-  @media (min-width: $lg) {
-    padding: 0 calc(50% - 372px);
-  }
-  @media (min-width: $xl) {
-    padding: 0 calc(50% - 480px);
-  }
 }
 
 // ------------------------------------------

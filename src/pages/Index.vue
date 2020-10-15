@@ -112,7 +112,8 @@ export default {
 // Home intro
 // -----------------------------------------------
 .home-intro {
-  @include container;
+  // @include container;
+  @include container-half;
   background-image: url('~@/assets/images/bg/home-intro.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -125,12 +126,10 @@ export default {
     padding-bottom: 7rem;
   }
   @media (min-width: $md) {
-    padding-right: 40%;
     padding-bottom: 8rem;
   }
   @media (min-width: $lg) {
-    padding-left: calc(50% - 372px);
-    padding-right: 35%;
+    @include container-narrow-half;
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
@@ -146,6 +145,7 @@ export default {
 // Services
 // -----------------------------------------------
 .home-services {
+  @include container-narrow;
   position: relative;
   z-index: 1;
   padding-top: 1.5rem;
@@ -158,11 +158,7 @@ export default {
     @include circle-decoration;
   }
 }
-.home-services h2 {
-  @include header-narrow;
-}
 .home-services__body {
-  @include container-narrow;
   padding-top: 0.5rem;
 
   @media (min-width: $lg) {

@@ -84,6 +84,11 @@ h5, .h5 {
   }
 }
 
+.headline {
+  @extend .h3;
+  color: var(--color-orange);
+}
+
 .highlighted-text {
   color: var(--color-orange);
   @include font-size(1.125); // 18px

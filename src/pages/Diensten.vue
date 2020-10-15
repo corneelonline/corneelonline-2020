@@ -50,6 +50,7 @@ query {
     }
     headline
     introduction_text
+    big_image_url
     seo_title
     seo_description
   }
@@ -111,14 +112,18 @@ export default {
 // services overview
 // --------------------------------------
 .services-overview {
-  // @include container;
-    @include container-narrow-half;
+  @include container-narrow-half;
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0;
   background-color: var(--color-gray-light);
-  
-  // @media (min-width: $lg) {
-  //   @include container-narrow-half;
-  // }
+}
+.big-image {
+  width: 100%;
+  padding: 0;
+  position: relative;
+
+  &.services::before {
+    @include top-triangle(var(--color-gray-light));
+  }
 }
 </style>

@@ -16,7 +16,7 @@ export default {
 <style lang="scss">
 .service__excerpt {
   padding-top: 6.4rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   background-image: url('~@/assets/images/icon-service.svg');
   background-position: top left;
   background-repeat: no-repeat;
@@ -24,6 +24,7 @@ export default {
   
   @media (min-width: $sm) {
     padding-top: 0;
+    padding-bottom: 2rem;
     padding-left: 6.5rem;
   }
   @media (min-width: $md) {

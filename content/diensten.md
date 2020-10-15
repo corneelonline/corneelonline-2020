@@ -37,5 +37,28 @@ process_list_item:
   description: De oplevering markeert het einde van het project, maar ook het begin
     van een mooie samenwerking. Na lancering komt de website of app pas echt tot leven.
     Denk hierbij aan onderhoud, nazorg, doorontwikkelen en verdere optimalisatie.
+process_steps:
+- step_nr: 1
+  title: Doelen van het project bepalen
+  description: |-
+    Wat heb je nodig? Welke factoren zijn bepalend het succes van het project?
+
+    Is er al een ontwerp? Of een marketing strategie? We zorgen eerst dat het doel
+
+    van het project glashelder is en dat we precies weten wat er nodig is om er een
+
+    succes van te maken.
+- step_nr: 1
+  title: ''
+  description: ''
+- step_nr: 1
+  title: ''
+  description: ''
+- step_nr: 1
+  title: ''
+  description: ''
+- step_nr: 1
+  title: ''
+  description: ''
 
 ---

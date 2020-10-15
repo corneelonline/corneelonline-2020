@@ -4,7 +4,7 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - name: sort_order
   type: number
   label: Sort order
@@ -21,10 +21,10 @@ fields:
   label: Show on homepage
 - type: text
   name: seo_title
-  label: seo_title
+  label: SEO title
 - type: textarea
   name: seo_description
-  label: seo_description
+  label: SEO description
 pages:
 - content/services/advies-en-ondersteuning.md
 - content/services/content-management.md

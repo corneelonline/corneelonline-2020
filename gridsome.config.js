@@ -41,12 +41,20 @@ module.exports = {
         typeName: 'Project',
         path: './content/projects/**/*.md',
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Service',
+        path: './content/services/**/*.md',
+      }
     }
   ],
   templates: {
     Webpage: '/:title',
     Post: '/blog/:title',
-    Project: '/projecten/:title'
+    Project: '/projecten/:title',
+    Service: '/diensten/:title'
   },
   transformers: {
     remark: {

@@ -13,3 +13,4 @@ fields:
   label: seo_description
 pages:
 - content/services/web-development.md
+- content/services/webdesign.md

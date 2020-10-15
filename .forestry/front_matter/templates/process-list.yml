@@ -1,5 +1,5 @@
 ---
-label: Process list
+label: Process list item
 hide_body: true
 fields:
 - name: title

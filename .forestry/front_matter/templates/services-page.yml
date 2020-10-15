@@ -27,11 +27,6 @@ fields:
   config:
     required: false
   label: Big image url
-- name: process_steps
-  type: include
-  config: {}
-  template: process-list
-  label: Process steps
 - name: seo_information
   type: include
   config: {}

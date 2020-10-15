@@ -41,6 +41,13 @@ sections:
   match: "**/*"
   templates:
   - project
+- type: directory
+  path: content/services
+  label: Services
+  create: documents
+  match: "**/*"
+  templates:
+  - default-page
 upload_dir: corneel
 public_path: corneel
 front_matter_path: ''

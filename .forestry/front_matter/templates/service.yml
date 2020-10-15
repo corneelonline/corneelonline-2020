@@ -11,3 +11,5 @@ fields:
 - type: textarea
   name: seo_description
   label: seo_description
+pages:
+- content/services/web-development.md

@@ -138,12 +138,11 @@ export default {
   }
 
   h2 {
-    color: var(--color-orange);
-    margin-bottom: 1rem;
+    @extend .headline;
+    margin-bottom: 2rem;
   }
 }
 .process-step {
-  // border: 1px dotted blue;
   position: relative;
 
   @media (min-width: $sm) {
@@ -201,11 +200,6 @@ export default {
         height: 96px;
         @include font-size(3.125); // 50px
       }
-      // @media (min-width: $lg) {
-      //   width: 96px;
-      //   height: 96px;
-      //   @include font-size(3.125); // 50px
-      // }
     }
   }
 

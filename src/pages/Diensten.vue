@@ -6,34 +6,14 @@
       v-bind:intro="$page.post.introduction_text"
     />
     <section class="services-overview">
-      <div class="service">
-        <h3>Web Development</h3>
-        <p>Corneel Online ontwikkelt moderne en robuuste maatwerk websites en webapplicaties waar jij het verschil mee maakt.</p>
-      </div>
-      <div class="service">
-        <h3>Webdesign</h3>
-        <p>Met mijn netwerk van webdesigners zorgen we voor een uniek ontwerp dat precies past bij jouw project, jouw organisatie en jouw persoonlijkheid.</p>
-      </div>
-      <div class="service">
-        <h3>Content Management</h3>
-        <p>Met een robuust content management systeem blijf je de baas over je eigen content. Corneel Online helpt je de juiste keuze te maken.</p>
-      </div>
-      <div class="service">
-        <h3>Vindbaarheid / SEO</h3>
-        <p>Websites van Corneel Online zijn goed vindbaar. En met een netwerk van marketeers zetten we als het nodig is net een stap verder.</p>
-      </div>
-      <div class="service">
-        <h3>Mobile first</h3>
-        <p>Meer dan de helft van alle bezoekers van een website doen dat met hun telefoon. Het is daarom essentieel dat jouw website of applicatie perfect werkt op mobiele devices.</p>
-      </div>
-      <div class="service">
-        <h3>Advies en ondersteuning</h3>
-        <p>Heb je plannen en wil je weten wat er mogelijk is? Of welke aanpak voor jouw project het meest geschikt is? Corneel Online denkt gaag met je mee.</p>
-      </div>
+      <ServiceExcerpt v-for="edge in $page.services.edges" :key="edge.node.id">
+        <h3>{{edge.node.title}}</h3>
+        <div v-html="edge.node.content" />
+      </ServiceExcerpt>
     </section>
-    <section class="big-image">
-      [IMAGE]
-    </section>
+    <BigImage>
+      IMAGE
+    </BigImage>
     <section class="process">
       <h2>Hoe ik het doe</h2>
       <div class="process__step">
@@ -73,12 +53,22 @@ query {
     seo_title
     seo_description
   }
+  services: allService(sortBy: "sort_order", order: ASC, filter: { show_on_homepage: { eq: true }}) {
+    edges {
+      node {
+        title
+        content
+      }
+    }
+  }
 }
 </page-query>
 
 <script>
 import PageIntro from '~/components/layout/PageIntro.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
+import BigImage from '~/components/layout/BigImage.vue'
+import ServiceExcerpt from '~/components/service/Excerpt.vue'
 
 export default {
   metaInfo() {
@@ -109,7 +99,9 @@ export default {
   },
   components: {
     PageIntro,
-    ContactMe
+    ContactMe,
+    BigImage,
+    ServiceExcerpt
   }
 }
 </script>
@@ -119,9 +111,14 @@ export default {
 // services overview
 // --------------------------------------
 .services-overview {
-  @include container-narrow-half;
-  padding-top: 2rem;
+  // @include container;
+    @include container-narrow-half;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   background-color: var(--color-gray-light);
+  
+  // @media (min-width: $lg) {
+  //   @include container-narrow-half;
+  // }
 }
 </style>

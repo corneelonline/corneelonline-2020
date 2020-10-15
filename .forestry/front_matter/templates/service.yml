@@ -13,5 +13,6 @@ fields:
   label: seo_description
 pages:
 - content/services/content-management.md
+- content/services/vindbaarheid-seo.md
 - content/services/web-development.md
 - content/services/webdesign.md

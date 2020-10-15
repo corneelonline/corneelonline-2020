@@ -16,25 +16,14 @@
     </section>
     <section class="process">
       <h2>Hoe ik het doe</h2>
-      <div class="process__step">
-        <h3>Doelen van het project bepalen</h3>
-        <p>Wat heb je nodig? Welke factoren zijn bepalend het succes van het project? Is er al een ontwerp? Of een marketing strategie? We zorgen eerst dat het doel van het project glashelder is en dat we precies weten wat er nodig is om er een succes van te maken.</p>
-      </div>
-      <div class="process__step">
-        <h3>De juiste tools uitzoeken</h3>
-        <p>De volgende stap is om de juiste tools uit te zoeken voor de uitvoering van het project. Het doel van het project bepaalt de keuze voor de technologie die toegepast wordt. We nemen de mogelijkheden door en wegen de voor- en nadelen af om tot het beste eindresultaat te komen.</p>
-      </div>
-      <div class="process__step">
-        <h3>Aan de slag</h3>
-        <p>Nadat het doel van het project helder is en de juiste tools zijn geselecteerd gaan we aan de slag. Tijdens de uitvoering van het project blijf je als opdrachtgever nauw betrokken en wordt je op de hoogte gehouden van de voortgang.</p>
-      </div>
-      <div class="process__step">
-        <h3>Testen en opleveren</h3>
-        <p>Als het project technisch klaar is wordt dit op een demo server beschikbaar gesteld, zodat er getest kan worden. En als alles 100% in orde is wordt het project gelanceerd.</p>
-      </div>
-      <div class="process__step">
-        <h3>Geen reden om afscheid te nemen</h3>
-        <p>De oplevering markeert het einde van het project, maar ook het begin van een mooie samenwerking. Na lancering komt de website of app pas echt tot leven. Denk hierbij aan onderhoud, nazorg, doorontwikkelen en verdere optimalisatie.</p>
+      <div class="process-step" v-for="process_step in $page.post.process_steps" :key="process_step.step_nr">
+        <div class="process-step__nr">
+          <span>{{ process_step.step_nr }}</span>
+        </div>
+        <div class="process-step__body">
+          <h3>{{ process_step.title }}</h3>
+          <p>{{ process_step.description }}</p>
+        </div>
       </div>
     </section>
     <ContactMe />
@@ -51,6 +40,11 @@ query {
     headline
     introduction_text
     big_image_url
+    process_steps {
+      step_nr
+      title
+      description
+    }
     seo_title
     seo_description
   }
@@ -117,6 +111,9 @@ export default {
   padding-bottom: 0;
   background-color: var(--color-gray-light);
 }
+// --------------------------------------
+// big image
+// --------------------------------------
 .big-image {
   width: 100%;
   padding: 0;
@@ -126,6 +123,100 @@ export default {
     &::before {
       @include top-triangle(var(--color-gray-light));
     }
+  }
+}
+// --------------------------------------
+// process steps
+// --------------------------------------
+.process {
+  @include container-narrow-half;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+    
+  @media (min-width: $md) {
+    padding-right: calc(50% - 230px);
+  }
+
+  h2 {
+    color: var(--color-orange);
+    margin-bottom: 1rem;
+  }
+}
+.process-step {
+  // border: 1px dotted blue;
+  position: relative;
+
+  @media (min-width: $sm) {
+    display: flex;
+    background: var(--color-white);
+    background: linear-gradient(90deg, var(--color-white) 36px, var(--color-orange) 36px, var(--color-white) 38px, var(--color-white) 38px);
+  }
+  @media (min-width: $md) {
+    background: var(--color-white);
+    background: linear-gradient(90deg, var(--color-white) 48px, var(--color-orange) 48px, var(--color-white) 50px, var(--color-white) 50px);
+  }
+  @media (min-width: $lg) {
+    background: var(--color-white);
+    background: linear-gradient(90deg, var(--color-white) 80px, var(--color-orange) 80px, var(--color-white) 82px, var(--color-white) 82px);
+  }
+
+  &:last-of-type {
+    @media (min-width: $sm) {
+      display: flex;
+      background: var(--color-white);
+    }
+  }
+
+  &__nr {
+    padding-bottom: 1rem;
+    
+    @media (min-width: $sm) {
+      padding-right: 2rem;
+    }
+    @media (min-width: $lg) {
+      padding-left: 2rem;
+      padding-right: 2.45rem;
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      font-family: var(--ff-header);
+      @include font-size(1.375); // 22px
+      color: var(--color-white);
+      background-color: var(--color-orange);
+      z-index: 2;
+    
+      @media (min-width: $sm) {
+        width: 72px;
+        height: 72px;
+        @include font-size(2.5); // 40px
+      }
+      @media (min-width: $md) {
+        width: 96px;
+        height: 96px;
+        @include font-size(3.125); // 50px
+      }
+      // @media (min-width: $lg) {
+      //   width: 96px;
+      //   height: 96px;
+      //   @include font-size(3.125); // 50px
+      // }
+    }
+  }
+
+  &__body {
+    @media (min-width: $sm) {
+      padding-top: 1rem;
+    }
+  }
+
+  h3 {
+    @extend .excerpt-header;
   }
 }
 </style>

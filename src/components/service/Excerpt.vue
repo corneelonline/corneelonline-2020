@@ -37,5 +37,9 @@ export default {
     padding-left: 10.625rem;
     background-size: 8rem 9.3125rem;
   }
+
+  h3 {
+    @extend .excerpt-header;
+  }
 }
 </style>

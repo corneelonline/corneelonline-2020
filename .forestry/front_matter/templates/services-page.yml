@@ -2,12 +2,37 @@
 label: Services page
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: title
-- type: text
-  name: seo_title
-  label: seo_title
-- type: textarea
-  name: seo_description
-  label: seo_description
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: headline
+  type: text
+  config:
+    required: false
+  label: Headline
+- name: introduction_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Introduction text
+- name: big_image_url
+  type: text
+  config:
+    required: false
+  label: Big image url
+- name: process_steps
+  type: include
+  config: {}
+  template: process-list
+  label: Process steps
+- name: seo_information
+  type: include
+  config: {}
+  template: seo
+  label: SEO Information

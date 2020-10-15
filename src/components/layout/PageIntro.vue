@@ -2,14 +2,14 @@
   <section class="page-intro">
     <h1>{{ title }}</h1>
     <h2 class="headline" v-if="headline !== ''">{{ headline }}</h2>
-    <p>{{ introduction_text }}</p>
+    <p v-if="intro !== ''">{{ intro }}</p>
   </section>
 </template>
 
 <script>
 export default {
   name: 'PageIntro',
-  props: ['title', 'headline', 'introduction_text']
+  props: ['title', 'headline', 'intro']
 }
 </script>
 

@@ -3,9 +3,8 @@
     <PageIntro 
       v-bind:title="$page.post.title"
       v-bind:headline="$page.post.headline"
-      v-bind:introduction_text="$page.post.introduction_text"
-    >
-    </PageIntro>
+      v-bind:intro="$page.post.introduction_text"
+    />
     <section class="services-overview">
       <div class="service">
         <h3>Web Development</h3>

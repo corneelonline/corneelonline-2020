@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <PageIntro v-bind:title="Diensten">
-      <div class="page-intro__body">
-        <h2 class="headline">Wat ik doe</h2>
-        <p>Corneel Online brengt jouw idee&euml;n tot leven. Met een team van webprofessionals ontwikkel ik doordachte (mobiele) websites en webapplicaties die laten zien wie jij bent en waar jij voor staat.</p>
-      </div>
+    <PageIntro 
+      v-bind:title="$page.post.title"
+      v-bind:headline="$page.post.headline"
+      v-bind:introduction_text="$page.post.introduction_text"
+    >
     </PageIntro>
     <section class="services-overview">
       <div class="service">
@@ -62,13 +62,51 @@
   </Layout>
 </template>
 
+<page-query>
+query {
+  post: webpage(id: "f30f003e2ef8095e79939ac605ccf56f") {
+    title
+    fileInfo {
+      name
+    }
+    headline
+    introduction_text
+    seo_title
+    seo_description
+  }
+}
+</page-query>
+
 <script>
 import PageIntro from '~/components/layout/PageIntro.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
-  metaInfo: {
-    title: 'Diensten'
+  metaInfo() {
+    return {
+      title: this.$page.post.seo_title,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.post.seo_description
+        },
+        {
+          property: "og:title",
+          content: this.$page.post.seo_title
+        },
+        {
+          property: "og:description",
+          content: this.$page.post.seo_description
+        },
+        {
+          property: "og:image",
+          content: ""
+        }
+      ],
+      bodyAttrs: {
+        class: this.$page.post.fileInfo.name
+      }
+    }
   },
   components: {
     PageIntro,

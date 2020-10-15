@@ -12,6 +12,7 @@ fields:
   name: seo_description
   label: seo_description
 pages:
+- content/services/advies-en-ondersteuning.md
 - content/services/content-management.md
 - content/services/mobile-first.md
 - content/services/vindbaarheid-seo.md

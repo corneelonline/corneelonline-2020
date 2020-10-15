@@ -1,6 +1,6 @@
 ---
-label: Default page
-hide_body: false
+label: Services page
+hide_body: true
 display_field: title
 fields:
 - name: title
@@ -20,14 +20,22 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Introduction text
+- name: big_image_url
+  type: text
+  config:
+    required: false
+  label: Big image url
+- name: process_steps
+  type: include
+  config: {}
+  template: process-list
+  label: Process steps
 - name: seo_information
   type: include
   config: {}
   template: seo
   label: SEO Information
 pages:
-- content/algemene-voorwaarden.md
-- content/colofon.md
-- content/privacyverklaring.md
+- content/diensten.md

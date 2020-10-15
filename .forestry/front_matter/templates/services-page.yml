@@ -36,3 +36,5 @@ fields:
   config: {}
   template: seo
   label: SEO Information
+pages:
+- content/diensten.md

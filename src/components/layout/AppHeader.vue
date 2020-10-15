@@ -71,6 +71,7 @@ export default {
 
   &.active {
     background-color: var(--color-black);
+    z-index: 2;
   }
 }
 // -------------------------------------

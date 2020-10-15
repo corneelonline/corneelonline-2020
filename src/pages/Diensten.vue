@@ -120,10 +120,12 @@ export default {
 .big-image {
   width: 100%;
   padding: 0;
-  position: relative;
 
-  &.services::before {
-    @include top-triangle(var(--color-gray-light));
+  &.services {
+    position: relative;
+    &::before {
+      @include top-triangle(var(--color-gray-light));
+    }
   }
 }
 </style>

@@ -8,6 +8,11 @@ fields:
   config:
     required: false
   label: Title
+- name: headline
+  type: text
+  config:
+    required: false
+  label: Headline
 - name: introduction_text
   type: textarea
   default: ''

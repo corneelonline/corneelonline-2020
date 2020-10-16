@@ -15,7 +15,6 @@ sections:
 - type: document
   path: content/projecten.md
   label: Projecten
-  match: "**/*"
 - type: document
   path: content/contact.md
   label: Contact

@@ -11,6 +11,8 @@ seo_description: Het Centrum voor Conflicthantering is een opleidingsinstituut d
   zich richt op opleidingen, trainingen op het gebied van conflicthantering en mediation.
 published: true
 featured: false
+summary: Het Centrum voor Conflicthantering is een opleidingsinstituut dat zich richt
+  op opleidingen, trainingen op het gebied van conflicthantering en mediation.
 
 ---
 Het Centrum voor Conflicthantering is een opleidingsinstituut dat zich richt op opleidingen, trainingen op het gebied van conflicthantering en mediation.

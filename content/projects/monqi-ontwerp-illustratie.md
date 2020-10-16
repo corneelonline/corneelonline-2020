@@ -1,7 +1,7 @@
 ---
 draft: true
 title: MONQI Ontwerp & Illustratie
-banner_image: ''
+banner_image_url: ''
 client: MONQI Ontwerp & Illustratie
 team: Corneel Online, MONQI Ontwerp & Illustratie
 services: WordPress

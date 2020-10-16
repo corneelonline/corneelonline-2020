@@ -1,6 +1,6 @@
 ---
 title: Direct Financial Control
-banner_image: ''
+banner_image_url: ''
 client: Direct Financial Control
 team: Corneel Online, MD2 Mediaconcepts & Design
 services: WordPress

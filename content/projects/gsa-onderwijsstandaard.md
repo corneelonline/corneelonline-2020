@@ -1,7 +1,7 @@
 ---
 draft: true
 title: GSA Onderwijsstandaard
-banner_image: ''
+banner_image_url: ''
 client: COC Nederland
 team: Corneel Online, Buro RuSt, Maarten van Gelder
 services: WordPress

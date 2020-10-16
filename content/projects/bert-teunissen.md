@@ -1,7 +1,7 @@
 ---
 draft: true
 title: Bert Teunissen
-banner_image: ''
+banner_image_url: ''
 client: Bert Teunissen
 team: Corneel Online, Kirsten Fabels
 services: WordPress

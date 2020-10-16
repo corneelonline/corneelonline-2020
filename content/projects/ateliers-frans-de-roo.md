@@ -1,6 +1,6 @@
 ---
 title: Ateliers Frans de Roo
-banner_image: ''
+banner_image_url: ''
 client: Ateliers Frans de Roo
 team: Corneel Online, Ingeborg Rosenberg
 services: WordPress, Design

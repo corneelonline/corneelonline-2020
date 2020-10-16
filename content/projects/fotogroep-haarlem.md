@@ -1,6 +1,6 @@
 ---
 title: Fotogroep Haarlem
-banner_image: "/v1599583640/dummy-01_jvg3ti.jpg"
+banner_image_url: "/v1599583640/dummy-01_jvg3ti.jpg"
 client: Fotogroep Haarlem
 team: Corneel Online
 services: WordPress, Design

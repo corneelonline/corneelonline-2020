@@ -1,6 +1,6 @@
 ---
 title: Pedicurepraktijk Het Voetstuk
-banner_image: ''
+banner_image_url: ''
 client: Pedicurepraktijk Het Voetstuk
 team: Corneel Online
 services: WordPress

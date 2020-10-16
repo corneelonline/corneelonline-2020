@@ -1,6 +1,6 @@
 ---
 title: Geuzebroek.info
-banner_image: ''
+banner_image_url: ''
 client: Nanda Geuzebroek
 team: Corneel Online
 services: Hugo, Netlify CMS

@@ -1,6 +1,6 @@
 ---
 title: Marco Verheul Photography
-banner_image: ''
+banner_image_url: ''
 client: Marco Verheul
 team: Corneel Online
 services: WordPress

@@ -1,6 +1,6 @@
 ---
 title: GSA Netwerk
-banner_image: ''
+banner_image_url: ''
 client: COC Nederland
 team: OCCHIO, Corneel Online, Buro RuSt
 services: WordPress

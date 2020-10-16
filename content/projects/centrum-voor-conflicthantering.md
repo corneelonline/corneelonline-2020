@@ -1,6 +1,6 @@
 ---
 title: Centrum voor Conflicthantering
-banner_image: ''
+banner_image_url: ''
 client: Centrum voor Conflicthantering
 team: Corneel Online, Ratio Design
 services: WordPress

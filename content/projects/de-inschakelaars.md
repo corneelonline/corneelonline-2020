@@ -11,6 +11,8 @@ seo_description: De Inschakelaars helpt burgers en maatschappelijke organisaties
   Haarlem duurzamer te maken en bewoners met elkaar in contact te brengen.
 published: true
 featured: false
+summary: De Inschakelaars helpt burgers en maatschappelijke organisaties om Haarlem
+  duurzamer te maken en bewoners met elkaar in contact te brengen.
 
 ---
 De Inschakelaars helpt burgers en maatschappelijke organisaties om Haarlem duurzamer te maken en bewoners met elkaar in contact te brengen.

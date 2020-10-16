@@ -11,6 +11,8 @@ seo_description: Vos Legal is specialist in contracten, vertalingen en juridisch
   dienstverlening voor overheden, advocatenkantoren, NGO’s, bedrijfsleven en particulieren.
 published: true
 featured: false
+summary: Vos Legal is specialist in contracten, vertalingen en juridische dienstverlening
+  voor overheden, advocatenkantoren, NGO’s, bedrijfsleven en particulieren.
 
 ---
 Vos Legal is specialist in contracten, vertalingen en juridische dienstverlening voor overheden, advocatenkantoren, NGO’s, bedrijfsleven en particulieren.

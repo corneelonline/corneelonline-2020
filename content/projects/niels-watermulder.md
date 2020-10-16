@@ -11,6 +11,8 @@ seo_description: Niels Watermulder is een fotograaf en videokunstenaar die in me
   2018 is afgestudeerd aan de Fotoacademie.
 published: true
 featured: false
+summary: Website van Niels Watermulder, een fotograaf en videokunstenaar die in mei
+  2018 is afgestudeerd aan de Fotoacademie.
 
 ---
 Website van Niels Watermulder, een fotograaf en videokunstenaar die in mei 2018 is afgestudeerd aan de Fotoacademie.

@@ -7,7 +7,7 @@
       <g-link to="/projecten/" class="button-back">Terug</g-link>
       <h2 v-html="$page.project.title"/>
       <figure class="main-image">
-        [IMAGE]
+        <g-image src="~/assets/images/dummy-project-1.png" alt="project img" />
       </figure>
       <div class="project-desc">
         <div class="project-desc__details">
@@ -42,7 +42,7 @@ query ($path: String!) {
   project(path: $path) {
     id
     title
-    banner_image
+    banner_image_url
     client
     team
     services

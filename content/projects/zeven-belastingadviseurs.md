@@ -1,6 +1,6 @@
 ---
 title: Zeven Belastingadviseurs
-banner_image: corneel/v1602856249/corneel/zeven_ye5rz4.jpg
+banner_image: ''
 client: Zeven Belastingadviseurs
 team: Corneel Online, X-Ray
 services: WordPress

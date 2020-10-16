@@ -10,7 +10,7 @@ seo_title: QST Safe Skies
 seo_description: QST Safe Skies richt zich op het vergroten van het verandervermogen
   binnen organisaties en teams.
 published: true
-featured: false
+featured: true
 
 ---
 QST Safe Skies richt zich op het vergroten van het verandervermogen binnen organisaties

@@ -11,6 +11,8 @@ seo_description: Direct Financial Control is een Nederlands bedrijf dat een bree
   scala aan financiële diensten uitvoert voor nationale en internationale ondernemingen.
 published: true
 featured: false
+summary: Direct Financial Control is een Nederlands bedrijf dat een breed scala aan
+  financiële diensten uitvoert voor nationale en internationale ondernemingen.
 
 ---
 Direct Financial Control is een Nederlands bedrijf dat een breed scala aan financiële diensten uitvoert voor nationale en internationale ondernemingen.

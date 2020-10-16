@@ -1,15 +1,16 @@
 ---
 title: Geuzebroek.info
-banner_image_url: ''
+banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856410/corneel/geuzebroek_uk0ljo.jpg
 client: Nanda Geuzebroek
 team: Corneel Online
 services: Hugo, Netlify CMS
-delivery_date: 2020-04-23T00:00:00+02:00
+delivery_date: 2020-04-23T00:00:00.000+02:00
 visit_website: https://geuzebroek.info/
 seo_title: Geuzebroek.info
 seo_description: Geuzebroek.info biedt informatie over de genealogie en over vondelingen
   en hun geschiedenis.
 published: true
+featured: false
 
 ---
 Geuzebroek.info biedt informatie over de genealogie en over vondelingen en hun geschiedenis. Nanda Geuzebroek heeft onderzoek gedaan naar haar familiegeschiedenis en deze geschiedenis uitgebreid gedocumenteerd. Toen ze op een vondelingenvoorouder stuitte is ze verder in de vondelingenproblematiek gedoken. Ze heeft hier een boek over gepubliceerd en op de website is veel aanvullende informatie over dit onderwerp te vinden.

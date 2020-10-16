@@ -11,6 +11,8 @@ seo_description: Fotogroep Haarlem is een groep enthousiaste amateurfotografen d
   in clubverband hun plezier in fotografie willen delen en verdiepen.
 published: true
 featured: false
+summary: Fotogroep Haarlem is een groep enthousiaste amateurfotografen die in clubverband
+  hun plezier in fotografie willen delen en verdiepen.
 
 ---
 Fotogroep Haarlem is een groep enthousiaste amateurfotografen die in clubverband hun plezier in fotografie willen delen en verdiepen.

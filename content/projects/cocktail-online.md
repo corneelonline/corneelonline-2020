@@ -11,6 +11,8 @@ seo_description: Cocktail Online werkt aan het verbeteren van het leven en de ka
   van LHBTI-asielzoekers in Nederland
 published: true
 featured: false
+summary: Cocktail Online werkt aan het verbeteren van het leven en de kansen van LHBTI-asielzoekers
+  in Nederland.
 
 ---
 Cocktail Online werkt aan het verbeteren van het leven en de kansen van LHBTI-asielzoekers in Nederland.

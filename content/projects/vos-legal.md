@@ -9,7 +9,7 @@ visit_website: http://www.voslegal.eu
 seo_title: Vos Legal
 seo_description: Vos Legal is specialist in contracten, vertalingen en juridische
   dienstverlening voor overheden, advocatenkantoren, NGO’s, bedrijfsleven en particulieren.
-draft: true
+published: true
 
 ---
 Vos Legal is specialist in contracten, vertalingen en juridische dienstverlening voor overheden, advocatenkantoren, NGO’s, bedrijfsleven en particulieren.

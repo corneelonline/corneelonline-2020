@@ -9,7 +9,7 @@ visit_website: https://www.marcoverheul.nl/
 seo_title: Marco Verheul Photography
 seo_description: Marco Verheul Photography is de persoonlijke fotografie website van
   Marco Verheul, eigenaar van Corneel Online.
-draft: true
+published: true
 
 ---
 Marco Verheul Photography is de persoonlijke fotografie website van Marco Verheul, eigenaar van Corneel Online.

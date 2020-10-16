@@ -9,7 +9,7 @@ visit_website: https://www.cocktailonline.nl/
 seo_title: Cocktail Online
 seo_description: Cocktail Online werkt aan het verbeteren van het leven en de kansen van
   LHBTI-asielzoekers in Nederland
-draft: true
+published: true
 
 ---
 Cocktail Online werkt aan het verbeteren van het leven en de kansen van LHBTI-asielzoekers in Nederland.

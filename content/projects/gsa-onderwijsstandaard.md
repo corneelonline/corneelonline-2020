@@ -1,5 +1,5 @@
 ---
-draft: true
+published: true
 title: GSA Onderwijsstandaard
 banner_image_url: ''
 client: COC Nederland

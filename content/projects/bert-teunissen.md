@@ -1,5 +1,5 @@
 ---
-draft: true
+published: true
 title: Bert Teunissen
 banner_image_url: ''
 client: Bert Teunissen

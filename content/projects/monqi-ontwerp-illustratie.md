@@ -1,5 +1,5 @@
 ---
-draft: true
+published: true
 title: MONQI Ontwerp & Illustratie
 banner_image_url: ''
 client: MONQI Ontwerp & Illustratie

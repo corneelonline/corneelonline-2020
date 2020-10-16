@@ -1,5 +1,5 @@
 ---
-draft: true
+published: true
 title: Doesburg Coaching
 banner_image_url: ''
 client: Doesburg Coaching

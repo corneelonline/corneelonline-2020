@@ -11,6 +11,8 @@ seo_description: Meertalige website voor Ateliers Frans de Roo, lijstenmaker en 
   Het betreft lijsten voor musea, waarin de oude meesters in worden getoond.
 published: true
 featured: false
+summary: Meertalige website voor Ateliers Frans de Roo, lijstenmaker en restaurateur.
+  Het betreft lijsten voor musea, waarin de oude meesters in worden getoond.
 
 ---
 Meertalige website voor Ateliers Frans de Roo, lijstenmaker en restaurateur. Het betreft lijsten voor musea, waarin de oude meesters in worden getoond.

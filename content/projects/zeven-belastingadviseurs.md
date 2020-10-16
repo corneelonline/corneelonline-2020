@@ -8,8 +8,9 @@ visit_website: https://zevencs.nl/
 seo_title: Zeven Belastingadviseurs
 seo_description: Belasting betalen moeten we allemaal maar teveel betalen wil niemand.
   Dat is het specialisme van Zeven Belastingadviseurs.
-draft: true
+draft: false
 banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/zeven_xhthzu.jpg
+featured: false
 
 ---
 WordPress website voor Zeven Belastingadviseurs.

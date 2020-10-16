@@ -11,12 +11,11 @@ fields:
   config:
     required: false
   label: Title
-- name: banner_image
-  type: file
+- name: banner_image_url
+  type: text
   config:
-    maxSize: 64
-  label: Banner image
-  description: The main image on top of the project page
+    required: false
+  label: Banner image url
 - name: client
   type: text
   config:

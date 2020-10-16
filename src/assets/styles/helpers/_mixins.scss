@@ -95,6 +95,7 @@
   font-family: var(--ff-header);
   text-transform: uppercase;
   color: var(--color-white);
+  border: none;
   background-color: var(--color-orange);
   background-image: url('~@/assets/images/arrow-white-right.svg');
   background-position: calc(100% - (var(--gutter-sm))) 50%;
@@ -159,6 +160,23 @@
   @media (min-width: $xl) {
     height: 150px;
     bottom: -150px;
+  }
+}
+@mixin bottom-triangle-margins {
+  position: relative;
+  margin-bottom: 80px;
+
+  @media (min-width: $sm) {
+    margin-bottom: 110px;
+  }
+  @media (min-width: $md) {
+    margin-bottom: 110px;
+  }
+  @media (min-width: $lg) {
+    margin-bottom: 130px;
+  }
+  @media (min-width: $xl) {
+    margin-bottom: 170px;
   }
 }
 

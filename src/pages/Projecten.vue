@@ -1,57 +1,182 @@
 <template>
   <Layout>
-    <section class="page-intro">
-      <h1>Projecten</h1>
-      <h2 class="headline">Wat ik doe</h2>
-      <p>Corneel Online brengt jouw idee&euml;n tot leven. Met een team van webprofessionals ontwikkel ik doordachte (mobiele) websites en webapplicaties die laten zien wie jij bent en waar jij voor staat.</p>
-    </section>
-    <section class="featured-projects">
-      <h2>Uitgelichte projecten</h2>
-      <div class="featured-project">
-        <div class="featured-project__image">
-          [IMAGE]
-        </div>
-        <div class="featured-project__body">
-          <h3>GSA Onderwijsstandaard</h3>
-          <p>Met mijn netwerk van webdesigners zorgen we voor een uniek ontwerp dat precies past bij jouw project, jouw organisatie en jouw persoonlijkheid.</p>
-          <g-link to="/" class="button">Meer over deze case</g-link>
-        </div>
-        <div class="featured-project__body">
-          <h3>GSA Onderwijsstandaard</h3>
-          <p>Met mijn netwerk van webdesigners zorgen we voor een uniek ontwerp dat precies past bij jouw project, jouw organisatie en jouw persoonlijkheid.</p>
-          <g-link to="/" class="button">Meer over deze case</g-link>
-        </div>
-        <div class="featured-project__body">
-          <h3>GSA Onderwijsstandaard</h3>
-          <p>Met mijn netwerk van webdesigners zorgen we voor een uniek ontwerp dat precies past bij jouw project, jouw organisatie en jouw persoonlijkheid.</p>
-          <g-link to="/" class="button">Meer over deze case</g-link>
-        </div>
+    <PageIntro 
+      v-bind:title="$page.post.title"
+      v-bind:headline="$page.post.headline"
+      v-bind:intro="$page.post.introduction_text"
+    />
+    <section class="featured-cases">
+      <div class="wrapper">
+        <h2>Uitgelichte projecten</h2>
+        <ProjectExcerpt />
+        <ProjectExcerpt />
+        <ProjectExcerpt />
       </div>
     </section>
     <section class="all-projects">
-      <div class="project-teaser">
-        [PROJECT-TEASER]
-      </div>
-      <div class="project-teaser">
-        [PROJECT-TEASER]
-      </div>
-      <div class="project-teaser">
-        [PROJECT-TEASER]
-      </div>
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
+      <ProjectTeaser />
     </section>
     <ContactMe />
   </Layout>
 </template>
 
+<page-query>
+query {
+  post: webpage(id: "b1876516c2866f7a2a29760bf0434237") {
+    title
+    fileInfo {
+      name
+    }
+    headline
+    introduction_text
+    seo_title
+    seo_description
+  }
+}
+</page-query>
+
 <script>
+import PageIntro from '~/components/layout/PageIntro.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
+import ProjectExcerpt from '~/components/project/Excerpt.vue'
+import ProjectTeaser from '~/components/project/Teaser.vue'
 
 export default {
-  metaInfo: {
-    title: 'Projecten'
+  metaInfo() {
+    return {
+      title: this.$page.post.seo_title,
+      meta: [
+        {
+          name: "description",
+          content: this.$page.post.seo_description
+        },
+        {
+          property: "og:title",
+          content: this.$page.post.seo_title
+        },
+        {
+          property: "og:description",
+          content: this.$page.post.seo_description
+        },
+        {
+          property: "og:image",
+          content: ""
+        }
+      ],
+      bodyAttrs: {
+        class: this.$page.post.fileInfo.name
+      }
+    }
   },
   components: {
-    ContactMe
+    PageIntro,
+    ContactMe,
+    ProjectExcerpt,
+    ProjectTeaser
   }
 }
 </script>
+
+<style lang="scss">
+// -----------------------------------------
+// featured projects section
+// -----------------------------------------
+.featured-cases {
+  @include bottom-triangle-margins;
+  background-color: var(--color-orange-light);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &::after {
+    @include bottom-triangle(var(--color-orange-light));
+  }
+
+  .wrapper {
+    @include container;
+
+    @media (min-width: $lg) {
+      @include container-narrow;
+    }
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+// -----------------------------------------
+// all projects section
+// -----------------------------------------
+.all-projects {
+  padding-bottom: 2rem;
+
+  @media (min-width: $sm) {
+    @include container;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 204px);
+    justify-content: space-evenly;
+  }
+  @media (min-width: $md) {
+    grid-template-columns: repeat(auto-fill, 220px);
+    justify-content: space-between;
+  }
+  @media (min-width: $lg) {
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: space-between;
+  }
+  @media (min-width: $lg) {
+    grid-template-columns: repeat(auto-fill, 311px);
+    justify-content: space-evenly;
+  }
+
+  & > .project__teaser {
+    margin-bottom: 2rem;
+
+    @media (min-width: $sm) {
+      width: 204px;
+    }
+    @media (min-width: $md) {
+      width: 220px;
+    }
+    @media (min-width: $lg) {
+      width: 300px;
+    }
+    @media (min-width: $xl) {
+      width: 311px;
+    }
+    
+    .project-img {
+      @media (min-width: $md) {
+        width: 100%;
+      }
+
+      img {
+        @media (min-width: $md) {
+          top: 13px;
+          left: 19px;
+        }
+        @media (min-width: $lg) {
+          top: 18px;
+          left: 25px;
+          width: 83.5%;
+        }
+        @media (min-width: $xl) {
+          width: 83%;
+        }
+      }
+    }
+  }
+}
+</style>

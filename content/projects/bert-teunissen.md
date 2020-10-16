@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: Bert Teunissen
 banner_image_url: ''
 client: Bert Teunissen
@@ -8,7 +8,9 @@ services: WordPress
 delivery_date: 
 visit_website: ''
 seo_title: Bert Teunissen
-seo_description: 'Website voor topfotograaf Bert Teunissen. Op deze online portfolio wordt het commerciële en het vrije werk getoond.'
+seo_description: Website voor topfotograaf Bert Teunissen. Op deze online portfolio
+  wordt het commerciële en het vrije werk getoond.
+featured: false
 
 ---
 Website voor topfotograaf Bert Teunissen. Op deze online portfolio wordt het commerciële en het vrije werk getoond.

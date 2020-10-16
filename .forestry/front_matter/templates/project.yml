@@ -19,6 +19,15 @@ fields:
   config:
     required: false
   label: Banner image url
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Summary
 - name: client
   type: text
   config:

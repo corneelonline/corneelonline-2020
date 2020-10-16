@@ -1,14 +1,16 @@
 ---
 title: QST Safe Skies
-banner_image_url: ''
+banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/qst-safe-skies_b0hkut.jpg
 client: QST Safe Skies
 team: Corneel Online, MD2 Mediaconcepts & Design, Orange Monkey
 services: Vue.js, Gridsome, Forestry CMS
-delivery_date: 2020-06-05T00:00:00+02:00
+delivery_date: 2020-06-05T00:00:00.000+02:00
 visit_website: https://www.qst-safe-skies.com/
 seo_title: QST Safe Skies
-seo_description: QST Safe Skies richt zich op het vergroten van het verandervermogen binnen organisaties en teams.
+seo_description: QST Safe Skies richt zich op het vergroten van het verandervermogen
+  binnen organisaties en teams.
 published: true
+featured: false
 
 ---
 QST Safe Skies richt zich op het vergroten van het verandervermogen binnen organisaties

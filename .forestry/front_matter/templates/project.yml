@@ -6,6 +6,9 @@ fields:
   type: boolean
   label: Published
   default: false
+- name: featured
+  type: boolean
+  label: Featured
 - name: title
   type: text
   config:

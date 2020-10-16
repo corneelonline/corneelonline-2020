@@ -13,6 +13,10 @@ sections:
   path: content/diensten.md
   label: Diensten
 - type: document
+  path: content/projecten.md
+  label: Projecten
+  match: "**/*"
+- type: document
   path: content/contact.md
   label: Contact
 - type: document

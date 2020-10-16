@@ -6,7 +6,7 @@
       </figure>
       <div class="project-excerpt__body">
         <h3>{{project.title}}</h3>
-        <div v-html="project.content"/>
+        <div v-html="project.summary"/>
         <button class="button">Meer over deze case</button>
       </div>
     </g-link>

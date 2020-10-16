@@ -12,20 +12,7 @@
       </div>
     </section>
     <section class="all-projects">
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
+      <ProjectTeaser v-for="edge in $page.allProjects.edges" :key="edge.node.id" v-bind:project="edge.node"/>
     </section>
     <ContactMe />
   </Layout>
@@ -49,7 +36,7 @@ query {
         title
         banner_image_url
         path
-        content
+        summary
       }
     }
   }
@@ -58,6 +45,7 @@ query {
 			node {
         title
         banner_image_url
+        path
       }
     }
   }

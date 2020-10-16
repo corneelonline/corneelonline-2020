@@ -1,8 +1,8 @@
 <template>
   <div class="project__teaser">
-    <g-link to="/projecten/">
+    <g-link :to="project.path">
       <figure class="project-img">
-        <g-image src="~/assets/images/dummy-project-1.png" alt="project img" />
+        <g-image :src="project.banner_image_url" alt="project img" />
       </figure>
     </g-link>
   </div>
@@ -11,7 +11,9 @@
 <script>
 export default {
   name: 'ProjectTeaser',
-  props: ['title']
+  props: {
+    project: Object
+  }
 }
 </script>
 

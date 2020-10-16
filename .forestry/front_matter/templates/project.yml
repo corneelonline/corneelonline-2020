@@ -4,16 +4,8 @@ hide_body: false
 fields:
 - name: published
   type: boolean
-<<<<<<< HEAD
   label: Published
   default: false
-=======
-  label: Draft
-  default: true
-- name: featured
-  type: boolean
-  label: Featured
->>>>>>> 7f7a9000bacf9298b57e5c3f8d3c3e4a399d5404
 - name: title
   type: text
   config:

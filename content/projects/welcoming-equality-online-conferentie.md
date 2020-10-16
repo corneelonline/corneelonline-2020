@@ -10,12 +10,7 @@ visit_website: https://projectwe.nl/
 seo_title: Welcoming Equality Online Conferentie
 seo_description: WE– Connect Europe is een conferentie over LGBTI-asiel en migratie,
   georganiseerd door COC Nederland.
-<<<<<<< HEAD
 published: true
-=======
-draft: false
-featured: true
->>>>>>> 7f7a9000bacf9298b57e5c3f8d3c3e4a399d5404
 
 ---
 ## Van live naar online event door COVID-19

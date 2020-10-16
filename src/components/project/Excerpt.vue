@@ -1,12 +1,12 @@
 <template>
   <div class="project-excerpt">
-    <g-link class="project-details" to="/projecten/">
+    <g-link class="project-details" :to="project.path">
       <figure class="project-excerpt__img">
-        <g-image src="~/assets/images/dummy-project-1.png" alt="project img" />
+        <g-image :src="project.banner_image_url" alt="project img" />
       </figure>
       <div class="project-excerpt__body">
-        <h3>GSA Onderwijsstandaard</h3>
-        <p>Met mijn netwerk van webdesigners zorgen we voor een uniek ontwerp dat precies past bij jouw project, jouw organisatie en jouw persoonlijkheid.</p>
+        <h3>{{project.title}}</h3>
+        <div v-html="project.content"/>
         <button class="button">Meer over deze case</button>
       </div>
     </g-link>
@@ -16,7 +16,9 @@
 <script>
 export default {
   name: 'ProjectExcerpt',
-  props: ['title']
+  props: {
+    project: Object
+  }
 }
 </script>
 

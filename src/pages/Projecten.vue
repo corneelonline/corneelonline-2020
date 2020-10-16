@@ -8,9 +8,7 @@
     <section class="featured-cases">
       <div class="wrapper">
         <h2>Uitgelichte projecten</h2>
-        <ProjectExcerpt />
-        <ProjectExcerpt />
-        <ProjectExcerpt />
+        <ProjectExcerpt v-for="edge in $page.featuredProjects.edges" :key="edge.node.id" v-bind:project="edge.node"/>
       </div>
     </section>
     <section class="all-projects">
@@ -44,6 +42,24 @@ query {
     introduction_text
     seo_title
     seo_description
+  }
+  featuredProjects: allProject(sortBy: "delivery_date", order: DESC, filter: { published: { eq: true }, featured: { eq: true }}) {
+    edges {
+			node {
+        title
+        banner_image_url
+        path
+        content
+      }
+    }
+  }
+  allProjects: allProject(sortBy: "delivery_date", order: DESC, filter: { published: { eq: true }, featured: { eq: false }}) {
+    edges {
+			node {
+        title
+        banner_image_url
+      }
+    }
   }
 }
 </page-query>

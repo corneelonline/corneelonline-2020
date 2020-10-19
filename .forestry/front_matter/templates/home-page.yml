@@ -42,11 +42,11 @@ fields:
     schema:
       format: html-blocks
   label: Services text
-- name: big_image_url
-  type: text
+- name: big_image_one
+  type: file
   config:
-    required: false
-  label: Big image url
+    maxSize: 64
+  label: Big image one
 - name: about_corneel_title
   type: text
   config:
@@ -66,11 +66,11 @@ fields:
     schema:
       format: html-blocks
   label: About Corneel text
-- name: big_image_url_two
-  type: text
+- name: big_image_two
+  type: file
   config:
-    required: false
-  label: Big image url two
+    maxSize: 64
+  label: Big image two
 - name: seo_information
   type: include
   config: {}

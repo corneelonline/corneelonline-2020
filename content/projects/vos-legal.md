@@ -1,6 +1,5 @@
 ---
 title: Vos Legal
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856412/corneel/voslegal-nl_arxidg.jpg
 client: Vos Legal
 team: Corneel Online, Ingeborg Rosenberg
 services: WordPress

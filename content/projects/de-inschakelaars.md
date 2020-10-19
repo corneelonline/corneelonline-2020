@@ -1,6 +1,5 @@
 ---
 title: De Inschakelaars
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602859105/corneel/deinschakelaars_vcp3lz.jpg
 client: De Inschakelaars
 team: Corneel Online, MD2 Mediaconcepts & Design
 services: WordPress

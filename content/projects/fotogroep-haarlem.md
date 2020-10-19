@@ -1,6 +1,5 @@
 ---
 title: Fotogroep Haarlem
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856410/corneel/fotogroephaarlem_abti20.jpg
 client: Fotogroep Haarlem
 team: Corneel Online
 services: WordPress, Design

@@ -1,6 +1,5 @@
 ---
 title: QST Safe Skies
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/qst-safe-skies_b0hkut.jpg
 client: QST Safe Skies
 team: Corneel Online, MD2 Mediaconcepts & Design, Orange Monkey
 services: Vue.js, Gridsome, Forestry CMS

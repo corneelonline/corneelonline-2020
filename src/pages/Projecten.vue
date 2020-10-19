@@ -34,7 +34,7 @@ query {
     edges {
 			node {
         title
-        banner_image_url
+        main_image
         path
         summary
       }
@@ -44,7 +44,7 @@ query {
     edges {
 			node {
         title
-        banner_image_url
+        main_image
         path
       }
     }
@@ -77,7 +77,7 @@ export default {
         },
         {
           property: "og:image",
-          content: ""
+          content: this.$page.post.main_image
         }
       ],
       bodyAttrs: {

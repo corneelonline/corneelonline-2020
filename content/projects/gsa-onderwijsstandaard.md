@@ -1,7 +1,6 @@
 ---
 published: false
 title: GSA Onderwijsstandaard
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602858697/corneel/gsa-onderwijsstandaard_ib3sr8.jpg
 client: COC Nederland
 team: Corneel Online, Buro RuSt, Maarten van Gelder
 services: WordPress

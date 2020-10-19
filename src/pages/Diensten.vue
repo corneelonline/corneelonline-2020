@@ -12,7 +12,7 @@
       </ServiceExcerpt>
     </section>
     <section class="big-image services">
-      <g-image :src="$page.post.big_image_url" alt="control room" />
+      <g-image :src="$page.post.big_image_one" alt="control room" />
     </section>
     <section class="process">
       <h2>Hoe ik het doe</h2>
@@ -39,7 +39,7 @@ query {
     }
     headline
     introduction_text
-    big_image_url
+    big_image_one
     process_steps {
       step_nr
       title

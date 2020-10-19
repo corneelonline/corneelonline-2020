@@ -1,6 +1,5 @@
 ---
 title: Cocktail Online
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602859183/corneel/cocktailonline_gi9vwk.jpg
 client: COC Nederland
 team: Corneel Online, Kirsten Fabels
 services: WordPress

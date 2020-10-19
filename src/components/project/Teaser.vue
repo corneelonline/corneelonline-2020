@@ -2,7 +2,7 @@
   <div class="project__teaser">
     <g-link :to="project.path">
       <figure class="project-img">
-        <g-image :src="project.banner_image_url" alt="project img" />
+        <g-image :src="project.main_image" alt="project img" />
       </figure>
     </g-link>
   </div>

@@ -1,6 +1,5 @@
 ---
 title: Direct Financial Control
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856410/corneel/directfinancialcontrol_rpgedu.jpg
 client: Direct Financial Control
 team: Corneel Online, MD2 Mediaconcepts & Design
 services: WordPress

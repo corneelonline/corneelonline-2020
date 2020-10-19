@@ -1,6 +1,5 @@
 ---
 title: HoyngDeMönnink Advocatuur & Mediation
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/hoyngdemonnink_goifpl.jpg
 client: HoyngDeMönnink Advocatuur & Mediation
 team: Corneel Online, MONQI Ontwerp & Illustratie
 services: WordPress

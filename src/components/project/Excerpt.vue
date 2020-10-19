@@ -2,7 +2,7 @@
   <div class="project-excerpt">
     <g-link class="project-details" :to="project.path">
       <figure class="project-excerpt__img">
-        <g-image :src="project.banner_image_url" alt="project img" />
+        <g-image :src="project.main_image" alt="project img" />
       </figure>
       <div class="project-excerpt__body">
         <h3>{{project.title}}</h3>

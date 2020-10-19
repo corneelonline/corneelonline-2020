@@ -1,6 +1,5 @@
 ---
 title: Niels Watermulder
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856412/corneel/watermulder_w1kkea.jpg
 client: Niels Watermulder
 team: Corneel Online
 services: ProcessWire, Design

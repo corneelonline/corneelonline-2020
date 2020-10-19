@@ -1,6 +1,5 @@
 ---
 title: Toesjee! Managementondersteuning
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/toesjee_tflyfe.jpg
 client: Toesjee! Managementondersteuning
 team: Corneel Online, Atelier Made
 services: WordPress

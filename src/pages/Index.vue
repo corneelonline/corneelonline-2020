@@ -18,7 +18,7 @@
       </div>
     </section>
     <section class="big-image">
-      <g-image :src="$page.post.big_image_url" alt="control room" />
+      <g-image :src="$page.post.big_image_one" alt="control room" />
     </section>
     <section class="featured-projects">
       <header>
@@ -32,13 +32,13 @@
     <section class="about-corneel">
       <h2>{{$page.post.about_corneel_title}}</h2>
       <div class="about-corneel__image">
-        <g-image :src="$page.post.about_corneel_image_url" alt="foto van Marco Verheul" />
+        <g-image :src="$page.post.about_corneel_image" alt="foto van Marco Verheul" />
       </div>
       <div class="about-corneel__body" v-html="$page.post.about_corneel_text"/>
     </section>
     <ContactMe />
     <BigImage>
-      <g-image :src="$page.post.big_image_url_two" alt="control room" />
+      <g-image :src="$page.post.big_image_two" alt="control room" />
     </BigImage>
   </Layout>
 </template>
@@ -53,10 +53,10 @@ query {
     introduction_title
     call_to_action_label
     about_corneel_title
-    about_corneel_image_url
+    about_corneel_image
     about_corneel_text
-    big_image_url
-    big_image_url_two
+    big_image_one
+    big_image_two
     fileInfo {
       name
     }

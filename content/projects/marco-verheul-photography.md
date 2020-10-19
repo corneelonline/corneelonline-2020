@@ -1,6 +1,5 @@
 ---
 title: Marco Verheul Photography
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/marcoverheul-home_oj2fzs.jpg
 client: Marco Verheul
 team: Corneel Online
 services: WordPress

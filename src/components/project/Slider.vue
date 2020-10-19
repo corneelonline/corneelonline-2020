@@ -1,13 +1,25 @@
 <template>
   <div class="featured-projects__teasers">
     <VueSlickCarousel v-bind="settings">
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
-      <ProjectTeaser />
+      <ProjectTeaser v-for="edge in $static.featuredProjects.edges" :key="edge.node.id" v-bind:project="edge.node"/>
     </VueSlickCarousel>
   </div>
 </template>
+
+<static-query>
+query {
+  featuredProjects: allProject(sortBy: "delivery_date", order: DESC, filter: { published: { eq: true }, featured: { eq: true }}) {
+    edges {
+			node {
+        title
+        main_image
+        path
+        summary
+      }
+    }
+  }
+}
+</static-query>
 
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'

@@ -1,6 +1,5 @@
 ---
 title: GSA Netwerk
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856410/corneel/gsanetwerk_htlwwa.jpg
 client: COC Nederland
 team: OCCHIO, Corneel Online, Buro RuSt
 services: WordPress

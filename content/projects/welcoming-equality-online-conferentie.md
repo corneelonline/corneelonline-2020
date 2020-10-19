@@ -1,6 +1,5 @@
 ---
 title: Welcoming Equality Online Conferentie
-banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/welcoming-equality_efxp8l.jpg
 client: COC Nederland
 team: Corneel Online, Kirsten Fabels, Maarten van Gelder, THAT'S ELSE Project & Eventmangement,
   Roca Productions

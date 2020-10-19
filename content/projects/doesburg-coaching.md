@@ -1,7 +1,6 @@
 ---
 published: false
 title: Doesburg Coaching
-banner_image_url: ''
 client: Doesburg Coaching
 team: Corneel Online, MD2 Mediaconcepts & Design
 services: WordPress

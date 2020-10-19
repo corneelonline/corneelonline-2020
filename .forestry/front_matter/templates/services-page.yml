@@ -22,11 +22,11 @@ fields:
     schema:
       format: html-blocks
   label: Introduction text
-- name: big_image_url
-  type: text
+- name: big_image_one
+  type: file
   config:
-    required: false
-  label: Big image url
+    maxSize: 64
+  label: Big image
 - name: process_steps
   type: field_group_list
   fields:

@@ -13,6 +13,9 @@ published: true
 featured: false
 summary: Vos Legal is specialist in contracten, vertalingen en juridische dienstverlening
   voor overheden, advocatenkantoren, NGO’s, bedrijfsleven en particulieren.
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602856412/corneel/voslegal-nl_arxidg.jpg
 
 ---
-Vos Legal is specialist in contracten, vertalingen en juridische dienstverlening voor overheden, advocatenkantoren, NGO’s, bedrijfsleven en particulieren.
+Vos Legal is specialist in contracten, vertalingen en juridische dienstverlening voor overheden, advocatenkantoren, NGO’s, bedrijfsleven en particulieren. Vos Legal ia gevestigd in Parijs en bedient een internationale clientèle.
+
+[Ingeborg Rosenberg](http://www.ingeborgrosenberg.nl/) heeft een eenvoudige, maar ook schitterende website ontworpen, Corneel Online heeft deze gerealiseerd.

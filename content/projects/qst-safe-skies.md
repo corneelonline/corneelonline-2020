@@ -15,6 +15,7 @@ summary: QST Safe Skies richt zich op het vergroten van het verandervermogen bin
   organisaties en teams en is tevens een van de eerste klanten van Corneel Online.
   Voor de nieuwste website is gekozen voor een JAMstack oplossing. Het resultaat is
   een frisse, zeer snelle website, die makkelijk bij te werken is door de klant.
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/qst-safe-skies_b0hkut.jpg
 
 ---
 QST Safe Skies richt zich op het vergroten van het verandervermogen binnen organisaties

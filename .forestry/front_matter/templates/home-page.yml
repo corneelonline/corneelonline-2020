@@ -52,11 +52,11 @@ fields:
   config:
     required: false
   label: About Corneel title
-- name: about_corneel_image_url
-  type: text
+- name: about_corneel_image
+  type: file
   config:
-    required: false
-  label: About Corneel image url
+    maxSize: 64
+  label: About Corneel image
 - name: about_corneel_text
   type: textarea
   default: ''

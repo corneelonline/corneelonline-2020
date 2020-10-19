@@ -2,7 +2,7 @@
 title: Ateliers Frans de Roo
 banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602859308/corneel/ateliersfransderoo_xysj3b.jpg
 client: Ateliers Frans de Roo
-team: Corneel Online, Ingeborg Rosenberg
+team: Corneel Online, Ingeborg Rosenberg, Ron de Gruyl
 services: WordPress, Design
 delivery_date: 2019-02-14T00:00:00.000+01:00
 visit_website: http://ateliersfransderoo.com/nl/

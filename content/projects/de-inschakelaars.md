@@ -13,6 +13,11 @@ published: true
 featured: false
 summary: De Inschakelaars helpt burgers en maatschappelijke organisaties om Haarlem
   duurzamer te maken en bewoners met elkaar in contact te brengen.
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602859105/corneel/deinschakelaars_vcp3lz.jpg
 
 ---
 De Inschakelaars helpt burgers en maatschappelijke organisaties om Haarlem duurzamer te maken en bewoners met elkaar in contact te brengen.
+
+Het bruist van de maatschappelijke initiatieven in Haarlemse wijken en buurten. Steeds vaker nemen burgers en maatschappelijke organisaties met succes het heft in eigen hand om de stad duurzamer te maken en bewoners met elkaar in contact te brengen. Soms is er wat hulp nodig om het plan tot een succes te maken. De Inschakelaars kunnen je daarbij helpen.
+
+Marc Don van [MD2](https://md2.nl/) heeft de huisstijl ontworpen, inclusief een strak en modern website ontwerp. Corneel Online heeft dit verwerkt in een strakke website.

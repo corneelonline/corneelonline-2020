@@ -11,14 +11,14 @@ services_text: "<p>Corneel Online creëert prachtige websites en webapplicaties 
   winst. Ik ontwikkel doordachte (mobiele) websites en webapplicaties.</p>"
 introduction_title: Web development met een missie
 call_to_action_label: Bekijk recente projecten
-big_image_one: corneel/v1602598164/corneel/control-room-01_smz913.jpg
+big_image_one: https://res.cloudinary.com/corneel-online/image/upload/v1602598164/corneel/control-room-01_smz913.jpg
 about_corneel_title: Over Corneel
 about_corneel_image: corneel/v1602584134/corneel/Foto-Marco_s953tj.jpg
 about_corneel_text: "<p>Ik ben Marco Verheul, web developer bij Corneel Online, mijn
   Haarlems webbureau. Ik ontwikkel doordachte (mobiele) websites en webapplicaties
   zoals het hoort: snel, clean, functioneel, vindbaar, veilig en 100% maatwerk.</p><p>Ik
   werk rechtstreeks voor opdrachtgevers, maar je kan me ook op freelance basis inhuren.</p>"
-big_image_two: corneel/v1602597715/corneel/control-room-02_lgjso2.jpg
+big_image_two: https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg
 big_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602598164/corneel/control-room-01_smz913.jpg
 about_corneel_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602584134/corneel/Foto-Marco_s953tj.jpg
 big_image_url_two: https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg

@@ -12,6 +12,7 @@ published: true
 banner_image_url: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/zeven_xhthzu.jpg
 featured: false
 summary: WordPress website voor Zeven Belastingadviseurs.
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/zeven_xhthzu.jpg
 
 ---
-WordPress website voor Zeven Belastingadviseurs.
+Zeven Belastingadviseurs helpt particulieren en ondernemers met alle zaken rondom belastingen. Zoals ze het zelf zeggen: "Uw belasting mag geen aanslag zijn". In 2019 is er een nieuwe huisstijl geïntroduceerd. Corneel Online heeft de nieuwe WordPress website gerealiseerd.

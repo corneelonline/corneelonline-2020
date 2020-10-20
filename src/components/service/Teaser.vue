@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .home-services__teaser {
   display: flex;
   flex-direction: column;

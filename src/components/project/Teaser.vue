@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .project__teaser {
   width: 100%;
   height: 143px;

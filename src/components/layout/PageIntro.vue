@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .page-intro {
   @include container-narrow-half;
   padding-top: 2rem;

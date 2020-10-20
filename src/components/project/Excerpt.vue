@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .project-excerpt {
   margin-bottom: 3rem;
 

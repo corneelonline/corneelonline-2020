@@ -38,7 +38,7 @@ query {
 }
 </static-query>
 
-<style lang="scss">
+<style scoped lang="scss">
 .page-footer {
 // -------------------------------------
 // footer section

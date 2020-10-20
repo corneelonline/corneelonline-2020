@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .debug-bar {
   @include font-size(0.8);
   width: 3rem;

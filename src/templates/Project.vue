@@ -5,10 +5,12 @@
     </section>
     <section class="project-single">
       <g-link to="/projecten/" class="button-back">Terug</g-link>
-      <h2 v-html="$page.project.title"/>
-      <figure class="main-image">
-        <g-image src="~/assets/images/dummy-project-1.png" alt="project img" />
-      </figure>
+      <h2 class="project-title" v-html="$page.project.title"/>
+      <div class="project-img">
+        <figure class="main-image">
+          <g-image :src="$page.project.main_image" alt="project img" />
+        </figure>
+      </div>
       <div class="project-desc">
         <div class="project-desc__details">
           <dl>
@@ -25,13 +27,6 @@
         </div>
         <div class="project-desc__content" v-html="$page.project.content"/>
       </div>
-      <div class="project-case">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dicta amet tempora, eaque minima illo itaque maxime pariatur ea aliquid nemo quas at placeat, praesentium reprehenderit sed. Sed, iste totam.
-      </div>
-      <div class="page-nav">
-        <g-link to="/previous/" class="page-nav__prev">Vorig project</g-link>
-        <g-link to="/next/" class="page-nav__next">Volgend project</g-link>
-      </div>
     </section>
     <ContactMe />
   </Layout>
@@ -42,12 +37,13 @@ query ($path: String!) {
   project(path: $path) {
     id
     title
-    banner_image_url
+    main_image
     client
     team
     services
     delivery_date(format: "YYYY")
     visit_website
+    content
     seo_title
     seo_description
   }
@@ -67,6 +63,159 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
+.page-intro {
+  @include container-narrow-half;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.project-single {
+  @include container;
+  background-color: var(--color-orange-light);
+  border-bottom: 3rem solid var(--color-white);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
+  @media (min-width: $lg) {
+    @include container-narrow;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .button-back {
+    margin-bottom: 2rem;
+  }
 
+  .project-title {
+    @extend .headline;
+    margin-bottom: 2rem;
+  }
+}
+.project-img {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+  
+  @media (min-width: $sm) {
+    justify-content: center;
+  }
+}
+.main-image {
+  display: block;
+  width: 204px;
+  height: 143px;
+  margin-bottom: 1rem;
+  background-image: url('~@/assets/images/bg/laptop.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  
+  @media (min-width: $sm) {
+    width: 570px;
+    height: 360px;
+  }
+  @media (min-width: $md) {
+    width: 760px;
+    height: 470px;
+  }
+  @media (min-width: $lg) {
+    width: 740px;
+    height: 520px;
+  }
+  @media (min-width: $xl) {
+    width: 960px;
+    height: 680px;
+  }
+
+  img {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    width: 168px;
+  
+    @media (min-width: $sm) {
+      top: 30px;
+      left: calc(50% - 212px);
+      width: 424px;
+    }
+    @media (min-width: $md) {
+      top: 40px;
+      left: calc(50% - 277px);
+      width: 554px;
+    }
+    @media (min-width: $lg) {
+      top: 42px;
+      left: calc(50% - 307px);
+      width: 614px;
+    }
+    @media (min-width: $xl) {
+      top: 58px;
+      left: calc(50% - 400px);
+      width: 800px;
+    }
+  }
+}
+.project-desc {
+  @media (min-width: $lg) {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__details {
+    // border: 1px dotted blue;
+    margin-bottom: 2rem;
+
+    @media (min-width: $lg) {
+      width: 45%;
+    }
+
+    dl {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      font-family: var(--ff-header);
+
+      @media (min-width: $lg) {
+        margin-bottom: 4rem;
+      }
+    }
+    dt {
+      padding: .25rem 0 0;
+      color: var(--color-orange);
+      width: 100%;
+  
+      @media (min-width: $sm) {
+        padding: .25rem 0;
+        border-bottom: 1px solid var(--color-orange);
+        width: 35%;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+    dd {
+      padding: 0 0 .25rem;
+      border-bottom: 1px solid var(--color-orange);
+      width: 100%;
+  
+      @media (min-width: $sm) {
+        padding: .25rem 0;
+        width: 65%;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__content {
+    @media (min-width: $lg) {
+      width: 45%;
+    }
+  }
+}
 </style>

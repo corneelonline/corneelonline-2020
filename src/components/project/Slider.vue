@@ -63,7 +63,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .featured-projects__teasers {
   height: 240px;
 

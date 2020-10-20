@@ -29,6 +29,7 @@ html, body {
 #main {
   flex: 1 0 auto;
   background-color: var(--color-white);
+  min-width: 20rem;
   // padding-bottom: var(--gutter-lg);
 }
 
@@ -57,6 +58,10 @@ a:hover {
 // ---------------------------------------------------------
 .button, a.button {
   @include button;
+}
+
+.button-back, a.button-back {
+  @include button-back;
 }
 
 

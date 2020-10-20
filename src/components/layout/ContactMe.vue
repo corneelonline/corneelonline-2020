@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .contact-me {
   height: 450px;
   background: var(--color-gray-lighter);

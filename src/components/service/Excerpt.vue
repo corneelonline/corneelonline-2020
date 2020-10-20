@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .service__excerpt {
   padding-top: 6.4rem;
   padding-bottom: 1rem;

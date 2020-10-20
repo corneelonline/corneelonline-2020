@@ -102,6 +102,20 @@
   background-repeat: no-repeat;
   background-size: 19px 15px;
 }
+@mixin button-back {
+  display: inline-block;
+  padding: 0.6rem 2rem 0.6rem 3.5rem;
+  text-decoration: none;
+  font-family: var(--ff-header);
+  text-transform: uppercase;
+  color: var(--color-white);
+  border: none;
+  background-color: var(--color-gray-dark);
+  background-image: url('~@/assets/images/arrow-white-left.svg');
+  background-position: var(--gutter-sm) 50%;
+  background-repeat: no-repeat;
+  background-size: 19px 15px;
+}
 
 // ------------------------------------------
 // H2 circle decoration

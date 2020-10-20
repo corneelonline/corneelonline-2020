@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .big-image {
   width: 100%;
   padding: 0;

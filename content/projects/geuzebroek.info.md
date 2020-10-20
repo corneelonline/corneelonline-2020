@@ -16,7 +16,7 @@ summary: Geuzebroek.info biedt informatie over de genealogie en over vondelingen
   stuitte is ze verder in de vondelingenproblematiek gedoken. Ze heeft hier een boek
   over gepubliceerd en op de website is veel aanvullende informatie over dit onderwerp
   te vinden.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602856410/corneel/geuzebroek_uk0ljo.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603191067/corneel/geuzebroek_jhgwsx.jpg
 
 ---
 Geuzebroek.info biedt informatie over de genealogie en over vondelingen en hun geschiedenis. Nanda Geuzebroek heeft onderzoek gedaan naar haar familiegeschiedenis en deze geschiedenis uitgebreid gedocumenteerd. Toen ze op een vondelingenvoorouder stuitte is ze verder in de vondelingenproblematiek gedoken. Ze heeft hier [een boek over gepubliceerd](https://verloren.nl/boeken/2086/257/28632/sociaal-economisch/vondelingen) en op de website is veel aanvullende informatie over dit onderwerp te vinden.

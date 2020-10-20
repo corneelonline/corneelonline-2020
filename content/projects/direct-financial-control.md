@@ -15,4 +15,6 @@ summary: Direct Financial Control is een Nederlands bedrijf dat een breed scala 
 main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603107701/corneel/directfinancialcontrol_xbbpcm.jpg
 
 ---
-Direct Financial Control is een Nederlands bedrijf dat een breed scala aan financiële diensten uitvoert voor nationale en internationale ondernemingen.
+Direct Financial Control is een Nederlands bedrijf van Ad van Dijk dat een breed scala aan financiële diensten uitvoert voor nationale en internationale ondernemingen.
+
+Een internationale clientèle vereist een meertalige website. Marc Don van MD2 heeft een moderne en zakelijke huisstijl ontworpen. Corneel heeft de meertalige website gebouwd.

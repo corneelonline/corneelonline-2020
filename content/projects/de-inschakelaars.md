@@ -12,7 +12,7 @@ published: true
 featured: false
 summary: De Inschakelaars helpt burgers en maatschappelijke organisaties om Haarlem
   duurzamer te maken en bewoners met elkaar in contact te brengen.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602859105/corneel/deinschakelaars_vcp3lz.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603107701/corneel/deinschakelaars_i7r7di.jpg
 
 ---
 De Inschakelaars helpt burgers en maatschappelijke organisaties om Haarlem duurzamer te maken en bewoners met elkaar in contact te brengen.

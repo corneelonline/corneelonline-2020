@@ -12,6 +12,7 @@ published: true
 featured: false
 summary: Direct Financial Control is een Nederlands bedrijf dat een breed scala aan
   financiële diensten uitvoert voor nationale en internationale ondernemingen.
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603107701/corneel/directfinancialcontrol_xbbpcm.jpg
 
 ---
 Direct Financial Control is een Nederlands bedrijf dat een breed scala aan financiële diensten uitvoert voor nationale en internationale ondernemingen.

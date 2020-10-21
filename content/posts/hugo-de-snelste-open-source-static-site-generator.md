@@ -5,7 +5,7 @@ tags:
 - Hugo
 - SSR
 title: 'Hugo: de snelste open-source static site generator'
-banner_image: ''
+main_image: ''
 date_published: 
 seo_title: 'Hugo: de snelste open-source static site generator'
 seo_description: Hugo is een van de meest populaire open-source static site generators.

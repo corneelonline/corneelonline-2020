@@ -4,7 +4,7 @@ tags:
 - JAMstack
 - Development
 title: 'JAMstack: de methode voor snelle en veilige websites'
-banner_image: ''
+main_image: ''
 date_published: 
 seo_title: 'JAMstack: de methode voor snelle en veilige websites'
 seo_description: De JAMstack is geen specifieke set tools, maar een nieuwe, moderne

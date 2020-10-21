@@ -5,7 +5,7 @@ tags:
 title: Responsive webdesign
 body: "***"
 published: '2020-09-07T22:00:00.000+00:00'
-banner_image: "/v1599583640/dummy-01_jvg3ti.jpg"
+main_image: "/v1599583640/dummy-01_jvg3ti.jpg"
 seo_title: Responsive webdesign
 seo_description: De techniek die nodig is om de layout van een een website aan te
   passen aan het apparaat waarmee je het bekijkt wordt responsive webdesign genoemd.

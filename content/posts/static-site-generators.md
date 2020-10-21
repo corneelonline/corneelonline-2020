@@ -4,7 +4,7 @@ tags:
 - JAMstack
 - SSR
 title: Static Site Generators
-banner_image: ''
+main_image: ''
 date_published: 
 seo_title: Static Site Generators
 seo_description: 'Een Static Site Generator is een belangrijk onderdeel in web development volgens de JAMstack-methode'

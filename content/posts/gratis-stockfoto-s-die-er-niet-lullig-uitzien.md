@@ -2,7 +2,7 @@
 tags:
 - Design
 title: Gratis stockfoto's die er niet lullig uitzien
-banner_image: ''
+main_image: ''
 date_published: 2017-06-07T22:00:00Z
 seo_title: Gratis stockfoto's die er niet lullig uitzien
 seo_description: Kies voor goed beeldmateriaal op je website. In dit artikel vind

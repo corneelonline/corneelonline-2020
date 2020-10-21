@@ -3,11 +3,12 @@ tags:
 - Veiligheid
 - SEO
 title: Google Chrome bestempelt sites zonder HTTPS als "Niet Veilig"
-main_image: ''
-date_published: 2017-03-20T23:00:00Z
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603283269/corneel/https-save-browsing_b584ov.jpg
+date_published: 2017-03-20T23:00:00.000+00:00
 seo_title: Sites zonder HTTPS "Niet Veilig"
 seo_description: De nieuwe versie van de Google Chrome browser geeft bij websites
   die geen gebruik maken van HTTPS een waarschuwing dat deze niet veilig zijn.
+published: true
 
 ---
 Aan het begin van 2017 is versie 56 van de Chrome browser beschikbaar gekomen. Een van de belangrijke wijzigingen bij deze nieuwe versie is dat bij websites die geen gebruik maken van HTTPS een waarschuwing wordt gegeven dat deze niet veilig zijn. Dit kan verwarring en onrust veroorzaken bij bezoekers die dit niet verwachten of niet goed weten wat ze met deze informatie aanmoeten.

@@ -4,11 +4,12 @@ tags:
 - JAMstack
 - Development
 title: 'JAMstack: de methode voor snelle en veilige websites'
-main_image: ''
-date_published: 
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603289440/corneel/jam-stack_prwkjm.jpg
+date_published: 2020-10-19T00:00:00+02:00
 seo_title: 'JAMstack: de methode voor snelle en veilige websites'
 seo_description: De JAMstack is geen specifieke set tools, maar een nieuwe, moderne
   manier om websites en apps te bouwen.
+published: true
 
 ---
 De JAMstack is geen specifieke set tools, maar een nieuwe, moderne manier om websites en apps te bouwen. Waar komt "J-A-M" vandaan? Van deze drie kernconcepten:

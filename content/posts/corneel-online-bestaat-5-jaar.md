@@ -3,10 +3,11 @@ tags:
 - Corneel
 title: Corneel Online bestaat 5 jaar
 main_image: ''
-date_published: 2020-08-31T22:00:00Z
+date_published: 2020-08-31T22:00:00.000+00:00
 seo_title: Corneel Online bestaat 5 jaar
 seo_description: Het Haarlemse webbureau Corneel Online bestaat 5 jaar. Een mooi moment
   en terug te blikken en vooral om vooruit te kijken.
+published: true
 
 ---
 Op 1 september 2015 ben ik van start gegaan met mijn Haarlemse webbureau Corneel Online. Nu 5 jaar later kijk ik met veel plezier terug naar een fantastische periode met hele interessante opdrachten, fijne opdrachtgevers en leuke samenwerkingen. Ik wil iedereen bedanken die hier op de een of andere manier aan heeft bijgedragen.

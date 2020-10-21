@@ -5,11 +5,12 @@ tags:
 - Gridsome
 - SSR
 title: " Gridsome: Moderne Site Generator voor Vue.js"
-main_image: ''
-date_published: 
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603287588/corneel/gridsome-alt_oalnho.jpg
+date_published: 2020-10-01T00:00:00+02:00
 seo_title: " Gridsome: Moderne Site Generator voor Vue.js"
 seo_description: Gridsome maakt het gemakkelijk om statisch gegenereerde websites
   en apps te bouwen die razendsnel zijn
+published: true
 
 ---
 ## Wat is Gridsome?

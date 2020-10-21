@@ -4,12 +4,13 @@ tags:
 - Development
 - JAMstack
 title: 'Headless CMS: een korte introductie'
-main_image: ''
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603287074/corneel/headless-cms_xguond.jpg
 date_published: 2019-04-15T22:00:00.000+00:00
 seo_title: 'Headless CMS: een korte introductie'
 seo_description: Wat is een headless content management system (CMS) en wanneer gebruik
   je een headless CMS?
 draft: false
+published: true
 
 ---
 Het headless content management systeem (CMS) is aan een opmars bezig. Er is een uitgebreid aanbod van verschillende headless CMS’en en deze systemen winnen vlot aan populariteit. De verwachting is dat toekomstige systemen de vraag naar dit soort CMS’en alleen nog maar zal doen toenemen.

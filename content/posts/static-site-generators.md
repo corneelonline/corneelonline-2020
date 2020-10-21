@@ -4,10 +4,12 @@ tags:
 - JAMstack
 - SSR
 title: Static Site Generators
-main_image: ''
-date_published: 
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603290127/corneel/static-site-generators_ooueds.jpg
+date_published: 2020-10-12T00:00:00+02:00
 seo_title: Static Site Generators
-seo_description: 'Een Static Site Generator is een belangrijk onderdeel in web development volgens de JAMstack-methode'
+seo_description: Een Static Site Generator is een belangrijk onderdeel in web development
+  volgens de JAMstack-methode.
+published: true
 
 ---
 ## Wat is een Static Site Generator?

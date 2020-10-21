@@ -3,10 +3,10 @@ label: Blog post
 hide_body: false
 display_field: title
 fields:
-- name: draft
+- name: published
   type: boolean
-  label: Draft
-  default: true
+  default: false
+  label: Published
 - name: title
   type: text
   config:

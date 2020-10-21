@@ -2,11 +2,12 @@
 tags:
 - Design
 title: Gratis stockfoto's die er niet lullig uitzien
-main_image: ''
-date_published: 2017-06-07T22:00:00Z
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603283797/corneel/stockfoto_lunv5u.jpg
+date_published: 2017-06-07T22:00:00.000+00:00
 seo_title: Gratis stockfoto's die er niet lullig uitzien
 seo_description: Kies voor goed beeldmateriaal op je website. In dit artikel vind
   je websites die goede gratis stockfoto's aanbieden.
+published: true
 
 ---
 Het valt vaak niet mee om goede stockfoto’s te vinden. Je wordt doodgegooid met van die flauwe kantoorfoto’s met lachende collega’s die allemaal dezelfde spreadsheet staan te bewonderen of nog erger, van die illustraties van mensen (m/v) in zakelijk kostuum die een beetje interessant staan te doen in een high tech omgeving. Vaak zijn gratis stockfoto's gewoon van slechte kwaliteit. Gebruik van dit soort foto's doen afbreuk aan je website. ![](https://www.corneelonline.nl/wp-content/uploads/2017/06/stock-photos-examples.png) Kwalitatief hoogstaande afbeeldingen kunnen juist heel goed de inhoud van je website ondersteunen. Een blog ziet er meestal een stuk aantrekkelijker uit als er goed gekozen afbeeldingen bij de artikelen gebruikt worden. Of wat dacht je van een grote achtergrondafbeelding op je homepage of landingspagina. Wil je een goede indruk achterlaten bij je bezoekers, kies dan voor goed beeldmateriaal.

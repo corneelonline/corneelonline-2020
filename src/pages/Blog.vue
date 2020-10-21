@@ -4,7 +4,23 @@
       <h1>Blog</h1>
     </section>
     <section class="blog-posts">
-      <BlogTeaser v-for="edge in $page.posts.edges" :key="edge.node.id" v-bind:post="edge.node"/>
+      <div class="grid" ref="grid" v-images-loaded:on.progress="layout">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+        <article class="blog-post__teaser" v-for="edge in $page.posts.edges" :key="edge.node.id">
+          <g-link class="post-details" :to="edge.node.path">
+            <figure class="cover-image">
+              <g-image src="https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg" alt="blog cover image" />
+            </figure>
+            <ul class="tags">
+              <li>Development</li>
+              <li>CMS</li>
+              <li>WordPress</li>
+            </ul>
+            <h2>{{edge.node.title}}</h2>
+          </g-link>
+        </article>
+      </div>
     </section>
     <ContactMe />
   </Layout>
@@ -25,15 +41,28 @@ query {
 </page-query>
 
 <script>
-import BlogTeaser from '~/components/blog/Teaser.vue'
+import Masonry from 'masonry-layout'
+import imagesLoaded from 'vue-images-loaded'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
   metaInfo: {
     title: 'Blog'
   },
+  directives: {
+    imagesLoaded
+  },
+  methods: {
+    layout(instance, image) {
+      let msnry = new Masonry(this.$refs.grid, {
+        itemSelector: '.blog-post__teaser',
+        columnWidth: '.grid-sizer',
+        gutter: '.gutter-sizer',
+        percentPosition: true
+      });
+    }
+  },
   components: {
-    BlogTeaser,
     ContactMe
   }
 }
@@ -46,6 +75,7 @@ export default {
   padding-bottom: 2rem;
 }
 .blog-posts {
+  // border: 1px solid red;
   @include container;
   background-color: var(--color-gray-light);
   border-bottom: 3rem solid var(--color-white);
@@ -53,9 +83,88 @@ export default {
   padding-bottom: 2rem;
   
   @media (min-width: $lg) {
-    @include container-narrow;
-    padding-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+.gutter-sizer {
+  width: 0;
+
+  @media (min-width: $md) {
+    width: 4%;
+  }
+  @media (min-width: $lg) {
+    width: 3%;
+  }
+}
+.grid-sizer,
+.blog-post__teaser {
+  width: 100%;
+
+  @media (min-width: $md) {
+    width: 48%;
+  }
+  @media (min-width: $lg) {
+    width: 31.33333%;
+  }
+}
+.blog-post__teaser {
+  background-color: var(--color-white);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  .post-details {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  h2 {
+    @extend .h4;
+    color: var(--color-orange);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .cover-image {
+    margin-bottom: 1rem;
+  }
+
+  .tags {
+    margin: 0 1rem;
+  }
+}
+.blog-post__teaser:first-of-type {
+  background-color: var(--color-gray-light);
+  width: 100%;
+    
+  @media (min-width: $lg) {
     padding-bottom: 2rem;
+  }
+
+  .cover-image {
+    order: 1;
+  }
+
+  .tags {
+    order: 2;
+    margin: 0;
+  }
+
+  h2 {
+    order: 0;
+    @extend .h3;
+    color: var(--color-orange);
+    margin-left: 0;
+    
+    @media (min-width: $lg) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.tags {
+  li {
+    @include tag;
   }
 }
 </style>

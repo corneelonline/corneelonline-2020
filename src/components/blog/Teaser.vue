@@ -24,10 +24,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.grid-sizer,
 .blog-post--teaser {
   background-color: var(--color-white);
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+  width: 48%;
 
   .post-details {
     display: flex;
@@ -51,6 +53,7 @@ export default {
 }
 .blog-post--teaser:first-of-type {
   background-color: transparent;
+  width: 100%;
 
   .cover-image {
     order: 1;

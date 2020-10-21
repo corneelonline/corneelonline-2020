@@ -4,11 +4,12 @@ tags:
 - Development
 - ProcessWire
 title: ProcessWire CMS - Een goed alternatief voor WordPress?
-main_image: ''
-date_published: 2018-08-28T22:00:00Z
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603286319/corneel/processwire_d3nm6h.jpg
+date_published: 2018-08-28T22:00:00.000+00:00
 seo_title: ProcessWire CMS - Een goed alternatief voor WordPress?
 seo_description: ProcessWire CMS is een zeer volwassen content management systeem
   en een goed alternatief voor WordPress voor het ontwikkelen van maatwerk websites.
+published: true
 
 ---
 WordPress is het CMS (Content Management Systeem) waarmee ik verreweg de meeste opdrachten uitvoer. Ik vind het een uitstekende basis voor het bouwen van maatwerk websites, vooral omdat er voor bijna elke functionaliteit wel één of meerdere oplossingen bestaan in de vorm van plugins. Wil je een winkel, een membership website, een blog, een portfolio site, een fotografie website, een meertalige website? Met de juiste plugin is dit allemaal geen probleem. Tegelijkertijd valt er ook wel wat aan te merken op WordPress. Het CMS zelf is erg beperkt in zijn mogelijkheden en je bent al snel afhankelijk van allerlei plugins en thema’s voor functionaliteit die bij veel nieuwe CMS-en standaard wordt geleverd. En die plugins en thema’s krijgen zeer regelmatig updates, waardoor een WordPress website heel actief moet worden onderhouden. Achterstallig onderhoud kan de website kwetsbaar maken voor misbruik.

@@ -5,11 +5,12 @@ tags:
 - Hugo
 - SSR
 title: 'Hugo: de snelste open-source static site generator'
-main_image: ''
-date_published: 
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603288250/corneel/hugo-ssr-alt_ac33ov.jpg
+date_published: 2020-10-05T00:00:00+02:00
 seo_title: 'Hugo: de snelste open-source static site generator'
 seo_description: Hugo is een van de meest populaire open-source static site generators.
   Hugo heeft een verbazingwekkende snelheid en flexibiliteit.
+published: true
 
 ---
 Hugo is geschreven in Go, waardoor het de enige echt populaire generator is die is geschreven in een statisch gecompileerde taal. De meeste van zijn grote voordelen en grootste nadeel komen hieruit voort.

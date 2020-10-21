@@ -10,7 +10,7 @@
         <article class="blog-post__teaser" v-for="edge in $page.posts.edges" :key="edge.node.id">
           <g-link class="post-details" :to="edge.node.path">
             <figure class="cover-image">
-              <g-image src="https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg" alt="blog cover image" />
+              <g-image :src="edge.node.main_image" alt="blog cover image" />
             </figure>
             <ul class="tags">
               <li>Development</li>
@@ -34,6 +34,7 @@ query {
         id
         path
         title
+        main_image
       }
     }
   }

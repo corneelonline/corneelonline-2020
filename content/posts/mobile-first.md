@@ -5,12 +5,13 @@ tags:
 - PWA
 - Design
 title: Mobile first
-main_image: ''
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603288765/corneel/mobile-first_y7vux8.jpg
 date_published: 2019-08-09T00:00:00.000+02:00
 seo_title: Mobile first
 seo_description: Meer dan de helft van alle bezoekers van een website doen dat met
   hun telefoon. Het is daarom essentieel dat jouw website of applicatie perfect werkt
   op mobiel.
+published: true
 
 ---
 Meer dan de helft van alle bezoekers van een website doen dat met hun telefoon. Het is daarom essentieel dat jouw website of applicatie perfect werkt op mobiele devices.
@@ -19,7 +20,7 @@ Meer dan de helft van alle bezoekers van een website doen dat met hun telefoon. 
 
 Een van de factoren die meewegen in de ranking op Google is of je website "mobile friendly" is. Niet zo gek want meer dan de helft van alle websitebezoekers gebruikt een mobiele telefoon. Voor je vindbaarheid is het dus belangrijk om hier rekening mee te houden.
 
-Is jouw website mobile friendly? Je kan dit zelf testen. (zie https://search.google.com/test/mobile-friendly).
+Is jouw website mobile friendly? Je kan dit zelf testen. (zie [https://search.google.com/test/mobile-friendly](https://search.google.com/test/mobile-friendly)).
 
 ## Focus
 
@@ -27,7 +28,7 @@ De mobile first benadering is om te beginnen een goed middel om de juiste focus 
 
 ## Responsive webdesign
 
-Responsive webdesign zorgt ervoor dat een website goed functioneert op alle appraten waarmee het bekeken wordt. Dezelfde inhoud wordt op verschilende manieren getoond, afhankelijk van de grootte van het beeldscherm. Alle websites van Corneel Online worden op deze manier gebouwd.
+Responsive webdesign zorgt ervoor dat een website goed functioneert op alle apparaten waarmee het bekeken wordt. Dezelfde inhoud wordt op verschillende manieren getoond, afhankelijk van de grootte van het beeldscherm. Alle websites van Corneel Online worden op deze manier gebouwd.
 
 ## Progressive Web Apps (PWA)
 

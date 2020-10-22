@@ -13,7 +13,7 @@
               <g-image :src="edge.node.main_image" alt="blog cover image" />
             </figure>
             <ul class="tags" v-if="edge.node.tags">
-              <li v-for="tag in edge.node.tags">{{ tag }}</li>
+              <li v-for="tag in edge.node.tags" :key="tag.id">{{ tag }}</li>
             </ul>
             <h2>{{edge.node.title}}</h2>
           </g-link>

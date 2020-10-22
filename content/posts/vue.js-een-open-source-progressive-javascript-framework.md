@@ -4,8 +4,8 @@ tags:
 - JAMstack
 - Vue.js
 title: Vue.js - een open-source progressive Javascript framework
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603290709/corneel/vuejs_ppaltt.jpg
-date_published: 2020-10-02T00:00:00+02:00
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603362046/corneelonline/vuejs_xlk2d2.jpg
+date_published: 2020-10-02T00:00:00.000+02:00
 seo_title: Vue.js - een open-source progressive Javascript framework
 seo_description: Vue.js is een open-source progressive JavaScript-framework voor het
   bouwen van websites, user interfaces (UI's) en single-page applications (SPA).

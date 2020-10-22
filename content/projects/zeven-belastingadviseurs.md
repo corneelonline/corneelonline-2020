@@ -11,7 +11,7 @@ seo_description: Belasting betalen moeten we allemaal maar teveel betalen wil ni
 published: true
 featured: false
 summary: WordPress website voor Zeven Belastingadviseurs.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603107702/corneel/zeven_za8ahr.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603357185/corneelonline/zeven_nlwfch.jpg
 
 ---
 Zeven Belastingadviseurs helpt particulieren en ondernemers met alle zaken rondom belastingen. Zoals ze het zelf zeggen: "Uw belasting mag geen aanslag zijn". In 2019 is er een nieuwe huisstijl geïntroduceerd. Corneel Online heeft de nieuwe WordPress website gerealiseerd.

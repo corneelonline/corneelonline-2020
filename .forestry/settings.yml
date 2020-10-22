@@ -51,10 +51,10 @@ sections:
   match: "**/*"
   templates:
   - service
-upload_dir: corneel
-public_path: https://res.cloudinary.com/corneel-online/image/upload
-front_matter_path: https://res.cloudinary.com/corneel-online/image/upload
-use_front_matter_path: true
+upload_dir: ''
+public_path: ''
+front_matter_path: ''
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_env:

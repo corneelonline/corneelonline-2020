@@ -119,9 +119,54 @@ strong {
 }
 
 blockquote {
-  border-left: 4px solid var(--border-color);
-  padding-left: calc(var(--space) / 2);
-  color: var(--title-color);
+  @include font-size(1.5625); // 25px
+  color: var(--color-blue);
+  font-family: var(--ff-header);
+  font-weight: var(--fw-normal);
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  @media (min-width: $sm) {
+    margin-left: 20%;
+  }
+  @media (min-width: $md) {
+    @include font-size(1.875); // 30px
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 30%;
+  }
+  @media (min-width: $lg) {
+    @include font-size(2.5); // 40px
+    margin-left: 20%;
+  }
+  @media (min-width: $lg) {
+    margin-left: 30%;
+  }
+
+  &::before {
+    // color: #ccc;
+    content: open-quote;
+    font-size: 5rem;
+    line-height: 0.1rem;
+    margin-right: 0.15rem;
+    vertical-align: -2.8rem;
+
+    @media (min-width: $sm) {
+      vertical-align: -2.8rem;
+    }
+    @media (min-width: $md) {
+      vertical-align: -2.6rem;
+    }
+    @media (min-width: $lg) {
+      vertical-align: -2.2rem;
+    }
+  }
+
+  p {
+    display: inline;
+  }
 }
 
 rem {

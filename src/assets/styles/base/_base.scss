@@ -72,10 +72,8 @@ a:hover {
   padding-bottom: 2rem;
 }
 
-.post-single__content {
-  p:first-child {
-    @extend .highlighted-text;
-  }
+.post-single__content > p:first-child {
+  @extend .highlighted-text;
 }
 
 

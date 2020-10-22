@@ -51,7 +51,7 @@ sections:
   match: "**/*"
   templates:
   - service
-upload_dir: corneel
+upload_dir: uploads
 public_path: https://res.cloudinary.com/corneel-online/image/upload
 front_matter_path: https://res.cloudinary.com/corneel-online/image/upload
 use_front_matter_path: true

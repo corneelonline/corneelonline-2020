@@ -5,7 +5,7 @@ tags:
 - PWA
 - Design
 title: Mobile first
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603288765/corneel/mobile-first_y7vux8.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361541/corneelonline/mobile-first_vl5o9r.jpg
 date_published: 2019-08-09T00:00:00.000+02:00
 seo_title: Mobile first
 seo_description: Meer dan de helft van alle bezoekers van een website doen dat met

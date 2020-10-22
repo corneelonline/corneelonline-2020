@@ -12,10 +12,8 @@
             <figure class="cover-image">
               <g-image :src="edge.node.main_image" alt="blog cover image" />
             </figure>
-            <ul class="tags">
-              <li>Development</li>
-              <li>CMS</li>
-              <li>WordPress</li>
+            <ul class="tags" v-if="edge.node.tags">
+              <li v-for="tag in edge.node.tags">{{ tag }}</li>
             </ul>
             <h2>{{edge.node.title}}</h2>
           </g-link>
@@ -35,6 +33,7 @@ query {
         path
         title
         main_image
+        tags
       }
     }
   }

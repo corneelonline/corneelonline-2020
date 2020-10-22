@@ -2,7 +2,7 @@
 tags:
 - Design
 title: Maak een kleuren palet met behulp van je favoriete schilderij
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603285839/corneel/favorite-painting-alt_ldiibj.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361540/corneelonline/favorite-painting-alt_qe7kww.jpg
 date_published: 2017-09-12T22:00:00.000+00:00
 seo_title: Kleuren palet van favoriete schilderij
 seo_description: Hoe kan je zelf een mooi kleuren palet voor je eigen ontwerp vinden?

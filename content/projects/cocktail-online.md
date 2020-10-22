@@ -12,7 +12,7 @@ published: true
 featured: false
 summary: Cocktail Online werkt aan het verbeteren van het leven en de kansen van LHBTI-asielzoekers
   in Nederland.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603107701/corneel/cocktailonline_aat7kp.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603357185/corneelonline/cocktailonline_yd44zr.jpg
 
 ---
 Cocktail Online werkt aan het verbeteren van het leven en de kansen van LHBTI-asielzoekers in Nederland.

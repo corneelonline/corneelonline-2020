@@ -11,8 +11,8 @@ seo_description: Vue.js is een open-source progressive JavaScript-framework voor
   bouwen van websites, user interfaces (UI's) en single-page applications (SPA).
 published: true
 related_articles:
-- content/posts/static-site-generators.md
 - content/posts/jamstack-de-methode-voor-snelle-en-veilige-websites.md
+- content/posts/static-site-generators.md
 - content/posts/gridsome-moderne-site-generator-voor-vue.js.md
 
 ---

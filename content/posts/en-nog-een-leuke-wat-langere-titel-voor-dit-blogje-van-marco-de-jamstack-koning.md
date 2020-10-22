@@ -4,7 +4,7 @@ tags:
 - Development
 - CMS
 title: Beveilig je website tegen hackers en voorkom misbruik
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603282061/corneel/hackers_mzrfww.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361539/corneelonline/hackers_dnxfa1.jpg
 published: true
 seo_title: Beveilig je website tegen hackers en voorkom misbruik
 seo_description: Veel website eigenaren worden zonder dat ze het weten constant belaagd

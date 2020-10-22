@@ -12,7 +12,7 @@ published: true
 featured: false
 summary: Website van Niels Watermulder, een fotograaf en videokunstenaar die in mei
   2018 is afgestudeerd aan de Fotoacademie.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602856412/corneel/watermulder_w1kkea.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603357185/corneelonline/watermulder_csizyp.jpg
 
 ---
 Website van Niels Watermulder, een fotograaf en videokunstenaar die in mei 2018 is afgestudeerd aan de Fotoacademie. Zijn werk was te zien tijdens een expositie in het weekend van 26 en 25 mei 2018, waarin alle geslaagden van de Fotoacademie hun werk tentoonstelden.

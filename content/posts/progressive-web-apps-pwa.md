@@ -4,8 +4,8 @@ tags:
 - JAMstack
 - PWA
 title: Progressive Web Apps (PWA)
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603289622/corneel/progressive-web-app_ayjcls.jpg
-date_published: 2020-10-15T00:00:00+02:00
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361541/corneelonline/progressive-web-app_zyj9ba.jpg
+date_published: 2020-10-15T00:00:00.000+02:00
 seo_title: Progressive Web Apps (PWA)
 seo_description: 'Het is mogelijk om met vertrouwde webtechnologie een website te
   bouwen die zich gedraagt als een app: de zogenaamde Progressive Web App (PWA).'

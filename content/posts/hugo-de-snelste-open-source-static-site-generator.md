@@ -5,8 +5,8 @@ tags:
 - Hugo
 - SSR
 title: 'Hugo: de snelste open-source static site generator'
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603288250/corneel/hugo-ssr-alt_ac33ov.jpg
-date_published: 2020-10-05T00:00:00+02:00
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361540/corneelonline/hugo-ssr_ektfm8.jpg
+date_published: 2020-10-05T00:00:00.000+02:00
 seo_title: 'Hugo: de snelste open-source static site generator'
 seo_description: Hugo is een van de meest populaire open-source static site generators.
   Hugo heeft een verbazingwekkende snelheid en flexibiliteit.

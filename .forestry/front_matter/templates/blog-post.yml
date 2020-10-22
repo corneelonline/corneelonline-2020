@@ -63,7 +63,7 @@ fields:
   config:
     min: 
     max: 3
-    labelField: 
+    labelField: post
   label: Related stuff
 pages:
 - content/posts/corneel-online-bestaat-5-jaar.md

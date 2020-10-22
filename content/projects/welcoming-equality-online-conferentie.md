@@ -15,7 +15,7 @@ summary: In mei 2020 was een conferentie gepland in Amsterdam door COC Nederland
   als onderwerp LGBTI-asiel en migratie. Corona gooide roet in het eten en de conferentie
   kon niet doorgaan. COC Nederland besloot daarop om de conferentie online te organiseren
   en Corneel Online werd gekozen om de website voor deze conferentie te realiseren.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603190854/corneel/welcoming-equality_ymxo23.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603357185/corneelonline/welcoming-equality_hsqqmb.jpg
 
 ---
 ### Van live naar online event door COVID-19

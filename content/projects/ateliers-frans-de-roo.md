@@ -12,7 +12,7 @@ published: true
 featured: false
 summary: Meertalige website voor Ateliers Frans de Roo, lijstenmaker en restaurateur.
   Het betreft lijsten voor musea, waarin de oude meesters in worden getoond.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602859308/corneel/ateliersfransderoo_xysj3b.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603357185/corneelonline/ateliersfransderoo_hqwust.jpg
 
 ---
 Meertalige website voor Ateliers Frans de Roo, lijstenmaker en restaurateur. Het betreft lijsten voor musea, waarin de oude meesters in worden getoond.

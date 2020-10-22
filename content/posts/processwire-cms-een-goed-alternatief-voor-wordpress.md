@@ -4,7 +4,7 @@ tags:
 - Development
 - ProcessWire
 title: ProcessWire CMS - Een goed alternatief voor WordPress?
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603286319/corneel/processwire_d3nm6h.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361541/corneelonline/processwire-alt_u7onc4.jpg
 date_published: 2018-08-28T22:00:00.000+00:00
 seo_title: ProcessWire CMS - Een goed alternatief voor WordPress?
 seo_description: ProcessWire CMS is een zeer volwassen content management systeem

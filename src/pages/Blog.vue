@@ -28,7 +28,7 @@
 
 <page-query>
 query {
-  posts: allPost {
+  posts: allPost(sortBy: "date_published", order: DESC, filter: { published: { eq: true }}) {
 		edges {
 			node {
         id

@@ -17,6 +17,12 @@
       </div>
       <div class="post-single__content" v-html="$page.post.content"/>
     </section>
+    <section class="related-content">
+      <h3>Geralateerde artikelen</h3>
+      <div class="related-content__body">
+        [POSTS]
+      </div>
+    </section>
     <ContactMe />
   </Layout>
 </template>

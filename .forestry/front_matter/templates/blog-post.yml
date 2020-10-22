@@ -30,6 +30,16 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: related_articles
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 3
+    source:
+      type: pages
+      section: blog
+  label: Related articles
 - name: seo_information
   type: include
   config: {}
@@ -50,5 +60,4 @@ pages:
 - content/posts/processwire-cms-een-goed-alternatief-voor-wordpress.md
 - content/posts/progressive-web-apps-pwa.md
 - content/posts/static-site-generators.md
-- content/posts/test-article-marco.md
 - content/posts/vue.js-een-open-source-progressive-javascript-framework.md

@@ -45,26 +45,6 @@ fields:
   config: {}
   template: seo
   label: SEO Information
-- name: related_stuff
-  type: field_group_list
-  fields:
-  - name: post
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: blog
-        file: 
-        path: 
-    label: Post
-  config:
-    min: 
-    max: 3
-    labelField: post
-  label: Related stuff
 pages:
 - content/posts/corneel-online-bestaat-5-jaar.md
 - content/posts/en-nog-een-leuke-wat-langere-titel-voor-dit-blogje-van-marco-de-jamstack-koning.md

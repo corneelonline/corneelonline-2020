@@ -39,6 +39,8 @@ fields:
     source:
       type: pages
       section: blog
+      file: 
+      path: ''
   label: Related articles
 - name: seo_information
   type: include

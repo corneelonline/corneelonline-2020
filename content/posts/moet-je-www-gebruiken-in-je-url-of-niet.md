@@ -3,7 +3,7 @@ tags:
 - Development
 - SEO
 title: Moet je "www" gebruiken in je URL of niet?
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603284585/corneel/www-or-not_owf630.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361542/corneelonline/www-or-not_n2ouwz.jpg
 date_published: 2017-08-28T22:00:00.000+00:00
 seo_title: Moet je "www" gebruiken in je URL of niet?
 seo_description: Het gebruik van “www" in de url kan verwarrend zijn voor veel website-eigenaren.

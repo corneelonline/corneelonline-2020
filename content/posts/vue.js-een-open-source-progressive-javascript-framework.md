@@ -14,6 +14,8 @@ related_articles:
 - content/posts/static-site-generators.md
 - content/posts/gridsome-moderne-site-generator-voor-vue.js.md
 - content/posts/jamstack-de-methode-voor-snelle-en-veilige-websites.md
+related_stuff:
+- post: content/posts/corneel-online-bestaat-5-jaar.md
 
 ---
 Als web developer wil je voor elk project de meest geschikte technologie kiezen om op een elegante manier allerlei soorten websites en applicaties te ontwikkelen. Vue.js heeft alles in huis om deze taak te vervullen.

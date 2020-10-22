@@ -69,11 +69,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.page-intro {
-  @include container-narrow-half;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .blog-posts {
   // border: 1px solid red;
   @include container;
@@ -131,7 +126,7 @@ export default {
   }
 
   .tags {
-    margin: 0 1rem;
+    margin: 0 1rem 1rem;
   }
 }
 .blog-post__teaser:first-of-type {
@@ -160,11 +155,6 @@ export default {
     @media (min-width: $lg) {
       margin-bottom: 1rem;
     }
-  }
-}
-.tags {
-  li {
-    @include tag;
   }
 }
 </style>

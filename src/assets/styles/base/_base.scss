@@ -49,10 +49,6 @@ a:hover {
   color: var(--color-link-hover);
 }
 
-// section {
-//   @include container;
-// }
-
 // ---------------------------------------------------------
 // basic classes
 // ---------------------------------------------------------
@@ -62,6 +58,24 @@ a:hover {
 
 .button-back, a.button-back {
   @include button-back;
+}
+
+.tags {
+  li {
+    @include tag;
+  }
+}
+
+.page-intro {
+  @include container-narrow-half;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.post-single__content {
+  p:first-child {
+    @extend .highlighted-text;
+  }
 }
 
 

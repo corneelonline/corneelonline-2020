@@ -12,7 +12,7 @@ published: true
 ---
 Het valt vaak niet mee om goede stockfoto’s te vinden. Je wordt doodgegooid met van die flauwe kantoorfoto’s met lachende collega’s die allemaal dezelfde spreadsheet staan te bewonderen of nog erger, van die illustraties van mensen (m/v) in zakelijk kostuum die een beetje interessant staan te doen in een high tech omgeving. Vaak zijn gratis stockfoto's gewoon van slechte kwaliteit. Gebruik van dit soort foto's doen afbreuk aan je website. ![](https://www.corneelonline.nl/wp-content/uploads/2017/06/stock-photos-examples.png) Kwalitatief hoogstaande afbeeldingen kunnen juist heel goed de inhoud van je website ondersteunen. Een blog ziet er meestal een stuk aantrekkelijker uit als er goed gekozen afbeeldingen bij de artikelen gebruikt worden. Of wat dacht je van een grote achtergrondafbeelding op je homepage of landingspagina. Wil je een goede indruk achterlaten bij je bezoekers, kies dan voor goed beeldmateriaal.
 
-## Waar vind je goede stockfoto’s?
+### Waar vind je goede stockfoto’s?
 
 Gelukkig zijn er websites te vinden die gratis kwalitatief goede foto’s aanbieden. Op de volgende website vind je gegarandeerd iets van jouw gading.
 

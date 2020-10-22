@@ -26,7 +26,7 @@ Het is ook mogelijk om met vertrouwde webtechnologie een website te bouwen die z
 
 Door deze features voelen PWA’s als een echte app aan. Ze werken dus offline, kunnen pushberichten sturen en staan op het homescreen. Net als een echte app.
 
-## PWA use cases
+### PWA use cases
 
 Er zijn veel juichende verhalen te vinden over het succes van PWA's, met name op het gebied van e-commerce. De algehele tendens lijkt te zijn dat PWA's de volgende voordelen bieden:
 
@@ -39,7 +39,7 @@ In dit overzicht van Medium.com staat een overzicht van succesvolle PWA's. Wedde
 
 [https://medium.com/progressivewebapps/best-pwa-examples-for-your-inspiration-261bcb3fab47](https://medium.com/progressivewebapps/best-pwa-examples-for-your-inspiration-261bcb3fab47 "https://medium.com/progressivewebapps/best-pwa-examples-for-your-inspiration-261bcb3fab47")
 
-## Is een PWA iets voor jouw organisatie?
+### Is een PWA iets voor jouw organisatie?
 
 Het antwoord op die vraag is niet zo eenduidig te geven. Wel kun je jezelf een aantal vragen stellen:
 
@@ -51,6 +51,6 @@ Het antwoord op die vraag is niet zo eenduidig te geven. Wel kun je jezelf een a
 
 Wanneer je vier van bovenstaande vijf vragen met een ‘ja’ beantwoordt, doe je er goed aan om de mogelijkheden van een PWA te onderzoeken.
 
-## PWA en JAMstack
+### PWA en JAMstack
 
 JAMstack leent zich uitstekend om een PWA mee te ontwikkelen. Veel frameworks en Static Site Generators maken het heel eenvoudig om van je website een PWA te maken die razendsnel is, ook op je mobiele telefoon.

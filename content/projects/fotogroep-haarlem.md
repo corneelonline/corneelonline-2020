@@ -12,7 +12,7 @@ published: true
 featured: false
 summary: Fotogroep Haarlem is een groep enthousiaste amateurfotografen die in clubverband
   hun plezier in fotografie willen delen en verdiepen.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602856410/corneel/fotogroephaarlem_abti20.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603357185/corneelonline/fotogroephaarlem_ss5mnn.jpg
 
 ---
 Fotogroep Haarlem is een groep enthousiaste amateurfotografen die in clubverband hun plezier in fotografie willen delen en verdiepen.

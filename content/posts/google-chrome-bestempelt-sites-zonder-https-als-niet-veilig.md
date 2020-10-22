@@ -3,7 +3,7 @@ tags:
 - Veiligheid
 - SEO
 title: Google Chrome bestempelt sites zonder HTTPS als "Niet Veilig"
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603283269/corneel/https-save-browsing_b584ov.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361540/corneelonline/https-save-browsing_fau7dr.jpg
 date_published: 2017-03-20T23:00:00.000+00:00
 seo_title: Sites zonder HTTPS "Niet Veilig"
 seo_description: De nieuwe versie van de Google Chrome browser geeft bij websites

@@ -15,7 +15,7 @@ related_articles:
 - content/posts/gridsome-moderne-site-generator-voor-vue.js.md
 - content/posts/jamstack-de-methode-voor-snelle-en-veilige-websites.md
 related_stuff:
-- post: []
+- post: content/posts/maak-een-kleuren-palet-met-behulp-van-je-favoriete-schilderij.md
 - post: content/posts/google-chrome-bestempelt-sites-zonder-https-als-niet-veilig.md
 
 ---

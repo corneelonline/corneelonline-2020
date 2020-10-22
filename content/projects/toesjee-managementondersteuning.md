@@ -12,7 +12,7 @@ published: true
 featured: false
 summary: Toesjee! is het bedrijf van Ruth van Knippenberg, een zelfstandig projectleider
   en fondsenwerver voor maatschappelijke projecten in de kunst en cultuur.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/toesjee_tflyfe.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603357185/corneelonline/toesjee_xezajt.jpg
 
 ---
 Toesjee! is het bedrijf van Ruth van Knippenberg, een zelfstandig projectleider en fondsenwerver voor maatschappelijke projecten in de kunst en cultuur.

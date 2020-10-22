@@ -12,7 +12,7 @@ published: true
 featured: false
 summary: WordPress website voor Annelies Neele, een gediplomeerd Medisch Pedicure
   en eigenaar van Pedicurepraktijk Het Voetstuk in Sint Philipsland.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602858437/corneel/voetstuk_jsiicc.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603357185/corneelonline/voetstuk_fvtiwj.jpg
 
 ---
 WordPress website voor Annelies Neele, een gediplomeerd Medisch Pedicure en eigenaar van Pedicurepraktijk Het Voetstuk in Sint Philipsland.

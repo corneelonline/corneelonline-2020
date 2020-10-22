@@ -2,7 +2,7 @@
 tags:
 - Corneel
 title: Corneel Online bestaat 5 jaar
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603362895/corneelonline/corneel-party-alt_csgrpp.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361539/corneelonline/corneel-party_m8lxfx.jpg
 date_published: 2020-08-31T22:00:00.000+00:00
 seo_title: Corneel Online bestaat 5 jaar
 seo_description: Het Haarlemse webbureau Corneel Online bestaat 5 jaar. Een mooi moment

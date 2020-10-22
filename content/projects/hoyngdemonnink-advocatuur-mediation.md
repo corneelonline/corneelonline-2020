@@ -16,7 +16,7 @@ summary: HoyngDeMönnink is een Haarlems advocatenkantoor gespecialiseerd in Arb
   zijn ook scheidingsmediator. HoyngDeMönnink Advocatuur & Mediation biedt daarmee
   alle denkbare bijstand, advisering en ondersteuning op het gebied van het arbeidsrecht
   en het familierecht.
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1602856411/corneel/hoyngdemonnink_goifpl.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603357185/corneelonline/hoyngdemonnink_nsxfvx.jpg
 
 ---
 HoyngDeMönnink is een Haarlems advocatenkantoor gespecialiseerd in Arbeidsrecht, Familierecht en Mediation. Zowel Marjan de Mönnink als Philippine Hoyng hebben veel ervaring met en een grondige kennis van de rechtspraktijk en het procesrecht. Beiden zijn ook scheidingsmediator. HoyngDeMönnink Advocatuur & Mediation biedt daarmee alle denkbare bijstand, advisering en ondersteuning op het gebied van het arbeidsrecht en het familierecht.

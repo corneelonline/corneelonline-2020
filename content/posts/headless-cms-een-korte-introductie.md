@@ -4,7 +4,7 @@ tags:
 - Development
 - JAMstack
 title: 'Headless CMS: een korte introductie'
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603287074/corneel/headless-cms_xguond.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361539/corneelonline/headless-cms_r1nzge.jpg
 date_published: 2019-04-15T22:00:00.000+00:00
 seo_title: 'Headless CMS: een korte introductie'
 seo_description: Wat is een headless content management system (CMS) en wanneer gebruik

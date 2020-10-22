@@ -2,7 +2,7 @@
 tags:
 - Design
 title: Gratis stockfoto's die er niet lullig uitzien
-main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603296637/corneel/stockfoto-alt_s5onjz.jpg
+main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361542/corneelonline/stockfoto_zyj3fv.jpg
 date_published: 2017-06-07T22:00:00.000+00:00
 seo_title: Gratis stockfoto's die er niet lullig uitzien
 seo_description: Kies voor goed beeldmateriaal op je website. In dit artikel vind

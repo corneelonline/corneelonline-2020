@@ -11,6 +11,10 @@ seo_title: 'Hugo: de snelste open-source static site generator'
 seo_description: Hugo is een van de meest populaire open-source static site generators.
   Hugo heeft een verbazingwekkende snelheid en flexibiliteit.
 published: true
+related_articles:
+- content/posts/static-site-generators.md
+- content/posts/jamstack-de-methode-voor-snelle-en-veilige-websites.md
+- content/posts/gridsome-moderne-site-generator-voor-vue-js.md
 
 ---
 Hugo is geschreven in Go, waardoor het de enige echt populaire generator is die is geschreven in een statisch gecompileerde taal. De meeste van zijn grote voordelen en grootste nadeel komen hieruit voort.

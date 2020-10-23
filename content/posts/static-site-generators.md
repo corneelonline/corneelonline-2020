@@ -10,6 +10,10 @@ seo_title: Static Site Generators
 seo_description: Een Static Site Generator is een belangrijk onderdeel in web development
   volgens de JAMstack-methode.
 published: true
+related_articles:
+- content/posts/gridsome-moderne-site-generator-voor-vue-js.md
+- content/posts/hugo-de-snelste-open-source-static-site-generator.md
+- content/posts/jamstack-de-methode-voor-snelle-en-veilige-websites.md
 
 ---
 ### Wat is een Static Site Generator?

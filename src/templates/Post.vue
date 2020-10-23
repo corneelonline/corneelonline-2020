@@ -17,6 +17,7 @@
       </div>
       <div class="post-single__content" v-html="$page.post.content"/>
     </section>
+    <RelatedArticles />
     <ContactMe />
   </Layout>
 </template>
@@ -37,6 +38,7 @@ query ($path: String!) {
 </page-query>
 
 <script>
+import RelatedArticles from '~/components/blog/RelatedArticles.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
@@ -67,6 +69,7 @@ export default {
     }
   },
   components: {
+    RelatedArticles,
     ContactMe
   }
 }

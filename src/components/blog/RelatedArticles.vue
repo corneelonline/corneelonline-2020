@@ -1,15 +1,14 @@
 <template>
   <div class="lalalaa">
-    <h4>{{ article.title }}</h4>
+    RELATED
   </div>
 </template>
 
 <script>
 export default {
-  name: 'RelatedArticle',
+  name: 'RelatedArticles',
   props: {
-    item: String,
-    article: Object,
+    articlePaths: Array,
   },
   // data () {
   //   return {

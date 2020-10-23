@@ -37,10 +37,10 @@ fields:
     min: 
     max: 3
     source:
-      type: pages
+      type: documents
       section: blog
-      file: 
-      path: ''
+      file: content/posts/gridsome-moderne-site-generator-voor-vue.js.md
+      path: tags
   label: Related articles
 - name: seo_information
   type: include

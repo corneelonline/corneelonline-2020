@@ -3,7 +3,6 @@ tags:
 - Design
 - Development
 title: Responsive webdesign
-body: "***"
 published: true
 main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361542/corneelonline/responsive-design_rtbzc4.jpg
 seo_title: Responsive webdesign

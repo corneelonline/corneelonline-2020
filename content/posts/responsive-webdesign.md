@@ -12,9 +12,6 @@ seo_description: De techniek die nodig is om de layout van een een website aan t
 date_published: 2017-01-11T23:00:00.000+00:00
 category: ''
 draft: false
-related_articles:
-- content/posts/progressive-web-apps-pwa.md
-- content/posts/mobile-first.md
 
 ---
 De tijd dat iedereen alleen achter een computerscherm jouw website bezocht is voorbij. Op dit moment bezoekt ongeveer de helft van alle Nederlandse internetbezoekers websites met een smartphone of tablet. De andere helft zit wel achter een monitor of laptop. Dat betekent dat jouw website zowel op een grote monitor als op een klein(er) telefoonscherm goed moet functioneren. De techniek die nodig is om de layout van een een website aan te passen aan het apparaat waarmee je het bekijkt wordt responsive webdesign genoemd.

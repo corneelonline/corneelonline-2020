@@ -12,6 +12,9 @@ seo_description: Meer dan de helft van alle bezoekers van een website doen dat m
   hun telefoon. Het is daarom essentieel dat jouw website of applicatie perfect werkt
   op mobiel.
 published: true
+related_articles:
+- content/posts/progressive-web-apps-pwa.md
+- content/posts/jamstack-de-methode-voor-snelle-en-veilige-websites.md
 
 ---
 Meer dan de helft van alle bezoekers van een website doen dat met hun telefoon. Het is daarom essentieel dat jouw website of applicatie perfect werkt op mobiele devices.

@@ -11,6 +11,10 @@ seo_title: " Gridsome: Moderne Site Generator voor Vue.js"
 seo_description: Gridsome maakt het gemakkelijk om statisch gegenereerde websites
   en apps te bouwen die razendsnel zijn
 published: true
+related_articles:
+- content/posts/vue.js-een-open-source-progressive-javascript-framework.md
+- content/posts/jamstack-de-methode-voor-snelle-en-veilige-websites.md
+- content/posts/static-site-generators.md
 
 ---
 ### Wat is Gridsome?

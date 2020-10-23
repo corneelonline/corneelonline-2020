@@ -3,7 +3,7 @@ tags:
 - JAMstack
 - Development
 published: true
-title: 'JAMstack: de methode voor snelle en veilige websites'
+title: 'Jamstack: de methode voor snelle en veilige websites'
 main_image: https://res.cloudinary.com/corneel-online/image/upload/v1603361541/corneelonline/jam-stack_bobka6.jpg
 date_published: 2020-10-20T00:00:00+02:00
 related_articles:

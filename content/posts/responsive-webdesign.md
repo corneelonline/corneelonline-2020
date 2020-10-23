@@ -10,8 +10,6 @@ seo_title: Responsive webdesign
 seo_description: De techniek die nodig is om de layout van een een website aan te
   passen aan het apparaat waarmee je het bekijkt wordt responsive webdesign genoemd.
 date_published: 2017-01-11T23:00:00.000+00:00
-category: ''
-draft: false
 related_articles:
 - content/posts/mobile-first.md
 - content/posts/progressive-web-apps-pwa.md

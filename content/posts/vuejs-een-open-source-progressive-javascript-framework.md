@@ -1,5 +1,4 @@
 ---
-draft: true
 tags:
 - JAMstack
 - Vue.js

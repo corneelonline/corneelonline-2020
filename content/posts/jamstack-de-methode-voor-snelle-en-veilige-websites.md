@@ -10,6 +10,10 @@ seo_title: 'JAMstack: de methode voor snelle en veilige websites'
 seo_description: De JAMstack is geen specifieke set tools, maar een nieuwe, moderne
   manier om websites en apps te bouwen.
 published: true
+related_articles:
+- content/posts/headless-cms-een-korte-introductie.md
+- content/posts/hugo-de-snelste-open-source-static-site-generator.md
+- content/posts/gridsome-moderne-site-generator-voor-vue-js.md
 
 ---
 De JAMstack is geen specifieke set tools, maar een nieuwe, moderne manier om websites en apps te bouwen. Waar komt "J-A-M" vandaan? Van deze drie kernconcepten:

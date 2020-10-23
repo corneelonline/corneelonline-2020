@@ -10,6 +10,10 @@ seo_title: Progressive Web Apps (PWA)
 seo_description: 'Het is mogelijk om met vertrouwde webtechnologie een website te
   bouwen die zich gedraagt als een app: de zogenaamde Progressive Web App (PWA).'
 published: true
+related_articles:
+- content/posts/mobile-first.md
+- content/posts/jamstack-de-methode-voor-snelle-en-veilige-websites.md
+- content/posts/static-site-generators.md
 
 ---
 We kennen allemaal de apps op onze telefoon. Deze (native) apps worden afhankelijk van het platform (iPhone / Android) in verschillende programmeertalen gebouwd en via een store beschikbaar gesteld. De ontwikkeling van native apps zijn vaak kostbaar.

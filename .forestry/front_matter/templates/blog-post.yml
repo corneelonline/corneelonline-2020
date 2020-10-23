@@ -30,18 +30,6 @@ fields:
   type: tag_list
   default: []
   label: Tags
-- name: related_articles
-  type: list
-  config:
-    use_select: true
-    min: 
-    max: 3
-    source:
-      type: pages
-      section: blog
-      file: content/posts/gridsome-moderne-site-generator-voor-vue.js.md
-      path: tags
-  label: Related articles
 - name: seo_information
   type: include
   config: {}

@@ -36,6 +36,6 @@ process_steps:
   description: De oplevering markeert het einde van het project, maar ook het begin
     van een mooie samenwerking. Na lancering komt de website of app pas echt tot leven.
     Denk hierbij aan onderhoud, nazorg, doorontwikkelen en verdere optimalisatie.
-big_image_one: https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg
+big_image_one: https://res.cloudinary.com/corneel-online/image/upload/v1603456476/corneelonline/control-room-02_txqpk3.jpg
 
 ---

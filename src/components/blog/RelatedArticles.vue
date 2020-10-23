@@ -1,5 +1,5 @@
 <template>
-  <div class="related-articles" v-if="this.relPaths.length" >
+  <div class="related-articles" v-if="this.showComponent" >
     <h3>Gerelateerde artikelen</h3>
     <div class="related-articles__body">
       <article class="blog-post__teaser" v-for="item in this.postObjects" :key="item.id">
@@ -28,16 +28,23 @@ export default {
   data () {
     return {
       postPaths: [],
-      postObjects: []
+      postObjects: [],
+      isMounted: false
+    }
+  },
+  computed: {
+    showComponent: function () {
+      if (this.isMounted) {
+        return this.relPaths.length;
+      } else {
+        return false;
+      }
     }
   },
   methods: {
     setPostPath(startpath) {
       let arr = startpath.split("/");
-      console.dir(arr);
       let filename = arr[2].split(".");
-      console.dir(filename);
-
       this.postPaths.push(`/blog/${filename[0]}/`);
     }
   },
@@ -51,7 +58,11 @@ export default {
         console.log(error);
       }
     })
+    this.isMounted = true;
   },
+  beforeUpdate () {
+    console.log('UPDATE');
+  }
 }
 </script>
 
@@ -76,7 +87,7 @@ export default {
     &::after {
       @media (min-width: $lg) {
         content: "";
-        width: 31.33333%;
+        width: 1px;
       }
     }
   }

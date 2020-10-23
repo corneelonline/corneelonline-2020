@@ -14,7 +14,7 @@ published: true
 related_articles:
 - content/posts/jamstack-de-methode-voor-snelle-en-veilige-websites.md
 - content/posts/static-site-generators.md
-- content/posts/vue.js-een-open-source-progressive-javascript-framework.md
+- content/posts/vue-js-een-open-source-progressive-javascript-framework.md
 
 ---
 Het headless content management systeem (CMS) is aan een opmars bezig. Er is een uitgebreid aanbod van verschillende headless CMS’en en deze systemen winnen vlot aan populariteit. De verwachting is dat toekomstige systemen de vraag naar dit soort CMS’en alleen nog maar zal doen toenemen.

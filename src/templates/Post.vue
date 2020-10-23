@@ -18,7 +18,6 @@
       <div class="post-single__content" v-html="$page.post.content"/>
     </section>
     <RelatedArticles 
-      v-if="$page.post.related_articles" 
       v-bind:relPaths="$page.post.related_articles" 
     />
     <ContactMe />

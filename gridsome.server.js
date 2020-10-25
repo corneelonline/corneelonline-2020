@@ -13,4 +13,12 @@ module.exports = function (api) {
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
   })
+
+  api.createSchema(({ addSchemaTypes }) => {
+    addSchemaTypes(`
+      type SanityDocument implements Node @infer {
+        id: ID!
+      }
+    `)
+  })
 }

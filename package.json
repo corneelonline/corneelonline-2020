@@ -9,7 +9,9 @@
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.3",
+    "dotenv": "^8.2.0",
     "gridsome": "^0.7.0",
+    "gridsome-source-sanity": "^1.0.5",
     "imagesloaded": "^4.1.4",
     "masonry-layout": "^4.2.2",
     "vue-images-loaded": "^1.1.2",

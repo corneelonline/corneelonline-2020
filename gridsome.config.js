@@ -4,6 +4,9 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+require('dotenv').config()
+// console.log(process.env.PROJECT_ID);
+
 // Make the SASS available in all files
 const path = require('path')
 
@@ -47,6 +50,21 @@ module.exports = {
       options: {
         typeName: 'Service',
         path: './content/services/**/*.md',
+      }
+    },
+    {
+      use: 'gridsome-source-sanity',
+      options: {
+        projectId: process.env.PROJECT_ID,
+        dataset: process.env.DATASET,
+        // Token is only required if dataset is private
+        // or `overlayDrafts` is set to true
+        token: process.env.TOKEN,
+        overlayDrafts: false,
+        watchMode: false,
+        // If the Sanity GraphQL API was deployed using `--tag <name>`,
+        // use `graphqlTag` to specify the tag name. Defaults to `default`.
+        graphqlTag: 'default'
       }
     }
   ],

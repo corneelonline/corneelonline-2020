@@ -46,23 +46,41 @@ export default {
       let arr = startpath.split("/");
       let filename = arr[2].split(".");
       this.postPaths.push(`/blog/${filename[0]}/`);
-    }
+    },
+    // setPostObject(elem) {
+    //   try {
+    //     const results = this.$fetch(elem);
+    //     this.postObjects.push(results.data.post);
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
+    // }
   },
-  async mounted () {
+  mounted () {
+    console.dir(this.relPaths);
     this.relPaths.forEach(element => this.setPostPath(element));
-    this.postPaths.forEach(async elem => {
+    this.postPaths.forEach(async (elem) => {
       try {
         const results = await this.$fetch(elem);
         this.postObjects.push(results.data.post);
       } catch (error) {
         console.log(error);
       }
-    })
+    });
     this.isMounted = true;
   },
-  beforeUpdate () {
-    console.log('UPDATE');
-  }
+  // beforeUpdate () {
+  //   console.log('UPDATE');
+  //   this.relPaths.forEach(element => this.setPostPath(element));
+  //   this.postPaths.forEach(async (elem) => {
+  //     try {
+  //       const results = await this.$fetch(elem);
+  //       this.postObjects.push(results.data.post);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   });
+  // }
 }
 </script>
 

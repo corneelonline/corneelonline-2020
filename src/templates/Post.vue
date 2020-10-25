@@ -17,9 +17,6 @@
       </div>
       <div class="post-single__content" v-html="$page.post.content"/>
     </section>
-    <RelatedArticles 
-      v-bind:relPaths="$page.post.related_articles" 
-    />
     <ContactMe />
   </Layout>
 </template>

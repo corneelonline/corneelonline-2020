@@ -14,6 +14,7 @@ module.exports = function (api) {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
   })
 
+  // Fix error in gridsome-source-sanity plugin
   api.createSchema(({ addSchemaTypes }) => {
     addSchemaTypes(`
       type SanityDocument implements Node @infer {

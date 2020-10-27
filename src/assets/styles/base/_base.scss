@@ -28,10 +28,38 @@ html, body {
 }
 #main {
   flex: 1 0 auto;
-  background-color: var(--color-white);
   min-width: 20rem;
-  // padding-bottom: var(--gutter-lg);
 }
+
+// -----------------------------------------------
+// Home body
+// -----------------------------------------------
+// body.home {
+//   @media (min-width: $md) {
+//     background-image: url('~@/assets/images/bg/bg-header-home.jpg');
+//     background-position: center top;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//   }
+// }
+body.home {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 175px;
+    height: 671px;
+    background-image: url('~@/assets/images/bg/concrete-block.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    right: 80px;
+  }
+}
+
 
 // ---------------------------------------------------------
 // basic elements

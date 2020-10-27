@@ -56,17 +56,18 @@ export default {
   // styles
   height: var(--banner-height-xs);
   position: relative;
-  background-color: var(--color-background-header);
 
   @media (min-width: $md) {
     height: var(--banner-height-md);
   }
   @media (min-width: $lg) {
     @include container;
+    height: var(--banner-height-lg);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    // background-color: darken(rgb(255,240,109), 20%);
   }
 
   &.active {

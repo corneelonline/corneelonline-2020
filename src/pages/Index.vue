@@ -3,11 +3,18 @@
     <section class="home-intro">
       <h1>{{$page.post.introduction_title}}</h1>
       <p v-html="$page.post.introduction_text"/>
-      <g-link to="/projecten/" class="button">{{$page.post.call_to_action_label}}</g-link>
+      <g-link to="/projecten/" class="button">Bekijk recente projecten</g-link>
     </section>
     <section class="home-services">
       <h2>{{$page.post.services_title}}</h2>
-      <div class="home-services__body" v-html="$page.post.services_text"/>
+      <div class="home-services__body">
+        <p>
+          Corneel Online creëert prachtige websites en webapplicaties voor organisaties die een echte toegevoegde waarde willen bieden.
+        </p>
+        <p>
+          Met een ijzersterk netwerk van webprofessionals help ik organisaties die een echte toegevoegde waarde willen bieden. Voor wie de boodschap of de beleving leidend is en niet alleen de winst. Ik ontwikkel doordachte (mobiele) websites en webapplicaties.
+        </p>
+      </div>
       <h2>Corneel Online houdt zich bezig met:</h2>
       <div class="home-services__teasers">
         <ServiceTeaser 
@@ -173,14 +180,14 @@ export default {
     display: flex;
     justify-content: space-between;
   }
+}
 
-  p {
-    @media (min-width: $lg) {
-      width: 48%;
-    }
+.home-services__body > p {
+  @media (min-width: $lg) {
+    width: 48%;
   }
 }
-.home-services__body p:first-child {
+.home-services__body p:first-of-type {
   @extend .highlighted-text;
 }
 .home-services__teasers {

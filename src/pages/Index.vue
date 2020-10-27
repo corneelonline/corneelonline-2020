@@ -7,14 +7,7 @@
     </section>
     <section class="home-services">
       <h2>{{$page.post.services_title}}</h2>
-      <div class="home-services__body">
-        <p>
-          Corneel Online creëert prachtige websites en webapplicaties voor organisaties die een echte toegevoegde waarde willen bieden.
-        </p>
-        <p>
-          Met een ijzersterk netwerk van webprofessionals help ik organisaties die een echte toegevoegde waarde willen bieden. Voor wie de boodschap of de beleving leidend is en niet alleen de winst. Ik ontwikkel doordachte (mobiele) websites en webapplicaties.
-        </p>
-      </div>
+      <div class="home-services__body" v-html="$page.post.services_text"/>
       <h2>Corneel Online houdt zich bezig met:</h2>
       <div class="home-services__teasers">
         <ServiceTeaser 
@@ -181,15 +174,15 @@ export default {
     justify-content: space-between;
   }
 }
-
-.home-services__body > p {
+.home-services__body >>> p {
   @media (min-width: $lg) {
+    border: 1px solid red;
     width: 48%;
   }
 }
-.home-services__body p:first-of-type {
-  @extend .highlighted-text;
-}
+// .home-services__body >>> p:first-of-type {
+//   @extend .highlighted-text;
+// }
 .home-services__teasers {
   @include container;
   display: flex;

@@ -32,7 +32,7 @@ html, body {
 }
 
 // -----------------------------------------------
-// Home body
+// Page decorations
 // -----------------------------------------------
 // body.home {
 //   @media (min-width: $md) {
@@ -46,17 +46,23 @@ body.home {
   position: relative;
 
   &::after {
-    content: "";
-    display: block;
-    width: 175px;
-    height: 671px;
-    background-image: url('~@/assets/images/bg/concrete-block.png');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    right: 80px;
+    @media (min-width: $md) {
+      content: "";
+      display: block;
+      width: 140px;
+      height: 540px;
+      background-image: url('~@/assets/images/bg/concrete-block.png');
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      right: 80px;
+    }
+    @media (min-width: $lg) {
+      width: 175px;
+      height: 671px;
+    }
   }
 }
 

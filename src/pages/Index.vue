@@ -1,13 +1,15 @@
 <template>
   <Layout>
     <section class="home-intro">
-      <h1>{{$page.post.introduction_title}}</h1>
-      <p v-html="$page.post.introduction_text"/>
+      <h1>{{$page.home.introductionTitle}}</h1>
+      <block-content :blocks="$page.home._rawIntroductionText" />
       <g-link to="/projecten/" class="button">Bekijk recente projecten</g-link>
     </section>
     <section class="home-services">
-      <h2>{{$page.post.services_title}}</h2>
-      <div class="home-services__body" v-html="$page.post.services_text"/>
+      <h2>{{$page.home.servicesTitle}}</h2>
+      <div class="home-services__body">
+        <block-content :blocks="$page.home._rawServicesText"/>
+      </div>
       <h2>Corneel Online houdt zich bezig met:</h2>
       <div class="home-services__teasers">
         <ServiceTeaser 
@@ -18,7 +20,7 @@
       </div>
     </section>
     <section class="big-image">
-      <g-image :src="$page.post.big_image_one" alt="control room" />
+      <g-image :src="$page.home.bigImageOne.asset.url" alt="control room" />
     </section>
     <section class="featured-projects">
       <header>
@@ -30,38 +32,50 @@
       </footer>
     </section>
     <section class="about-corneel">
-      <h2>{{$page.post.about_corneel_title}}</h2>
+      <h2>{{$page.home.aboutMeTitle}}</h2>
       <div class="about-corneel__image">
-        <g-image :src="$page.post.about_corneel_image" alt="foto van Marco Verheul" />
+        <g-image :src="$page.home.aboutMeImage.asset.url" alt="foto van Marco Verheul" />
       </div>
-      <div class="about-corneel__body" v-html="$page.post.about_corneel_text"/>
+      <div class="about-corneel__body">
+        <block-content :blocks="$page.home._rawAboutMeText"/>
+      </div>
     </section>
     <ContactMe />
     <BigImage>
-      <g-image :src="$page.post.big_image_two" alt="control room" />
+      <g-image :src="$page.home.bigImageTwo.asset.url" alt="control room" />
     </BigImage>
   </Layout>
 </template>
 
 <page-query>
 query {
-  post: webpage(id: "14b844fa207042add04d39881b895615") {
+  home: sanityHomepage(id: "homepage") {
     title
-    introduction_text
-    services_title
-    services_text
-    introduction_title
-    call_to_action_label
-    about_corneel_title
-    about_corneel_image
-    about_corneel_text
-    big_image_one
-    big_image_two
-    fileInfo {
-      name
+    introductionTitle
+    _rawIntroductionText
+    servicesTitle
+    _rawServicesText
+    aboutMeTitle
+    aboutMeImage {
+      asset {
+        url
+      }
     }
-    seo_title
-    seo_description
+    _rawAboutMeText
+    bigImageOne {
+      asset {
+        url
+      }
+    }
+    bigImageTwo {
+      asset {
+        url
+      }
+    }
+    seo {
+      seo_title
+      meta_description
+    }
   }
   services: allService(sortBy: "sort_order", order: ASC, filter: { show_on_homepage: { eq: true }}) {
     edges {
@@ -82,19 +96,19 @@ import ContactMe from '~/components/layout/ContactMe.vue'
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.seo_title,
+      title: this.$page.home.seo.seo_title,
       meta: [
         {
           name: "description",
-          content: this.$page.post.seo_description
+          content: this.$page.home.seo.meta_description
         },
         {
           property: "og:title",
-          content: this.$page.post.seo_title
+          content: this.$page.home.seo.seo_title
         },
         {
           property: "og:description",
-          content: this.$page.post.seo_description
+          content: this.$page.home.seo.meta_description
         },
         {
           property: "og:image",
@@ -102,7 +116,7 @@ export default {
         }
       ],
       bodyAttrs: {
-        class: this.$page.post.fileInfo.name
+        class: this.$page.home.title
       }
     }
   },
@@ -174,15 +188,14 @@ export default {
     justify-content: space-between;
   }
 }
-.home-services__body >>> p {
+.home-services__body /deep/ p {
   @media (min-width: $lg) {
-    border: 1px solid red;
     width: 48%;
   }
 }
-// .home-services__body >>> p:first-of-type {
-//   @extend .highlighted-text;
-// }
+.home-services__body /deep/ p:first-of-type {
+  @extend .highlighted-text;
+}
 .home-services__teasers {
   @include container;
   display: flex;
@@ -273,13 +286,13 @@ export default {
     @media (min-width: $lg) {
       grid-area: body;
     }
+  }
 
-    p:first-of-type {
-      @extend .highlighted-text;
+  &__body /deep/ p:first-of-type {
+    @extend .highlighted-text;
 
-      @media (min-width: $lg) {
-        @include font-size(1.375); // 22px
-      }
+    @media (min-width: $lg) {
+      @include font-size(1.375); // 22px
     }
   }
 }

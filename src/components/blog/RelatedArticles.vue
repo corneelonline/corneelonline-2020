@@ -15,9 +15,6 @@
       </article>
     </div>
   </div>
-  <div v-else>
-    Nothing...
-  </div>
 </template>
 
 <script>

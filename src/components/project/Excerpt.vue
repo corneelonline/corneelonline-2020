@@ -1,12 +1,12 @@
 <template>
   <div class="project-excerpt">
-    <g-link class="project-details" :to="project.path">
+    <g-link class="project-details" :to="getPath(project.slug.current)">
       <figure class="project-excerpt__img">
-        <g-image :src="project.main_image" alt="project img" />
+        <g-image :src="project.mainImage.asset.url" alt="project img" />
       </figure>
       <div class="project-excerpt__body">
         <h3>{{project.title}}</h3>
-        <p v-html="project.summary"/>
+        <block-content :blocks="project._rawIntroductionText"/>
         <button class="button">Meer over deze case</button>
       </div>
     </g-link>
@@ -18,6 +18,11 @@ export default {
   name: 'ProjectExcerpt',
   props: {
     project: Object
+  },
+  methods: {
+    getPath(slug) {
+      return `/projecten/${slug}/`;
+    }
   }
 }
 </script>

@@ -20,7 +20,6 @@ query {
         slug {
           current
         }
-        _rawSummary
       }
     }
   }

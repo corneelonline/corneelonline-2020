@@ -71,8 +71,14 @@ module.exports = {
   templates: {
     Webpage: '/:title',
     Post: '/blog/:title',
-    Project: '/projecten/:title',
-    Service: '/diensten/:title'
+    Project: '/projectenlalala/:title',
+    Service: '/diensten/:title',
+    SanityProject: [
+      {
+        path: '/projecten/:title',
+        component: './src/templates/SanityProject.vue'
+      }
+    ]
   },
   transformers: {
     remark: {

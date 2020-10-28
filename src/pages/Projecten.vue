@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <PageIntro 
-      v-bind:title="$page.post.title"
-      v-bind:headline="$page.post.headline"
-      v-bind:intro="$page.post.introduction_text"
+      v-bind:title="$page.portfolio.title"
+      v-bind:headline="$page.portfolio.introductionTitle"
+      v-bind:intro="$page.portfolio._rawIntroductionText"
     />
     <section class="featured-cases">
       <div class="wrapper">
@@ -20,32 +20,39 @@
 
 <page-query>
 query {
-  post: webpage(id: "b1876516c2866f7a2a29760bf0434237") {
+  portfolio: sanityPortfolio(id: "portfolio") {
     title
-    fileInfo {
-      name
-    }
-    headline
-    introduction_text
-    seo_title
-    seo_description
+    introductionTitle
+    _rawIntroductionText
   }
-  featuredProjects: allProject(sortBy: "delivery_date", order: DESC, filter: { published: { eq: true }, featured: { eq: true }}) {
+  featuredProjects: allSanityProject(sortBy: "deliveryDate", order: DESC, filter: { featured: { eq: true }}) {
     edges {
 			node {
         title
-        main_image
-        path
-        summary
+        slug {
+					current
+        }
+        mainImage {
+					asset {
+            url
+          }
+        }
+        _rawIntroductionText
       }
     }
   }
-  allProjects: allProject(sortBy: "delivery_date", order: DESC, filter: { published: { eq: true }, featured: { eq: false }}) {
+  allProjects: allSanityProject(sortBy: "deliveryDate", order: DESC, filter: { featured: { eq: false }}) {
     edges {
 			node {
         title
-        main_image
-        path
+        slug {
+					current
+        }
+        mainImage {
+					asset {
+            url
+          }
+        }
       }
     }
   }
@@ -61,27 +68,27 @@ import ProjectTeaser from '~/components/project/Teaser.vue'
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.seo_title,
+      title: this.$page.portfolio.seo_title,
       meta: [
         {
           name: "description",
-          content: this.$page.post.seo_description
+          content: this.$page.portfolio.seo_description
         },
         {
           property: "og:title",
-          content: this.$page.post.seo_title
+          content: this.$page.portfolio.seo_title
         },
         {
           property: "og:description",
-          content: this.$page.post.seo_description
+          content: this.$page.portfolio.seo_description
         },
         {
           property: "og:image",
-          content: this.$page.post.main_image
+          content: this.$page.portfolio.main_image
         }
       ],
       bodyAttrs: {
-        class: this.$page.post.fileInfo.name
+        class: "projecten"
       }
     }
   },

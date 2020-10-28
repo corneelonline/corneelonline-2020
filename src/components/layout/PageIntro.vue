@@ -2,7 +2,7 @@
   <section class="page-intro">
     <h1>{{ title }}</h1>
     <h2 class="headline" v-if="headline !== ''">{{ headline }}</h2>
-    <p v-if="intro !== ''">{{ intro }}</p>
+    <block-content :blocks="intro"/>
   </section>
 </template>
 

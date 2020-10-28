@@ -1,28 +1,28 @@
 <template>
   <Layout>
     <PageIntro 
-      v-bind:title="$page.post.title"
-      v-bind:headline="$page.post.headline"
-      v-bind:intro="$page.post.introduction_text"
+      v-bind:title="$page.service.title"
+      v-bind:headline="$page.service.introductionTitle"
+      v-bind:intro="$page.service._rawIntroductionText"
     />
     <section class="services-overview">
       <ServiceExcerpt v-for="edge in $page.services.edges" :key="edge.node.id">
         <h3>{{edge.node.title}}</h3>
-        <div v-html="edge.node.content" />
+        <block-content :blocks="edge.node._rawBody"/>
       </ServiceExcerpt>
     </section>
     <section class="big-image services">
-      <g-image :src="$page.post.big_image_one" alt="control room" />
+      <g-image :src="$page.service.bigImage.asset.url" alt="control room" />
     </section>
     <section class="process">
       <h2>Hoe ik het doe</h2>
-      <div class="process-step" v-for="process_step in $page.post.process_steps" :key="process_step.step_nr">
+      <div class="process-step" v-for="step in $page.service.steps" :key="step.stepNumber">
         <div class="process-step__nr">
-          <span>{{ process_step.step_nr }}</span>
+          <span>{{ step.stepNumber }}</span>
         </div>
         <div class="process-step__body">
-          <h3>{{ process_step.title }}</h3>
-          <p>{{ process_step.description }}</p>
+          <h3>{{ step.stepTitle }}</h3>
+          <block-content :blocks="step._rawStepDescription" className="process-step__desc"/>
         </div>
       </div>
     </section>
@@ -32,27 +32,30 @@
 
 <page-query>
 query {
-  post: webpage(id: "f30f003e2ef8095e79939ac605ccf56f") {
+  service: sanityServicesPage(id: "servicesPage") {
     title
-    fileInfo {
-      name
+    introductionTitle
+    _rawIntroductionText
+    bigImage {
+			asset {
+        url
+      }
     }
-    headline
-    introduction_text
-    big_image_one
-    process_steps {
-      step_nr
-      title
-      description
+    steps {
+      stepNumber
+      stepTitle
+      _rawStepDescription
     }
-    seo_title
-    seo_description
+    seo {
+      seo_title
+      meta_description
+    }
   }
-  services: allService(sortBy: "sort_order", order: ASC) {
+  services: allSanityService(sortBy: "sortOrder", order: ASC) {
     edges {
-      node {
+			node {
         title
-        content
+        _rawBody
       }
     }
   }
@@ -68,19 +71,19 @@ import ServiceExcerpt from '~/components/service/Excerpt.vue'
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.seo_title,
+      title: this.$page.service.seo_title,
       meta: [
         {
           name: "description",
-          content: this.$page.post.seo_description
+          content: this.$page.service.seo_description
         },
         {
           property: "og:title",
-          content: this.$page.post.seo_title
+          content: this.$page.service.seo_title
         },
         {
           property: "og:description",
-          content: this.$page.post.seo_description
+          content: this.$page.service.seo_description
         },
         {
           property: "og:image",
@@ -88,7 +91,7 @@ export default {
         }
       ],
       bodyAttrs: {
-        class: this.$page.post.fileInfo.name
+        class: "diensten"
       }
     }
   },

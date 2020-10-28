@@ -10,7 +10,7 @@
         <article class="blog-post__teaser" v-for="edge in $page.posts.edges" :key="edge.node.id">
           <g-link class="post-details" :to="edge.node.path">
             <figure class="cover-image">
-              <g-image :src="edge.node.main_image" alt="blog cover image" />
+              <g-image :src="edge.node.mainImage.asset.url" alt="blog cover image" />
             </figure>
             <ul class="tags" v-if="edge.node.tags">
               <li v-for="tag in edge.node.tags" :key="tag.id">{{ tag }}</li>
@@ -26,13 +26,20 @@
 
 <page-query>
 query {
-  posts: allPost(sortBy: "date_published", order: DESC, filter: { published: { eq: true }}) {
-		edges {
-			node {
+  posts: allSanityPost(sortBy: "publishedAt", order: DESC) {
+    edges {
+      node {
         id
-        path
         title
-        main_image
+        slug {
+          current
+        }
+        path
+        mainImage {
+          asset {
+            url
+          }
+        }
         tags
       }
     }

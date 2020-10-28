@@ -1,86 +1,36 @@
 <template>
-  <div class="related-articles" v-if="this.showComponent" >
+  <div class="related-articles" v-if="this.showComponent">
     <h3>Gerelateerde artikelen</h3>
     <div class="related-articles__body">
-      <article class="blog-post__teaser" v-for="item in this.postObjects" :key="item.id">
-        <g-link class="post-details" :to="item.path">
+      <article class="blog-post__teaser" v-for="relatedPost in this.relPosts" :key="relatedPost.id">
+        <g-link class="post-details" :to="relatedPost.path">
           <figure class="cover-image">
-            <g-image :src="item.main_image" alt="blog cover image" />
+            <g-image :src="relatedPost.mainImage.asset.url" alt="blog cover image" />
           </figure>
-          <ul class="tags" v-if="item.tags">
-            <li v-for="tag in item.tags" :key="tag.id">{{ tag }}</li>
+          <ul class="tags" v-if="relatedPost.tags">
+            <li v-for="tag in relatedPost.tags" :key="tag.id">{{ tag }}</li>
           </ul>
-          <h2>{{item.title}}</h2>
+          <h2>{{relatedPost.title}}</h2>
         </g-link>
       </article>
     </div>
   </div>
+  <div v-else>
+    Nothing...
+  </div>
 </template>
 
 <script>
-import { fetch } from 'gridsome'
-
 export default {
   name: 'RelatedArticles',
   props: {
-    relPaths: Array,
-  },
-  data () {
-    return {
-      postPaths: [],
-      postObjects: [],
-      isMounted: false
-    }
+    relPosts: Array,
   },
   computed: {
     showComponent: function () {
-      if (this.isMounted) {
-        return this.relPaths.length;
-      } else {
-        return false;
-      }
+      return this.relPosts.length
     }
-  },
-  methods: {
-    setPostPath(startpath) {
-      let arr = startpath.split("/");
-      let filename = arr[2].split(".");
-      this.postPaths.push(`/blog/${filename[0]}/`);
-    },
-    // setPostObject(elem) {
-    //   try {
-    //     const results = this.$fetch(elem);
-    //     this.postObjects.push(results.data.post);
-    //   } catch (error) {
-    //     console.log(error);
-    //   }
-    // }
-  },
-  mounted () {
-    console.dir(this.relPaths);
-    this.relPaths.forEach(element => this.setPostPath(element));
-    this.postPaths.forEach(async (elem) => {
-      try {
-        const results = await this.$fetch(elem);
-        this.postObjects.push(results.data.post);
-      } catch (error) {
-        console.log(error);
-      }
-    });
-    this.isMounted = true;
-  },
-  // beforeUpdate () {
-  //   console.log('UPDATE');
-  //   this.relPaths.forEach(element => this.setPostPath(element));
-  //   this.postPaths.forEach(async (elem) => {
-  //     try {
-  //       const results = await this.$fetch(elem);
-  //       this.postObjects.push(results.data.post);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   });
-  // }
+  }
 }
 </script>
 

@@ -5,7 +5,6 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 require('dotenv').config()
-// console.log(process.env.PROJECT_ID);
 
 // Make the SASS available in all files
 const path = require('path')
@@ -55,8 +54,8 @@ module.exports = {
     {
       use: 'gridsome-source-sanity',
       options: {
-        projectId: process.env.PROJECT_ID,
-        dataset: process.env.DATASET,
+        projectId: process.env.GRIDSOME_PROJECT_ID,
+        dataset: process.env.GRIDSOME_DATASET,
         // Token is only required if dataset is private
         // or `overlayDrafts` is set to true
         token: process.env.TOKEN,
@@ -70,13 +69,19 @@ module.exports = {
   ],
   templates: {
     Webpage: '/:title',
-    Post: '/blog/:title',
+    Post: '/bloglalall/:title',
     Project: '/projectenlalala/:title',
     Service: '/diensten/:title',
     SanityProject: [
       {
         path: '/projecten/:title',
         component: './src/templates/SanityProject.vue'
+      }
+    ],
+    SanityPost: [
+      {
+        path: '/blog/:title',
+        component: './src/templates/SanityPost.vue'
       }
     ]
   },

@@ -1,8 +1,8 @@
 <template>
   <div class="project__teaser">
-    <g-link :to="project.path">
+    <g-link :to="getPath(project.slug.current)">
       <figure class="project-img">
-        <g-image :src="project.main_image" alt="project img" />
+        <g-image :src="project.mainImage.asset.url" alt="project img" />
       </figure>
     </g-link>
   </div>
@@ -13,6 +13,11 @@ export default {
   name: 'ProjectTeaser',
   props: {
     project: Object
+  },
+  methods: {
+    getPath(slug) {
+      return `/projecten/${slug}/`;
+    }
   }
 }
 </script>

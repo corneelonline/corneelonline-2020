@@ -7,9 +7,7 @@
     </section>
     <section class="home-services">
       <h2>{{$page.home.servicesTitle}}</h2>
-      <div class="home-services__body">
-        <block-content :blocks="$page.home._rawServicesText"/>
-      </div>
+      <block-content :blocks="$page.home._rawServicesText" className="home-services__body"/>
       <h2>Corneel Online houdt zich bezig met:</h2>
       <div class="home-services__teasers">
         <ServiceTeaser 
@@ -36,9 +34,7 @@
       <div class="about-corneel__image">
         <g-image :src="$page.home.aboutMeImage.asset.url" alt="foto van Marco Verheul" />
       </div>
-      <div class="about-corneel__body">
-        <block-content :blocks="$page.home._rawAboutMeText"/>
-      </div>
+      <block-content :blocks="$page.home._rawAboutMeText" className="about-corneel__body"/>
     </section>
     <ContactMe />
     <BigImage>

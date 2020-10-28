@@ -8,13 +8,19 @@
 
 <static-query>
 query {
-  featuredProjects: allProject(sortBy: "delivery_date", order: DESC, filter: { published: { eq: true }, featured: { eq: true }}) {
+  featuredProjects: allSanityProject(sortBy: "deliveryDate", order: DESC, filter: { featured: { eq: true }}) {
     edges {
 			node {
         title
-        main_image
-        path
-        summary
+        mainImage {
+          asset {
+            url
+          }
+        }
+        slug {
+          current
+        }
+        _rawSummary
       }
     }
   }

@@ -8,18 +8,24 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
 
 pre {
   padding: calc(var(--space) / 2);
-  font-size: .85em;
-  background-color: var(--bg-code);
+  // font-size: .85em;
+  background-color: var(--color-gray-lighter);
   margin-bottom: 2em;
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
 }
 
 code {
-  background-color: var(--bg-code);
-  border: 1px solid var(--border-color);
-  font-size: .85em;
-  padding: .2em .5em;
+  @include font-size(1.125);
+  background-color: var(--color-gray-lighter);
+  color: var(--color-orange);
+  padding: .25rem .75rem;
+  @media (min-width: $md) {
+    @include font-size(1.5); // 20px
+  }
+  @media (min-width: $lg) {
+    @include font-size(1.5); // 20px
+  }
 }
 
 code[class*="language-"],

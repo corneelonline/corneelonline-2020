@@ -19,38 +19,18 @@ function addStyleResource (rule) {
     })
 }
 
+// const sanityClient = require('@sanity/client')
+// const client = sanityClient({
+//   projectId: process.env.GRIDSOME_PROJECT_ID,
+//   dataset: process.env.GRIDSOME_DATASET,
+//   token: process.env.TOKEN, // create read/write token when using this
+//   useCdn: false // `false` if you want to ensure fresh data
+// })
+
 // Declare modules
 module.exports = {
   siteName: 'Corneel Online',
   plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Webpage',
-        path: './content/*.md',
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Post',
-        path: './content/posts/**/*.md',
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Project',
-        path: './content/projects/**/*.md',
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Service',
-        path: './content/services/**/*.md',
-      }
-    },
     {
       use: 'gridsome-source-sanity',
       options: {
@@ -68,10 +48,6 @@ module.exports = {
     }
   ],
   templates: {
-    Webpage: '/:title',
-    Post: '/bloglalall/:title',
-    Project: '/projectenlalala/:title',
-    Service: '/diensten/:title',
     SanityProject: [
       {
         path: '/projecten/:title',
@@ -84,11 +60,6 @@ module.exports = {
         component: './src/templates/SanityPost.vue'
       }
     ]
-  },
-  transformers: {
-    remark: {
-      //
-    }
   },
   chainWebpack (config) {
     // Load variables for all vue-files

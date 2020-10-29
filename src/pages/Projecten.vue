@@ -29,9 +29,7 @@ query {
     edges {
 			node {
         title
-        slug {
-					current
-        }
+        path
         mainImage {
 					asset {
             url
@@ -45,9 +43,7 @@ query {
     edges {
 			node {
         title
-        slug {
-					current
-        }
+        path
         mainImage {
 					asset {
             url

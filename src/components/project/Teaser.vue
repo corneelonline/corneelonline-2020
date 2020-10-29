@@ -1,6 +1,6 @@
 <template>
   <div class="project__teaser">
-    <g-link :to="getPath(project.slug.current)">
+    <g-link :to="project.path">
       <figure class="project-img">
         <g-image :src="project.mainImage.asset.url" alt="project img" />
       </figure>

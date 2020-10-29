@@ -53,8 +53,31 @@ import imagesLoaded from 'vue-images-loaded'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
-  metaInfo: {
-    title: 'Blog'
+  metaInfo() {
+    return {
+      title: "Blog",
+      meta: [
+        {
+          name: "description",
+          content: "Corneel heeft wat te vertellen. In het blog vind je artikelen over webdevelopment, webdesign, tips en tricks, trends en ontwikkelingen en nog veel meer."
+        },
+        {
+          property: "og:title",
+          content: "Blog"
+        },
+        {
+          property: "og:description",
+          content: "Corneel heeft wat te vertellen. In het blog vind je artikelen over webdevelopment, webdesign, tips en tricks, trends en ontwikkelingen en nog veel meer."
+        },
+        {
+          property: "og:image",
+          content: ""
+        }
+      ],
+      bodyAttrs: {
+        class: "Blog"
+      }
+    }
   },
   directives: {
     imagesLoaded

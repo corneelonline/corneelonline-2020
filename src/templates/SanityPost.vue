@@ -154,5 +154,9 @@ export default {
       padding-right: 8rem;
     }
   }
+
+  figure {
+    margin-bottom: 4rem;
+  }
 }
 </style>

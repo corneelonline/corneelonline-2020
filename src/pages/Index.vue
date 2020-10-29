@@ -73,9 +73,9 @@ query {
       meta_description
     }
   }
-  services: allService(sortBy: "sort_order", order: ASC, filter: { show_on_homepage: { eq: true }}) {
+  services: allSanityService(sortBy: "sortOrder", order: ASC, filter: { showOnHomepage: { eq: true }}) {
     edges {
-      node {
+			node {
         title
       }
     }
@@ -130,7 +130,6 @@ export default {
 // Home intro
 // -----------------------------------------------
 .home-intro {
-  // @include container;
   @include container-half;
   background-image: url('~@/assets/images/bg/home-intro.jpg');
   background-position: center bottom;

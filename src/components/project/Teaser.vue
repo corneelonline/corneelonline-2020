@@ -3,6 +3,7 @@
     <g-link :to="project.path">
       <figure class="project-img">
         <g-image :src="project.mainImage.asset.url" alt="project img" />
+        <figcaption>{{project.title}}</figcaption>
       </figure>
     </g-link>
   </div>
@@ -33,12 +34,35 @@ export default {
   @media (min-width: $lg) {
     height: 218px;
   }
-
-  a {
+}
+.project__teaser a {
     display: block;
     width: 100%;
     height: 100%;
-  }
+    position: relative;
+
+    figcaption {
+      display: none;
+    }
+}
+.project__teaser a:hover {
+    figcaption {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(51,51,51,0.9);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: var(--color-white);
+      font-family: var(--ff-header);
+      font-weight: var(--fw-normal);
+      text-transform: uppercase;
+      text-align: center;
+    }
 }
 .project-img {
   display: block;

@@ -11,13 +11,15 @@
     "@gridsome/transformer-remark": "^0.6.3",
     "@sanity/client": "^2.0.1",
     "dotenv": "^8.2.0",
+    "get-youtube-id": "^1.0.1",
     "gridsome": "^0.7.0",
     "gridsome-source-sanity": "^1.0.5",
     "imagesloaded": "^4.1.4",
     "masonry-layout": "^4.2.2",
     "sanity-blocks-vue-component": "^0.1.0",
     "vue-images-loaded": "^1.1.2",
-    "vue-slick-carousel": "^1.0.6"
+    "vue-slick-carousel": "^1.0.6",
+    "vue-youtube": "^1.4.0"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",

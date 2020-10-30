@@ -66,6 +66,10 @@ body.home {
   }
 }
 
+.project-body figure {
+  margin-bottom: 4rem;
+}
+
 
 // ---------------------------------------------------------
 // basic elements
@@ -110,6 +114,12 @@ a:hover {
   @extend .highlighted-text;
 }
 
+.page-content {
+  @include container-narrow;
+  background-color: var(--color-gray-light);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 // ---------------------------------------------------------
 // Copy media queries from here

@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="project-body" v-if="$page.sanityProject._rawBody">
-        <block-content :blocks="$page.sanityProject._rawBody"/>
+        <SanityRichText :blocks="$page.sanityProject._rawBody" />
       </div>
     </section>
     <ContactMe />
@@ -53,7 +53,7 @@ query ($path: String!) {
     services
     deliveryDate(format: "YYYY")
     visitWebsite
-    _rawBody
+    _rawBody(resolveReferences: {maxDepth: 10})
     seo {
       seo_title
       meta_description
@@ -63,6 +63,7 @@ query ($path: String!) {
 </page-query>
 
 <script>
+import SanityRichText from '~/components/ui/SanityRichText.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
@@ -93,6 +94,7 @@ export default {
     }
   },
   components: {
+    SanityRichText,
     ContactMe
   }
 }

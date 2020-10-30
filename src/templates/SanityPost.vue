@@ -15,11 +15,7 @@
         </ul>
       </div>
       <div class="post-single__content">
-        <block-content 
-        :blocks="$page.sanityPost._rawBody"
-        :projectId="this.projectId"
-        :dataset="this.dataset"
-        />
+        <SanityRichText :blocks="$page.sanityPost._rawBody" />
       </div>
     </section>
     <RelatedArticles v-bind:relPosts="$page.sanityPost.relatedPosts"/>
@@ -33,13 +29,16 @@ query ($path: String!) {
     id
     path
     title
+    slug {
+      current
+    }
     mainImage {
       asset {
         url
       }
     }
     tags
-    _rawBody
+    _rawBody(resolveReferences: {maxDepth: 10})
     relatedPosts {
       id
       path
@@ -56,6 +55,7 @@ query ($path: String!) {
 </page-query>
 
 <script>
+import SanityRichText from '~/components/ui/SanityRichText.vue'
 import RelatedArticles from '~/components/blog/RelatedArticles.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
@@ -87,18 +87,9 @@ export default {
     }
   },
   components: {
+    SanityRichText,
     RelatedArticles,
     ContactMe
-  },
-  data: function () {
-    return {
-      projectId: null,
-      dataset: null
-    }
-  },
-  created() {
-    this.projectId = process.env.GRIDSOME_PROJECT_ID
-    this.dataset = process.env.GRIDSOME_DATASET
   }
 }
 </script>

@@ -6,7 +6,9 @@ import '~/assets/styles/main.scss'
 // Import default layout so we don't need to import it to every page
 import DefaultLayout from '~/layouts/Default.vue'
 
+// Import a Vue component for rendering block text from Sanity
 import BlockContent from 'sanity-blocks-vue-component'
+import VueYoutube from 'vue-youtube'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -22,7 +24,4 @@ export default function (Vue, { router, head, isClient }) {
 
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'nl' }
-  
-  // Add attributes to BODY tag
-  // head.bodyAttrs = { class: 'page' }
 }

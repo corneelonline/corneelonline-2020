@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="project-body" v-if="$page.sanityProject._rawBody">
-        <SanityRichText :blocks="$page.sanityProject._rawBody" />
+        <PortableText :blocks="$page.sanityProject._rawBody" />
       </div>
     </section>
     <ContactMe />
@@ -63,7 +63,7 @@ query ($path: String!) {
 </page-query>
 
 <script>
-import SanityRichText from '~/components/ui/SanityRichText.vue'
+import PortableText from '~/components/sanity/PortableText.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
@@ -94,7 +94,7 @@ export default {
     }
   },
   components: {
-    SanityRichText,
+    PortableText,
     ContactMe
   }
 }

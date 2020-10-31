@@ -15,7 +15,7 @@
         </ul>
       </div>
       <div class="post-single__content">
-        <SanityRichText :blocks="$page.sanityPost._rawBody" />
+        <PortableText :blocks="$page.sanityPost._rawBody" />
       </div>
     </section>
     <RelatedArticles v-bind:relPosts="$page.sanityPost.relatedPosts"/>
@@ -55,7 +55,7 @@ query ($path: String!) {
 </page-query>
 
 <script>
-import SanityRichText from '~/components/ui/SanityRichText.vue'
+import PortableText from '~/components/sanity/PortableText.vue'
 import RelatedArticles from '~/components/blog/RelatedArticles.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
@@ -87,7 +87,7 @@ export default {
     }
   },
   components: {
-    SanityRichText,
+    PortableText,
     RelatedArticles,
     ContactMe
   }

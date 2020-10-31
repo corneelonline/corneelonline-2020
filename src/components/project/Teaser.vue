@@ -62,6 +62,7 @@ export default {
       font-weight: var(--fw-normal);
       text-transform: uppercase;
       text-align: center;
+      @include font-size(0.9)
     }
 }
 .project-img {

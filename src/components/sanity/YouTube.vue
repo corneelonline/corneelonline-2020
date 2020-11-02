@@ -1,8 +1,6 @@
 <template>
-  <div class="youtube-wrapper">
-    <iframe 
-      width="560" 
-      height="315" 
+  <div class="video-container">
+    <iframe  
       :src="videoEmbedUrl" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -35,7 +33,19 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.youtube-wrapper {
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
   margin-bottom: 2rem;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }
 </style>

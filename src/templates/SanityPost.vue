@@ -149,5 +149,9 @@ export default {
   figure {
     margin-bottom: 4rem;
   }
+
+  & /deep/ p:first-of-type {
+    @extend .highlighted-text;
+  }
 }
 </style>

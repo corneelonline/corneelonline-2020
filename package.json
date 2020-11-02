@@ -19,7 +19,8 @@
     "sanity-blocks-vue-component": "^0.1.0",
     "vue-images-loaded": "^1.1.2",
     "vue-slick-carousel": "^1.0.6",
-    "vue-youtube": "^1.4.0"
+    "vue-youtube": "^1.4.0",
+    "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",

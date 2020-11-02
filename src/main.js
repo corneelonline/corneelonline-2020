@@ -8,7 +8,6 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 // Import a Vue component for rendering block text from Sanity
 import BlockContent from 'sanity-blocks-vue-component'
-import VueYoutube from 'vue-youtube'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component

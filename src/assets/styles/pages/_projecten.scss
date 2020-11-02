@@ -1,7 +1,7 @@
 // -----------------------------------------------
-// Diensten
+// Projecten
 // -----------------------------------------------
-body.diensten {
+body.projecten {
   position: relative;
 
   &::before {
@@ -10,10 +10,10 @@ body.diensten {
       display: block;
       width: 280px;
       height: 280px;
-      border: 1px solid var(--color-yellow);
+      border: 1px solid var(--color-orange);
       border-radius: 50%;
-      background-color: var(--color-yellow);
-      background-image: url('~@/assets/images/icon-rocket-white.svg');
+      background-color: var(--color-orange);
+      background-image: url('~@/assets/images/icon-service-development-white.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 120px 144px;
@@ -25,11 +25,11 @@ body.diensten {
       width: 320px;
       height: 320px;
       background-size: 160px 186px;
-      top: 110px;
-      right: 80px;
+      top: 100px;
+      right: 90px;
     }
     @media (min-width: $xl) {
-      right: 110px;
+      right: 100px;
     }
   }
 
@@ -39,13 +39,13 @@ body.diensten {
       display: block;
       width: 140px;
       height: 540px;
-      background-image: url('~@/assets/images/bg/concrete-block.png');
-      background-position: center top;
+      background-image: url('~@/assets/images/bg/takel.png');
+      background-position: bottom center;
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
-      top: 0;
-      right: 80px;
+      top: -40px;
+      right: 40px;
     }
     @media (min-width: $lg) {
       width: 175px;
@@ -54,9 +54,9 @@ body.diensten {
   }
 }
 
-body.diensten .banner {
+body.projecten .banner {
   @media (min-width: $lg) {
-    background-image: url('~@/assets/images/arrow-orange-down.svg');
+    background-image: url('~@/assets/images/arrow-yellow-down.svg');
     background-position: calc(100% - 16px) 0;
     background-repeat: no-repeat;
     background-size: 117px 94px;

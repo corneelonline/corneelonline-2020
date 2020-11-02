@@ -75,7 +75,7 @@ export default {
         }
       ],
       bodyAttrs: {
-        class: "Blog"
+        class: "blog"
       }
     }
   },

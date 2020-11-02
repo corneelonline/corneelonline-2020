@@ -78,7 +78,7 @@ export default {
         }
       ],
       bodyAttrs: {
-        class: this.$page.about.title
+        class: "over-corneel"
       }
     }
   },

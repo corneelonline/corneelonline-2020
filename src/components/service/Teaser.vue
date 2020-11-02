@@ -37,6 +37,25 @@ export default {
     background-size: 6.3125rem 7.375rem; //101px 118px;
   }
 
+  &.development {
+    background-image: url('~@/assets/images/icon-service-development.svg');
+  }
+  &.design {
+    background-image: url('~@/assets/images/icon-service-design.svg');
+  }
+  &.cms {
+    background-image: url('~@/assets/images/icon-service-cms.svg');
+  }
+  &.advice {
+    background-image: url('~@/assets/images/icon-service-advice.svg');
+  }
+  &.mobile-first {
+    background-image: url('~@/assets/images/icon-service.svg');
+  }
+  &.seo {
+    background-image: url('~@/assets/images/icon-service-seo.svg');
+  }
+
   h3 {
     @extend .h4;
     line-height: 1.5rem;

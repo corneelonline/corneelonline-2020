@@ -20,8 +20,7 @@ export default {
     },
   },
   components: {
-    SanityRichText,
-    YouTube
+    SanityRichText
   },
   data() {
     return {

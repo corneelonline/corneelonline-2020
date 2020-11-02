@@ -6,7 +6,7 @@
       v-bind:intro="$page.service._rawIntroductionText"
     />
     <section class="services-overview">
-      <ServiceExcerpt v-for="edge in $page.services.edges" :key="edge.node.id">
+      <ServiceExcerpt v-for="edge in $page.services.edges" :key="edge.node.id" v-bind:class="edge.node.serviceClass">
         <h3>{{edge.node.title}}</h3>
         <block-content :blocks="edge.node._rawBody"/>
       </ServiceExcerpt>
@@ -55,6 +55,7 @@ query {
     edges {
 			node {
         title
+        serviceClass
         _rawBody
       }
     }

@@ -34,14 +34,17 @@ html, body {
 // -----------------------------------------------
 // Page decorations
 // -----------------------------------------------
-// body.home {
-//   @media (min-width: $md) {
-//     background-image: url('~@/assets/images/bg/bg-header-home.jpg');
-//     background-position: center top;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//   }
-// }
+body.home {
+  @media (min-width: $md) {
+    background-image: url('~@/assets/images/bg/bg-header-home.jpg');
+    background-position: center 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  @media (min-width: $lg) {
+    background-position: center 50px;
+  }
+}
 body.home {
   position: relative;
 
@@ -60,6 +63,10 @@ body.home {
       right: 80px;
     }
     @media (min-width: $lg) {
+      width: 175px;
+      height: 560px;
+    }
+    @media (min-width: $xl) {
       width: 175px;
       height: 671px;
     }

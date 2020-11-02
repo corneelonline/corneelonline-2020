@@ -14,6 +14,7 @@
           v-for="edge in $page.services.edges" 
           :key="edge.node.id" 
           v-bind:title="edge.node.title"
+          v-bind:class="edge.node.serviceClass"
         />
       </div>
     </section>
@@ -77,6 +78,7 @@ query {
     edges {
 			node {
         title
+        serviceClass
       }
     }
   }
@@ -112,7 +114,7 @@ export default {
         }
       ],
       bodyAttrs: {
-        class: this.$page.home.title
+        class: this.$page.home.title.toLowerCase()
       }
     }
   },
@@ -143,14 +145,16 @@ export default {
     padding-bottom: 7rem;
   }
   @media (min-width: $md) {
+    background-image: none;
     padding-bottom: 8rem;
   }
   @media (min-width: $lg) {
     @include container-narrow-half;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 10rem;
   }
   @media (min-width: $xl) {
+    padding-top: 5rem;
     padding-bottom: 14rem;
   }
 

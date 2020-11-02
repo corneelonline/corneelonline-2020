@@ -62,3 +62,47 @@ body.projecten .banner {
     background-size: 117px 94px;
   }
 }
+
+// -----------------------------------------------
+// Single Project
+// -----------------------------------------------
+body.project {
+  position: relative;
+
+  &::before {
+    @media (min-width: $lg) {
+      content: "";
+      display: block;
+      width: 400px;
+      height: 400px;
+      border: 1px solid var(--color-orange);
+      border-radius: 50%;
+      background-color: var(--color-orange);
+      position: absolute;
+      top: -160px;
+      right: -150px;
+    }
+    @media (min-width: $xl) {
+      width: 500px;
+      height: 500px;
+      top: -250px;
+      right: -200px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $lg) {
+      content: "";
+      display: block;
+      width: 140px;
+      height: 540px;
+      background-image: url('~@/assets/images/bg/takel.png');
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: -200px;
+      right: 40px;
+    }
+  }
+}

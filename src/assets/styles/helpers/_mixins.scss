@@ -63,16 +63,13 @@
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   @media (min-width: $md) {
-    // padding-left: calc(50% - 230px);
     padding-right: 40%;
   }
   @media (min-width: $lg) {
     padding-left: calc(50% - 372px);
-    padding-right: 35%;
   }
   @media (min-width: $xl) {
     padding-left: calc(50% - 480px);
-    padding-right: 40%;
   }
 }
 

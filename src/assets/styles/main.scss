@@ -34,3 +34,14 @@
 @import 'base/typography';
 @import 'base/base';
 @import 'base/code';
+
+/* ----------------------------------------------
+ | Pages
+ | ----------------------------------------------
+ |
+ | The pages/ folder holds styles for pages that cannot be added
+ | in the dedicated components.
+ |
+*/
+@import 'pages/home';
+@import 'pages/diensten';

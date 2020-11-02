@@ -1,0 +1,45 @@
+// -----------------------------------------------
+// Homepage
+// -----------------------------------------------
+body.home {
+  @media (min-width: $md) {
+    background-image: url('~@/assets/images/bg/bg-header-home.jpg');
+    background-position: center 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  @media (min-width: $lg) {
+    background-position: center 50px;
+  }
+}
+body.home {
+  position: relative;
+
+  &::after {
+    @media (min-width: $md) {
+      content: "";
+      display: block;
+      width: 140px;
+      height: 540px;
+      background-image: url('~@/assets/images/bg/concrete-block.png');
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      right: 80px;
+    }
+    @media (min-width: $lg) {
+      width: 175px;
+      height: 560px;
+    }
+    @media (min-width: $xl) {
+      width: 175px;
+      height: 671px;
+    }
+  }
+}
+
+.project-body figure {
+  margin-bottom: 4rem;
+}

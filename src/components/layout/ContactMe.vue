@@ -44,7 +44,7 @@ export default {
     background-image: url('~@/assets/images/double-bubble-sm.svg');
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: 1.8125rem 26.625rem; //282px 426px;
+    background-size: 17.625rem 26.625rem; //282px 426px;
     position: relative;
   
     @media (min-width: $md) {

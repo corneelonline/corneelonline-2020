@@ -25,17 +25,17 @@ export default {
 
 <style scoped lang="scss">
 .contact-me {
-  height: 450px;
+  height: 28.125rem; //450px;
   background: var(--color-gray-lighter);
   background: linear-gradient(0deg, var(--color-gray-lighter) 75%, var(--color-white) 75%, var(--color-white) 100%);
   color: var(--color-white);
   
   @media (min-width: $md) {
-    height: 820px;
+    height: 51.25rem; //820px;
     background: linear-gradient(0deg, var(--color-gray-lighter) 85%, var(--color-white) 85%, var(--color-white) 100%);
   }
   @media (min-width: $lg) {
-    height: 612px;
+    height: 38.25rem; //612px;
     background: linear-gradient(0deg, var(--color-gray-lighter) 88%, var(--color-white) 88%, var(--color-white) 100%);
   }
 
@@ -44,16 +44,16 @@ export default {
     background-image: url('~@/assets/images/double-bubble-sm.svg');
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: 282px 426px;
+    background-size: 1.8125rem 26.625rem; //282px 426px;
     position: relative;
   
     @media (min-width: $md) {
       background-image: url('~@/assets/images/double-bubble-md.svg');
-      background-size: 673px 789px;
+      background-size: 42.0625rem 49.3125rem; //673px 789px;
     }
     @media (min-width: $lg) {
       background-image: url('~@/assets/images/double-bubble-lg.svg');
-      background-size: 996px 512px;
+      background-size: 62.25rem 32rem; //996px 512px;
     }
   }
 
@@ -69,17 +69,17 @@ export default {
     width: 200px;
     position: absolute;
     top: 70px;
-    left: calc(50% - 100px);
+    left: calc(50% - 6.25rem);
   
     @media (min-width: $md) {
       width: 374px;
       top: 140px;
-      left: calc(50% - 226px);
+      left: calc(50% - 14.125rem);
     }
     @media (min-width: $lg) {
       width: 374px;
       top: 140px;
-      left: calc(50% - 362px);
+      left: calc(50% - 22.625rem);
     }
 
     p {
@@ -87,7 +87,6 @@ export default {
   
       @media (min-width: $md) {
         @include font-size(1);
-        // @include font-size(1.125); // 18px
       }
     }
 
@@ -113,17 +112,17 @@ export default {
     width: 200px;
     position: absolute;
     bottom: 100px;
-    left: calc(50% - 100px);
+    left: calc(50% - 6.25rem);
   
     @media (min-width: $md) {
       width: 374px;
       bottom: 160px;
-      left: calc(50% - 16px);
+      left: calc(50% - 1rem);
     }
     @media (min-width: $lg) {
-      width: 374px;
-      bottom: 254px;
-      left: calc(50% + 120px);
+      width: 23.375rem; //374px;
+      bottom: 15.875rem; //254px;
+      left: calc(50% + 7.5rem);
     }
 
     a {

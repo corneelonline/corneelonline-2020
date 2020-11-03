@@ -68,7 +68,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .featured-projects__teasers {
   height: 240px;
 
@@ -133,10 +133,10 @@ export default {
   opacity: 1;
 
   @media (min-width: $md) {
-    font-size: 16px;
+    @include font-size(1);
   }
   @media (min-width: $lg) {
-    font-size: 12px;
+    @include font-size(0.75);
   }
 }
 .slick-dots {
@@ -146,15 +146,15 @@ export default {
   }
 }
 .slick-dots li.slick-active button::before {
-  font-size: 10px;
+  @include font-size(0.625);
   color: var(--color-orange);
   opacity: 1;
 
   @media (min-width: $md) {
-    font-size: 16px;
+    @include font-size(1);
   }
   @media (min-width: $lg) {
-    font-size: 12px;
+    @include font-size(0.75);
   }
 }
 </style>

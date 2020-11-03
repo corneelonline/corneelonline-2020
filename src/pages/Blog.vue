@@ -100,7 +100,6 @@ export default {
 
 <style scoped lang="scss">
 .blog-posts {
-  // border: 1px solid red;
   @include container;
   background-color: var(--color-gray-light);
   border-bottom: 3rem solid var(--color-white);

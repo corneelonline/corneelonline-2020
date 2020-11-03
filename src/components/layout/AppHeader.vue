@@ -49,9 +49,9 @@ export default {
 // -------------------------------------
 .banner {
   // var definitions
-  --banner-height-xs: 100px;
-  --banner-height-md: 130px;
-  --banner-height-lg: 130px;
+  --banner-height-xs: 6.25rem; //100px;
+  --banner-height-md: 8.125rem; //130px;
+  --banner-height-lg: 8.125rem; //130px;
 
   // styles
   height: var(--banner-height-xs);
@@ -67,7 +67,6 @@ export default {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    // background-color: darken(rgb(255,240,109), 20%);
   }
 
   &.active {
@@ -80,11 +79,11 @@ export default {
 // -------------------------------------
 #logo {
   position: absolute;
-  top: 25px;
+  top: 1.5625rem; //25px;
   left: 1rem;
   display: block;
-  width: 57px;
-  height: 50px;
+  width: 3.5626rem; //57px;
+  height: 3.125rem; //50px;
   text-indent: -9000px;
   background-image: url('~@/assets/images/logo-corneel.svg');
   background-position: 0 0;
@@ -93,13 +92,13 @@ export default {
 
   @media (min-width: $md) {
     left: 2rem;
-    width: 100px;
-    height: 87px;
+    width: 6.25rem; //100px;
+    height: 5.4375rem; //87px;
   }
 
   @media (min-width: $lg) {
     position: static;
-    margin-right: 70px;
+    margin-right: 4.375rem; //70px;
   }
 
   &.inverted {
@@ -154,7 +153,7 @@ export default {
     background-image: url('~@/assets/images/arrow-white-right.svg');
     background-position: calc(100% - (var(--gutter-xs))) 50%;
     background-repeat: no-repeat;
-    background-size: 19px 15px;
+    background-size: 1.1875rem 0.9375rem; //19px 15px;
 
     @media (min-width: $lg) {
       color: var(--color-black);
@@ -183,7 +182,7 @@ export default {
 // -------------------------------------
 .menu-toggler {
   position: absolute;
-  top: 40px;
+  top: 2.5rem; //40px;
   right: 1rem;
   display: flex;
   border: none;
@@ -195,7 +194,7 @@ export default {
   }
 
   @media (min-width: $md) {
-    top: 50px;
+    top: 3.125rem; //50px;
     right: 2rem;
   }
   @media (min-width: $lg) {
@@ -204,8 +203,8 @@ export default {
 }
 .menu-hamburger {
   display: inline-block;
-  width: 36px;
-  height: 24px;
+  width: 2.25rem; //36px;
+  height: 1.5rem; //24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

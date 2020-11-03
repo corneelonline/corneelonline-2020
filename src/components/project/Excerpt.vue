@@ -31,6 +31,10 @@ export default {
 .project-excerpt {
   margin-bottom: 3rem;
 
+  @media (min-width: $md) {
+    margin-bottom: 4rem;
+  }
+
   .project-details {
     text-decoration: none;
     color: var(--color-text-main);
@@ -115,6 +119,10 @@ export default {
     @media (min-width: $lg) {
       @include font-size(1.5); // 24px
     }
+  }
+
+  p {
+    @include font-size(1.0625);
   }
 }
 </style>

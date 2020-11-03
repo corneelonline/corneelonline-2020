@@ -10,9 +10,9 @@
       </div>
       <div class="page-footer__blog">
         <h4>Uit het blog</h4>
-        <g-link to="/blog/">Corneel Online bestaat 5 jaar</g-link>
-        <g-link to="/blog/">Headless CMS: een korte introductie</g-link>
-        <g-link to="/blog/">WordPress Gutenberg Editor</g-link>
+        <g-link v-for="edge in $static.posts.edges" :key="edge.node.id" :to="edge.node.path">
+          {{edge.node.title}}
+        </g-link>
       </div>
       <div class="page-footer__contact">
         <h4>Contact</h4>
@@ -34,6 +34,24 @@
 query {
   metadata {
     siteName
+  }
+  posts: allSanityPost(sortBy: "publishedAt", order: DESC, limit: 3) {
+    edges {
+      node {
+        id
+        title
+        slug {
+          current
+        }
+        path
+        mainImage {
+          asset {
+            url
+          }
+        }
+        tags
+      }
+    }
   }
 }
 </static-query>
@@ -90,8 +108,8 @@ query {
 }
 .logo-inverted {
   display: block;
-  width: 100px;
-  height: 88px;
+  width: 6.25rem; //100px;
+  height: 5.5rem; //88px;
   text-indent: -9000px;
   background-image: url('~@/assets/images/logo-corneel-inverted.svg');
   background-position: 0 0;
@@ -99,13 +117,13 @@ query {
   background-size: contain;
 
   @media (min-width: $md) {
-    width: 81px;
-    height: 71px;
+    width: 5.0625rem; //81px;
+    height: 4.4375rem; //71px;
   }
 
   @media (min-width: $lg) {
-    width: 100px;
-    height: 88px;
+    width: 6.25rem; //100px;
+    height: 5.5rem; //88px;
   }
 }
 // -------------------------------------
@@ -185,7 +203,7 @@ query {
     text-transform: uppercase;
   
     @media (min-width: $lg) {
-      margin: 6px 0 0 0;
+      margin: 0.375rem 0 0 0;
     }
   }
 }

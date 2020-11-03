@@ -129,7 +129,6 @@ export default {
   }
 }
 .project-img {
-  // border: 1px solid red;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 2rem;
@@ -140,8 +139,8 @@ export default {
 }
 .main-image {
   display: block;
-  width: 204px;
-  height: 143px;
+  width: 12.75rem; //204px;
+  height: 8.9375rem; //143px;
   margin-bottom: 1rem;
   background-image: url('~@/assets/images/bg/laptop.svg');
   background-position: center;
@@ -150,47 +149,47 @@ export default {
   position: relative;
   
   @media (min-width: $sm) {
-    width: 570px;
-    height: 360px;
+    width: 35.625rem; //570px;
+    height: 22.5rem; //360px;
   }
   @media (min-width: $md) {
-    width: 760px;
-    height: 470px;
+    width: 47.5rem; //760px;
+    height: 29.375rem; //470px;
   }
   @media (min-width: $lg) {
-    width: 740px;
-    height: 520px;
+    width: 46.25rem; //740px;
+    height: 32.5rem; //520px;
   }
   @media (min-width: $xl) {
-    width: 960px;
-    height: 680px;
+    width: 60rem; //960px;
+    height: 42.5rem; //680px;
   }
 
   img {
     position: absolute;
-    top: 12px;
-    left: 18px;
-    width: 168px;
+    top: 0.75rem; //12px;
+    left: 1.125rem; //18px;
+    width: 10.5rem; //68px;
   
     @media (min-width: $sm) {
-      top: 30px;
-      left: calc(50% - 212px);
-      width: 424px;
+      top: 1.875rem; //30px;
+      left: calc(50% - 13.75rem); //212px
+      width: 26.5rem; //424px;
     }
     @media (min-width: $md) {
-      top: 40px;
-      left: calc(50% - 277px);
-      width: 554px;
+      top: 2.5rem; //40px;
+      left: calc(50% - 17.3125rem); //277px
+      width: 34.625rem; //554px;
     }
     @media (min-width: $lg) {
-      top: 42px;
-      left: calc(50% - 307px);
-      width: 614px;
+      top: 2.625rem; //42px;
+      left: calc(50% - 19.1875); //307px
+      width: 38.375rem; //614px;
     }
     @media (min-width: $xl) {
-      top: 58px;
-      left: calc(50% - 400px);
-      width: 800px;
+      top: 3.625rem; //58px;
+      left: calc(50% - 25rem); //400px
+      width: 50rem; //800px;
     }
   }
 }
@@ -205,7 +204,6 @@ export default {
   }
   
   &__details {
-    // border: 1px dotted blue;
     margin-bottom: 2rem;
 
     @media (min-width: $lg) {

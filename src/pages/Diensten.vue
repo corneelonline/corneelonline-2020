@@ -185,8 +185,8 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 52px;
-      height: 52px;
+      width: 3.25rem; //52px;
+      height: 3.25rem; //52px;
       border-radius: 50%;
       font-family: var(--ff-header);
       @include font-size(1.375); // 22px
@@ -195,13 +195,13 @@ export default {
       z-index: 2;
     
       @media (min-width: $sm) {
-        width: 72px;
-        height: 72px;
+        width: 4.5rem; //72px;
+        height: 4.5rem; //72px;
         @include font-size(2.5); // 40px
       }
       @media (min-width: $md) {
-        width: 96px;
-        height: 96px;
+        width: 6rem; //96px;
+        height: 6rem; //96px;
         @include font-size(3.125); // 50px
       }
     }

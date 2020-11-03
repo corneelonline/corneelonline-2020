@@ -132,19 +132,19 @@ export default {
   @media (min-width: $sm) {
     @include container;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 204px);
+    grid-template-columns: repeat(auto-fill, 12.75rem); //204px
     justify-content: space-evenly;
   }
   @media (min-width: $md) {
-    grid-template-columns: repeat(auto-fill, 220px);
+    grid-template-columns: repeat(auto-fill, 13.75rem); //220px
     justify-content: space-between;
   }
   @media (min-width: $lg) {
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, 18.75rem); //300px
     justify-content: space-between;
   }
   @media (min-width: $lg) {
-    grid-template-columns: repeat(auto-fill, 311px);
+    grid-template-columns: repeat(auto-fill, 19,5rem); //311px
     justify-content: space-evenly;
   }
 
@@ -152,16 +152,17 @@ export default {
     margin-bottom: 2rem;
 
     @media (min-width: $sm) {
-      width: 204px;
+      width: 12.75rem; //204px
     }
     @media (min-width: $md) {
-      width: 220px;
+      width: 13.75rem; //220px
+      margin-bottom: 3rem;
     }
     @media (min-width: $lg) {
-      width: 300px;
+      width: 18.75rem; //300px
     }
     @media (min-width: $xl) {
-      width: 311px;
+      width: 19,5rem; //311px
     }
     
     .project-img {
@@ -171,12 +172,12 @@ export default {
 
       img {
         @media (min-width: $md) {
-          top: 13px;
-          left: 19px;
+          top: 0.8125rem; //13px;
+          left: 1.1875rem; //19px;
         }
         @media (min-width: $lg) {
-          top: 18px;
-          left: 25px;
+          top: 1.125rem; //18px;
+          left: 1.5625rem; //25px;
           width: 83.5%;
         }
         @media (min-width: $xl) {

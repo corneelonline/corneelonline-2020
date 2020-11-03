@@ -204,6 +204,7 @@ export default {
 
   @media (min-width: $lg) {
     @include container-narrow;
+    padding-top: 1rem;
   }
 }
 // -----------------------------------------------
@@ -213,19 +214,19 @@ export default {
   padding-top: 1em;
   background-color: var(--color-orange-light);
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 5rem; //80px;
 
   @media (min-width: $sm) {
-    margin-bottom: 110px;
+    margin-bottom: 6.875rem; //110px;
   }
   @media (min-width: $md) {
-    margin-bottom: 110px;
+    margin-bottom: 6.875rem; //110px;
   }
   @media (min-width: $lg) {
-    margin-bottom: 130px;
+    margin-bottom: 8.125rem; //130px;
   }
   @media (min-width: $xl) {
-    margin-bottom: 170px;
+    margin-bottom: 10.625rem; //170px;
   }
 
   header {
@@ -236,6 +237,8 @@ export default {
       @include container-narrow;
       text-indent: 0;
       height: auto;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -255,7 +258,6 @@ export default {
 
   @media (min-width: $lg) {
     display: grid;
-    // grid-template-rows: 1fr 10fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
       "header image"

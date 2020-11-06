@@ -4,10 +4,21 @@
       <h1>Blog</h1>
     </section>
     <section class="blog-posts">
-      <div class="grid" ref="grid" v-images-loaded:on.progress="layout">
-        <div class="grid-sizer"></div>
-        <div class="gutter-sizer"></div>
-        <article class="blog-post__teaser" v-for="edge in $page.posts.edges" :key="edge.node.id">
+      <div class="latest-post">
+        <article class="blog-post__teaser latest" v-for="edge in $page.firstPost.edges" :key="edge.node.id">
+          <g-link class="post-details" :to="edge.node.path">
+            <figure class="cover-image">
+              <g-image :src="edge.node.mainImage.asset.url" alt="blog cover image" />
+            </figure>
+            <ul class="tags" v-if="edge.node.tags">
+              <li v-for="tag in edge.node.tags" :key="tag.id">{{ tag }}</li>
+            </ul>
+            <h2>{{edge.node.title}}</h2>
+          </g-link>
+        </article>
+      </div>
+      <div class="grid" ref="grid">
+        <article class="blog-post__teaser" v-for="edge in $page.otherPosts.edges" :key="edge.node.id">
           <g-link class="post-details" :to="edge.node.path">
             <figure class="cover-image">
               <g-image :src="edge.node.mainImage.asset.url" alt="blog cover image" />
@@ -26,7 +37,25 @@
 
 <page-query>
 query {
-  posts: allSanityPost(sortBy: "publishedAt", order: DESC) {
+  firstPost: allSanityPost(sortBy: "publishedAt", order: DESC, limit: 1) {
+    edges {
+      node {
+        id
+        title
+        slug {
+          current
+        }
+        path
+        mainImage {
+          asset {
+            url
+          }
+        }
+        tags
+      }
+    }
+  }
+  otherPosts: allSanityPost(sortBy: "publishedAt", order: DESC, skip: 1) {
     edges {
       node {
         id
@@ -48,8 +77,6 @@ query {
 </page-query>
 
 <script>
-import Masonry from 'masonry-layout'
-import imagesLoaded from 'vue-images-loaded'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
@@ -79,19 +106,6 @@ export default {
       }
     }
   },
-  directives: {
-    imagesLoaded
-  },
-  methods: {
-    layout(instance, image) {
-      let msnry = new Masonry(this.$refs.grid, {
-        itemSelector: '.blog-post__teaser',
-        columnWidth: '.grid-sizer',
-        gutter: '.gutter-sizer',
-        percentPosition: true
-      });
-    }
-  },
   components: {
     ContactMe
   }
@@ -111,31 +125,26 @@ export default {
     padding-bottom: 3rem;
   }
 }
-.gutter-sizer {
-  width: 0;
-
+.grid {
+  
+  @media (min-width: $sm) {
+    column-count: 2;
+  }
   @media (min-width: $md) {
-    width: 4%;
+    column-count: 2;
   }
   @media (min-width: $lg) {
-    width: 3%;
+    column-count: 3;
   }
-}
-.grid-sizer,
-.blog-post__teaser {
-  width: 100%;
-
-  @media (min-width: $md) {
-    width: 48%;
-  }
-  @media (min-width: $lg) {
-    width: 31.33333%;
+  @media (min-width: $xl) {
+    column-count: 3;
   }
 }
 .blog-post__teaser {
   background-color: var(--color-white);
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+  break-inside: avoid;
 
   .post-details {
     display: flex;
@@ -158,7 +167,7 @@ export default {
     margin: 0 1rem 1rem;
   }
 }
-.blog-post__teaser:first-of-type {
+.blog-post__teaser.latest {
   background-color: var(--color-gray-light);
   width: 100%;
     

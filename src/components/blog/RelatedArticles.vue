@@ -42,6 +42,7 @@ export default {
 
     @media (min-width: $md) {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
     @media (min-width: $lg) {
@@ -67,7 +68,7 @@ export default {
     width: 48%;
   }
   @media (min-width: $lg) {
-    width: 31.33333%;
+    width: 30%;
   }
 
   .post-details {
@@ -92,6 +93,3 @@ export default {
   }
 }
 </style>
-
-  
-

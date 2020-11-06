@@ -6,19 +6,9 @@ import '~/assets/styles/main.scss'
 // Import default layout so we don't need to import it to every page
 import DefaultLayout from '~/layouts/Default.vue'
 
-// Import a Vue component for rendering block text from Sanity
-import BlockContent from 'sanity-blocks-vue-component'
-
-// import Masonry from 'masonry-layout'
-// import imagesLoaded from 'vue-images-loaded'
-
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-
-  Vue.component('block-content', BlockContent)
-  // Vue.component('Masonry', Masonry)
-  // Vue.component('imagesLoaded', imagesLoaded)
 
   // Add Google webfonts
   head.link.push({

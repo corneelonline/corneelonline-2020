@@ -58,7 +58,7 @@ body.default-page {
     padding-right: 30% !important;
   }
 
-  p:first-of-type {
+  > p:first-of-type {
     @extend .highlighted-text;
   }
 }

@@ -51,7 +51,7 @@ export default {
     background-image: url('~@/assets/images/icon-service-advice.svg');
   }
   &.mobile-first {
-    background-image: url('~@/assets/images/icon-service.svg');
+    background-image: url('~@/assets/images/icon-service-mobile.svg');
   }
   &.seo {
     background-image: url('~@/assets/images/icon-service-seo.svg');

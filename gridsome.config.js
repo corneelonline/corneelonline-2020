@@ -19,13 +19,13 @@ function addStyleResource (rule) {
     })
 }
 
-// const sanityClient = require('@sanity/client')
-// const client = sanityClient({
-//   projectId: process.env.GRIDSOME_PROJECT_ID,
-//   dataset: process.env.GRIDSOME_DATASET,
-//   token: process.env.TOKEN, // create read/write token when using this
-//   useCdn: false // `false` if you want to ensure fresh data
-// })
+const sanityClient = require('@sanity/client')
+const client = sanityClient({
+  projectId: process.env.PROJECT_ID,
+  dataset: process.env.DATASET,
+  token: process.env.TOKEN, // create read/write token when using this
+  useCdn: false // `false` if you want to ensure fresh data
+})
 
 // Declare modules
 module.exports = {

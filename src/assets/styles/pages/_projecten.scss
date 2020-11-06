@@ -106,3 +106,47 @@ body.project {
     }
   }
 }
+
+// -----------------------------------------------
+// 404 not found
+// -----------------------------------------------
+body.not-found {
+  position: relative;
+
+  &::before {
+    @media (min-width: $lg) {
+      content: "";
+      display: block;
+      width: 400px;
+      height: 400px;
+      border: 1px solid var(--color-orange);
+      border-radius: 50%;
+      background-color: var(--color-orange);
+      position: absolute;
+      top: -180px;
+      right: -140px;
+    }
+    @media (min-width: $xl) {
+      width: 500px;
+      height: 500px;
+      top: -270px;
+      right: -180px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $lg) {
+      content: "";
+      display: block;
+      width: 180px;
+      height: 540px;
+      background-image: url('~@/assets/images/bg/takel.png');
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: -200px;
+      right: 40px;
+    }
+  }
+}

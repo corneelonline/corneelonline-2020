@@ -4,7 +4,7 @@
       <h1>Pagina niet gevonden</h1>
     </section>
     <section class="page-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+      <p>Helaas, deze pagina kan niet worden gevonden. Lalalaa...</p>
     </section>
   </Layout>
 </template>

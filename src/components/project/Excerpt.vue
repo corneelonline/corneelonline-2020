@@ -6,7 +6,7 @@
       </figure>
       <div class="project-excerpt__body">
         <h3>{{project.title}}</h3>
-        <block-content :blocks="project._rawIntroductionText"/>
+        <PortableText :blocks="project._rawIntroductionText" />
         <button class="button">Meer over deze case</button>
       </div>
     </g-link>
@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import PortableText from '~/components/sanity/PortableText.vue'
+
 export default {
   name: 'ProjectExcerpt',
   props: {
@@ -23,6 +25,9 @@ export default {
     getPath(slug) {
       return `/projecten/${slug}/`;
     }
+  },
+  components: {
+    PortableText
   }
 }
 </script>

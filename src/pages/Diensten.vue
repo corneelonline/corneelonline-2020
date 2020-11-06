@@ -8,7 +8,7 @@
     <section class="services-overview">
       <ServiceExcerpt v-for="edge in $page.services.edges" :key="edge.node.id" v-bind:class="edge.node.serviceClass">
         <h3>{{edge.node.title}}</h3>
-        <block-content :blocks="edge.node._rawBody"/>
+        <PortableText :blocks="edge.node._rawBody"/>
       </ServiceExcerpt>
     </section>
     <section class="big-image services">
@@ -22,7 +22,7 @@
         </div>
         <div class="process-step__body">
           <h3>{{ step.stepTitle }}</h3>
-          <block-content :blocks="step._rawStepDescription" className="process-step__desc"/>
+          <PortableText :blocks="step._rawStepDescription" class="process-step__desc"/>
         </div>
       </div>
     </section>
@@ -64,6 +64,7 @@ query {
 </page-query>
 
 <script>
+import PortableText from '~/components/sanity/PortableText.vue'
 import PageIntro from '~/components/layout/PageIntro.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
 import BigImage from '~/components/layout/BigImage.vue'
@@ -97,6 +98,7 @@ export default {
     }
   },
   components: {
+    PortableText,
     PageIntro,
     ContactMe,
     BigImage,

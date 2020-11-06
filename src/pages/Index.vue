@@ -2,12 +2,12 @@
   <Layout>
     <section class="home-intro">
       <h1>{{$page.home.introductionTitle}}</h1>
-      <block-content :blocks="$page.home._rawIntroductionText" />
+      <PortableText :blocks="$page.home._rawIntroductionText" />
       <g-link to="/projecten/" class="button">Bekijk recente projecten</g-link>
     </section>
     <section class="home-services">
       <h2>{{$page.home.servicesTitle}}</h2>
-      <block-content :blocks="$page.home._rawServicesText" className="home-services__body"/>
+      <PortableText :blocks="$page.home._rawServicesText" class="home-services__body"/>
       <h2>Corneel Online houdt zich bezig met:</h2>
       <div class="home-services__teasers">
         <ServiceTeaser 
@@ -35,7 +35,7 @@
       <div class="about-corneel__image">
         <g-image :src="$page.home.aboutMeImage.asset.url" alt="foto van Marco Verheul" />
       </div>
-      <block-content :blocks="$page.home._rawAboutMeText" className="about-corneel__body"/>
+      <PortableText :blocks="$page.home._rawAboutMeText" class="about-corneel__body"/>
     </section>
     <ContactMe />
     <BigImage>
@@ -86,6 +86,7 @@ query {
 </page-query>
 
 <script>
+import PortableText from '~/components/sanity/PortableText.vue'
 import ServiceTeaser from '~/components/service/Teaser.vue'
 import ProjectSlider from '~/components/project/Slider.vue'
 import BigImage from '~/components/layout/BigImage.vue'
@@ -119,6 +120,7 @@ export default {
     }
   },
   components: {
+    PortableText,
     ServiceTeaser,
     ProjectSlider,
     BigImage,

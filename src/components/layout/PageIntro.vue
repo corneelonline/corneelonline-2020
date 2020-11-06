@@ -2,14 +2,19 @@
   <section class="page-intro">
     <h1>{{ title }}</h1>
     <h2 class="headline" v-if="headline !== ''">{{ headline }}</h2>
-    <block-content :blocks="intro"/>
+    <PortableText :blocks="intro" />
   </section>
 </template>
 
 <script>
+import PortableText from '~/components/sanity/PortableText.vue'
+
 export default {
   name: 'PageIntro',
-  props: ['title', 'headline', 'intro']
+  props: ['title', 'headline', 'intro'],
+  components: {
+    PortableText
+  }
 }
 </script>
 

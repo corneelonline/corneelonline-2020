@@ -5,7 +5,7 @@
     </section>
     <section class="about-me-intro">
       <div class="about-me-intro__body">
-        <block-content :blocks="$page.about._rawBody"/>
+        <PortableText :blocks="$page.about._rawBody"/>
         <g-link to="/contact/" class="button">Verder kennismaken?</g-link>
       </div>
       <div class="about-me-intro__img">
@@ -14,10 +14,10 @@
     </section>
     <section class="about-me-info">
       <div class="about-me-info__mission">
-        <block-content :blocks="$page.about._rawMission"/>
+        <PortableText :blocks="$page.about._rawMission"/>
       </div>
       <div class="about-me-info__team">
-        <block-content :blocks="$page.about._rawTeam"/>
+        <PortableText :blocks="$page.about._rawTeam"/>
       </div>
     </section>
     <section class="big-image about">
@@ -53,6 +53,7 @@ query {
 </page-query>
 
 <script>
+import PortableText from '~/components/sanity/PortableText.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
@@ -83,6 +84,7 @@ export default {
     }
   },
   components: {
+    PortableText,
     ContactMe
   }
 }
@@ -114,7 +116,7 @@ export default {
       order: 0;
       width: 45%;
     }
-    p:first-child {
+    /deep/ p:first-of-type {
       @extend .highlighted-text;
     }
   }

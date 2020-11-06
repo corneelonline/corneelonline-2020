@@ -34,8 +34,8 @@ module.exports = {
     {
       use: 'gridsome-source-sanity',
       options: {
-        projectId: process.env.GRIDSOME_PROJECT_ID,
-        dataset: process.env.GRIDSOME_DATASET,
+        projectId: process.env.PROJECT_ID,
+        dataset: process.env.DATASET,
         // Token is only required if dataset is private
         // or `overlayDrafts` is set to true
         token: process.env.TOKEN,

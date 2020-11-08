@@ -26,7 +26,7 @@
           <a v-if="$page.sanityProject.visitWebsite.length" :href="$page.sanityProject.visitWebsite" class="button" target="_blank">Bezoek website</a>
         </div>
         <div class="project-desc__content">
-          <block-content :blocks="$page.sanityProject._rawIntroductionText"/>
+          <PortableText :blocks="$page.sanityProject._rawIntroductionText"/>
         </div>
       </div>
       <div class="project-body" v-if="$page.sanityProject._rawBody">

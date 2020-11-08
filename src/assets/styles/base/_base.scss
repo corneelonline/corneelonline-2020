@@ -21,6 +21,10 @@ html, body {
     background-color: var(--color-background-body);
   }
 }
+body {
+  overscroll-behavior: contain;
+  overflow-x: hidden;
+}
 #app {
   min-height: 100%;
   display: flex;

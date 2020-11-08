@@ -6,9 +6,11 @@
       <g-link to="/projecten/" class="button">Bekijk recente projecten</g-link>
     </section>
     <section class="home-services">
-      <h2>{{$page.home.servicesTitle}}</h2>
-      <PortableText :blocks="$page.home._rawServicesText" class="home-services__body"/>
-      <h2>Corneel Online houdt zich bezig met:</h2>
+      <div class="home-services__intro">
+        <h2>{{$page.home.servicesTitle}}</h2>
+        <PortableText :blocks="$page.home._rawServicesText" class="home-services__body"/>
+        <h2>Corneel Online houdt zich bezig met:</h2>
+      </div>
       <div class="home-services__teasers">
         <ServiceTeaser 
           v-for="edge in $page.services.edges" 
@@ -168,7 +170,7 @@ export default {
 // Services
 // -----------------------------------------------
 .home-services {
-  @include container-narrow;
+  // @include container-narrow;
   position: relative;
   z-index: 1;
   padding-top: 1.5rem;
@@ -180,6 +182,9 @@ export default {
   &::before {
     @include circle-decoration;
   }
+}
+.home-services__intro {
+  @include container-narrow;
 }
 .home-services__body {
   padding-top: 0.5rem;

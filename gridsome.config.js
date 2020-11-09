@@ -45,7 +45,61 @@ module.exports = {
         // use `graphqlTag` to specify the tag name. Defaults to `default`.
         graphqlTag: 'default'
       }
-    }
+    },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+          // Service Worker Options
+          disableServiceWorker: false,
+          serviceWorkerPath: 'service-worker.js',
+          cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
+          disableTemplatedUrls: false,       // Optional
+
+          // Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
+          manifestPath: 'manifest.json',
+          title: 'Corneel Online',
+          startUrl: '/',
+          display: 'standalone',
+          statusBarStyle: 'default',
+          themeColor: '#666600',
+          backgroundColor: '#ffffff',
+          icon: 'favicon.png',
+          shortName: 'Corneel',              // Optional
+          description: 'Web development met een missie',// Optional
+          categories: ['development'],          // Optional
+          lang: 'nl_NL',                      // Optional
+          dir: 'auto',                        // Optional
+          maskableIcon: true,                 // Optional
+          screenshots: [                      // Optional
+              {
+                  src: 'src/screenshot1.png',
+                  sizes: '1280x720',
+                  type: 'image/png',
+              },
+          ],
+      }
+    },
+    {
+      use: "gridsome-plugin-manifest",
+      options: {
+        background_color: "#000000",
+        icon_path: "./src/assets/images/logo-corneel.svg",
+        name: "Corneel Online",
+        short_name: "Corneel",
+        theme_color: "#FFFFFF",
+        lang: "nl",
+      },
+    },
+    {
+      use: "gridsome-plugin-service-worker",
+      options: {
+        precachedRoutes: ["/"],
+        cacheFirst: {
+          cacheName: "cf-v1",
+          routes: ["/"],
+        },
+      },
+    },
   ],
   templates: {
     SanityProject: [

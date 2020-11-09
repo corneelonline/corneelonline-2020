@@ -40,12 +40,12 @@ body.projecten {
       width: 140px;
       height: 540px;
       background-image: url('~@/assets/images/bg/takel.png');
-      background-position: bottom center;
+      background-position: bottom right;
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
       top: -40px;
-      right: 40px;
+      right: 70px;
     }
     @media (min-width: $lg) {
       width: 175px;
@@ -94,7 +94,7 @@ body.project {
     @media (min-width: $lg) {
       content: "";
       display: block;
-      width: 180px;
+      width: 140px;
       height: 540px;
       background-image: url('~@/assets/images/bg/takel.png');
       background-position: bottom center;
@@ -102,7 +102,7 @@ body.project {
       background-size: contain;
       position: absolute;
       top: -200px;
-      right: 40px;
+      right: 80px;
     }
   }
 }

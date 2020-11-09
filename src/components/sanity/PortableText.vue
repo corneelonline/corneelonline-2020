@@ -10,6 +10,7 @@ import SanityRichText from 'sanity-blocks-vue-component'
 import InternalLink from '~/components/sanity/InternalLink.vue'
 import ExternalLink from '~/components/sanity/ExternalLink.vue'
 import YouTube from '~/components/sanity/YouTube.vue'
+import Image from '~/components/sanity/Image.vue'
 
 export default {
   props: {
@@ -30,7 +31,8 @@ export default {
           link: ExternalLink
         },
         types: {
-          youtube: YouTube
+          youtube: YouTube,
+          image: Image
         }
       }
     };

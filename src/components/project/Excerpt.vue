@@ -89,9 +89,9 @@ export default {
       width: 83.5%;
     }
     @media (min-width: $md) {
-      top: 17px;
-      left: 24px;
-      width: 78.5%;
+      top: 19px;
+      left: 27px;
+      width: 83.5%;
     }
     @media (min-width: $lg) {
       top: 24px;

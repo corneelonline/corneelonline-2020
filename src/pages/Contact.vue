@@ -44,7 +44,7 @@
       </div>
     </section>
     <section class="big-image contact">
-      <g-image :src="$page.sanityContact.bigImage.asset.url" alt="control room" />
+      <g-image src="~/assets/images/layout/control-room-02.jpg" alt="control room" />
     </section>
     <ContactMe />
   </Layout>
@@ -56,11 +56,6 @@ query {
     title
     introductionTitle
     _rawIntroductionText
-    bigImage {
-			asset {
-        url
-      }
-    }
     seo {
       seo_title
       meta_description
@@ -171,7 +166,6 @@ a.phone {
   margin-bottom: 2rem;
 
   .form-group {
-    // border: 1px dotted blue;
     padding-bottom: 1rem;
   }
 

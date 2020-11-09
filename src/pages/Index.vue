@@ -21,7 +21,7 @@
       </div>
     </section>
     <section class="big-image">
-      <g-image :src="$page.home.bigImageOne.asset.url" alt="control room" />
+      <g-image src="~/assets/images/layout/control-room-01.jpg" alt="control room" />
     </section>
     <section class="featured-projects">
       <header>
@@ -35,13 +35,13 @@
     <section class="about-corneel">
       <h2>{{$page.home.aboutMeTitle}}</h2>
       <div class="about-corneel__image">
-        <g-image :src="$page.home.aboutMeImage.asset.url" alt="foto van Marco Verheul" />
+        <g-image src="~/assets/images/layout/Marco-Verheul.jpg" alt="foto van Marco Verheul" />
       </div>
       <PortableText :blocks="$page.home._rawAboutMeText" class="about-corneel__body"/>
     </section>
     <ContactMe />
     <BigImage>
-      <g-image :src="$page.home.bigImageTwo.asset.url" alt="control room" />
+      <g-image src="~/assets/images/layout/control-room-02.jpg" alt="control room" />
     </BigImage>
   </Layout>
 </template>
@@ -55,22 +55,7 @@ query {
     servicesTitle
     _rawServicesText
     aboutMeTitle
-    aboutMeImage {
-      asset {
-        url
-      }
-    }
     _rawAboutMeText
-    bigImageOne {
-      asset {
-        url
-      }
-    }
-    bigImageTwo {
-      asset {
-        url
-      }
-    }
     seo {
       seo_title
       meta_description

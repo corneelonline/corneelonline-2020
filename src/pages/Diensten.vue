@@ -12,7 +12,7 @@
       </ServiceExcerpt>
     </section>
     <section class="big-image services">
-      <g-image :src="$page.service.bigImage.asset.url" alt="control room" />
+      <g-image src="~/assets/images/layout/control-room-02.jpg" alt="control room" />
     </section>
     <section class="process">
       <h2>Hoe ik het doe</h2>
@@ -36,11 +36,6 @@ query {
     title
     introductionTitle
     _rawIntroductionText
-    bigImage {
-			asset {
-        url
-      }
-    }
     steps {
       stepNumber
       stepTitle

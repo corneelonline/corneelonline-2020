@@ -9,7 +9,7 @@
         <g-link to="/contact/" class="button">Verder kennismaken?</g-link>
       </div>
       <div class="about-me-intro__img">
-        <g-image :src="$page.about.aboutMeImage.asset.url" alt="foto van Marco Verheul" />
+        <g-image src="~/assets/images/layout/Marco-Verheul.jpg" alt="foto van Marco Verheul" />
       </div>
     </section>
     <section class="about-me-info">
@@ -21,7 +21,7 @@
       </div>
     </section>
     <section class="big-image about">
-      <g-image :src="$page.about.bigImage.asset.url" alt="control room" />
+      <g-image src="~/assets/images/layout/control-room-02.jpg" alt="control room" />
     </section>
     <ContactMe />
   </Layout>
@@ -31,16 +31,6 @@
 query {
   about: sanityAboutMe(id: "aboutMe") {
     title
-    aboutMeImage {
-      asset {
-        url
-      }
-    }
-    bigImage {
-      asset {
-				url
-      }
-    }
     _rawBody
     _rawMission
     _rawTeam

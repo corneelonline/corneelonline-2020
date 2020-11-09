@@ -13,7 +13,7 @@ body.contact {
       border: 1px solid var(--color-yellow);
       border-radius: 50%;
       background-color: var(--color-yellow);
-      background-image: url('~@/assets/images/icon-rocket-white.svg');
+      background-image: url('~@/assets/images/icons/icon-rocket-white.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 120px 144px;
@@ -39,7 +39,7 @@ body.contact {
       display: block;
       width: 140px;
       height: 540px;
-      background-image: url('~@/assets/images/bg/concrete-block.png');
+      background-image: url('~@/assets/images/layout/concrete-block.png');
       background-position: center top;
       background-repeat: no-repeat;
       background-size: contain;
@@ -56,7 +56,7 @@ body.contact {
 
 body.contact .banner {
   @media (min-width: $lg) {
-    background-image: url('~@/assets/images/arrow-orange-down.svg');
+    background-image: url('~@/assets/images/icons/arrow-orange-down.svg');
     background-position: calc(100% - 16px) 0;
     background-repeat: no-repeat;
     background-size: 117px 94px;

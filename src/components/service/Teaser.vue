@@ -21,7 +21,7 @@ export default {
   min-height: 140px;
   padding-top: 6.25rem; //100px;
   margin-bottom: 1rem;
-  background-image: url('~@/assets/images/icon-service.svg');
+  background-image: url('~@/assets/images/icons/icon-service.svg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 4.875rem 5.625rem; //78px 90px;
@@ -38,22 +38,22 @@ export default {
   }
 
   &.development {
-    background-image: url('~@/assets/images/icon-service-development.svg');
+    background-image: url('~@/assets/images/icons/icon-service-development.svg');
   }
   &.design {
-    background-image: url('~@/assets/images/icon-service-design.svg');
+    background-image: url('~@/assets/images/icons/icon-service-design.svg');
   }
   &.cms {
-    background-image: url('~@/assets/images/icon-service-cms.svg');
+    background-image: url('~@/assets/images/icons/icon-service-cms.svg');
   }
   &.advice {
-    background-image: url('~@/assets/images/icon-service-advice.svg');
+    background-image: url('~@/assets/images/icons/icon-service-advice.svg');
   }
   &.mobile-first {
-    background-image: url('~@/assets/images/icon-service-mobile.svg');
+    background-image: url('~@/assets/images/icons/icon-service-mobile.svg');
   }
   &.seo {
-    background-image: url('~@/assets/images/icon-service-seo.svg');
+    background-image: url('~@/assets/images/icons/icon-service-seo.svg');
   }
 
   h3 {

@@ -13,7 +13,7 @@ body.projecten {
       border: 1px solid var(--color-orange);
       border-radius: 50%;
       background-color: var(--color-orange);
-      background-image: url('~@/assets/images/icon-service-development-white.svg');
+      background-image: url('~@/assets/images/icons/icon-service-development-white.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 120px 144px;
@@ -39,7 +39,7 @@ body.projecten {
       display: block;
       width: 140px;
       height: 540px;
-      background-image: url('~@/assets/images/bg/takel.png');
+      background-image: url('~@/assets/images/layout/takel.png');
       background-position: bottom right;
       background-repeat: no-repeat;
       background-size: contain;
@@ -56,7 +56,7 @@ body.projecten {
 
 body.projecten .banner {
   @media (min-width: $lg) {
-    background-image: url('~@/assets/images/arrow-yellow-down.svg');
+    background-image: url('~@/assets/images/icons/arrow-yellow-down.svg');
     background-position: calc(100% - 16px) 0;
     background-repeat: no-repeat;
     background-size: 117px 94px;
@@ -96,7 +96,7 @@ body.project {
       display: block;
       width: 140px;
       height: 540px;
-      background-image: url('~@/assets/images/bg/takel.png');
+      background-image: url('~@/assets/images/layout/takel.png');
       background-position: bottom center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -140,7 +140,7 @@ body.not-found {
       display: block;
       width: 180px;
       height: 540px;
-      background-image: url('~@/assets/images/bg/takel.png');
+      background-image: url('~@/assets/images/layout/takel.png');
       background-position: bottom center;
       background-repeat: no-repeat;
       background-size: contain;

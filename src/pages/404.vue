@@ -5,7 +5,7 @@
     </section>
     <section class="page-content">
       <h2>Helaas, de pagina die je zoekt kan niet worden gevonden</h2>
-      <g-image src="~/assets/images/not-found.jpg" class="main-img-notfound"/>
+      <g-image src="~/assets/images/layout/not-found.jpg" class="main-img-notfound"/>
       <p>Er is iets misgegaan. De pagina die je zoekt bestaat niet (meer).</p>
       <p>Wat kunt u doen om te vinden wat u zoekt?</p>
       <ul>

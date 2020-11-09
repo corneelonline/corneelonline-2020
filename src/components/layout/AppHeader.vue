@@ -150,7 +150,7 @@ export default {
     padding: 0 var(--gutter-xs);
     margin: var(--gutter-sm) 0;
     width: 100%;
-    background-image: url('~@/assets/images/arrow-white-right.svg');
+    background-image: url('~@/assets/images/icons/arrow-white-right.svg');
     background-position: calc(100% - (var(--gutter-xs))) 50%;
     background-repeat: no-repeat;
     background-size: 1.1875rem 0.9375rem; //19px 15px;
@@ -166,10 +166,10 @@ export default {
     
     &.active {
       color: var(--color-orange);
-      background-image: url('~@/assets/images/arrow-orange-right.svg');
+      background-image: url('~@/assets/images/icons/arrow-orange-right.svg');
 
       @media (min-width: $lg) {
-        background-image: url('~@/assets/images/arrow-orange-down.svg');
+        background-image: url('~@/assets/images/icons/arrow-orange-down.svg');
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: 1.125em 1.5rem;

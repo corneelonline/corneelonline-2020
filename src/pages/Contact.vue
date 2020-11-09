@@ -159,10 +159,10 @@ a.email {
   background-size: 1.375rem 1.375rem; //22px
 }
 a.email {
-  background-image: url('~@/assets/images/icon-mail.svg');
+  background-image: url('~@/assets/images/icons/icon-mail.svg');
 }
 a.phone {
-  background-image: url('~@/assets/images/icon-phone.svg');
+  background-image: url('~@/assets/images/icons/icon-phone.svg');
 }
 // ---------------------------------------
 // contact form

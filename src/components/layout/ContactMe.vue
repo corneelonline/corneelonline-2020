@@ -41,18 +41,18 @@ export default {
 
   &__wrapper {
     height: 100%;
-    background-image: url('~@/assets/images/double-bubble-sm.svg');
+    background-image: url('~@/assets/images/bg/double-bubble-sm.svg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 17.625rem 26.625rem; //282px 426px;
     position: relative;
   
     @media (min-width: $md) {
-      background-image: url('~@/assets/images/double-bubble-md.svg');
+      background-image: url('~@/assets/images/bg/double-bubble-md.svg');
       background-size: 42.0625rem 49.3125rem; //673px 789px;
     }
     @media (min-width: $lg) {
-      background-image: url('~@/assets/images/double-bubble-lg.svg');
+      background-image: url('~@/assets/images/bg/double-bubble-lg.svg');
       background-size: 62.25rem 32rem; //996px 512px;
     }
   }

@@ -105,7 +105,7 @@ export default {
   &.slick-prev,
   &.slick-prev:hover,
   &.slick-prev:focus {
-    background-image: url('~@/assets/images/arrow-black-left.svg');
+    background-image: url('~@/assets/images/icons/arrow-black-left.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -117,7 +117,7 @@ export default {
   &.slick-next,
   &.slick-next:hover,
   &.slick-next:focus {
-    background-image: url('~@/assets/images/arrow-black-right.svg');
+    background-image: url('~@/assets/images/icons/arrow-black-right.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

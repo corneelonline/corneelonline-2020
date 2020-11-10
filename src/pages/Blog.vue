@@ -144,6 +144,8 @@ export default {
   background-color: var(--color-white);
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
   break-inside: avoid;
 
   .post-details {

@@ -155,7 +155,6 @@ export default {
 // Services
 // -----------------------------------------------
 .home-services {
-  // @include container-narrow;
   position: relative;
   z-index: 1;
   padding-top: 1.5rem;
@@ -173,6 +172,7 @@ export default {
 }
 .home-services__body {
   padding-top: 0.5rem;
+  padding-bottom: 2rem;
 
   @media (min-width: $lg) {
     display: flex;

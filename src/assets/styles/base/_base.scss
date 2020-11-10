@@ -65,9 +65,17 @@ ul {
 .button, a.button {
   @include button;
 }
+.button:hover, a.button:hover {
+  @include button;
+  @include button-hover;
+}
 
 .button-back, a.button-back {
   @include button-back;
+}
+.button-back:hover, a.button-back:hover {
+  @include button-back;
+  @include button-back-hover;
 }
 
 .tags {

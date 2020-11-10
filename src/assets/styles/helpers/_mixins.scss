@@ -99,6 +99,27 @@
   background-repeat: no-repeat;
   background-size: 19px 15px;
 }
+@keyframes bounceright {
+  0% {
+    background-position: calc(100% - (var(--gutter-sm))) 50%;
+  }
+  25% {
+    background-position: calc(100% - (var(--gutter-xs))) 50%;
+  }
+  50% {
+    background-position: calc(100% - (var(--gutter-sm))) 50%;
+  }
+  75% {
+    background-position: calc(100% - (var(--gutter-xs))) 50%;
+  }
+  100% {
+    background-position: calc(100% - (var(--gutter-sm))) 50%;
+  }
+}
+@mixin button-hover {
+  animation-name: bounceright;
+  animation-duration: .4s;
+}
 @mixin button-back {
   display: inline-block;
   padding: 0.6rem 2rem 0.6rem 3.5rem;
@@ -113,6 +134,27 @@
   background-position: var(--gutter-sm) 50%;
   background-repeat: no-repeat;
   background-size: 19px 15px;
+}
+@keyframes bounceleft {
+  0% {
+    background-position: var(--gutter-sm) 50%;
+  }
+  25% {
+    background-position: var(--gutter-xs) 50%;
+  }
+  50% {
+    background-position: var(--gutter-sm) 50%;
+  }
+  75% {
+    background-position: var(--gutter-xs) 50%;
+  }
+  100% {
+    background-position: var(--gutter-sm) 50%;
+  }
+}
+@mixin button-back-hover {
+  animation-name: bounceleft;
+  animation-duration: .4s;
 }
 
 // ------------------------------------------

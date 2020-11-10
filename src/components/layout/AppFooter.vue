@@ -84,6 +84,13 @@ query {
   }
 
   h4 {
+    @include font-size(1.125); // 18px
+    @media (min-width: $md) {
+      @include font-size(1.25); // 20px
+    }
+    @media (min-width: $lg) {
+      @include font-size(1.25); // 20px
+    }
     color: var(--color-white);
     margin-bottom: 1rem;
   }

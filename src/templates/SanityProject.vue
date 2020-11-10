@@ -18,7 +18,7 @@
             <dd>{{$page.sanityProject.client}}</dd>
             <dt>Team</dt>
             <dd>{{$page.sanityProject.team}}</dd>
-            <dt>Diensten</dt>
+            <dt>Tools</dt>
             <dd>{{$page.sanityProject.services}}</dd>
             <dt>Opgeleverd</dt>
             <dd>{{$page.sanityProject.deliveryDate}}</dd>
@@ -255,15 +255,24 @@ export default {
     @media (min-width: $lg) {
       width: 45%;
     }
+
+    p, & /deep/ p {
+      @extend .highlighted-text;
+      line-height: 1.4;
+    }
   }
 }
 .project-body {
+  padding-bottom: 4rem;
   @media (min-width: $md) {
     @include container-narrow;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
   @media (min-width: $lg) {
     padding-left: 15%;
     padding-right: 15%;
+    padding-bottom: 6rem;
   }
 }
 </style>

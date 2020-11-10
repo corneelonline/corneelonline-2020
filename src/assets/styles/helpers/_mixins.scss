@@ -248,3 +248,25 @@
     @include font-size(0.92);
   }
 }
+
+// ------------------------------------------
+// Decoration corner-circle
+// ------------------------------------------
+@mixin decoration-corner-circle {
+  @media (min-width: $lg) {
+    content: "";
+    display: block;
+    width: 345px;
+    height: 250px;
+    background-image: url('~@/assets/images/bg/corner-circle.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 300px 240px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  @media (min-width: $xl) {
+    background-size: 325px 250px;
+  }
+}

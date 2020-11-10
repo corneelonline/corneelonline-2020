@@ -12,7 +12,7 @@
       </div>
       <div class="page-contact">
         <div class="page-contact__form">
-          <form method="post" name="Contact Form" class="contact-form">
+          <form method="post" name="Contact Form" class="contact-form" action="/bedankt" netlify-honeypot="hpfield" data-netlify="true">
             <div class="form-group">
               <label for="name">Naam</label>
               <input type="text" name="name" id="name">
@@ -25,6 +25,7 @@
               <label for="comments">Bericht</label>
               <textarea name="comments" id="comments"></textarea>
             </div>
+            <input class="hidden" name="hpfield">
             <div class="form-group">
               <button type="submit" class="button">Verzend bericht</button>
             </div>

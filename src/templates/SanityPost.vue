@@ -146,7 +146,7 @@ export default {
     }
   }
 
-  figure {
+  & /deep/ figure {
     margin-bottom: 4rem;
   }
 

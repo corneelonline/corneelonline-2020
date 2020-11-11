@@ -12,24 +12,7 @@
       </div>
       <div class="page-contact">
         <div class="page-contact__form">
-          <form method="post" name="Contact Form" class="contact-form" action="/bedankt" netlify-honeypot="hpfield" data-netlify="true">
-            <div class="form-group">
-              <label for="name">Naam</label>
-              <input type="text" name="name" id="name">
-            </div>
-            <div class="form-group">
-              <label for="email">E-mailadres</label>
-              <input type="email" name="email" id="email">
-            </div>
-            <div class="form-group">
-              <label for="comments">Bericht</label>
-              <textarea name="comments" id="comments"></textarea>
-            </div>
-            <input class="hidden" name="hpfield">
-            <div class="form-group">
-              <button type="submit" class="button">Verzend bericht</button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
         <div class="page-contact__details">
           <h4>Contactgegevens</h4>
@@ -66,8 +49,8 @@ query {
 </page-query>
 
 <script>
-// see: https://snipcart.com/blog/netlify-forms
 import PageIntro from '~/components/layout/PageIntro.vue'
+import ContactForm from '~/components/common/ContactForm.vue';
 import ContactMe from '~/components/layout/ContactMe.vue'
 
 export default {
@@ -99,6 +82,7 @@ export default {
   },
   components: {
     PageIntro,
+    ContactForm,
     ContactMe
   }
 }
@@ -159,35 +143,6 @@ a.email {
 }
 a.phone {
   background-image: url('~@/assets/images/icons/icon-phone.svg');
-}
-// ---------------------------------------
-// contact form
-// ---------------------------------------
-.contact-form {
-  margin-bottom: 2rem;
-
-  .form-group {
-    padding-bottom: 1rem;
-  }
-
-  label {
-    display: block;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    border: 1px solid var(--color-gray-lighter);
-    padding: 0.5rem 1rem;
-  }
-  textarea {
-    height: 10rem;
-    
-    @media (min-width: $md) {
-      height: 15rem;
-    }
-  }
 }
 // --------------------------------------
 // big image

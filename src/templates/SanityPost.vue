@@ -7,7 +7,7 @@
       <g-link to="/blog/" class="button-back">Terug</g-link>
       <h2 v-html="$page.sanityPost.title"/>
       <figure class="cover-image">
-        <g-image :src="$page.sanityPost.mainImage.asset.url" alt="blog cover image" />
+        <BlogMainImage :imgSrc="$page.sanityPost.mainImage.asset.url" />
       </figure>
       <div class="post-single__meta">
         <ul class="tags" v-if="$page.sanityPost.tags">
@@ -58,6 +58,7 @@ query ($path: String!) {
 import PortableText from '~/components/sanity/PortableText.vue'
 import RelatedArticles from '~/components/blog/RelatedArticles.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
+import BlogMainImage from '~/components/common/BlogMainImage.vue'
 
 export default {
   metaInfo() {
@@ -89,7 +90,8 @@ export default {
   components: {
     PortableText,
     RelatedArticles,
-    ContactMe
+    ContactMe,
+    BlogMainImage
   }
 }
 </script>

@@ -8,7 +8,7 @@
       <h2 class="project-title" v-html="$page.sanityProject.title"/>
       <div class="project-img">
         <figure class="main-image">
-          <g-image :src="$page.sanityProject.mainImage.asset.url" alt="project img" />
+          <ProjectImage :imgSrc="$page.sanityProject.mainImage.asset.url" />
         </figure>
       </div>
       <div class="project-desc">
@@ -65,6 +65,7 @@ query ($path: String!) {
 <script>
 import PortableText from '~/components/sanity/PortableText.vue'
 import ContactMe from '~/components/layout/ContactMe.vue'
+import ProjectImage from '~/components/common/ProjectImage.vue'
 
 export default {
   metaInfo() {
@@ -95,7 +96,8 @@ export default {
   },
   components: {
     PortableText,
-    ContactMe
+    ContactMe,
+    ProjectImage
   }
 }
 </script>

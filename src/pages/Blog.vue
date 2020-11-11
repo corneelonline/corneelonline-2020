@@ -8,7 +8,7 @@
         <article class="blog-post__teaser latest" v-for="edge in $page.firstPost.edges" :key="edge.node.id">
           <g-link class="post-details" :to="edge.node.path">
             <figure class="cover-image">
-              <g-image :src="edge.node.mainImage.asset.url" alt="blog cover image" />
+              <BlogMainImage :imgSrc="edge.node.mainImage.asset.url" />
             </figure>
             <ul class="tags" v-if="edge.node.tags">
               <li v-for="tag in edge.node.tags" :key="tag.id">{{ tag }}</li>
@@ -21,7 +21,7 @@
         <article class="blog-post__teaser" v-for="edge in $page.otherPosts.edges" :key="edge.node.id">
           <g-link class="post-details" :to="edge.node.path">
             <figure class="cover-image">
-              <g-image :src="edge.node.mainImage.asset.url" alt="blog cover image" />
+              <BlogTeaserImage :imgSrc="edge.node.mainImage.asset.url" />
             </figure>
             <ul class="tags" v-if="edge.node.tags">
               <li v-for="tag in edge.node.tags" :key="tag.id">{{ tag }}</li>
@@ -78,6 +78,8 @@ query {
 
 <script>
 import ContactMe from '~/components/layout/ContactMe.vue'
+import BlogMainImage from '~/components/common/BlogMainImage.vue'
+import BlogTeaserImage from '~/components/common/BlogTeaserImage.vue'
 
 export default {
   metaInfo() {
@@ -107,7 +109,9 @@ export default {
     }
   },
   components: {
-    ContactMe
+    ContactMe,
+    BlogMainImage,
+    BlogTeaserImage
   }
 }
 </script>
@@ -155,7 +159,7 @@ export default {
   }
 
   h2 {
-    @extend .h4;
+    @extend .h5;
     color: var(--color-orange);
     margin-left: 1rem;
     margin-right: 1rem;

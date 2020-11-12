@@ -49,6 +49,7 @@ module.exports = {
     {
       use: "gridsome-plugin-service-worker",
       options: {
+        precachedRoutes: ["/"],
         networkFirst: {
           cacheName: "nf-v1",
           routes: ["/", /\.(js|css|png|jpg|svg)/],
@@ -60,6 +61,7 @@ module.exports = {
       options: {
         background_color: "#FFFFFF",
         icon_path: "./src/assets/images/FAVICON-Corneel@2x.png",
+        start_url: "/",
         name: "Corneel Online",
         short_name: "Corneel",
         theme_color: "#FFFFFF",

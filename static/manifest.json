@@ -1,6 +1,7 @@
 {
     "background_color": "#FFFFFF",
     "icon_path": "./src/assets/images/FAVICON-Corneel@2x.png",
+    "start_url": "/",
     "name": "Corneel Online",
     "short_name": "Corneel",
     "theme_color": "#FFFFFF",
@@ -9,7 +10,6 @@
     "file_name": "manifest.json",
     "orientation": "any",
     "scope": "/",
-    "start_url": "/",
     "dir": "auto",
     "prefer_related_applications": false,
     "related_applications": [],

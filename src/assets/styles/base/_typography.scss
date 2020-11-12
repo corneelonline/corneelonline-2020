@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5 {
 
 h1, .h1 {
   margin-top: 0;
-  @include font-size(1.375); // 22px
+  @include font-size(1.875); // 30px
   @media (min-width: $md) {
     @include font-size(3.125); // 50px
   }

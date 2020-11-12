@@ -78,6 +78,55 @@ export default {
   @media (min-width: $lg) {
     height: 300px;
   }
+
+  .project__teaser {
+    width: 100%;
+    height: 142px;
+    
+    @media (min-width: $md) {
+      height: 158px;
+    }
+    @media (min-width: $lg) {
+      height: 202px;
+    }
+  }
+
+  .project-img {
+    display: block;
+    width: 180px;
+    height: 142px;
+    background-image: url('~@/assets/images/bg/laptop.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+    
+    @media (min-width: $md) {
+      width: 220px;
+      height: 158px;
+    }
+    @media (min-width: $lg) {
+      width: 285px;
+      height: 202px;
+    }
+
+    img {
+      position: absolute;
+      top: 11px;
+      left: 16px;
+      width: 83%;
+    
+      @media (min-width: $md) {
+        top: 13px;
+        left: 19px;
+      }
+      @media (min-width: $lg) {
+        top: 17px;
+        left: 24px;
+      }
+    }
+  }
 }
 .slick-slider {
   margin: 0 4rem;

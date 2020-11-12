@@ -65,8 +65,8 @@ export default {
 }
 .project-excerpt__img {
   display: block;
-  width: 204px;
-  height: 143px;
+  width: 260px;
+  height: 200px;
   margin-bottom: 1rem;
   background-image: url('~@/assets/images/bg/laptop.svg');
   background-position: 0 0;
@@ -93,9 +93,9 @@ export default {
   img {
     position: absolute;
     border: 2px solid var(--color-gray-dark);
-    top: 10px;
-    left: 15px;
-    width: 84.5%;
+    top: 14px;
+    left: 20px;
+    width: 84.2%;
   
     @media (min-width: $sm) {
       border: 3px solid var(--color-gray-dark);

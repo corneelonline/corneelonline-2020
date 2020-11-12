@@ -26,7 +26,7 @@ export default {
 <style scoped lang="scss">
 .project__teaser {
   width: 100%;
-  height: 143px;
+  height: 172px;
   
   @media (min-width: $md) {
     height: 158px;
@@ -37,8 +37,8 @@ export default {
 
   .project-img {
     display: block;
-    width: 204px;
-    height: 143px;
+    width: 240px;
+    height: 172px;
     background-image: url('~@/assets/images/bg/laptop.svg');
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -57,8 +57,8 @@ export default {
 
     img {
       position: absolute;
-      top: 12px;
-      left: 17px;
+      top: 15px;
+      left: 20px;
       width: 83%;
     
       @media (min-width: $md) {

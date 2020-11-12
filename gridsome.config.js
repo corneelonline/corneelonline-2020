@@ -55,6 +55,17 @@ module.exports = {
         },
       },
     },
+    {
+      use: "gridsome-plugin-manifest",
+      options: {
+        background_color: "#FFFFFF",
+        icon_path: "./src/assets/images/FAVICON-Corneel@2x.png",
+        name: "Corneel Online",
+        short_name: "Corneel",
+        theme_color: "#FFFFFF",
+        lang: "nl",
+      },
+    },
   ],
   templates: {
     SanityProject: [

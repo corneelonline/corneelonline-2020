@@ -24,6 +24,7 @@
     "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
+    "gridsome-plugin-manifest": "^0.3.5",
     "gridsome-plugin-service-worker": "^0.2.6",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",

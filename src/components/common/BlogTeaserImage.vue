@@ -23,7 +23,7 @@ export default {
       return `${this.imgSrc}?w=482`
     },
     srcSet() {
-      return `${this.imgSrc}?w=482 320w, ${this.imgSrc}?w=310 576w, ${this.imgSrc}?w=400 768w, ${this.imgSrc}?w=310 992w, ${this.imgSrc}?w=380 1200w`
+      return `${this.imgSrc}?w=482 320w`
     }
   }
 }

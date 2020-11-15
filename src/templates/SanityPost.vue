@@ -103,7 +103,6 @@ export default {
     readingTime: function (content) {
       let minutes = 0;
       const contentString = content.textContent;
-      // const contentString = JSON.stringify(this.$page.sanityPost._rawBody);
       const words = contentString.split(" ").length;
       const wordsPerMinute = 200;
       minutes = Math.ceil(words / wordsPerMinute);

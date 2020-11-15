@@ -13,6 +13,7 @@
         <ul class="tags" v-if="$page.sanityPost.tags">
           <li v-for="tag in $page.sanityPost.tags" :key="tag.id">{{ tag }}</li>
         </ul>
+        <span class="time-to-read">Leestijd {{timeToRead}} min</span>
       </div>
       <div class="post-single__content">
         <PortableText :blocks="$page.sanityPost._rawBody" />
@@ -87,11 +88,31 @@ export default {
       }
     }
   },
+  data () {
+    return {
+      timeToRead: 0
+    }
+  },
   components: {
     PortableText,
     RelatedArticles,
     ContactMe,
     BlogMainImage
+  },
+  methods: {
+    readingTime: function (content) {
+      let minutes = 0;
+      const contentString = content.textContent;
+      // const contentString = JSON.stringify(this.$page.sanityPost._rawBody);
+      const words = contentString.split(" ").length;
+      const wordsPerMinute = 200;
+      minutes = Math.ceil(words / wordsPerMinute);
+      return minutes;
+    }
+  },
+  mounted() {
+    const postContent = document.querySelector('.post-single__content');
+    this.timeToRead = this.readingTime(postContent);
   }
 }
 </script>
@@ -124,6 +145,11 @@ export default {
   &__meta {
     margin-bottom: 1rem;
 
+    @media (min-width: $sm) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     @media (min-width: $md) {
       margin-bottom: 2rem;
     }
@@ -135,6 +161,10 @@ export default {
     @media (min-width: $sm) {
       margin-bottom: 0;
     }
+  }
+
+  .time-to-read {
+    @include font-size(0.889);
   }
 
   .post-single__content {

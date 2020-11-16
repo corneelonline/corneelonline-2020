@@ -147,10 +147,15 @@ export default {
 .blog-post__teaser {
   background-color: var(--color-white);
   padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
+
+  // fix safari bug with column layout
+  &:first-of-type {
+    margin-top: 0;
+  }
 
   .post-details {
     display: flex;

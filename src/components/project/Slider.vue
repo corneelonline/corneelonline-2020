@@ -12,6 +12,7 @@ query {
     edges {
 			node {
         title
+        path
         mainImage {
           asset {
             url

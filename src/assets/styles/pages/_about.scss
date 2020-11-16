@@ -13,13 +13,13 @@ body.over-corneel {
       content: "";
       display: block;
       width: 250px;
-      height: 340px;
+      height: 330px;
       background-image: url('~@/assets/images/layout/ladder.png');
       background-position: bottom center;
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
-      top: 0px;
+      top: 0;
       right: 100px;
     }
   }

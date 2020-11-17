@@ -1,7 +1,7 @@
 <template>
-  <div class="home-services__teaser">
+  <g-link to="/diensten" class="home-services__teaser">
     <h3>{{ title }}</h3>
-  </div>
+  </g-link>
 </template>
 
 <script>
@@ -17,6 +17,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
   width: 40%;
   min-height: 140px;
   padding-top: 6.25rem; //100px;

@@ -27,6 +27,10 @@ const client = sanityClient({
   useCdn: false // `false` if you want to ensure fresh data
 })
 
+// client.delete({
+//   query: `*[_type == "term"]`
+// })
+
 // Declare modules
 module.exports = {
   siteName: 'Corneel Online',
@@ -45,28 +49,6 @@ module.exports = {
         // use `graphqlTag` to specify the tag name. Defaults to `default`.
         graphqlTag: 'default'
       }
-    },
-    {
-      use: "gridsome-plugin-service-worker",
-      options: {
-        precachedRoutes: ["/"],
-        networkFirst: {
-          cacheName: "nf-v1",
-          routes: ["/", /\.(js|css|png|jpg|svg)/],
-        },
-      },
-    },
-    {
-      use: "gridsome-plugin-manifest",
-      options: {
-        background_color: "#FFFFFF",
-        icon_path: "./src/assets/images/FAVICON-Corneel@2x.png",
-        start_url: "/",
-        name: "Corneel Online",
-        short_name: "Corneel",
-        theme_color: "#FFFFFF",
-        lang: "nl",
-      },
     },
   ],
   templates: {

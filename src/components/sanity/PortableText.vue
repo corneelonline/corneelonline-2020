@@ -11,6 +11,7 @@ import InternalLink from '~/components/sanity/InternalLink.vue'
 import ExternalLink from '~/components/sanity/ExternalLink.vue'
 import YouTube from '~/components/sanity/YouTube.vue'
 import Image from '~/components/sanity/Image.vue'
+import CallToAction from '~/components/sanity/CallToAction.vue'
 
 export default {
   props: {
@@ -28,11 +29,12 @@ export default {
       serializers: {
         marks: {
           internalLink: InternalLink,
-          link: ExternalLink
+          link: ExternalLink,
         },
         types: {
           youtube: YouTube,
-          image: Image
+          image: Image,
+          callToAction: CallToAction
         }
       }
     };

@@ -127,7 +127,7 @@ export default {
   @media (min-width: $lg) {
     @include container-narrow;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
   }
 
   h2 {

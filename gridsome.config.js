@@ -68,6 +68,23 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: 'gridsome-plugin-robots-txt',
+      options: {
+        policy: [
+          {
+            userAgent: "Googlebot",
+            disallow: "/",
+            crawlDelay: 2
+          },
+          {
+            userAgent: "*",
+            disallow: "/",
+            crawlDelay: 10
+          }
+        ]
+      }
     }
   ],
   templates: {

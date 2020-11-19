@@ -85,7 +85,13 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    // {
+    //   use: '@gridsome/plugin-google-analytics',
+    //   options: {
+    //     id: 'UA-67022300-1'
+    //   }
+    // }
   ],
   templates: {
     SanityProject: [

@@ -6,8 +6,8 @@
     <section class="page-content">
       <h2>Helaas, de pagina die je zoekt kan niet worden gevonden</h2>
       <g-image src="~/assets/images/layout/not-found.jpg" class="main-img-notfound"/>
-      <p>Er is iets misgegaan. De pagina die je zoekt bestaat niet (meer).</p>
-      <p>Wat kunt u doen om te vinden wat u zoekt?</p>
+      <p>Er is iets misgegaan. De pagina die je zoekt bestaat niet (meer). Bij de lancering van de nieuwe website zijn een flink aantal blogartikelen en projecten opgeschoond, dus dat kan een mogelijke oorzaak zijn.</p>
+      <p>Wat kun je doen om te vinden wat je zoekt?</p>
       <ul>
         <li>Controleer de URL en probeer het opnieuw.</li>
         <li>Kijk in in navigatiemenu of je daar de juiste pagina kunt vinden.</li>

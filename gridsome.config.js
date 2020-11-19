@@ -34,6 +34,7 @@ const client = sanityClient({
 // Declare modules
 module.exports = {
   siteName: 'Corneel Online',
+  siteUrl: 'https://corneel-2020.netlify.app',
   plugins: [
     {
       use: 'gridsome-source-sanity',
@@ -50,6 +51,24 @@ module.exports = {
         graphqlTag: 'default'
       }
     },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        exclude: ['/exclude-me'],
+        config: {
+          '/blog/*': {
+            changefreq: 'weekly',
+            priority: 0.5,
+            lastmod: '2020-11-19',
+          },
+          '/projecten/*': {
+            changefreq: 'weekly',
+            priority: 0.7,
+            lastmod: '2020-11-19',
+          }
+        }
+      }
+    }
   ],
   templates: {
     SanityProject: [

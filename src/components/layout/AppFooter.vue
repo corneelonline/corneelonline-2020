@@ -1,5 +1,5 @@
 <template>
-  <footer class="page-footer" role="contentinfo">
+  <footer class="page-footer">
     <div class="page-footer__branding">
       <g-link class="logo-inverted" to="/">{{ $static.metadata.siteName }}</g-link>
     </div>

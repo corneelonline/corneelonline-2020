@@ -54,7 +54,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-sitemap',
       options: {
-        exclude: ['/exclude-me'],
+        exclude: ['/bedankt'],
         config: {
           '/blog/*': {
             changefreq: 'weekly',

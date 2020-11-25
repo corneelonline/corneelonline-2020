@@ -141,8 +141,8 @@ export default {
 }
 .main-image {
   display: block;
-  width: 204px;
-  height: 143px;
+  width: 270px;
+  height: 200px;
   margin-bottom: 1rem;
   background-image: url('~@/assets/images/bg/laptop.svg');
   background-position: center;
@@ -169,9 +169,9 @@ export default {
 
   img {
     position: absolute;
-    top: 12px;
-    left: 18px;
-    width: 168px;
+    top: 21px;
+    left: 22px;
+    width: 225px;
   
     @media (min-width: $sm) {
       top: 30px;

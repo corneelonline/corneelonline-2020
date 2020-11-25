@@ -75,23 +75,25 @@ module.exports = {
         policy: [
           {
             userAgent: "Googlebot",
-            disallow: "/",
+            allow: "/",
+            disallow: "/bedankt",
             crawlDelay: 2
           },
           {
             userAgent: "*",
-            disallow: "/",
+            allow: "/",
+            disallow: "/bedankt",
             crawlDelay: 10
           }
         ]
       }
     },
-    // {
-    //   use: '@gridsome/plugin-google-analytics',
-    //   options: {
-    //     id: 'UA-67022300-1'
-    //   }
-    // }
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-67022300-1'
+      }
+    }
   ],
   templates: {
     SanityProject: [

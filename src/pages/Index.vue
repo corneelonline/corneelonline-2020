@@ -98,7 +98,7 @@ export default {
         },
         {
           property: "og:image",
-          content: ""
+          content: "/assets/img/screenshot-home.jpg"
         }
       ],
       bodyAttrs: {

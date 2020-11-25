@@ -34,7 +34,7 @@ const client = sanityClient({
 // Declare modules
 module.exports = {
   siteName: 'Corneel Online',
-  siteUrl: 'https://corneel-2020.netlify.app',
+  siteUrl: 'https://corneelonline.nl',
   plugins: [
     {
       use: 'gridsome-source-sanity',

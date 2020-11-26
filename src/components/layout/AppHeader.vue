@@ -175,6 +175,10 @@ export default {
         background-size: 1.125em 1.5rem;
       }
     }
+    
+    &:hover {
+      color: var(--color-orange);
+    }
   }
 }
 // -------------------------------------

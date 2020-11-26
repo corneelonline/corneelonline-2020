@@ -68,19 +68,19 @@ import ServiceExcerpt from '~/components/service/Excerpt.vue'
 export default {
   metaInfo() {
     return {
-      title: this.$page.service.seo_title,
+      title: this.$page.service.seo.seo_title,
       meta: [
         {
           name: "description",
-          content: this.$page.service.seo_description
+          content: this.$page.service.seo.meta_description
         },
         {
           property: "og:title",
-          content: this.$page.service.seo_title
+          content: this.$page.service.seo.seo_title
         },
         {
           property: "og:description",
-          content: this.$page.service.seo_description
+          content: this.$page.service.seo.meta_description
         },
         {
           property: "og:image",

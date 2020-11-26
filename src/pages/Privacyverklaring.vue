@@ -30,19 +30,19 @@ import ContactMe from '~/components/layout/ContactMe.vue'
 export default {
   metaInfo() {
     return {
-      title: this.$page.content.seo_title,
+      title: this.$page.content.seo.seo_title,
       meta: [
         {
           name: "description",
-          content: this.$page.content.seo_description
+          content: this.$page.content.seo.meta_description
         },
         {
           property: "og:title",
-          content: this.$page.content.seo_title
+          content: this.$page.content.seo.seo_title
         },
         {
           property: "og:description",
-          content: this.$page.content.seo_description
+          content: this.$page.content.seo.meta_description
         },
         {
           property: "og:image",

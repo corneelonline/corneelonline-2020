@@ -24,6 +24,10 @@ query {
     title
     introductionTitle
     _rawIntroductionText
+    seo {
+      seo_title
+      meta_description
+    }
   }
   featuredProjects: allSanityProject(sortBy: "deliveryDate", order: DESC, filter: { featured: { eq: true }}) {
     edges {
@@ -64,19 +68,19 @@ import ProjectTeaser from '~/components/project/Teaser.vue'
 export default {
   metaInfo() {
     return {
-      title: this.$page.portfolio.seo_title,
+      title: this.$page.portfolio.seo.seo_title,
       meta: [
         {
           name: "description",
-          content: this.$page.portfolio.seo_description
+          content: this.$page.portfolio.seo.meta_description
         },
         {
           property: "og:title",
-          content: this.$page.portfolio.seo_title
+          content: this.$page.portfolio.seo.seo_title
         },
         {
           property: "og:description",
-          content: this.$page.portfolio.seo_description
+          content: this.$page.portfolio.seo.meta_description
         },
         {
           property: "og:image",

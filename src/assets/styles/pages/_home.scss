@@ -1,7 +1,9 @@
 // -----------------------------------------------
 // Homepage
 // -----------------------------------------------
-body.home {
+body.home > .page {
+  max-width: 1440px;
+  margin: 0 auto;
   @media (min-width: $md) {
     background-image: url('~@/assets/images/bg/bg-header-home.jpg');
     background-position: center 80px;
@@ -12,7 +14,7 @@ body.home {
     background-position: center 50px;
   }
 }
-body.home {
+body.home > .page {
   position: relative;
 
   &::after {

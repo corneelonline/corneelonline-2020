@@ -1,30 +1,27 @@
 <template>
-  <img 
-    :src="srcSmall"
-    :srcset="srcSet"
-    :alt="imgAlt">
+  <img :src="srcSmall" :srcset="srcSet" :alt="imgAlt" />
 </template>
 
 <script>
 export default {
-  name: 'BlogTeaserImage',
+  name: "BlogTeaserImage",
   props: {
     imgSrc: {
       type: String,
-      default: null
+      default: null,
     },
     imgAlt: {
       type: String,
-      default: "hoofdafbeelding van het artikel"
-    }
+      default: "hoofdafbeelding van het artikel",
+    },
   },
   computed: {
     srcSmall() {
-      return `${this.imgSrc}?w=482`
+      return `${this.imgSrc}?w=482`;
     },
     srcSet() {
-      return `${this.imgSrc}?w=482 320w`
-    }
-  }
-}
+      return `${this.imgSrc}?w=482 320w`;
+    },
+  },
+};
 </script>

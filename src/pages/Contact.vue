@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageIntro 
+    <PageIntro
       v-bind:title="$page.sanityContact.title"
       v-bind:headline="$page.sanityContact.introductionTitle"
       v-bind:intro="$page.sanityContact._rawIntroductionText"
@@ -8,7 +8,9 @@
     <section class="page-content">
       <div class="page-content__intro">
         <h3>Heb je een vraag of opmerking?</h3>
-        <p class="highlighted-text">Vul dan onderstaand formulier in; dan reageer ik zo snel mogelijk!</p>
+        <p class="highlighted-text">
+          Vul dan onderstaand formulier in; dan reageer ik zo snel mogelijk!
+        </p>
       </div>
       <div class="page-contact">
         <div class="page-contact__form">
@@ -16,19 +18,24 @@
         </div>
         <div class="page-contact__details">
           <h4>Contactgegevens</h4>
-          <p>Corneel Online<br>Marco Verheul</p>
+          <p>Corneel Online<br />Marco Verheul</p>
           <p class="links">
-            <a tel="+31628461106" class="phone">06 2846 1106</a><br>
-            <a href="mailto:marco@corneelonline.nl" class="email">marco@corneelonline.nl</a>
+            <a tel="+31628461106" class="phone">06 2846 1106</a><br />
+            <a href="mailto:marco@corneelonline.nl" class="email"
+              >marco@corneelonline.nl</a
+            >
           </p>
           <h4>Correspondentieadres</h4>
-          <p>Mercuriusstraat 7<br>2024 TL Haarlem</p>
-          <p>Kvk 34289767<br>BTW NL002172594B84</p>
+          <p>Mercuriusstraat 7<br />2024 TL Haarlem</p>
+          <p>Kvk 34289767<br />BTW NL002172594B84</p>
         </div>
       </div>
     </section>
     <section class="big-image contact">
-      <g-image src="~/assets/images/layout/control-room-02.jpg" alt="control room" />
+      <g-image
+        src="~/assets/images/layout/control-room-02.jpg"
+        alt="control room"
+      />
     </section>
     <ContactMe />
   </Layout>
@@ -49,9 +56,9 @@ query {
 </page-query>
 
 <script>
-import PageIntro from '~/components/layout/PageIntro.vue'
-import ContactForm from '~/components/common/ContactForm.vue';
-import ContactMe from '~/components/layout/ContactMe.vue'
+import PageIntro from "~/components/layout/PageIntro.vue";
+import ContactForm from "~/components/common/ContactForm.vue";
+import ContactMe from "~/components/layout/ContactMe.vue";
 
 export default {
   metaInfo() {
@@ -60,32 +67,32 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.sanityContact.seo.meta_description
+          content: this.$page.sanityContact.seo.meta_description,
         },
         {
           property: "og:title",
-          content: this.$page.sanityContact.seo.seo_title
+          content: this.$page.sanityContact.seo.seo_title,
         },
         {
           property: "og:description",
-          content: this.$page.sanityContact.seo.meta_description
+          content: this.$page.sanityContact.seo.meta_description,
         },
         {
           property: "og:image",
-          content: ""
-        }
+          content: "",
+        },
       ],
       bodyAttrs: {
-        class: "contact"
-      }
-    }
+        class: "contact",
+      },
+    };
   },
   components: {
     PageIntro,
     ContactForm,
-    ContactMe
-  }
-}
+    ContactMe,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -98,7 +105,8 @@ export default {
     padding-top: 3rem;
   }
 
-  h3, h4 {
+  h3,
+  h4 {
     @extend .excerpt-header;
   }
 
@@ -139,10 +147,10 @@ a.email {
   background-size: 1.375rem 1.375rem; //22px
 }
 a.email {
-  background-image: url('~@/assets/images/icons/icon-mail.svg');
+  background-image: url("~@/assets/images/icons/icon-mail.svg");
 }
 a.phone {
-  background-image: url('~@/assets/images/icons/icon-phone.svg');
+  background-image: url("~@/assets/images/icons/icon-phone.svg");
 }
 // --------------------------------------
 // big image

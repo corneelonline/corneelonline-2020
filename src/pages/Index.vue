@@ -1,27 +1,33 @@
 <template>
   <Layout>
     <section class="home-intro">
-      <h1>{{$page.home.introductionTitle}}</h1>
+      <h1>{{ $page.home.introductionTitle }}</h1>
       <PortableText :blocks="$page.home._rawIntroductionText" />
       <g-link to="/projecten/" class="button">Bekijk recente projecten</g-link>
     </section>
     <section class="home-services">
       <div class="home-services__intro">
-        <h2>{{$page.home.servicesTitle}}</h2>
-        <PortableText :blocks="$page.home._rawServicesText" class="home-services__body"/>
+        <h2>{{ $page.home.servicesTitle }}</h2>
+        <PortableText
+          :blocks="$page.home._rawServicesText"
+          class="home-services__body"
+        />
         <h2>Corneel Online houdt zich bezig met:</h2>
       </div>
       <div class="home-services__teasers">
-        <ServiceTeaser 
-          v-for="edge in $page.services.edges" 
-          :key="edge.node.id" 
+        <ServiceTeaser
+          v-for="edge in $page.services.edges"
+          :key="edge.node.id"
           v-bind:title="edge.node.title"
           v-bind:class="edge.node.serviceClass"
         />
       </div>
     </section>
     <section class="big-image">
-      <g-image src="~/assets/images/layout/control-room-01.jpg" alt="control room" />
+      <g-image
+        src="~/assets/images/layout/control-room-01.jpg"
+        alt="control room"
+      />
     </section>
     <section class="featured-projects">
       <header>
@@ -33,15 +39,24 @@
       </footer>
     </section>
     <section class="about-corneel">
-      <h2>{{$page.home.aboutMeTitle}}</h2>
+      <h2>{{ $page.home.aboutMeTitle }}</h2>
       <div class="about-corneel__image">
-        <g-image src="~/assets/images/layout/Marco-Verheul.jpg" alt="foto van Marco Verheul" />
+        <g-image
+          src="~/assets/images/layout/Marco-Verheul.jpg"
+          alt="foto van Marco Verheul"
+        />
       </div>
-      <PortableText :blocks="$page.home._rawAboutMeText" class="about-corneel__body"/>
+      <PortableText
+        :blocks="$page.home._rawAboutMeText"
+        class="about-corneel__body"
+      />
     </section>
     <ContactMe />
     <BigImage>
-      <g-image src="~/assets/images/layout/control-room-02.jpg" alt="control room" />
+      <g-image
+        src="~/assets/images/layout/control-room-02.jpg"
+        alt="control room"
+      />
     </BigImage>
   </Layout>
 </template>
@@ -73,11 +88,11 @@ query {
 </page-query>
 
 <script>
-import PortableText from '~/components/sanity/PortableText.vue'
-import ServiceTeaser from '~/components/service/Teaser.vue'
-import ProjectSlider from '~/components/project/Slider.vue'
-import BigImage from '~/components/layout/BigImage.vue'
-import ContactMe from '~/components/layout/ContactMe.vue'
+import PortableText from "~/components/sanity/PortableText.vue";
+import ServiceTeaser from "~/components/service/Teaser.vue";
+import ProjectSlider from "~/components/project/Slider.vue";
+import BigImage from "~/components/layout/BigImage.vue";
+import ContactMe from "~/components/layout/ContactMe.vue";
 
 export default {
   metaInfo() {
@@ -86,34 +101,34 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.home.seo.meta_description
+          content: this.$page.home.seo.meta_description,
         },
         {
           property: "og:title",
-          content: this.$page.home.seo.seo_title
+          content: this.$page.home.seo.seo_title,
         },
         {
           property: "og:description",
-          content: this.$page.home.seo.meta_description
+          content: this.$page.home.seo.meta_description,
         },
         {
           property: "og:image",
-          content: "/assets/img/screenshot-home.jpg"
-        }
+          content: "/assets/img/screenshot-home.jpg",
+        },
       ],
       bodyAttrs: {
-        class: this.$page.home.title.toLowerCase()
-      }
-    }
+        class: this.$page.home.title.toLowerCase(),
+      },
+    };
   },
   components: {
     PortableText,
     ServiceTeaser,
     ProjectSlider,
     BigImage,
-    ContactMe
-  }
-}
+    ContactMe,
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -122,14 +137,14 @@ export default {
 // -----------------------------------------------
 .home-intro {
   @include container-half;
-  background-image: url('~@/assets/images/bg/home-intro.jpg');
+  background-image: url("~@/assets/images/bg/home-intro.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color-white);
   padding-top: 2rem;
   padding-bottom: 4rem;
-  
+
   @media (min-width: $sm) {
     padding-bottom: 7rem;
   }
@@ -162,7 +177,7 @@ export default {
   @media (min-width: $md) {
     padding-top: 5rem;
   }
-  
+
   &::before {
     @include circle-decoration;
   }
@@ -251,7 +266,7 @@ export default {
   @media (min-width: $lg) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "header image"
       "body   image";
     grid-gap: 1rem;

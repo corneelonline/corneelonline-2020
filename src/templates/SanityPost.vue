@@ -5,7 +5,7 @@
     </section>
     <section class="post-single">
       <g-link to="/blog/" class="button-back">Terug</g-link>
-      <h2 v-html="$page.sanityPost.title"/>
+      <h2 v-html="$page.sanityPost.title" />
       <figure class="cover-image">
         <BlogMainImage :imgSrc="$page.sanityPost.mainImage.asset.url" />
       </figure>
@@ -13,13 +13,13 @@
         <ul class="tags" v-if="$page.sanityPost.tags">
           <li v-for="tag in $page.sanityPost.tags" :key="tag.id">{{ tag }}</li>
         </ul>
-        <span class="time-to-read">Leestijd {{timeToRead}} min</span>
+        <span class="time-to-read">Leestijd {{ timeToRead }} min</span>
       </div>
       <div class="post-single__content">
         <PortableText :blocks="$page.sanityPost._rawBody" />
       </div>
     </section>
-    <RelatedArticles v-bind:relPosts="$page.sanityPost.relatedPosts"/>
+    <RelatedArticles v-bind:relPosts="$page.sanityPost.relatedPosts" />
     <ContactMe />
   </Layout>
 </template>
@@ -56,10 +56,10 @@ query ($path: String!) {
 </page-query>
 
 <script>
-import PortableText from '~/components/sanity/PortableText.vue'
-import RelatedArticles from '~/components/blog/RelatedArticles.vue'
-import ContactMe from '~/components/layout/ContactMe.vue'
-import BlogMainImage from '~/components/common/BlogMainImage.vue'
+import PortableText from "~/components/sanity/PortableText.vue";
+import RelatedArticles from "~/components/blog/RelatedArticles.vue";
+import ContactMe from "~/components/layout/ContactMe.vue";
+import BlogMainImage from "~/components/common/BlogMainImage.vue";
 
 export default {
   metaInfo() {
@@ -68,52 +68,52 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.sanityPost.excerpt
+          content: this.$page.sanityPost.excerpt,
         },
         {
           property: "og:title",
-          content: this.$page.sanityPost.title
+          content: this.$page.sanityPost.title,
         },
         {
           property: "og:description",
-          content: this.$page.sanityPost.excerpt
+          content: this.$page.sanityPost.excerpt,
         },
         {
           property: "og:image",
-          content: this.$page.sanityPost.main_image
-        }
+          content: this.$page.sanityPost.main_image,
+        },
       ],
       bodyAttrs: {
-        class: 'blog'
-      }
-    }
+        class: "blog",
+      },
+    };
   },
-  data () {
+  data() {
     return {
-      timeToRead: 0
-    }
+      timeToRead: 0,
+    };
   },
   components: {
     PortableText,
     RelatedArticles,
     ContactMe,
-    BlogMainImage
+    BlogMainImage,
   },
   methods: {
-    readingTime: function (content) {
+    readingTime: function(content) {
       let minutes = 0;
       const contentString = content.textContent;
       const words = contentString.split(" ").length;
       const wordsPerMinute = 200;
       minutes = Math.ceil(words / wordsPerMinute);
       return minutes;
-    }
+    },
   },
   mounted() {
-    const postContent = document.querySelector('.post-single__content');
+    const postContent = document.querySelector(".post-single__content");
     this.timeToRead = this.readingTime(postContent);
-  }
-}
+  },
+};
 </script>
 
 <style scoped lang="scss">

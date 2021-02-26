@@ -1,7 +1,11 @@
 <template>
   <div class="featured-projects__teasers">
     <VueSlickCarousel v-bind="settings">
-      <ProjectTeaser v-for="edge in $static.featuredProjects.edges" :key="edge.node.id" v-bind:project="edge.node"/>
+      <ProjectTeaser
+        v-for="edge in $static.featuredProjects.edges"
+        :key="edge.node.id"
+        v-bind:project="edge.node"
+      />
     </VueSlickCarousel>
   </div>
 </template>
@@ -28,45 +32,45 @@ query {
 </static-query>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
-import ProjectTeaser from '~/components/project/Teaser.vue'
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import ProjectTeaser from "~/components/project/Teaser.vue";
 
 export default {
-  name: 'ProjectSlider',
+  name: "ProjectSlider",
   components: {
     ProjectTeaser,
-    VueSlickCarousel
+    VueSlickCarousel,
   },
-  data () {
+  data() {
     return {
       settings: {
-        "arrows": true,
-        "dots": true,
-        "infinite": true,
-        "speed": 500,
-        "slidesToShow": 3,
-        "initialSlide": 0,
-        "responsive": [
+        arrows: true,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        initialSlide: 0,
+        responsive: [
           {
-            "breakpoint": 1100,
-            "settings": {
-              "slidesToShow": 2
-            }
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 2,
+            },
           },
           {
-            "breakpoint": 576,
-            "settings": {
-              "slidesToShow": 1
-            }
-          }
-        ]
-      }
-    }
-  }
-}
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      },
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -83,7 +87,7 @@ export default {
   .project__teaser {
     width: 100%;
     height: 142px;
-    
+
     @media (min-width: $md) {
       height: 158px;
     }
@@ -96,13 +100,13 @@ export default {
     display: block;
     width: 180px;
     height: 142px;
-    background-image: url('~@/assets/images/bg/laptop.svg');
+    background-image: url("~@/assets/images/bg/laptop.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
     margin: 0 auto;
-    
+
     @media (min-width: $md) {
       width: 220px;
       height: 158px;
@@ -117,7 +121,7 @@ export default {
       top: 11px;
       left: 16px;
       width: 83%;
-    
+
       @media (min-width: $md) {
         top: 13px;
         left: 19px;
@@ -155,7 +159,7 @@ export default {
   &.slick-prev,
   &.slick-prev:hover,
   &.slick-prev:focus {
-    background-image: url('~@/assets/images/icons/arrow-black-left.svg');
+    background-image: url("~@/assets/images/icons/arrow-black-left.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -167,7 +171,7 @@ export default {
   &.slick-next,
   &.slick-next:hover,
   &.slick-next:focus {
-    background-image: url('~@/assets/images/icons/arrow-black-right.svg');
+    background-image: url("~@/assets/images/icons/arrow-black-right.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

@@ -1,17 +1,14 @@
 <template>
-  <SanityRichText 
-    :blocks="blocks"
-    :serializers="serializers" 
-  />
+  <SanityRichText :blocks="blocks" :serializers="serializers" />
 </template>
 
 <script>
-import SanityRichText from 'sanity-blocks-vue-component'
-import InternalLink from '~/components/sanity/InternalLink.vue'
-import ExternalLink from '~/components/sanity/ExternalLink.vue'
-import YouTube from '~/components/sanity/YouTube.vue'
-import Image from '~/components/sanity/Image.vue'
-import CallToAction from '~/components/sanity/CallToAction.vue'
+import SanityRichText from "sanity-blocks-vue-component";
+import InternalLink from "~/components/sanity/InternalLink.vue";
+import ExternalLink from "~/components/sanity/ExternalLink.vue";
+import YouTube from "~/components/sanity/YouTube.vue";
+import Image from "~/components/sanity/Image.vue";
+import CallToAction from "~/components/sanity/CallToAction.vue";
 
 export default {
   props: {
@@ -22,7 +19,7 @@ export default {
     },
   },
   components: {
-    SanityRichText
+    SanityRichText,
   },
   data() {
     return {
@@ -34,10 +31,10 @@ export default {
         types: {
           youtube: YouTube,
           image: Image,
-          callToAction: CallToAction
-        }
-      }
+          callToAction: CallToAction,
+        },
+      },
     };
-  }
-}
+  },
+};
 </script>

@@ -5,7 +5,7 @@
     </section>
     <section class="project-single">
       <g-link to="/projecten/" class="button-back">Terug</g-link>
-      <h2 class="project-title" v-html="$page.sanityProject.title"/>
+      <h2 class="project-title" v-html="$page.sanityProject.title" />
       <div class="project-img">
         <figure class="main-image">
           <ProjectImage :imgSrc="$page.sanityProject.mainImage.asset.url" />
@@ -15,18 +15,24 @@
         <div class="project-desc__details">
           <dl>
             <dt>Opdrachtgever</dt>
-            <dd>{{$page.sanityProject.client}}</dd>
+            <dd>{{ $page.sanityProject.client }}</dd>
             <dt>Team</dt>
-            <dd>{{$page.sanityProject.team}}</dd>
+            <dd>{{ $page.sanityProject.team }}</dd>
             <dt>Tools</dt>
-            <dd>{{$page.sanityProject.services}}</dd>
+            <dd>{{ $page.sanityProject.services }}</dd>
             <dt>Opgeleverd</dt>
-            <dd>{{$page.sanityProject.deliveryDate}}</dd>
+            <dd>{{ $page.sanityProject.deliveryDate }}</dd>
           </dl>
-          <a v-if="$page.sanityProject.visitWebsite.length" :href="$page.sanityProject.visitWebsite" class="button" target="_blank">Bezoek website</a>
+          <a
+            v-if="$page.sanityProject.visitWebsite.length"
+            :href="$page.sanityProject.visitWebsite"
+            class="button"
+            target="_blank"
+            >Bezoek website</a
+          >
         </div>
         <div class="project-desc__content">
-          <PortableText :blocks="$page.sanityProject._rawIntroductionText"/>
+          <PortableText :blocks="$page.sanityProject._rawIntroductionText" />
         </div>
       </div>
       <div class="project-body" v-if="$page.sanityProject._rawBody">
@@ -63,9 +69,9 @@ query ($path: String!) {
 </page-query>
 
 <script>
-import PortableText from '~/components/sanity/PortableText.vue'
-import ContactMe from '~/components/layout/ContactMe.vue'
-import ProjectImage from '~/components/common/ProjectImage.vue'
+import PortableText from "~/components/sanity/PortableText.vue";
+import ContactMe from "~/components/layout/ContactMe.vue";
+import ProjectImage from "~/components/common/ProjectImage.vue";
 
 export default {
   metaInfo() {
@@ -74,32 +80,32 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.sanityProject.seo.meta_description
+          content: this.$page.sanityProject.seo.meta_description,
         },
         {
           property: "og:title",
-          content: this.$page.sanityProject.seo.seo_title
+          content: this.$page.sanityProject.seo.seo_title,
         },
         {
           property: "og:description",
-          content: this.$page.sanityProject.seo.meta_description
+          content: this.$page.sanityProject.seo.meta_description,
         },
         {
           property: "og:image",
-          content: this.$page.sanityProject.main_image
-        }
+          content: this.$page.sanityProject.main_image,
+        },
       ],
       bodyAttrs: {
-        class: "project"
-      }
-    }
+        class: "project",
+      },
+    };
   },
   components: {
     PortableText,
     ContactMe,
-    ProjectImage
-  }
-}
+    ProjectImage,
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -114,13 +120,13 @@ export default {
   border-bottom: 3rem solid var(--color-white);
   padding-top: 2rem;
   padding-bottom: 2rem;
-  
+
   @media (min-width: $lg) {
     @include container-narrow;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  
+
   .button-back {
     margin-bottom: 2rem;
   }
@@ -134,7 +140,7 @@ export default {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 2rem;
-  
+
   @media (min-width: $sm) {
     justify-content: center;
   }
@@ -144,12 +150,12 @@ export default {
   width: 270px;
   height: 200px;
   margin-bottom: 1rem;
-  background-image: url('~@/assets/images/bg/laptop.svg');
+  background-image: url("~@/assets/images/bg/laptop.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  
+
   @media (min-width: $sm) {
     width: 570px;
     height: 360px;
@@ -172,7 +178,7 @@ export default {
     top: 21px;
     left: 22px;
     width: 225px;
-  
+
     @media (min-width: $sm) {
       top: 30px;
       left: calc(50% - 212px);
@@ -204,7 +210,7 @@ export default {
     display: flex;
     justify-content: space-between;
   }
-  
+
   &__details {
     margin-bottom: 2rem;
 
@@ -223,12 +229,12 @@ export default {
       }
     }
     dt {
-      padding: .25rem 0 0;
+      padding: 0.25rem 0 0;
       color: var(--color-orange);
       width: 100%;
-  
+
       @media (min-width: $sm) {
-        padding: .25rem 0;
+        padding: 0.25rem 0;
         border-bottom: 1px solid var(--color-orange);
         width: 35%;
       }
@@ -238,12 +244,12 @@ export default {
       }
     }
     dd {
-      padding: 0 0 .25rem;
+      padding: 0 0 0.25rem;
       border-bottom: 1px solid var(--color-orange);
       width: 100%;
-  
+
       @media (min-width: $sm) {
-        padding: .25rem 0;
+        padding: 0.25rem 0;
         width: 65%;
       }
 
@@ -258,7 +264,8 @@ export default {
       width: 45%;
     }
 
-    p, & /deep/ p {
+    p,
+    & /deep/ p {
       @extend .highlighted-text;
       line-height: 1.4;
     }

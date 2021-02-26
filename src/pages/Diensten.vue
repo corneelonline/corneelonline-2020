@@ -1,28 +1,42 @@
 <template>
   <Layout>
-    <PageIntro 
+    <PageIntro
       v-bind:title="$page.service.title"
       v-bind:headline="$page.service.introductionTitle"
       v-bind:intro="$page.service._rawIntroductionText"
     />
     <section class="services-overview">
-      <ServiceExcerpt v-for="edge in $page.services.edges" :key="edge.node.id" v-bind:class="edge.node.serviceClass">
-        <h3>{{edge.node.title}}</h3>
-        <PortableText :blocks="edge.node._rawBody"/>
+      <ServiceExcerpt
+        v-for="edge in $page.services.edges"
+        :key="edge.node.id"
+        v-bind:class="edge.node.serviceClass"
+      >
+        <h3>{{ edge.node.title }}</h3>
+        <PortableText :blocks="edge.node._rawBody" />
       </ServiceExcerpt>
     </section>
     <section class="big-image services">
-      <g-image src="~/assets/images/layout/control-room-02.jpg" alt="control room" />
+      <g-image
+        src="~/assets/images/layout/control-room-02.jpg"
+        alt="control room"
+      />
     </section>
     <section class="process">
       <h2>Hoe ik het doe</h2>
-      <div class="process-step" v-for="step in $page.service.steps" :key="step.stepNumber">
+      <div
+        class="process-step"
+        v-for="step in $page.service.steps"
+        :key="step.stepNumber"
+      >
         <div class="process-step__nr">
           <span>{{ step.stepNumber }}</span>
         </div>
         <div class="process-step__body">
           <h3>{{ step.stepTitle }}</h3>
-          <PortableText :blocks="step._rawStepDescription" class="process-step__desc"/>
+          <PortableText
+            :blocks="step._rawStepDescription"
+            class="process-step__desc"
+          />
         </div>
       </div>
     </section>
@@ -59,11 +73,11 @@ query {
 </page-query>
 
 <script>
-import PortableText from '~/components/sanity/PortableText.vue'
-import PageIntro from '~/components/layout/PageIntro.vue'
-import ContactMe from '~/components/layout/ContactMe.vue'
-import BigImage from '~/components/layout/BigImage.vue'
-import ServiceExcerpt from '~/components/service/Excerpt.vue'
+import PortableText from "~/components/sanity/PortableText.vue";
+import PageIntro from "~/components/layout/PageIntro.vue";
+import ContactMe from "~/components/layout/ContactMe.vue";
+import BigImage from "~/components/layout/BigImage.vue";
+import ServiceExcerpt from "~/components/service/Excerpt.vue";
 
 export default {
   metaInfo() {
@@ -72,34 +86,34 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.service.seo.meta_description
+          content: this.$page.service.seo.meta_description,
         },
         {
           property: "og:title",
-          content: this.$page.service.seo.seo_title
+          content: this.$page.service.seo.seo_title,
         },
         {
           property: "og:description",
-          content: this.$page.service.seo.meta_description
+          content: this.$page.service.seo.meta_description,
         },
         {
           property: "og:image",
-          content: ""
-        }
+          content: "",
+        },
       ],
       bodyAttrs: {
-        class: "diensten"
-      }
-    }
+        class: "diensten",
+      },
+    };
   },
   components: {
     PortableText,
     PageIntro,
     ContactMe,
     BigImage,
-    ServiceExcerpt
-  }
-}
+    ServiceExcerpt,
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -133,7 +147,7 @@ export default {
   @include container-narrow-half;
   padding-top: 2rem;
   padding-bottom: 2rem;
-    
+
   @media (min-width: $md) {
     padding-right: calc(50% - 230px);
   }
@@ -149,15 +163,33 @@ export default {
   @media (min-width: $sm) {
     display: flex;
     background: var(--color-white);
-    background: linear-gradient(90deg, var(--color-white) 36px, var(--color-orange) 36px, var(--color-white) 38px, var(--color-white) 38px);
+    background: linear-gradient(
+      90deg,
+      var(--color-white) 36px,
+      var(--color-orange) 36px,
+      var(--color-white) 38px,
+      var(--color-white) 38px
+    );
   }
   @media (min-width: $md) {
     background: var(--color-white);
-    background: linear-gradient(90deg, var(--color-white) 48px, var(--color-orange) 48px, var(--color-white) 50px, var(--color-white) 50px);
+    background: linear-gradient(
+      90deg,
+      var(--color-white) 48px,
+      var(--color-orange) 48px,
+      var(--color-white) 50px,
+      var(--color-white) 50px
+    );
   }
   @media (min-width: $lg) {
     background: var(--color-white);
-    background: linear-gradient(90deg, var(--color-white) 80px, var(--color-orange) 80px, var(--color-white) 82px, var(--color-white) 82px);
+    background: linear-gradient(
+      90deg,
+      var(--color-white) 80px,
+      var(--color-orange) 80px,
+      var(--color-white) 82px,
+      var(--color-white) 82px
+    );
   }
 
   &:last-of-type {
@@ -169,7 +201,7 @@ export default {
 
   &__nr {
     padding-bottom: 1rem;
-    
+
     @media (min-width: $sm) {
       padding-right: 2rem;
     }
@@ -190,7 +222,7 @@ export default {
       color: var(--color-white);
       background-color: var(--color-orange);
       z-index: 2;
-    
+
       @media (min-width: $sm) {
         width: 4.5rem; //72px;
         height: 4.5rem; //72px;

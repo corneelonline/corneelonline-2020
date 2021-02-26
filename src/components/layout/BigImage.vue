@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'BigImage'
-}
+  name: "BigImage",
+};
 </script>
 
 <style scoped lang="scss">

@@ -5,24 +5,25 @@
     </section>
     <section class="about-me-intro">
       <div class="about-me-intro__body">
-        <PortableText :blocks="$page.about._rawBody"/>
+        <PortableText :blocks="$page.about._rawBody" />
         <g-link to="/contact/" class="button">Verder kennismaken?</g-link>
       </div>
       <div class="about-me-intro__img">
-        <g-image src="~/assets/images/layout/Marco-Verheul.jpg" alt="foto van Marco Verheul" />
+        <g-image
+          src="~/assets/images/layout/Marco-Verheul.jpg"
+          alt="foto van Marco Verheul"
+        />
       </div>
     </section>
     <section class="about-me-info">
       <div class="about-me-info__mission">
-        <PortableText :blocks="$page.about._rawMission"/>
+        <PortableText :blocks="$page.about._rawMission" />
       </div>
       <div class="about-me-info__team">
-        <PortableText :blocks="$page.about._rawTeam"/>
+        <PortableText :blocks="$page.about._rawTeam" />
       </div>
     </section>
-    <section class="big-image about">
-      <g-image src="~/assets/images/layout/control-room-02.jpg" alt="control room" />
-    </section>
+    <section class="big-image about"></section>
     <ContactMe />
   </Layout>
 </template>
@@ -43,8 +44,8 @@ query {
 </page-query>
 
 <script>
-import PortableText from '~/components/sanity/PortableText.vue'
-import ContactMe from '~/components/layout/ContactMe.vue'
+import PortableText from "~/components/sanity/PortableText.vue";
+import ContactMe from "~/components/layout/ContactMe.vue";
 
 export default {
   metaInfo() {
@@ -53,31 +54,31 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.about.seo.meta_description
+          content: this.$page.about.seo.meta_description,
         },
         {
           property: "og:title",
-          content: this.$page.about.seo.seo_title
+          content: this.$page.about.seo.seo_title,
         },
         {
           property: "og:description",
-          content: this.$page.about.seo.meta_description
+          content: this.$page.about.seo.meta_description,
         },
         {
           property: "og:image",
-          content: ""
-        }
+          content: "",
+        },
       ],
       bodyAttrs: {
-        class: "over-corneel"
-      }
-    }
+        class: "over-corneel",
+      },
+    };
   },
   components: {
     PortableText,
-    ContactMe
-  }
-}
+    ContactMe,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

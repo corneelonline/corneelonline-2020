@@ -1,7 +1,7 @@
 <template>
   <article class="blog-post--latest">
     <g-link class="post-details" :to="post.path">
-      <h2>{{post.title}}</h2>
+      <h2>{{ post.title }}</h2>
       <figure class="cover-image">
         <g-image :src="post.main_image" alt="blog cover image" />
       </figure>
@@ -16,13 +16,9 @@
 
 <script>
 export default {
-  name: 'BlogLatestArticle',
+  name: "BlogLatestArticle",
   props: {
-    post: Object
-  }
-}
+    post: Object,
+  },
+};
 </script>
-
-<style scoped lang="scss">
-
-</style>

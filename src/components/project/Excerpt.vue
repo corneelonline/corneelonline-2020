@@ -5,7 +5,7 @@
         <g-image :src="project.mainImage.asset.url" alt="project img" />
       </figure>
       <div class="project-excerpt__body">
-        <h3>{{project.title}}</h3>
+        <h3>{{ project.title }}</h3>
         <PortableText :blocks="project._rawIntroductionText" />
         <button class="button">Meer over deze case</button>
       </div>
@@ -14,22 +14,22 @@
 </template>
 
 <script>
-import PortableText from '~/components/sanity/PortableText.vue'
+import PortableText from "~/components/sanity/PortableText.vue";
 
 export default {
-  name: 'ProjectExcerpt',
+  name: "ProjectExcerpt",
   props: {
-    project: Object
+    project: Object,
   },
   methods: {
     getPath(slug) {
       return `/projecten/${slug}/`;
-    }
+    },
   },
   components: {
-    PortableText
-  }
-}
+    PortableText,
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -43,7 +43,7 @@ export default {
   .project-details {
     text-decoration: none;
     color: var(--color-text-main);
-  
+
     @media (min-width: $sm) {
       display: flex;
       justify-content: space-between;
@@ -68,12 +68,12 @@ export default {
   width: 260px;
   height: 200px;
   margin-bottom: 1rem;
-  background-image: url('~@/assets/images/bg/laptop.svg');
+  background-image: url("~@/assets/images/bg/laptop.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  
+
   @media (min-width: $sm) {
     width: 240px;
     height: auto;
@@ -96,7 +96,7 @@ export default {
     top: 14px;
     left: 20px;
     width: 84.2%;
-  
+
     @media (min-width: $sm) {
       border: 3px solid var(--color-gray-dark);
       top: 11px;
@@ -135,7 +135,7 @@ export default {
 
   h3 {
     color: var(--color-orange);
-    
+
     @media (min-width: $md) {
       @include font-size(1.5); // 24px
     }

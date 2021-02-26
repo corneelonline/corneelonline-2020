@@ -6,22 +6,22 @@
 
 <script>
 export default {
-  name: 'ServiceExcerpt',
+  name: "ServiceExcerpt",
   props: {
-    service: Object
-  }
-}
+    service: Object,
+  },
+};
 </script>
 
 <style scoped lang="scss">
 .service__excerpt {
   padding-top: 6.4rem;
   padding-bottom: 1rem;
-  background-image: url('~@/assets/images/icons/icon-service.svg');
+  background-image: url("~@/assets/images/icons/icon-service.svg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 4.875rem 5.625rem; //78px 90px;
-  
+
   @media (min-width: $sm) {
     padding-top: 0;
     padding-bottom: 2rem;
@@ -39,22 +39,22 @@ export default {
   }
 
   &.development {
-    background-image: url('~@/assets/images/icons/icon-service-development.svg');
+    background-image: url("~@/assets/images/icons/icon-service-development.svg");
   }
   &.design {
-    background-image: url('~@/assets/images/icons/icon-service-design.svg');
+    background-image: url("~@/assets/images/icons/icon-service-design.svg");
   }
   &.cms {
-    background-image: url('~@/assets/images/icons/icon-service-cms.svg');
+    background-image: url("~@/assets/images/icons/icon-service-cms.svg");
   }
   &.advice {
-    background-image: url('~@/assets/images/icons/icon-service-advice.svg');
+    background-image: url("~@/assets/images/icons/icon-service-advice.svg");
   }
   &.mobile-first {
-    background-image: url('~@/assets/images/icons/icon-service-mobile.svg');
+    background-image: url("~@/assets/images/icons/icon-service-mobile.svg");
   }
   &.seo {
-    background-image: url('~@/assets/images/icons/icon-service-seo.svg');
+    background-image: url("~@/assets/images/icons/icon-service-seo.svg");
   }
 
   h3 {

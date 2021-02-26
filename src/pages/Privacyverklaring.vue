@@ -24,8 +24,8 @@ query {
 </page-query>
 
 <script>
-import PortableText from '~/components/sanity/PortableText.vue'
-import ContactMe from '~/components/layout/ContactMe.vue'
+import PortableText from "~/components/sanity/PortableText.vue";
+import ContactMe from "~/components/layout/ContactMe.vue";
 
 export default {
   metaInfo() {
@@ -34,29 +34,29 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.content.seo.meta_description
+          content: this.$page.content.seo.meta_description,
         },
         {
           property: "og:title",
-          content: this.$page.content.seo.seo_title
+          content: this.$page.content.seo.seo_title,
         },
         {
           property: "og:description",
-          content: this.$page.content.seo.meta_description
+          content: this.$page.content.seo.meta_description,
         },
         {
           property: "og:image",
-          content: ""
-        }
+          content: "",
+        },
       ],
       bodyAttrs: {
-        class: "default-page"
-      }
-    }
+        class: "default-page",
+      },
+    };
   },
   components: {
     PortableText,
-    ContactMe
-  }
-}
+    ContactMe,
+  },
+};
 </script>

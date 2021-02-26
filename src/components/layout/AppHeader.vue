@@ -1,7 +1,14 @@
 <template>
   <header class="banner" v-bind:class="{ active: menuVisible }">
-    <g-link id="logo" v-bind:class="{ inverted: menuVisible }" to="/">{{ $static.metadata.siteName }}</g-link>
-    <button class="menu-toggler" aria-label="menu" v-on:click="showMainMenu" v-bind:class="{ active: menuVisible }">
+    <g-link id="logo" v-bind:class="{ inverted: menuVisible }" to="/">{{
+      $static.metadata.siteName
+    }}</g-link>
+    <button
+      class="menu-toggler"
+      aria-label="menu"
+      v-on:click="showMainMenu"
+      v-bind:class="{ active: menuVisible }"
+    >
       <span class="menu-hamburger">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -29,18 +36,18 @@ query {
 
 <script>
 export default {
-  name: 'PageHeader',
+  name: "PageHeader",
   data() {
     return {
-      menuVisible: false
-    }
+      menuVisible: false,
+    };
   },
   methods: {
     showMainMenu() {
       this.menuVisible = !this.menuVisible;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -85,7 +92,7 @@ export default {
   width: 3.5626rem; //57px;
   height: 3.125rem; //50px;
   text-indent: -9000px;
-  background-image: url('~@/assets/images/logo-corneel.svg');
+  background-image: url("~@/assets/images/logo-corneel.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -102,7 +109,7 @@ export default {
   }
 
   &.inverted {
-    background-image: url('~@/assets/images/logo-corneel-inverted.svg');
+    background-image: url("~@/assets/images/logo-corneel-inverted.svg");
   }
 }
 // -------------------------------------
@@ -124,18 +131,18 @@ export default {
     top: var(--banner-height-xs);
     left: 0;
     width: 100%;
-    height: calc(100vh - ( var(--banner-height-xs) ));
+    height: calc(100vh - (var(--banner-height-xs)));
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     background-color: var(--color-black);
-    transition: .2s all ease-in;
+    transition: 0.2s all ease-in;
 
     @media (min-width: $md) {
       top: var(--banner-height-md);
-      height: calc(100vh - ( var(--banner-height-md) ));
+      height: calc(100vh - (var(--banner-height-md)));
       padding-top: 1rem;
     }
   }
@@ -150,7 +157,7 @@ export default {
     padding: 0 var(--gutter-xs);
     margin: var(--gutter-sm) 0;
     width: 100%;
-    background-image: url('~@/assets/images/icons/arrow-white-right.svg');
+    background-image: url("~@/assets/images/icons/arrow-white-right.svg");
     background-position: calc(100% - (var(--gutter-xs))) 50%;
     background-repeat: no-repeat;
     background-size: 1.1875rem 0.9375rem; //19px 15px;
@@ -163,19 +170,19 @@ export default {
       margin: 0;
       background-image: none;
     }
-    
+
     &.active {
       color: var(--color-orange);
-      background-image: url('~@/assets/images/icons/arrow-orange-right.svg');
+      background-image: url("~@/assets/images/icons/arrow-orange-right.svg");
 
       @media (min-width: $lg) {
-        background-image: url('~@/assets/images/icons/arrow-orange-down.svg');
+        background-image: url("~@/assets/images/icons/arrow-orange-down.svg");
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: 1.125em 1.5rem;
       }
     }
-    
+
     &:hover {
       color: var(--color-orange);
     }
@@ -194,7 +201,7 @@ export default {
   padding: 0;
 
   &:focus {
-    outline:0;
+    outline: 0;
   }
 
   @media (min-width: $md) {
@@ -217,7 +224,7 @@ export default {
     width: 100%;
     height: 2px;
     background: var(--color-orange);
-    transition: .2s all ease-in;
+    transition: 0.2s all ease-in;
 
     &:last-child {
       margin-bottom: 0;
@@ -230,7 +237,7 @@ export default {
       width: 90%;
       transform: rotate(-45deg);
       transform-origin: right top;
-      transition: .2s all ease-in;
+      transition: 0.2s all ease-in;
     }
     &:nth-child(2) {
       display: none;
@@ -239,7 +246,7 @@ export default {
       width: 90%;
       transform: rotate(45deg);
       transform-origin: right bottom;
-      transition: .2s all ease-in;
+      transition: 0.2s all ease-in;
     }
   }
 }

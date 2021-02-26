@@ -5,13 +5,25 @@
     </section>
     <section class="page-content">
       <h2>Helaas, de pagina die je zoekt kan niet worden gevonden</h2>
-      <g-image src="~/assets/images/layout/not-found.jpg" class="main-img-notfound"/>
-      <p>Er is iets misgegaan. De pagina die je zoekt bestaat niet (meer). Bij de lancering van de nieuwe website zijn een flink aantal blogartikelen en projecten opgeschoond, dus dat kan een mogelijke oorzaak zijn.</p>
+      <g-image
+        src="~/assets/images/layout/not-found.jpg"
+        class="main-img-notfound"
+      />
+      <p>
+        Er is iets misgegaan. De pagina die je zoekt bestaat niet (meer). Bij de
+        lancering van de nieuwe website zijn een flink aantal blogartikelen en
+        projecten opgeschoond, dus dat kan een mogelijke oorzaak zijn.
+      </p>
       <p>Wat kun je doen om te vinden wat je zoekt?</p>
       <ul>
         <li>Controleer de URL en probeer het opnieuw.</li>
-        <li>Kijk in in navigatiemenu of je daar de juiste pagina kunt vinden.</li>
-        <li>Kom je er helemaal niet uit? Neem dan <a href="/contact/">contact</a> op. Ik kan je vast verder helpen.</li>
+        <li>
+          Kijk in in navigatiemenu of je daar de juiste pagina kunt vinden.
+        </li>
+        <li>
+          Kom je er helemaal niet uit? Neem dan
+          <a href="/contact/">contact</a> op. Ik kan je vast verder helpen.
+        </li>
       </ul>
       <p>Misschien vind je hier wat je zoekt:</p>
       <p class="button-group">
@@ -28,13 +40,13 @@
 export default {
   metaInfo() {
     return {
-      title: '404 Not Found',
+      title: "404 Not Found",
       bodyAttrs: {
-        class: "not-found"
-      }
-    }
-  }
-}
+        class: "not-found",
+      },
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

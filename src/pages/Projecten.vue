@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageIntro 
+    <PageIntro
       v-bind:title="$page.portfolio.title"
       v-bind:headline="$page.portfolio.introductionTitle"
       v-bind:intro="$page.portfolio._rawIntroductionText"
@@ -8,11 +8,19 @@
     <section class="featured-cases">
       <div class="wrapper">
         <h2>Uitgelichte projecten</h2>
-        <ProjectExcerpt v-for="edge in $page.featuredProjects.edges" :key="edge.node.id" v-bind:project="edge.node"/>
+        <ProjectExcerpt
+          v-for="edge in $page.featuredProjects.edges"
+          :key="edge.node.id"
+          v-bind:project="edge.node"
+        />
       </div>
     </section>
     <section class="all-projects">
-      <ProjectTeaser v-for="edge in $page.allProjects.edges" :key="edge.node.id" v-bind:project="edge.node"/>
+      <ProjectTeaser
+        v-for="edge in $page.allProjects.edges"
+        :key="edge.node.id"
+        v-bind:project="edge.node"
+      />
     </section>
     <ContactMe />
   </Layout>
@@ -60,10 +68,10 @@ query {
 </page-query>
 
 <script>
-import PageIntro from '~/components/layout/PageIntro.vue'
-import ContactMe from '~/components/layout/ContactMe.vue'
-import ProjectExcerpt from '~/components/project/Excerpt.vue'
-import ProjectTeaser from '~/components/project/Teaser.vue'
+import PageIntro from "~/components/layout/PageIntro.vue";
+import ContactMe from "~/components/layout/ContactMe.vue";
+import ProjectExcerpt from "~/components/project/Excerpt.vue";
+import ProjectTeaser from "~/components/project/Teaser.vue";
 
 export default {
   metaInfo() {
@@ -72,33 +80,33 @@ export default {
       meta: [
         {
           name: "description",
-          content: this.$page.portfolio.seo.meta_description
+          content: this.$page.portfolio.seo.meta_description,
         },
         {
           property: "og:title",
-          content: this.$page.portfolio.seo.seo_title
+          content: this.$page.portfolio.seo.seo_title,
         },
         {
           property: "og:description",
-          content: this.$page.portfolio.seo.meta_description
+          content: this.$page.portfolio.seo.meta_description,
         },
         {
           property: "og:image",
-          content: this.$page.portfolio.main_image
-        }
+          content: this.$page.portfolio.main_image,
+        },
       ],
       bodyAttrs: {
-        class: "projecten"
-      }
-    }
+        class: "projecten",
+      },
+    };
   },
   components: {
     PageIntro,
     ContactMe,
     ProjectExcerpt,
-    ProjectTeaser
-  }
-}
+    ProjectTeaser,
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -146,7 +154,7 @@ export default {
     grid-template-columns: repeat(auto-fill, 18.75rem); //300px
   }
   @media (min-width: $lg) {
-    grid-template-columns: repeat(auto-fill, 19,5rem); //311px
+    grid-template-columns: repeat(auto-fill, 19, 5rem); //311px
   }
 
   & > .project__teaser {

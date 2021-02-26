@@ -2,15 +2,22 @@
   <div class="related-articles" v-if="this.showComponent">
     <h3>Gerelateerde artikelen</h3>
     <div class="related-articles__body">
-      <article class="blog-post__teaser" v-for="relatedPost in this.relPosts" :key="relatedPost.id">
+      <article
+        class="blog-post__teaser"
+        v-for="relatedPost in this.relPosts"
+        :key="relatedPost.id"
+      >
         <g-link class="post-details" :to="relatedPost.path">
           <figure class="cover-image">
-            <g-image :src="relatedPost.mainImage.asset.url" alt="blog cover image" />
+            <g-image
+              :src="relatedPost.mainImage.asset.url"
+              alt="blog cover image"
+            />
           </figure>
           <ul class="tags" v-if="relatedPost.tags">
             <li v-for="tag in relatedPost.tags" :key="tag.id">{{ tag }}</li>
           </ul>
-          <h2>{{relatedPost.title}}</h2>
+          <h2>{{ relatedPost.title }}</h2>
         </g-link>
       </article>
     </div>
@@ -19,21 +26,20 @@
 
 <script>
 export default {
-  name: 'RelatedArticles',
+  name: "RelatedArticles",
   props: {
     relPosts: Array,
   },
   computed: {
-    showComponent: function () {
-      return this.relPosts.length
-    }
-  }
-}
+    showComponent: function() {
+      return this.relPosts.length;
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
 .related-articles {
-
   h3 {
     @include header-narrow;
   }

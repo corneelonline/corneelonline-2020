@@ -5,7 +5,9 @@
     </section>
     <div class="page-content--default">
       <p>Bedankt voor je bericht.</p>
-      <p>Je bericht is verzonden. Ik neem zo snel mogelijk contact met je op.</p>
+      <p>
+        Je bericht is verzonden. Ik neem zo snel mogelijk contact met je op.
+      </p>
     </div>
     <ContactMe />
   </Layout>
@@ -25,7 +27,7 @@ query {
 </page-query>
 
 <script>
-import ContactMe from '~/components/layout/ContactMe.vue'
+import ContactMe from "~/components/layout/ContactMe.vue";
 
 export default {
   metaInfo() {
@@ -34,28 +36,28 @@ export default {
       meta: [
         {
           name: "description",
-          content: "Bedankt voor je bericht."
+          content: "Bedankt voor je bericht.",
         },
         {
           property: "og:title",
-          content: "Bedankt"
+          content: "Bedankt",
         },
         {
           property: "og:description",
-          content: "Bedankt voor je bericht."
+          content: "Bedankt voor je bericht.",
         },
         {
           property: "og:image",
-          content: ""
-        }
+          content: "",
+        },
       ],
       bodyAttrs: {
-        class: "default-page"
-      }
-    }
+        class: "default-page",
+      },
+    };
   },
   components: {
-    ContactMe
-  }
-}
+    ContactMe,
+  },
+};
 </script>

@@ -10,8 +10,8 @@
 
 <script>
 export default {
-  name: 'DebugBar'
-}
+  name: "DebugBar",
+};
 </script>
 
 <style scoped lang="scss">
@@ -25,11 +25,21 @@ export default {
   z-index: 1050;
   // display: none;
 
-  @media (min-width: $xs) { background: #cceeff; }
-  @media (min-width: $sm) { background: #ffffcc; }
-  @media (min-width: $md) { background: #e6e6ff; }
-  @media (min-width: $lg) { background: #ffcccc; }
-  @media (min-width: $xl) { background: #d9f2d9; }
+  @media (min-width: $xs) {
+    background: #cceeff;
+  }
+  @media (min-width: $sm) {
+    background: #ffffcc;
+  }
+  @media (min-width: $md) {
+    background: #e6e6ff;
+  }
+  @media (min-width: $lg) {
+    background: #ffcccc;
+  }
+  @media (min-width: $xl) {
+    background: #d9f2d9;
+  }
 }
 
 .debug-xs {

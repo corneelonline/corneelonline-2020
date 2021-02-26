@@ -2,25 +2,28 @@
   <article class="blog-post--teaser">
     <g-link class="post-details" :to="post.path">
       <figure class="cover-image">
-        <g-image src="https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg" alt="blog cover image" />
+        <g-image
+          src="https://res.cloudinary.com/corneel-online/image/upload/v1602597715/corneel/control-room-02_lgjso2.jpg"
+          alt="blog cover image"
+        />
       </figure>
       <ul class="tags">
         <li>Development</li>
         <li>CMS</li>
         <li>WordPress</li>
       </ul>
-      <h2>{{post.title}}</h2>
+      <h2>{{ post.title }}</h2>
     </g-link>
   </article>
 </template>
 
 <script>
 export default {
-  name: 'BlogTeaser',
+  name: "BlogTeaser",
   props: {
-    post: Object
-  }
-}
+    post: Object,
+  },
+};
 </script>
 
 <style scoped lang="scss">

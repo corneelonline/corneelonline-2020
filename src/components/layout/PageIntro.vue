@@ -7,15 +7,15 @@
 </template>
 
 <script>
-import PortableText from '~/components/sanity/PortableText.vue'
+import PortableText from "~/components/sanity/PortableText.vue";
 
 export default {
-  name: 'PageIntro',
-  props: ['title', 'headline', 'intro'],
+  name: "PageIntro",
+  props: ["title", "headline", "intro"],
   components: {
-    PortableText
-  }
-}
+    PortableText,
+  },
+};
 </script>
 
 <style scoped lang="scss">

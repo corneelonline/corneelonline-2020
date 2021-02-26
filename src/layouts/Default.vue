@@ -2,20 +2,20 @@
   <div class="page">
     <AppHeader />
     <main id="main">
-      <slot/>
+      <slot />
     </main>
     <AppFooter />
   </div>
 </template>
 
 <script>
-import AppHeader from '~/components/layout/AppHeader.vue'
-import AppFooter from '~/components/layout/AppFooter.vue'
+import AppHeader from "~/components/layout/AppHeader.vue";
+import AppFooter from "~/components/layout/AppFooter.vue";
 
 export default {
   components: {
     AppHeader,
-    AppFooter
-  }
-}
+    AppFooter,
+  },
+};
 </script>

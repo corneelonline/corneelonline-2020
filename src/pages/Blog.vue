@@ -5,7 +5,11 @@
     </section>
     <section class="blog-posts">
       <div class="latest-post">
-        <article class="blog-post__teaser latest" v-for="edge in $page.firstPost.edges" :key="edge.node.id">
+        <article
+          class="blog-post__teaser latest"
+          v-for="edge in $page.firstPost.edges"
+          :key="edge.node.id"
+        >
           <g-link class="post-details" :to="edge.node.path">
             <figure class="cover-image">
               <BlogMainImage :imgSrc="edge.node.mainImage.asset.url" />
@@ -13,12 +17,16 @@
             <ul class="tags" v-if="edge.node.tags">
               <li v-for="tag in edge.node.tags" :key="tag.id">{{ tag }}</li>
             </ul>
-            <h2>{{edge.node.title}}</h2>
+            <h2>{{ edge.node.title }}</h2>
           </g-link>
         </article>
       </div>
       <div class="grid" ref="grid">
-        <article class="blog-post__teaser" v-for="edge in $page.otherPosts.edges" :key="edge.node.id">
+        <article
+          class="blog-post__teaser"
+          v-for="edge in $page.otherPosts.edges"
+          :key="edge.node.id"
+        >
           <g-link class="post-details" :to="edge.node.path">
             <figure class="cover-image">
               <BlogTeaserImage :imgSrc="edge.node.mainImage.asset.url" />
@@ -26,7 +34,7 @@
             <ul class="tags" v-if="edge.node.tags">
               <li v-for="tag in edge.node.tags" :key="tag.id">{{ tag }}</li>
             </ul>
-            <h2>{{edge.node.title}}</h2>
+            <h2>{{ edge.node.title }}</h2>
           </g-link>
         </article>
       </div>
@@ -77,9 +85,9 @@ query {
 </page-query>
 
 <script>
-import ContactMe from '~/components/layout/ContactMe.vue'
-import BlogMainImage from '~/components/common/BlogMainImage.vue'
-import BlogTeaserImage from '~/components/common/BlogTeaserImage.vue'
+import ContactMe from "~/components/layout/ContactMe.vue";
+import BlogMainImage from "~/components/common/BlogMainImage.vue";
+import BlogTeaserImage from "~/components/common/BlogTeaserImage.vue";
 
 export default {
   metaInfo() {
@@ -88,32 +96,34 @@ export default {
       meta: [
         {
           name: "description",
-          content: "Corneel heeft wat te vertellen. In het blog vind je artikelen over webdevelopment, webdesign, tips en tricks, trends en ontwikkelingen en nog veel meer."
+          content:
+            "Corneel heeft wat te vertellen. In het blog vind je artikelen over webdevelopment, webdesign, tips en tricks, trends en ontwikkelingen en nog veel meer.",
         },
         {
           property: "og:title",
-          content: "Blog"
+          content: "Blog",
         },
         {
           property: "og:description",
-          content: "Corneel heeft wat te vertellen. In het blog vind je artikelen over webdevelopment, webdesign, tips en tricks, trends en ontwikkelingen en nog veel meer."
+          content:
+            "Corneel heeft wat te vertellen. In het blog vind je artikelen over webdevelopment, webdesign, tips en tricks, trends en ontwikkelingen en nog veel meer.",
         },
         {
           property: "og:image",
-          content: ""
-        }
+          content: "",
+        },
       ],
       bodyAttrs: {
-        class: "blog"
-      }
-    }
+        class: "blog",
+      },
+    };
   },
   components: {
     ContactMe,
     BlogMainImage,
-    BlogTeaserImage
-  }
-}
+    BlogTeaserImage,
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -123,14 +133,13 @@ export default {
   border-bottom: 3rem solid var(--color-white);
   padding-top: 2rem;
   padding-bottom: 2rem;
-  
+
   @media (min-width: $lg) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 }
 .grid {
-  
   @media (min-width: $sm) {
     column-count: 2;
   }
@@ -181,7 +190,7 @@ export default {
 .blog-post__teaser.latest {
   background-color: var(--color-gray-light);
   width: 100%;
-    
+
   @media (min-width: $lg) {
     padding-bottom: 2rem;
   }
@@ -200,7 +209,7 @@ export default {
     @extend .h3;
     color: var(--color-orange);
     margin-left: 0;
-    
+
     @media (min-width: $lg) {
       margin-bottom: 1rem;
     }

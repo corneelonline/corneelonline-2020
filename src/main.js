@@ -16,12 +16,6 @@ export default function (Vue, { router, head, isClient }) {
     href: encodeURI('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Serif+Pro:wght@400;700&display=swap')
   })
 
-  // Add a meta tag
-  head.meta.push({
-    name: 'google-site-verification',
-    content: 'oEsKNPHiVstCJ4wlAGchV1w8nYtdkWbvhbcx4bBe0NA'
-  })
-
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'nl' }
 }

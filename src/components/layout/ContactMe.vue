@@ -6,7 +6,7 @@
         <p>Heb jij een interessant project?<br />En wil je erover praten?</p>
         <p>
           Of je nou een starter bent of een doorgewinterd bedrijf, ik hoor het
-          graag als ik je een leuke uitdaging voor me hebt.
+          graag als je een leuke uitdaging voor me hebt.
         </p>
       </div>
       <div class="contact-me__details">

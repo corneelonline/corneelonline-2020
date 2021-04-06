@@ -17,9 +17,10 @@ pre {
 
 code {
   @include font-size(1.125);
+  display: block;
   background-color: var(--color-gray-lighter);
   color: var(--color-orange);
-  padding: .25rem .75rem;
+  padding: 1rem 1.5rem;
   @media (min-width: $md) {
     @include font-size(1.5); // 20px
   }

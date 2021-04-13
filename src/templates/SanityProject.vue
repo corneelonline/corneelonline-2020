@@ -24,7 +24,7 @@
             <dd>{{ $page.sanityProject.deliveryDate }}</dd>
           </dl>
           <a
-            v-if="$page.sanityProject.visitWebsite.length"
+            v-if="$page.sanityProject.visitWebsite"
             :href="$page.sanityProject.visitWebsite"
             class="button"
             target="_blank"

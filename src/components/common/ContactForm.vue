@@ -10,15 +10,15 @@
     <input type="hidden" name="form-name" value="Contact Form" />
     <div class="form-group">
       <label for="name">Naam</label>
-      <input type="text" name="name" id="name" />
+      <input type="text" name="name" id="name" required />
     </div>
     <div class="form-group">
       <label for="email">E-mailadres</label>
-      <input type="email" name="email" id="email" />
+      <input type="email" name="email" id="email" required />
     </div>
     <div class="form-group">
       <label for="comments">Bericht</label>
-      <textarea name="comments" id="comments"></textarea>
+      <textarea name="comments" id="comments" required></textarea>
     </div>
     <input class="hidden" name="hpfield" />
     <div class="form-group">

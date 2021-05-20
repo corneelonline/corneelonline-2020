@@ -40,6 +40,10 @@ query ($path: String!) {
     }
     tags
     _rawBody(resolveReferences: {maxDepth: 10})
+    seo {
+      seo_title
+      meta_description
+    }
     relatedPosts {
       id
       path
@@ -64,23 +68,23 @@ import BlogMainImage from "~/components/common/BlogMainImage.vue";
 export default {
   metaInfo() {
     return {
-      title: this.$page.sanityPost.title,
+      title: this.$page.sanityPost.seo.seo_title,
       meta: [
         {
           name: "description",
-          content: this.$page.sanityPost.excerpt,
+          content: this.$page.sanityPost.seo.meta_description,
         },
         {
           property: "og:title",
-          content: this.$page.sanityPost.title,
+          content: this.$page.sanityPost.seo.seo_title,
         },
         {
           property: "og:description",
-          content: this.$page.sanityPost.excerpt,
+          content: this.$page.sanityPost.seo.meta_description,
         },
         {
           property: "og:image",
-          content: this.$page.sanityPost.main_image,
+          content: this.$page.sanityPost.mainImage.asset.url,
         },
       ],
       bodyAttrs: {

@@ -92,7 +92,7 @@ export default {
         },
         {
           property: "og:image",
-          content: this.$page.portfolio.main_image,
+          content: "/assets/img/screenshot-home.jpg",
         },
       ],
       bodyAttrs: {

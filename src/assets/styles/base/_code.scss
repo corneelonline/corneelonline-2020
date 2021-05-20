@@ -17,15 +17,12 @@ pre {
 
 code {
   @include font-size(1.125);
-  display: block;
+  display: inline-block;
   background-color: var(--color-gray-lighter);
   color: var(--color-orange);
-  padding: 1rem 1.5rem;
+  padding: 0 .5rem;
   @media (min-width: $md) {
-    @include font-size(1.5); // 20px
-  }
-  @media (min-width: $lg) {
-    @include font-size(1.5); // 20px
+    @include font-size(1.25); // 20px
   }
 }
 

@@ -7,6 +7,13 @@
 /blog/wordpress-gutenberg-editor/	                            /404/	                                                  404
 /blog/wordpress-kant-en-klaar-thema-kopen-of-custom-website-ontwikkelen/	/404/                                       404
 /blog/workshop-portret-fotografie-met-agata-serge/	          /404/	                                                  404
+/blog/case-study-corneel-goes-ja-mstack-met-een-nieuwe-website/  /blog/case-study-corneel-goes-jamstack/              301
+/blog/process-wire-cms-een-goed-alternatief-voor-word-press/  /blog/processwire-cms-een-goed-alternatief-voor-wordpress/ 301
+/blog/vue-js-een-open-source-progressive-javascript-framework/ /blog/vuejs-open-source-progressive-javascript-framework/ 301
+/blog/nuxt-js-een-framework-voor-vue-js-applicaties/          /blog/nuxt-framework-voor-vuejs-applicaties/            301
+/blog/gratis-stockfoto-s-die-er-niet-lullig-uitzien/          /blog/gratis-stockfotos-die-er-niet-lullig-uitzien/     301
+/blog/gridsome-moderne-site-generator-voor-vue-js/            /blog/gridsome-moderne-site-generator-voor-vuejs/       301
+/blog/jamstack-de-methode-voor-snelle-en-veilige-websites/    /blog/jamstack-methode-voor-snelle-en-veilige-websites/ 301
 /diensten/advies-en-ondersteuning/	                          /diensten/	                                            301
 /diensten/content-management-systeem/	                        /diensten/	                                            301
 /diensten/maatwerk-websites/	                                /diensten/	                                            301

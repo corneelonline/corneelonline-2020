@@ -104,7 +104,10 @@ module.exports = {
     ],
     SanityPost: [
       {
-        path: '/blog/:title',
+        // path: '/blog/:title',
+        path: (node) => {
+          return `/blog/${node.slug.current}`
+        },
         component: './src/templates/SanityPost.vue'
       }
     ]

@@ -92,7 +92,7 @@ export default {
         },
         {
           property: "og:image",
-          content: this.$page.sanityProject.main_image,
+          content: this.$page.sanityProject.mainImage.asset.url,
         },
       ],
       bodyAttrs: {

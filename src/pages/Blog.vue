@@ -21,7 +21,9 @@
           </g-link>
         </article>
       </div>
-      <div class="grid" ref="grid">
+      <div class="grid" ref="grid" v-images-loaded:on.progress="layout">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
         <article
           class="blog-post__teaser"
           v-for="edge in $page.otherPosts.edges"
@@ -85,6 +87,8 @@ query {
 </page-query>
 
 <script>
+import Masonry from "masonry-layout";
+import imagesLoaded from "vue-images-loaded";
 import ContactMe from "~/components/layout/ContactMe.vue";
 import BlogMainImage from "~/components/common/BlogMainImage.vue";
 import BlogTeaserImage from "~/components/common/BlogTeaserImage.vue";
@@ -118,10 +122,23 @@ export default {
       },
     };
   },
+  directives: {
+    imagesLoaded,
+  },
   components: {
     ContactMe,
     BlogMainImage,
     BlogTeaserImage,
+  },
+  methods: {
+    layout(instance, image) {
+      let msnry = new Masonry(this.$refs.grid, {
+        itemSelector: ".blog-post__teaser",
+        columnWidth: ".grid-sizer",
+        gutter: ".gutter-sizer",
+        percentPosition: true,
+      });
+    },
   },
 };
 </script>
@@ -139,18 +156,24 @@ export default {
     padding-bottom: 3rem;
   }
 }
-.grid {
-  @media (min-width: $sm) {
-    column-count: 2;
-  }
+.gutter-sizer {
+  width: 0;
+
   @media (min-width: $md) {
-    column-count: 2;
+    width: 4%;
   }
   @media (min-width: $lg) {
-    column-count: 3;
+    width: 3%;
   }
-  @media (min-width: $xl) {
-    column-count: 3;
+}
+.grid-sizer {
+  width: 100%;
+
+  @media (min-width: $md) {
+    width: 48%;
+  }
+  @media (min-width: $lg) {
+    width: 31.333333%;
   }
 }
 .blog-post__teaser {
@@ -161,9 +184,11 @@ export default {
   page-break-inside: avoid;
   break-inside: avoid;
 
-  // fix safari bug with column layout
-  &:first-of-type {
-    margin-top: 0;
+  @media (min-width: $md) {
+    width: 48%;
+  }
+  @media (min-width: $lg) {
+    width: 31.333333%;
   }
 
   .post-details {

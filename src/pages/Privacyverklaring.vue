@@ -1,5 +1,10 @@
 <template>
   <Layout>
+    <SocialHead
+      :title="$page.content.seo.seo_title"
+      :description="$page.content.seo.meta_description"
+      :path="canonicalUrl"
+    />
     <section class="page-intro">
       <h1>{{ $page.content.title }}</h1>
     </section>
@@ -14,6 +19,9 @@
 query {
   content: sanityDefaultPage(id: "878c333b-3de8-414b-841b-2a3f1f5817fa") {
     title
+  	slug {
+      current
+    }
     _rawBody
     seo {
       seo_title
@@ -24,39 +32,25 @@ query {
 </page-query>
 
 <script>
+import SocialHead from "~/components/common/SocialHead.vue";
 import PortableText from "~/components/sanity/PortableText.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
 
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.content.seo.seo_title,
-      meta: [
-        {
-          name: "description",
-          content: this.$page.content.seo.meta_description,
-        },
-        {
-          property: "og:title",
-          content: this.$page.content.seo.seo_title,
-        },
-        {
-          property: "og:description",
-          content: this.$page.content.seo.meta_description,
-        },
-        {
-          property: "og:image",
-          content: "/assets/img/screenshot-home.jpg",
-        },
-      ],
-      bodyAttrs: {
-        class: "default-page",
-      },
-    };
-  },
   components: {
+    SocialHead,
     PortableText,
     ContactMe,
+  },
+  computed: {
+    canonicalUrl() {
+      return (
+        process.env.GRIDSOME_BASE_URL +
+        "/" +
+        this.$page.content.slug.current +
+        "/"
+      );
+    },
   },
 };
 </script>

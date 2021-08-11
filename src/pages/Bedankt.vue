@@ -35,20 +35,14 @@ export default {
       title: "Bedankt",
       meta: [
         {
+          hid: "description",
           name: "description",
           content: "Bedankt voor je bericht.",
         },
         {
-          property: "og:title",
-          content: "Bedankt",
-        },
-        {
-          property: "og:description",
-          content: "Bedankt voor je bericht.",
-        },
-        {
-          property: "og:image",
-          content: "",
+          hid: "robots",
+          name: "robots",
+          content: "noindex, nofollow",
         },
       ],
       bodyAttrs: {

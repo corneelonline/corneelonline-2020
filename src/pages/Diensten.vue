@@ -1,5 +1,11 @@
 <template>
   <Layout>
+    <SocialHead
+      :title="$page.service.seo.seo_title"
+      :description="$page.service.seo.meta_description"
+      :path="canonicalUrl"
+      body-class="diensten"
+    />
     <PageIntro
       v-bind:title="$page.service.title"
       v-bind:headline="$page.service.introductionTitle"
@@ -48,6 +54,9 @@
 query {
   service: sanityServicesPage(id: "servicesPage") {
     title
+    slug {
+      current
+    }
     introductionTitle
     _rawIntroductionText
     steps {
@@ -73,6 +82,7 @@ query {
 </page-query>
 
 <script>
+import SocialHead from "~/components/common/SocialHead.vue";
 import PortableText from "~/components/sanity/PortableText.vue";
 import PageIntro from "~/components/layout/PageIntro.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
@@ -80,38 +90,23 @@ import BigImage from "~/components/layout/BigImage.vue";
 import ServiceExcerpt from "~/components/service/Excerpt.vue";
 
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.service.seo.seo_title,
-      meta: [
-        {
-          name: "description",
-          content: this.$page.service.seo.meta_description,
-        },
-        {
-          property: "og:title",
-          content: this.$page.service.seo.seo_title,
-        },
-        {
-          property: "og:description",
-          content: this.$page.service.seo.meta_description,
-        },
-        {
-          property: "og:image",
-          content: "",
-        },
-      ],
-      bodyAttrs: {
-        class: "diensten",
-      },
-    };
-  },
   components: {
+    SocialHead,
     PortableText,
     PageIntro,
     ContactMe,
     BigImage,
     ServiceExcerpt,
+  },
+  computed: {
+    canonicalUrl() {
+      return (
+        process.env.GRIDSOME_BASE_URL +
+        "/" +
+        this.$page.service.slug.current +
+        "/"
+      );
+    },
   },
 };
 </script>

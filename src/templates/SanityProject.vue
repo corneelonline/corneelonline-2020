@@ -1,5 +1,12 @@
 <template>
   <Layout>
+    <SocialHead
+      :title="$page.sanityProject.seo.seo_title"
+      :description="$page.sanityProject.seo.meta_description"
+      :path="canonicalUrl"
+      :image="$page.sanityProject.mainImage.asset.url"
+      body-class="project"
+    />
     <section class="page-intro">
       <h1>Projecten</h1>
     </section>
@@ -48,6 +55,7 @@ query ($path: String!) {
   sanityProject(path: $path) {
     id
     title
+    path
     mainImage {
       asset {
         url
@@ -69,41 +77,22 @@ query ($path: String!) {
 </page-query>
 
 <script>
+import SocialHead from "~/components/common/SocialHead.vue";
 import PortableText from "~/components/sanity/PortableText.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
 import ProjectImage from "~/components/common/ProjectImage.vue";
 
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.sanityProject.seo.seo_title,
-      meta: [
-        {
-          name: "description",
-          content: this.$page.sanityProject.seo.meta_description,
-        },
-        {
-          property: "og:title",
-          content: this.$page.sanityProject.seo.seo_title,
-        },
-        {
-          property: "og:description",
-          content: this.$page.sanityProject.seo.meta_description,
-        },
-        {
-          property: "og:image",
-          content: this.$page.sanityProject.mainImage.asset.url,
-        },
-      ],
-      bodyAttrs: {
-        class: "project",
-      },
-    };
-  },
   components: {
+    SocialHead,
     PortableText,
     ContactMe,
     ProjectImage,
+  },
+  computed: {
+    canonicalUrl() {
+      return process.env.GRIDSOME_BASE_URL + this.$page.sanityProject.path;
+    },
   },
 };
 </script>

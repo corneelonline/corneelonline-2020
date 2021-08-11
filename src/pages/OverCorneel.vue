@@ -1,5 +1,11 @@
 <template>
   <Layout>
+    <SocialHead
+      :title="$page.about.seo.seo_title"
+      :description="$page.about.seo.meta_description"
+      :path="canonicalUrl"
+      body-class="over-corneel"
+    />
     <section class="page-intro">
       <h1>{{ $page.about.title }}</h1>
     </section>
@@ -32,6 +38,9 @@
 query {
   about: sanityAboutMe(id: "aboutMe") {
     title
+  	slug {
+      current
+    }
     _rawBody
     _rawMission
     _rawTeam
@@ -44,39 +53,25 @@ query {
 </page-query>
 
 <script>
+import SocialHead from "~/components/common/SocialHead.vue";
 import PortableText from "~/components/sanity/PortableText.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
 
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.about.seo.seo_title,
-      meta: [
-        {
-          name: "description",
-          content: this.$page.about.seo.meta_description,
-        },
-        {
-          property: "og:title",
-          content: this.$page.about.seo.seo_title,
-        },
-        {
-          property: "og:description",
-          content: this.$page.about.seo.meta_description,
-        },
-        {
-          property: "og:image",
-          content: "/assets/img/screenshot-home.jpg",
-        },
-      ],
-      bodyAttrs: {
-        class: "over-corneel",
-      },
-    };
-  },
   components: {
+    SocialHead,
     PortableText,
     ContactMe,
+  },
+  computed: {
+    canonicalUrl() {
+      return (
+        process.env.GRIDSOME_BASE_URL +
+        "/" +
+        this.$page.about.slug.current +
+        "/"
+      );
+    },
   },
 };
 </script>

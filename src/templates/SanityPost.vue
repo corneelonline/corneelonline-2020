@@ -1,5 +1,12 @@
 <template>
   <Layout>
+    <SocialHead
+      :title="$page.sanityPost.seo.seo_title"
+      :description="$page.sanityPost.seo.meta_description"
+      :path="canonicalUrl"
+      :image="$page.sanityPost.mainImage.asset.url"
+      body-class="blog"
+    />
     <section class="page-intro">
       <h1>Blog</h1>
     </section>
@@ -60,48 +67,29 @@ query ($path: String!) {
 </page-query>
 
 <script>
+import SocialHead from "~/components/common/SocialHead.vue";
 import PortableText from "~/components/sanity/PortableText.vue";
 import RelatedArticles from "~/components/blog/RelatedArticles.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
 import BlogMainImage from "~/components/common/BlogMainImage.vue";
 
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.sanityPost.seo.seo_title,
-      meta: [
-        {
-          name: "description",
-          content: this.$page.sanityPost.seo.meta_description,
-        },
-        {
-          property: "og:title",
-          content: this.$page.sanityPost.seo.seo_title,
-        },
-        {
-          property: "og:description",
-          content: this.$page.sanityPost.seo.meta_description,
-        },
-        {
-          property: "og:image",
-          content: this.$page.sanityPost.mainImage.asset.url,
-        },
-      ],
-      bodyAttrs: {
-        class: "blog",
-      },
-    };
-  },
   data() {
     return {
       timeToRead: 0,
     };
   },
   components: {
+    SocialHead,
     PortableText,
     RelatedArticles,
     ContactMe,
     BlogMainImage,
+  },
+  computed: {
+    canonicalUrl() {
+      return process.env.GRIDSOME_BASE_URL + this.$page.sanityPost.path;
+    },
   },
   methods: {
     readingTime: function(content) {

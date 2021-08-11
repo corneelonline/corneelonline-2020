@@ -1,5 +1,11 @@
 <template>
   <Layout>
+    <SocialHead
+      :title="$page.portfolio.seo.seo_title"
+      :description="$page.portfolio.seo.meta_description"
+      :path="canonicalUrl"
+      body-class="projecten"
+    />
     <PageIntro
       v-bind:title="$page.portfolio.title"
       v-bind:headline="$page.portfolio.introductionTitle"
@@ -30,6 +36,9 @@
 query {
   portfolio: sanityPortfolio(id: "portfolio") {
     title
+  	slug {
+      current
+    }
     introductionTitle
     _rawIntroductionText
     seo {
@@ -68,43 +77,29 @@ query {
 </page-query>
 
 <script>
+import SocialHead from "~/components/common/SocialHead.vue";
 import PageIntro from "~/components/layout/PageIntro.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
 import ProjectExcerpt from "~/components/project/Excerpt.vue";
 import ProjectTeaser from "~/components/project/Teaser.vue";
 
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.portfolio.seo.seo_title,
-      meta: [
-        {
-          name: "description",
-          content: this.$page.portfolio.seo.meta_description,
-        },
-        {
-          property: "og:title",
-          content: this.$page.portfolio.seo.seo_title,
-        },
-        {
-          property: "og:description",
-          content: this.$page.portfolio.seo.meta_description,
-        },
-        {
-          property: "og:image",
-          content: "/assets/img/screenshot-home.jpg",
-        },
-      ],
-      bodyAttrs: {
-        class: "projecten",
-      },
-    };
-  },
   components: {
+    SocialHead,
     PageIntro,
     ContactMe,
     ProjectExcerpt,
     ProjectTeaser,
+  },
+  computed: {
+    canonicalUrl() {
+      return (
+        process.env.GRIDSOME_BASE_URL +
+        "/" +
+        this.$page.portfolio.slug.current +
+        "/"
+      );
+    },
   },
 };
 </script>

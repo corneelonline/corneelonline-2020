@@ -1,5 +1,11 @@
 <template>
   <Layout>
+    <SocialHead
+      :title="$page.sanityContact.seo.seo_title"
+      :description="$page.sanityContact.seo.meta_description"
+      :path="canonicalUrl"
+      body-class="contact"
+    />
     <PageIntro
       v-bind:title="$page.sanityContact.title"
       v-bind:headline="$page.sanityContact.introductionTitle"
@@ -45,6 +51,9 @@
 query {
   sanityContact(id: "contact") {
     title
+  	slug {
+      current
+    }
     introductionTitle
     _rawIntroductionText
     seo {
@@ -56,41 +65,53 @@ query {
 </page-query>
 
 <script>
+import SocialHead from "~/components/common/SocialHead.vue";
 import PageIntro from "~/components/layout/PageIntro.vue";
 import ContactForm from "~/components/common/ContactForm.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
 
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.sanityContact.seo.seo_title,
-      meta: [
-        {
-          name: "description",
-          content: this.$page.sanityContact.seo.meta_description,
-        },
-        {
-          property: "og:title",
-          content: this.$page.sanityContact.seo.seo_title,
-        },
-        {
-          property: "og:description",
-          content: this.$page.sanityContact.seo.meta_description,
-        },
-        {
-          property: "og:image",
-          content: "/assets/img/screenshot-home.jpg",
-        },
-      ],
-      bodyAttrs: {
-        class: "contact",
-      },
-    };
-  },
+  // metaInfo() {
+  //   return {
+  //     title: this.$page.sanityContact.seo.seo_title,
+  //     meta: [
+  //       {
+  //         name: "description",
+  //         content: this.$page.sanityContact.seo.meta_description,
+  //       },
+  //       {
+  //         property: "og:title",
+  //         content: this.$page.sanityContact.seo.seo_title,
+  //       },
+  //       {
+  //         property: "og:description",
+  //         content: this.$page.sanityContact.seo.meta_description,
+  //       },
+  //       {
+  //         property: "og:image",
+  //         content: "/assets/img/screenshot-home.jpg",
+  //       },
+  //     ],
+  //     bodyAttrs: {
+  //       class: "contact",
+  //     },
+  //   };
+  // },
   components: {
+    SocialHead,
     PageIntro,
     ContactForm,
     ContactMe,
+  },
+  computed: {
+    canonicalUrl() {
+      return (
+        process.env.GRIDSOME_BASE_URL +
+        "/" +
+        this.$page.sanityContact.slug.current +
+        "/"
+      );
+    },
   },
 };
 </script>

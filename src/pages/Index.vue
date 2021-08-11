@@ -1,5 +1,11 @@
 <template>
   <Layout>
+    <SocialHead
+      :title="$page.home.seo.seo_title"
+      :description="$page.home.seo.meta_description"
+      :path="canonicalUrl"
+      :body-class="$page.home.title.toLowerCase()"
+    />
     <section class="home-intro">
       <h1>{{ $page.home.introductionTitle }}</h1>
       <PortableText :blocks="$page.home._rawIntroductionText" />
@@ -88,6 +94,7 @@ query {
 </page-query>
 
 <script>
+import SocialHead from "~/components/common/SocialHead.vue";
 import PortableText from "~/components/sanity/PortableText.vue";
 import ServiceTeaser from "~/components/service/Teaser.vue";
 import ProjectSlider from "~/components/project/Slider.vue";
@@ -95,38 +102,18 @@ import BigImage from "~/components/layout/BigImage.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
 
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.home.seo.seo_title,
-      meta: [
-        {
-          name: "description",
-          content: this.$page.home.seo.meta_description,
-        },
-        {
-          property: "og:title",
-          content: this.$page.home.seo.seo_title,
-        },
-        {
-          property: "og:description",
-          content: this.$page.home.seo.meta_description,
-        },
-        {
-          property: "og:image",
-          content: "/assets/img/screenshot-home.jpg",
-        },
-      ],
-      bodyAttrs: {
-        class: this.$page.home.title.toLowerCase(),
-      },
-    };
-  },
   components: {
+    SocialHead,
     PortableText,
     ServiceTeaser,
     ProjectSlider,
     BigImage,
     ContactMe,
+  },
+  computed: {
+    canonicalUrl() {
+      return process.env.GRIDSOME_BASE_URL + "/";
+    },
   },
 };
 </script>

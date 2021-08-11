@@ -1,5 +1,11 @@
 <template>
   <Layout>
+    <SocialHead
+      title="Blog"
+      description="Corneel heeft wat te vertellen. In het blog vind je artikelen over webdevelopment, webdesign, tips en tricks, trends en ontwikkelingen en nog veel meer."
+      :path="canonicalUrl"
+      body-class="blog"
+    />
     <section class="page-intro">
       <h1>Blog</h1>
     </section>
@@ -85,43 +91,22 @@ query {
 </page-query>
 
 <script>
+import SocialHead from "~/components/common/SocialHead.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
 import BlogMainImage from "~/components/common/BlogMainImage.vue";
 import BlogTeaserImage from "~/components/common/BlogTeaserImage.vue";
 
 export default {
-  metaInfo() {
-    return {
-      title: "Blog",
-      meta: [
-        {
-          name: "description",
-          content:
-            "Corneel heeft wat te vertellen. In het blog vind je artikelen over webdevelopment, webdesign, tips en tricks, trends en ontwikkelingen en nog veel meer.",
-        },
-        {
-          property: "og:title",
-          content: "Blog",
-        },
-        {
-          property: "og:description",
-          content:
-            "Corneel heeft wat te vertellen. In het blog vind je artikelen over webdevelopment, webdesign, tips en tricks, trends en ontwikkelingen en nog veel meer.",
-        },
-        {
-          property: "og:image",
-          content: "/assets/img/screenshot-home.jpg",
-        },
-      ],
-      bodyAttrs: {
-        class: "blog",
-      },
-    };
-  },
   components: {
+    SocialHead,
     ContactMe,
     BlogMainImage,
     BlogTeaserImage,
+  },
+  computed: {
+    canonicalUrl() {
+      return process.env.GRIDSOME_BASE_URL + "/blog/";
+    },
   },
 };
 </script>

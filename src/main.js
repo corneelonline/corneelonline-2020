@@ -10,12 +10,6 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
-  // Add Google webfonts
-  head.link.push({
-    rel: 'stylesheet',
-    href: encodeURI('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Serif+Pro:wght@400;700&display=swap')
-  })
-
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'nl' }
 }

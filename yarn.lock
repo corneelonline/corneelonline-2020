@@ -1530,13 +1530,6 @@
     sort-package-json "^1.15.0"
     update-notifier "^4.1.0"
 
-"@gridsome/plugin-google-analytics@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/plugin-google-analytics/-/plugin-google-analytics-0.1.2.tgz#5ffe9c80a0c9c3418a51c21fcbdc5fae7dd4ff1f"
-  integrity sha512-41rWKTXQLnZphP8Fozzjh240lg/v5/JEDacB6ZJEr3RzXz3oYvoEQMOxQaUEgZkS8oOSG9TYDoBWVegzwMOuaw==
-  dependencies:
-    vue-analytics "^5.16.1"
-
 "@gridsome/plugin-sitemap@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@gridsome/plugin-sitemap/-/plugin-sitemap-0.4.0.tgz#dbd51c747cb8d6d9c827104c832e35a5aa4807af"
@@ -5510,6 +5503,13 @@ gridsome-plugin-manifest@^0.3.5:
     mkdirp "1.*"
     rename "1.*"
     sharp "^0.25.0"
+
+gridsome-plugin-matomo@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-matomo/-/gridsome-plugin-matomo-0.1.0.tgz#da74cf26d6350e64a5f535ff6bf6830bfe56f5c5"
+  integrity sha512-sq3/uyvsUzJzxx8P+aQ9LUFi1nEjJ0yoAeAAE8yqiKAEJRiD1KRjt8aoOPM/ffVRyfB5ZFm8Mriin4LKmJz57A==
+  dependencies:
+    vue-matomo "^3.12.0"
 
 gridsome-plugin-robots-txt@^1.0.2:
   version "1.0.2"
@@ -11170,11 +11170,6 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-analytics@^5.16.1:
-  version "5.22.1"
-  resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.22.1.tgz#9d6b32da56daee1b9dfb23a267b50349a03f710f"
-  integrity sha512-HPKQMN7gfcUqS5SxoO0VxqLRRSPkG1H1FqglsHccz6BatBatNtm/Vyy8brApktZxNCfnAkrSVDpxg3/FNDeOgQ==
-
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -11199,6 +11194,11 @@ vue-masonry@^0.11.8:
     imagesloaded "4.1.4"
     masonry-layout "^4.2.2"
     vue "^2.0.0"
+
+vue-matomo@^3.12.0:
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/vue-matomo/-/vue-matomo-3.12.0.tgz#57bc12dd7c5fc90c6cd974105693634543567ae5"
+  integrity sha512-JiloyyLkzW/teGHd4ZhCez5iqzFAmjlD1xqPIrAZB/yiJelpyZES2kOSOSc3lmiUs2C+0BLWvOczZP2AGo+NKg==
 
 vue-meta@^2.2.2:
   version "2.4.0"

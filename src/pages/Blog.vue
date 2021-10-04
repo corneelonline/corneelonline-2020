@@ -27,7 +27,6 @@
           </g-link>
         </article>
       </div>
-      <!--div class="grid" ref="grid"-->
       <masonry
         :cols="{ default: 3, 976: 2, 560: 1 }"
         :gutter="{ default: '30px' }"
@@ -48,7 +47,6 @@
           </g-link>
         </article>
       </masonry>
-      <!--div-->
     </section>
     <ContactMe />
   </Layout>

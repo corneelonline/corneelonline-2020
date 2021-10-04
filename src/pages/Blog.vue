@@ -27,7 +27,11 @@
           </g-link>
         </article>
       </div>
-      <div class="grid" ref="grid">
+      <!--div class="grid" ref="grid"-->
+      <masonry
+        :cols="{ default: 3, 976: 2, 560: 1 }"
+        :gutter="{ default: '30px' }"
+      >
         <article
           class="blog-post__teaser"
           v-for="edge in $page.otherPosts.edges"
@@ -43,7 +47,8 @@
             <h2>{{ edge.node.title }}</h2>
           </g-link>
         </article>
-      </div>
+      </masonry>
+      <!--div-->
     </section>
     <ContactMe />
   </Layout>
@@ -95,6 +100,9 @@ import SocialHead from "~/components/common/SocialHead.vue";
 import ContactMe from "~/components/layout/ContactMe.vue";
 import BlogMainImage from "~/components/common/BlogMainImage.vue";
 import BlogTeaserImage from "~/components/common/BlogTeaserImage.vue";
+import Vue from "vue";
+import VueMasonry from "vue-masonry-css";
+Vue.use(VueMasonry);
 
 export default {
   components: {
@@ -102,6 +110,7 @@ export default {
     ContactMe,
     BlogMainImage,
     BlogTeaserImage,
+    VueMasonry,
   },
   computed: {
     canonicalUrl() {
